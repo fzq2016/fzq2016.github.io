@@ -1,0 +1,904 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book UIKit-View -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>NSAttributedString | UIKit-View</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../uiappearence/index.html" />
+    
+    
+    <link rel="prev" href="../uicolor/index.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="12"
+        data-chapter-title="NSAttributedString"
+        data-filepath="nsattributedstring/README.md"
+        data-basepath=".."
+        data-revision="Wed May 25 2016 17:21:40 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+                
+                <li>
+                    <a href="http://fzq2016.github.io/index.html" target="blank" class="custom-link">Home</a>
+                </li>
+            
+            
+
+            
+            <li class="divider"></li>
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        目录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="chapter-0/index.html">
+            
+                
+                    <a href="../chapter-0/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        UIKit-View前言
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="uiview/index.html">
+            
+                
+                    <a href="../uiview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        UIView
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="uicontrol/index.html">
+            
+                
+                    <a href="../uicontrol/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        UIControl
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="uibutton/index.html">
+            
+                
+                    <a href="../uibutton/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.1.</b>
+                        
+                        UIButton
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="uisegmentedcontrol/index.html">
+            
+                
+                    <a href="../uisegmentedcontrol/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.2.</b>
+                        
+                        UISegmentedControl
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="uitextfield/index.html">
+            
+                
+                    <a href="../uitextfield/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.3.</b>
+                        
+                        UITextField
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="uipagecontrol/index.html">
+            
+                
+                    <a href="../uipagecontrol/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.4.</b>
+                        
+                        UIPageControl
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="uidatepicker/index.html">
+            
+                
+                    <a href="../uidatepicker/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.5.</b>
+                        
+                        UIDatePicker
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="uiwindow/index.html">
+            
+                
+                    <a href="../uiwindow/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        UIWindow???
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="uilabel/index.html">
+            
+                
+                    <a href="../uilabel/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        UILabel
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="uiimageview/index.html">
+            
+                
+                    <a href="../uiimageview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        UIImageView
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="uiscrollview/index.html">
+            
+                
+                    <a href="../uiscrollview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        UIScrollView
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.5.1" data-path="uitableview/index.html">
+            
+                
+                    <a href="../uitableview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.1.</b>
+                        
+                        UITableView
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5.2" data-path="uicollectionview/index.html">
+            
+                
+                    <a href="../uicollectionview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.2.</b>
+                        
+                        UICollectionView
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="uitableviewcell/index.html">
+            
+                
+                    <a href="../uitableviewcell/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        UITableViewCell
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="uinavigationbar/index.html">
+            
+                
+                    <a href="../uinavigationbar/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        UINavigationBar
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="uitabbar/index.html">
+            
+                
+                    <a href="../uitabbar/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        UITabBar
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="uitoolbar/index.html">
+            
+                
+                    <a href="../uitoolbar/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.9.</b>
+                        
+                        UIToolbar
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="uiactionsheet/index.html">
+            
+                
+                    <a href="../uiactionsheet/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.10.</b>
+                        
+                        UIActionSheet
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="uialertview/index.html">
+            
+                
+                    <a href="../uialertview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.11.</b>
+                        
+                        UIAlertView
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="uiactivityindicatorview/index.html">
+            
+                
+                    <a href="../uiactivityindicatorview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.12.</b>
+                        
+                        UIActivityIndicatorView(菊花)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="uipickerview/index.html">
+            
+                
+                    <a href="../uipickerview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.13.</b>
+                        
+                        UIPickerView
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="uicollectionviewlayout/index.html">
+            
+                
+                    <a href="../uicollectionviewlayout/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        UICollectionViewLayout
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="uicollectionviewflowlayout/index.html">
+            
+                
+                    <a href="../uicollectionviewflowlayout/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        UICollectionViewFlowLayout
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="uinavigationitem/index.html">
+            
+                
+                    <a href="../uinavigationitem/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        UINavigationItem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="uibaritem/index.html">
+            
+                
+                    <a href="../uibaritem/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        UIBarItem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="uibarbuttonitem/index.html">
+            
+                
+                    <a href="../uibarbuttonitem/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        UIBarButtonItem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="uitabbaritem/index.html">
+            
+                
+                    <a href="../uitabbaritem/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        UITabBarItem
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="uiimage/index.html">
+            
+                
+                    <a href="../uiimage/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        UIImage
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="uifont/index.html">
+            
+                
+                    <a href="../uifont/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        UIFont
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="uicolor/index.html">
+            
+                
+                    <a href="../uicolor/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        UIColor
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="12" data-path="nsattributedstring/index.html">
+            
+                
+                    <a href="../nsattributedstring/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        NSAttributedString
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="uiappearence/index.html">
+            
+                
+                    <a href="../uiappearence/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        UIAppearence协议
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >UIKit-View</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="nsattributedstring">NSAttributedString</h1>
+<ul>
+<li>&#x7236;&#x7C7B;&#x662F;NSObject</li>
+</ul>
+<h2 id="nsattributedstring">NSAttributedString</h2>
+<ul>
+<li>&#x5E26;&#x6709;&#x5C5E;&#x6027;&#x7684;&#x5B57;&#x7B26;&#x4E32;, &#x5BCC;&#x6587;&#x672C;</li>
+<li>&#x7531;2&#x90E8;&#x5206;&#x7EC4;&#x6210;<ul>
+<li>&#x6587;&#x5B57;&#x5185;&#x5BB9; : NSString *</li>
+<li>&#x6587;&#x5B57;&#x5C5E;&#x6027; : NSDictionary *<ul>
+<li>&#x6587;&#x5B57;&#x989C;&#x8272; - NSForegroundColorAttributeName</li>
+<li>&#x5B57;&#x4F53;&#x5927;&#x5C0F; - NSFontAttributeName</li>
+<li>&#x4E0B;&#x5212;&#x7EBF; - NSUnderlineStyleAttributeName</li>
+<li>&#x80CC;&#x666F;&#x8272; - NSBackgroundColorAttributeName</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>&#x521D;&#x59CB;&#x5316;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-built_in">NSMutableDictionary</span> *attributes = [<span class="hljs-built_in">NSMutableDictionary</span> dictionary];
+attributes[<span class="hljs-built_in">NSForegroundColorAttributeName</span>] = [<span class="hljs-built_in">UIColor</span> yellowColor];
+attributes[<span class="hljs-built_in">NSBackgroundColorAttributeName</span>] = [<span class="hljs-built_in">UIColor</span> redColor];
+attributes[<span class="hljs-built_in">NSUnderlineStyleAttributeName</span>] = @YES;
+<span class="hljs-built_in">NSAttributedString</span> *string = [[<span class="hljs-built_in">NSAttributedString</span> alloc] initWithString:<span class="hljs-string">@&quot;123&quot;</span> attributes:attributes];
+</code></pre>
+<ul>
+<li>&#x4F7F;&#x7528;&#x573A;&#x5408;<ul>
+<li>UILabel - attributedText</li>
+<li>UITextField - attributedPlaceholder</li>
+</ul>
+</li>
+</ul>
+<h2 id="nsmutableattributedstring">NSMutableAttributedString</h2>
+<ul>
+<li>&#x7EE7;&#x627F;&#x81EA;NSAttributedString</li>
+<li>&#x5E38;&#x89C1;&#x65B9;&#x6CD5;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x8BBE;&#x7F6E;range&#x8303;&#x56F4;&#x7684;&#x5C5E;&#x6027;, &#x91CD;&#x590D;&#x8BBE;&#x7F6E;&#x540C;&#x4E00;&#x4E2A;&#x8303;&#x56F4;&#x7684;&#x5C5E;&#x6027;, &#x6700;&#x540E;&#x4E00;&#x6B21;&#x8BBE;&#x7F6E;&#x624D;&#x662F;&#x6709;&#x6548;&#x7684;(&#x4E4B;&#x524D;&#x7684;&#x8BBE;&#x7F6E;&#x4F1A;&#x88AB;&#x8986;&#x76D6;&#x6389;)</span>
+- (<span class="hljs-keyword">void</span>)setAttributes:(nullable <span class="hljs-built_in">NSDictionary</span>&lt;<span class="hljs-built_in">NSString</span> *, <span class="hljs-keyword">id</span>&gt; *)attrs range:(<span class="hljs-built_in">NSRange</span>)range;
+<span class="hljs-comment">// &#x6DFB;&#x52A0;range&#x8303;&#x56F4;&#x7684;&#x5C5E;&#x6027;, &#x540C;&#x4E00;&#x4E2A;&#x8303;&#x56F4;, &#x53EF;&#x4EE5;&#x4E0D;&#x65AD;&#x7D2F;&#x52A0;&#x5C5E;&#x6027;</span>
+- (<span class="hljs-keyword">void</span>)addAttribute:(<span class="hljs-built_in">NSString</span> *)name value:(<span class="hljs-keyword">id</span>)value range:(<span class="hljs-built_in">NSRange</span>)range;
+- (<span class="hljs-keyword">void</span>)addAttributes:(<span class="hljs-built_in">NSDictionary</span>&lt;<span class="hljs-built_in">NSString</span> *, <span class="hljs-keyword">id</span>&gt; *)attrs range:(<span class="hljs-built_in">NSRange</span>)range;
+</code></pre>
+<ul>
+<li>&#x56FE;&#x6587;&#x6DF7;&#x6392;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-built_in">UILabel</span> *label = [[<span class="hljs-built_in">UILabel</span> alloc] init];
+label<span class="hljs-variable">.frame</span> = <span class="hljs-built_in">CGRectMake</span>(<span class="hljs-number">100</span>, <span class="hljs-number">100</span>, <span class="hljs-number">200</span>, <span class="hljs-number">25</span>);
+label<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> redColor];
+label<span class="hljs-variable">.font</span> = [<span class="hljs-built_in">UIFont</span> systemFontOfSize:<span class="hljs-number">14</span>];
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> addSubview:label];
+
+<span class="hljs-comment">// &#x56FE;&#x6587;&#x6DF7;&#x6392;</span>
+<span class="hljs-built_in">NSMutableAttributedString</span> *attributedText = [[<span class="hljs-built_in">NSMutableAttributedString</span> alloc] init];
+<span class="hljs-comment">// 1 - &#x4F60;&#x597D;</span>
+<span class="hljs-built_in">NSAttributedString</span> *first = [[<span class="hljs-built_in">NSAttributedString</span> alloc] initWithString:<span class="hljs-string">@&quot;&#x4F60;&#x597D;&quot;</span>];
+[attributedText appendAttributedString:first];
+
+<span class="hljs-comment">// 2 - &#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x5E26;&#x6709;&#x56FE;&#x7247;&#x7684;&#x9644;&#x4EF6;&#x5BF9;&#x8C61;</span>
+<span class="hljs-built_in">NSTextAttachment</span> *attachment = [[<span class="hljs-built_in">NSTextAttachment</span> alloc] init];
+attachment<span class="hljs-variable">.image</span> = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@&quot;header_cry_icon&quot;</span>];
+<span class="hljs-built_in">CGFloat</span> lineH = label<span class="hljs-variable">.font</span><span class="hljs-variable">.lineHeight</span>;
+attachment<span class="hljs-variable">.bounds</span> = <span class="hljs-built_in">CGRectMake</span>(<span class="hljs-number">0</span>, - ((label<span class="hljs-variable">.xmg_height</span> - lineH) * <span class="hljs-number">0.5</span> - <span class="hljs-number">1</span>), lineH, lineH);
+<span class="hljs-comment">// &#x5C06;&#x9644;&#x4EF6;&#x5BF9;&#x8C61;&#x5305;&#x88C5;&#x6210;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x6587;&#x5B57;</span>
+<span class="hljs-built_in">NSAttributedString</span> *second = [<span class="hljs-built_in">NSAttributedString</span> attributedStringWithAttachment:attachment];
+[attributedText appendAttributedString:second];
+
+<span class="hljs-comment">// 3 - &#x54C8;&#x54C8;&#x54C8;</span>
+<span class="hljs-built_in">NSAttributedString</span> *third = [[<span class="hljs-built_in">NSAttributedString</span> alloc] initWithString:<span class="hljs-string">@&quot;&#x54C8;&#x54C8;&#x54C8;&quot;</span>];
+[attributedText appendAttributedString:third];
+
+label<span class="hljs-variable">.attributedText</span> = attributedText;
+</code></pre>
+<ul>
+<li>&#x4E00;&#x4E2A;Label&#x663E;&#x793A;&#x591A;&#x884C;&#x4E0D;&#x540C;&#x5B57;&#x4F53;&#x7684;&#x6587;&#x5B57;</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-built_in">UILabel</span> *label = [[<span class="hljs-built_in">UILabel</span> alloc] init];
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x5C5E;&#x6027;&#x6587;&#x5B57;</span>
+<span class="hljs-built_in">NSString</span> *text = <span class="hljs-string">@&quot;&#x4F60;&#x597D;\n&#x54C8;&#x54C8;&#x54C8;&quot;</span>;
+<span class="hljs-built_in">NSMutableAttributedString</span> *attributedText = [[<span class="hljs-built_in">NSMutableAttributedString</span> alloc] initWithString:text];
+[attributedText addAttribute:<span class="hljs-built_in">NSFontAttributeName</span> value:[<span class="hljs-built_in">UIFont</span> systemFontOfSize:<span class="hljs-number">10</span>] range:<span class="hljs-built_in">NSMakeRange</span>(<span class="hljs-number">0</span>, text<span class="hljs-variable">.length</span>)];
+[attributedText addAttribute:<span class="hljs-built_in">NSFontAttributeName</span> value:[<span class="hljs-built_in">UIFont</span> boldSystemFontOfSize:<span class="hljs-number">13</span>] range:<span class="hljs-built_in">NSMakeRange</span>(<span class="hljs-number">3</span>, <span class="hljs-number">3</span>)];
+label<span class="hljs-variable">.attributedText</span> = attributedText;
+<span class="hljs-comment">// &#x5176;&#x4ED6;&#x8BBE;&#x7F6E;</span>
+label<span class="hljs-variable">.numberOfLines</span> = <span class="hljs-number">0</span>;
+label<span class="hljs-variable">.textAlignment</span> = <span class="hljs-built_in">NSTextAlignmentCenter</span>;
+label<span class="hljs-variable">.frame</span> = <span class="hljs-built_in">CGRectMake</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">100</span>, <span class="hljs-number">40</span>);
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> addSubview:label];
+<span class="hljs-keyword">self</span><span class="hljs-variable">.navigationItem</span><span class="hljs-variable">.titleView</span> = label;
+</code></pre>
+<p>//    NSMutableDictionary *attributes = [NSMutableDictionary dictionary];
+//    attributes[NSForegroundColorAttributeName] = [UIColor yellowColor];
+//    attributes[NSBackgroundColorAttributeName] = [UIColor redColor];
+//    attributes[NSUnderlineStyleAttributeName] = @YES;
+//    self.attributedPlaceholder = [[NSAttributedString alloc] initWithString:self.placeholder attributes:attributes];</p>
+<p>//    NSMutableAttributedString <em>string = [[NSMutableAttributedString alloc] initWithString:self.placeholder];
+//    // &#x8BBE;&#x7F6E;&#x5C5E;&#x6027;
+//    NSMutableDictionary </em>attributes = [NSMutableDictionary dictionary];
+//    attributes[NSForegroundColorAttributeName] = [UIColor yellowColor];
+//    [string setAttributes:attributes range:NSMakeRange(0, 1)];
+//<br>//    NSMutableDictionary *attributes2 = [NSMutableDictionary dictionary];
+//    attributes2[NSBackgroundColorAttributeName] = [UIColor redColor];
+//    attributes2[NSUnderlineStyleAttributeName] = @YES;
+//    [string setAttributes:attributes2 range:NSMakeRange(0, 2)];
+//    [string addAttribute:NSForegroundColorAttributeName value:[UIColor yellowColor] range:NSMakeRange(0, 1)];
+//    [string addAttribute:NSBackgroundColorAttributeName value:[UIColor redColor] range:NSMakeRange(0, 1)];
+//    [string addAttribute:NSUnderlineStyleAttributeName value:@YES range:NSMakeRange(1, 1)];
+//    self.attributedPlaceholder = string;</p>
+<h2 id="&#x5B57;&#x7B26;&#x5C5E;&#x6027;">&#x5B57;&#x7B26;&#x5C5E;&#x6027;</h2>
+<ul>
+<li>&#x5B57;&#x7B26;&#x5C5E;&#x6027;&#x53EF;&#x4EE5;&#x5E94;&#x7528;&#x4E8E; attributed string &#x7684;&#x6587;&#x672C;&#x4E2D;&#x3002;</li>
+</ul>
+<pre><code class="lang-objc"> <span class="hljs-number">1</span>&gt; <span class="hljs-built_in">NSFontAttributeName</span>(&#x5B57;&#x4F53;)
+
+ <span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSFontAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">UIFont</span> &#x5BF9;&#x8C61;&#x3002;&#x8BE5;&#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x6539;&#x53D8;&#x4E00;&#x6BB5;&#x6587;&#x672C;&#x7684;&#x5B57;&#x4F53;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x8BE5;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;<span class="hljs-number">12</span>-point Helvetica(Neue)&#x3002;
+
+
+ <span class="hljs-number">2</span>&gt; <span class="hljs-built_in">NSParagraphStyleAttributeName</span>(&#x6BB5;&#x843D;)
+
+ <span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSParagraphStyleAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">NSParagraphStyle</span> &#x5BF9;&#x8C61;&#x3002;&#x8BE5;&#x5C5E;&#x6027;&#x5728;&#x4E00;&#x6BB5;&#x6587;&#x672C;&#x4E0A;&#x5E94;&#x7528;&#x591A;&#x4E2A;&#x5C5E;&#x6027;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x8BE5;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A; <span class="hljs-built_in">NSParagraphStyle</span> &#x7684;defaultParagraphStyle &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x9ED8;&#x8BA4;&#x6BB5;&#x843D;&#x5C5E;&#x6027;&#x3002;
+
+
+ <span class="hljs-number">3</span>&gt; <span class="hljs-built_in">NSForegroundColorAttributeName</span>(&#x5B57;&#x4F53;&#x989C;&#x8272;)
+
+ <span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSForegroundColorAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">UIColor</span> &#x5BF9;&#x8C61;&#x3002;&#x8BE5;&#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x4E00;&#x6BB5;&#x6587;&#x672C;&#x7684;&#x5B57;&#x4F53;&#x989C;&#x8272;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x8BE5;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x4E3A;&#x9ED1;&#x8272;&#x3002;
+
+
+ <span class="hljs-number">4</span>&gt; <span class="hljs-built_in">NSBackgroundColorAttributeName</span>(&#x5B57;&#x4F53;&#x80CC;&#x666F;&#x8272;)
+
+<span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSBackgroundColorAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">UIColor</span> &#x5BF9;&#x8C61;&#x3002;&#x8BE5;&#x5C5E;&#x6027;&#x7528;&#x4E8E;&#x6307;&#x5B9A;&#x4E00;&#x6BB5;&#x6587;&#x672C;&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x6307;&#x5B9A;&#x8BE5;&#x5C5E;&#x6027;&#xFF0C;&#x5219;&#x9ED8;&#x8BA4;&#x65E0;&#x80CC;&#x666F;&#x8272;&#x3002;
+
+
+ <span class="hljs-number">5</span>&gt; <span class="hljs-built_in">NSLigatureAttributeName</span>(&#x8FDE;&#x5B57;&#x7B26;)
+
+<span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSLigatureAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">NSNumber</span> &#x5BF9;&#x8C61;(&#x6574;&#x6570;)&#x3002;&#x8FDE;&#x4F53;&#x5B57;&#x7B26;&#x662F;&#x6307;&#x67D0;&#x4E9B;&#x8FDE;&#x5728;&#x4E00;&#x8D77;&#x7684;&#x5B57;&#x7B26;&#xFF0C;&#x5B83;&#x4EEC;&#x91C7;&#x7528;&#x5355;&#x4E2A;&#x7684;&#x56FE;&#x5143;&#x7B26;&#x53F7;&#x3002;<span class="hljs-number">0</span> &#x8868;&#x793A;&#x6CA1;&#x6709;&#x8FDE;&#x4F53;&#x5B57;&#x7B26;&#x3002;<span class="hljs-number">1</span> &#x8868;&#x793A;&#x4F7F;&#x7528;&#x9ED8;&#x8BA4;&#x7684;&#x8FDE;&#x4F53;&#x5B57;&#x7B26;&#x3002;<span class="hljs-number">2</span>&#x8868;&#x793A;&#x4F7F;&#x7528;&#x6240;&#x6709;&#x8FDE;&#x4F53;&#x7B26;&#x53F7;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A; <span class="hljs-number">1</span>&#xFF08;&#x6CE8;&#x610F;&#xFF0C;iOS &#x4E0D;&#x652F;&#x6301;&#x503C;&#x4E3A; <span class="hljs-number">2</span>&#xFF09;&#x3002;
+
+
+ <span class="hljs-number">6</span>&gt; <span class="hljs-built_in">NSKernAttributeName</span>(&#x5B57;&#x95F4;&#x8DDD;)
+
+<span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSKernAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">NSNumber</span> &#x5BF9;&#x8C61;(&#x6574;&#x6570;)&#x3002;&#x5B57;&#x6BCD;&#x7D27;&#x6392;&#x6307;&#x5B9A;&#x4E86;&#x7528;&#x4E8E;&#x8C03;&#x6574;&#x5B57;&#x8DDD;&#x7684;&#x50CF;&#x7D20;&#x70B9;&#x6570;&#x3002;&#x5B57;&#x6BCD;&#x7D27;&#x6392;&#x7684;&#x6548;&#x679C;&#x4F9D;&#x8D56;&#x4E8E;&#x5B57;&#x4F53;&#x3002;&#x503C;&#x4E3A; <span class="hljs-number">0</span> &#x8868;&#x793A;&#x4E0D;&#x4F7F;&#x7528;&#x5B57;&#x6BCD;&#x7D27;&#x6392;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;<span class="hljs-number">0</span>&#x3002;
+
+
+ <span class="hljs-number">7</span>&gt; <span class="hljs-built_in">NSStrikethroughStyleAttributeName</span>(&#x5220;&#x9664;&#x7EBF;)
+
+<span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSStrikethroughStyleAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">NSNumber</span> &#x5BF9;&#x8C61;(&#x6574;&#x6570;)&#x3002;&#x8BE5;&#x503C;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5728;&#x6587;&#x5B57;&#x4E0A;&#x52A0;&#x4E0A;&#x5220;&#x9664;&#x7EBF;&#xFF0C;&#x8BE5;&#x503C;&#x53C2;&#x8003;&#x201C;Underline Style Attributes&#x201D;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;<span class="hljs-built_in">NSUnderlineStyleNone</span>&#x3002;
+
+
+ <span class="hljs-number">8</span>&gt; <span class="hljs-built_in">NSUnderlineStyleAttributeName</span>(&#x4E0B;&#x5212;&#x7EBF;)
+
+<span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSUnderlineStyleAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">NSNumber</span> &#x5BF9;&#x8C61;(&#x6574;&#x6570;)&#x3002;&#x8BE5;&#x503C;&#x6307;&#x5B9A;&#x662F;&#x5426;&#x5728;&#x6587;&#x5B57;&#x4E0A;&#x52A0;&#x4E0A;&#x4E0B;&#x5212;&#x7EBF;&#xFF0C;&#x8BE5;&#x503C;&#x53C2;&#x8003;&#x201C;Underline Style Attributes&#x201D;&#x3002;&#x9ED8;&#x8BA4;&#x503C;&#x662F;<span class="hljs-built_in">NSUnderlineStyleNone</span>&#x3002;
+
+
+ <span class="hljs-number">9</span>&gt; <span class="hljs-built_in">NSStrokeColorAttributeName</span>(&#x8FB9;&#x7EBF;&#x989C;&#x8272;)
+
+<span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSStrokeColorAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">UIColor</span> &#x5BF9;&#x8C61;&#x3002;&#x5982;&#x679C;&#x8BE5;&#x5C5E;&#x6027;&#x4E0D;&#x6307;&#x5B9A;&#xFF08;&#x9ED8;&#x8BA4;&#xFF09;&#xFF0C;&#x5219;&#x7B49;&#x540C;&#x4E8E; <span class="hljs-built_in">NSForegroundColorAttributeName</span>&#x3002;&#x5426;&#x5219;&#xFF0C;&#x6307;&#x5B9A;&#x4E3A;&#x5220;&#x9664;&#x7EBF;&#x6216;&#x4E0B;&#x5212;&#x7EBF;&#x989C;&#x8272;&#x3002;&#x66F4;&#x591A;&#x7EC6;&#x8282;&#x89C1;&#x201C;Drawing attributedstrings that are both filled and stroked&#x201D;&#x3002;
+
+
+ <span class="hljs-number">10</span>&gt; <span class="hljs-built_in">NSStrokeWidthAttributeName</span>(&#x8FB9;&#x7EBF;&#x5BBD;&#x5EA6;)
+
+<span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSStrokeWidthAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">NSNumber</span> &#x5BF9;&#x8C61;(&#x5C0F;&#x6570;)&#x3002;&#x8BE5;&#x503C;&#x6539;&#x53D8;&#x63CF;&#x8FB9;&#x5BBD;&#x5EA6;&#xFF08;&#x76F8;&#x5BF9;&#x4E8E;&#x5B57;&#x4F53;size &#x7684;&#x767E;&#x5206;&#x6BD4;&#xFF09;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; <span class="hljs-number">0</span>&#xFF0C;&#x5373;&#x4E0D;&#x6539;&#x53D8;&#x3002;&#x6B63;&#x6570;&#x53EA;&#x6539;&#x53D8;&#x63CF;&#x8FB9;&#x5BBD;&#x5EA6;&#x3002;&#x8D1F;&#x6570;&#x540C;&#x65F6;&#x6539;&#x53D8;&#x6587;&#x5B57;&#x7684;&#x63CF;&#x8FB9;&#x548C;&#x586B;&#x5145;&#x5BBD;&#x5EA6;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;&#x5E38;&#x89C1;&#x7684;&#x7A7A;&#x5FC3;&#x5B57;&#xFF0C;&#x8FD9;&#x4E2A;&#x503C;&#x901A;&#x5E38;&#x4E3A;<span class="hljs-number">3.0</span>&#x3002;
+
+
+ <span class="hljs-number">11</span>&gt; <span class="hljs-built_in">NSShadowAttributeName</span>(&#x9634;&#x5F71;)
+
+ <span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSShadowAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">NSShadow</span> &#x5BF9;&#x8C61;&#x3002;&#x9ED8;&#x8BA4;&#x4E3A; <span class="hljs-literal">nil</span>&#x3002;
+
+
+ <span class="hljs-number">12</span>&gt; <span class="hljs-built_in">NSVerticalGlyphFormAttributeName</span>(&#x6A2A;&#x7AD6;&#x6392;&#x7248;)
+
+<span class="hljs-built_in">NSString</span> *<span class="hljs-keyword">const</span> <span class="hljs-built_in">NSVerticalGlyphFormAttributeName</span>;
+
+ &#x8BE5;&#x5C5E;&#x6027;&#x6240;&#x5BF9;&#x5E94;&#x7684;&#x503C;&#x662F;&#x4E00;&#x4E2A; <span class="hljs-built_in">NSNumber</span> &#x5BF9;&#x8C61;(&#x6574;&#x6570;)&#x3002;<span class="hljs-number">0</span> &#x8868;&#x793A;&#x6A2A;&#x6392;&#x6587;&#x672C;&#x3002;<span class="hljs-number">1</span> &#x8868;&#x793A;&#x7AD6;&#x6392;&#x6587;&#x672C;&#x3002;&#x5728; iOS &#x4E2D;&#xFF0C;&#x603B;&#x662F;&#x4F7F;&#x7528;&#x6A2A;&#x6392;&#x6587;&#x672C;&#xFF0C;<span class="hljs-number">0</span> &#x4EE5;&#x5916;&#x7684;&#x503C;&#x90FD;&#x672A;&#x5B9A;&#x4E49;&#x3002;
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2016-05-10 13:37:11
+</span></footer>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../uicolor/index.html" class="navigation navigation-prev " aria-label="Previous page: UIColor"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../uiappearence/index.html" class="navigation navigation-next " aria-label="Next page: UIAppearence协议"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"tbfed-pagefooter":{"copyright":"Copyright &copy fzq2016 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book UIKit-View -->
+</html>

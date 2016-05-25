@@ -1,0 +1,548 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book Foundation（基础框架） -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>NSFileManager | Foundation（基础框架）</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../supersuperclass/index.html" />
+    
+    
+    <link rel="prev" href="../const/index.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="5"
+        data-chapter-title="NSFileManager"
+        data-filepath="nsfilemanager/README.md"
+        data-basepath=".."
+        data-revision="Wed May 25 2016 17:00:37 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+                
+                <li>
+                    <a href="http://fzq2016.github.io/index.html" target="blank" class="custom-link">Home</a>
+                </li>
+            
+            
+
+            
+            <li class="divider"></li>
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        Foundation（基础框架）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="nsobject/index.html">
+            
+                
+                    <a href="../nsobject/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        NSObject
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="bit_operationbit_flags/index.html">
+            
+                
+                    <a href="../bit_operationbit_flags/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        bit operation（位运算）与bit Flags（位枚举）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="macro/index.html">
+            
+                
+                    <a href="../macro/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        Macro（宏）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="const/index.html">
+            
+                
+                    <a href="../const/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        Const
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="5" data-path="nsfilemanager/index.html">
+            
+                
+                    <a href="../nsfilemanager/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        NSFileManager
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="supersuperclass/index.html">
+            
+                
+                    <a href="../supersuperclass/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        super、superClass
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="7" data-path="nsarray/index.html">
+            
+                
+                    <a href="../nsarray/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>7.</b>
+                        
+                        NSArray
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="8" data-path="nsdateformatter/index.html">
+            
+                
+                    <a href="../nsdateformatter/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>8.</b>
+                        
+                        NSDateFormatter
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="9" data-path="nscalendar/index.html">
+            
+                
+                    <a href="../nscalendar/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>9.</b>
+                        
+                        NSCalendar
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="10" data-path="nsdate/index.html">
+            
+                
+                    <a href="../nsdate/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>10.</b>
+                        
+                        NSDate
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="11" data-path="property/index.html">
+            
+                
+                    <a href="../property/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>11.</b>
+                        
+                        @property关键字
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="12" data-path="class_extension/index.html">
+            
+                
+                    <a href="../class_extension/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>12.</b>
+                        
+                        Class Extension
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="13" data-path="copy/index.html">
+            
+                
+                    <a href="../copy/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        copy（拷贝）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="14" data-path="nsstring/index.html">
+            
+                
+                    <a href="../nsstring/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>14.</b>
+                        
+                        NSString
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Foundation（基础框架）</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="nsfilemanager">NSFileManager</h2>
+<pre><code class="lang-objc"><span class="hljs-built_in">NSFileManager</span> &#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x7C7B;
+    <span class="hljs-number">1</span>&gt; &#x5355;&#x4F8B;:&#x4F7F;&#x7528;defaultManager &#x83B7;&#x5F97;&#x7684;&#x5BF9;&#x8C61;&#x603B;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5982;&#x4E0B;fm &#x548C; d&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x7684;
+    &#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x6BD4;&#x8F83;&#x7279;&#x6B8A;&#xFF0C;&#x548C;&#x5176;&#x4ED6;&#x7C7B;&#x4E0D;&#x4E00;&#x6837;
+    <span class="hljs-built_in">NSFileManager</span> *fm = [<span class="hljs-built_in">NSFileManager</span> defaultManager];
+    <span class="hljs-built_in">NSFileManager</span> *d = [<span class="hljs-built_in">NSFileManager</span> defaultManager];
+
+    <span class="hljs-keyword">if</span>(fm == d)<span class="hljs-comment">// &#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x4E00;&#x6837;&#xFF0C;&#x5B9E;&#x9645;3&#x6D4B;&#x8BD5;&#x7ED3;&#x679C;&#x662F;&#x4E00;&#x6837;&#x7684;</span>
+    {
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;This is same!&quot;</span>);
+    }
+
+    <span class="hljs-number">2</span>&gt; &#x5224;&#x65AD;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;
+    &#x5982;&#xFF1A;
+    <span class="hljs-built_in">NSFileManager</span> *fm = [<span class="hljs-built_in">NSFileManager</span> defaultManager];
+    <span class="hljs-comment">// &#x5224;&#x65AD;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+    <span class="hljs-built_in">BOOL</span> b = [fm fileExistsAtPath:<span class="hljs-string">@&quot;abc.txt&quot;</span>];<span class="hljs-comment">// &#x5229;&#x7528;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;1&#x6216;0</span>
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%d&quot;</span>,b);
+
+    <span class="hljs-number">3</span>&gt; &#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;
+    <span class="hljs-built_in">NSError</span> *error;<span class="hljs-comment">// &#x51FA;&#x9519;&#x5BF9;&#x8C61;&#xFF0C;&#x4FDD;&#x5B58;&#x51FA;&#x9519;&#x4FE1;&#x606F;</span>
+    [fm removeItemAtPath:<span class="hljs-string">@&quot;abc.txt&quot;</span> error:&amp;error];
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>,error);<span class="hljs-comment">// &#x5982;&#x679C;&#x51FA;&#x9519;&#x5BF9;&#x8C61;&#x8F93;&#x51FA;null&#xFF0C;&#x5219;&#x6CA1;&#x6709;&#x51FA;&#x9519;&#xFF0C;&#x5220;&#x9664;&#x6210;&#x529F;&#xFF0C;&#x5982;&#x5220;&#x9664;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x5219;&#x8F93;&#x51FA;&#x51FA;&#x9519;&#x4FE1;&#x606F;</span>
+
+
+    <span class="hljs-number">4</span>&gt; <span class="hljs-keyword">copy</span>&#x6587;&#x4EF6;
+    <span class="hljs-built_in">NSFileManager</span> *fm = [<span class="hljs-built_in">NSFileManager</span> defaultManager];
+    <span class="hljs-built_in">NSError</span> *error;<span class="hljs-comment">// &#x51FA;&#x9519;&#x5BF9;&#x8C61;&#xFF0C;&#x4FDD;&#x5B58;&#x51FA;&#x9519;&#x4FE1;&#x606F;</span>
+    [fm copyItemAtPath:<span class="hljs-string">@&quot;abc.txt&quot;</span> toPath:<span class="hljs-string">@&quot;2.txt&quot;</span> error:&amp;error];
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>,error);<span class="hljs-comment">// &#x8981;&#x62F7;&#x8D1D;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x62F7;&#x8D1D;&#x5931;&#x8D25;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x80FD;&#x62F7;&#x8D1D;&#x51FA;&#x201C;2.txt&#x201D;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;</span>
+
+
+
+
+
+
+    <span class="hljs-comment">// NSFileManager &#x6587;&#x4EF6;&#x7BA1;&#x7406;</span>
+<span class="hljs-comment">//        // &#x5355;&#x4F8B;:&#x4F7F;&#x7528;defaul tManager &#x83B7;&#x5F97;&#x7684;&#x5BF9;&#x8C61;&#x603B;&#x662F;&#x4E00;&#x6837;&#x7684;&#xFF0C;&#x5982;&#x4E0B;fm &#x548C; d&#x5BF9;&#x8C61;&#x4E00;&#x6837;&#x7684;</span>
+<span class="hljs-comment">//        NSFileManager *fm = [NSFileManager defaultManager];</span>
+<span class="hljs-comment">//        NSFileManager *d = [NSFileManager defaultManager];</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//        if(fm == d)</span>
+<span class="hljs-comment">//        {</span>
+<span class="hljs-comment">//            NSLog(@&quot;This is same!&quot;);</span>
+<span class="hljs-comment">//        }</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//        NSFileManager *fm = [NSFileManager defaultManager];</span>
+<span class="hljs-comment">//        // &#x5224;&#x65AD;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+<span class="hljs-comment">//        BOOL b = [fm fileExistsAtPath:@&quot;abc.txt&quot;];// &#x5229;&#x7528;&#x5E03;&#x5C14;&#x7C7B;&#x578B;&#x5224;&#x65AD;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x5B58;&#x5728;&#xFF0C;&#x8FD4;&#x56DE;1&#x6216;0</span>
+<span class="hljs-comment">//        NSLog(@&quot;%d&quot;,b);</span>
+<span class="hljs-comment">//        // &#x5220;&#x9664;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;</span>
+<span class="hljs-comment">//        NSError *error;// &#x51FA;&#x9519;&#x5BF9;&#x8C61;&#xFF0C;&#x4FDD;&#x5B58;&#x51FA;&#x9519;&#x4FE1;&#x606F;</span>
+<span class="hljs-comment">//        [fm removeItemAtPath:@&quot;abc.txt&quot; error:&amp;error];</span>
+<span class="hljs-comment">//        NSLog(@&quot;%@&quot;,error);// &#x5982;&#x679C;&#x51FA;&#x9519;&#x5BF9;&#x8C61;&#x8F93;&#x51FA;null&#xFF0C;&#x5219;&#x6CA1;&#x6709;&#x51FA;&#x9519;&#xFF0C;&#x5220;&#x9664;&#x6210;&#x529F;&#xFF0C;&#x5982;&#x5220;&#x9664;&#x4E0D;&#x6210;&#x529F;&#xFF0C;&#x5219;&#x8F93;&#x51FA;&#x51FA;&#x9519;&#x4FE1;&#x606F;</span>
+
+<span class="hljs-comment">//        // copy&#x6587;&#x4EF6;</span>
+<span class="hljs-comment">//        NSFileManager *fm = [NSFileManager defaultManager];</span>
+<span class="hljs-comment">//        NSError *error;// &#x51FA;&#x9519;&#x5BF9;&#x8C61;&#xFF0C;&#x4FDD;&#x5B58;&#x51FA;&#x9519;&#x4FE1;&#x606F;</span>
+<span class="hljs-comment">//        [fm copyItemAtPath:@&quot;abc.txt&quot; toPath:@&quot;2.txt&quot; error:&amp;error];</span>
+<span class="hljs-comment">//        NSLog(@&quot;%@&quot;,error);// &#x8981;&#x62F7;&#x8D1D;&#x7684;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x62F7;&#x8D1D;&#x5931;&#x8D25;&#xFF0C;&#x5982;&#x679C;&#x5B58;&#x5728;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;&#xFF0C;&#x5C31;&#x80FD;&#x62F7;&#x8D1D;&#x51FA;&#x201C;2.txt&#x201D;&#x8FD9;&#x4E2A;&#x6587;&#x4EF6;</span>
+
+        <span class="hljs-comment">// &#x83B7;&#x5F97;&#x6587;&#x4EF6;&#x5C5E;&#x6027;</span>
+        <span class="hljs-comment">// fileSystemAttributesAtPath &#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x7684;&#x662F;&#x4E00;&#x4E2A;&#x5B57;&#x5178;&#x7C7B;&#x578B;</span>
+<span class="hljs-comment">//        NSFileManager *fm = [NSFileManager defaultManager];</span>
+<span class="hljs-comment">//        NSDictionary *d = [fm fileSystemAttributesAtPath:@&quot;2.txt&quot;];</span>
+<span class="hljs-comment">//</span>
+
+        <span class="hljs-built_in">NSFileManager</span> *fm = [<span class="hljs-built_in">NSFileManager</span> defaultManager];
+        <span class="hljs-built_in">NSString</span> *str = <span class="hljs-string">@&quot;Hello World!&quot;</span>;
+
+        [str writeToFile:<span class="hljs-string">@&quot;abc.txt&quot;</span> atomically:<span class="hljs-literal">YES</span> encoding:<span class="hljs-built_in">NSUTF8StringEncoding</span> error:<span class="hljs-literal">nil</span>];
+
+        [fm copyItemAtPath:<span class="hljs-string">@&quot;abc.txt&quot;</span> toPath:<span class="hljs-string">@&quot;abc2.txt&quot;</span> error:<span class="hljs-literal">nil</span>];
+        <span class="hljs-built_in">NSDictionary</span> *d = [fm fileSystemAttributesAtPath:<span class="hljs-string">@&quot;abc.txt&quot;</span>];
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>,d);
+
+        [fm removeItemAtPath:<span class="hljs-string">@&quot;abc2.txt&quot;</span> error:<span class="hljs-literal">nil</span>];
+
+        <span class="hljs-built_in">BOOL</span> b = [fm fileExistsAtPath:<span class="hljs-string">@&quot;abc.txt&quot;</span>];
+        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%d&quot;</span>,b);
+</code></pre>
+<h2 id="&#x8BA1;&#x7B97;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x5927;&#x5C0F;">&#x8BA1;&#x7B97;&#x67D0;&#x4E2A;&#x6587;&#x4EF6;\&#x6587;&#x4EF6;&#x5939;&#x7684;&#x5927;&#x5C0F;</h2>
+<pre><code class="lang-objc"><span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">NSString</span> (<span class="hljs-title">XMGExtension</span>)</span>
+<span class="hljs-comment">//- (unsigned long long)fileSize</span>
+<span class="hljs-comment">//{</span>
+<span class="hljs-comment">//    // &#x603B;&#x5927;&#x5C0F;</span>
+<span class="hljs-comment">//    unsigned long long size = 0;</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//    // &#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x8005;</span>
+<span class="hljs-comment">//    NSFileManager *mgr = [NSFileManager defaultManager];</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//    // &#x6587;&#x4EF6;&#x5C5E;&#x6027;</span>
+<span class="hljs-comment">//    NSDictionary *attrs = [mgr attributesOfItemAtPath:self error:nil];</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//    if ([attrs.fileType isEqualToString:NSFileTypeDirectory]) { // &#x6587;&#x4EF6;&#x5939;</span>
+<span class="hljs-comment">//        // &#x83B7;&#x5F97;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x5927;&#x5C0F;  == &#x83B7;&#x5F97;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x7684;&#x603B;&#x5927;&#x5C0F;</span>
+<span class="hljs-comment">//        NSDirectoryEnumerator *enumerator = [mgr enumeratorAtPath:self];</span>
+<span class="hljs-comment">//        for (NSString *subpath in enumerator) {</span>
+<span class="hljs-comment">//            // &#x5168;&#x8DEF;&#x5F84;</span>
+<span class="hljs-comment">//            NSString *fullSubpath = [self stringByAppendingPathComponent:subpath];</span>
+<span class="hljs-comment">//            // &#x7D2F;&#x52A0;&#x6587;&#x4EF6;&#x5927;&#x5C0F;</span>
+<span class="hljs-comment">//            size += [mgr attributesOfItemAtPath:fullSubpath error:nil].fileSize;</span>
+<span class="hljs-comment">//        }</span>
+<span class="hljs-comment">//    } else { // &#x6587;&#x4EF6;</span>
+<span class="hljs-comment">//        size = attrs.fileSize;</span>
+<span class="hljs-comment">//    }</span>
+<span class="hljs-comment">//</span>
+<span class="hljs-comment">//    return size;</span>
+<span class="hljs-comment">//}</span>
+
+- (<span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span>)fileSize
+{
+    <span class="hljs-comment">// &#x603B;&#x5927;&#x5C0F;</span>
+    <span class="hljs-keyword">unsigned</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> size = <span class="hljs-number">0</span>;
+
+    <span class="hljs-comment">// &#x6587;&#x4EF6;&#x7BA1;&#x7406;&#x8005;</span>
+    <span class="hljs-built_in">NSFileManager</span> *mgr = [<span class="hljs-built_in">NSFileManager</span> defaultManager];
+
+    <span class="hljs-comment">// &#x662F;&#x5426;&#x4E3A;&#x6587;&#x4EF6;&#x5939;</span>
+    <span class="hljs-built_in">BOOL</span> isDirectory = <span class="hljs-literal">NO</span>;
+
+    <span class="hljs-comment">// &#x8DEF;&#x5F84;&#x662F;&#x5426;&#x5B58;&#x5728;</span>
+    <span class="hljs-built_in">BOOL</span> exists = [mgr fileExistsAtPath:<span class="hljs-keyword">self</span> isDirectory:&amp;isDirectory];
+    <span class="hljs-keyword">if</span> (!exists) <span class="hljs-keyword">return</span> size;
+
+    <span class="hljs-keyword">if</span> (isDirectory) { <span class="hljs-comment">// &#x6587;&#x4EF6;&#x5939;</span>
+        <span class="hljs-comment">// &#x83B7;&#x5F97;&#x6587;&#x4EF6;&#x5939;&#x7684;&#x5927;&#x5C0F;  == &#x83B7;&#x5F97;&#x6587;&#x4EF6;&#x5939;&#x4E2D;&#x6240;&#x6709;&#x6587;&#x4EF6;&#x7684;&#x603B;&#x5927;&#x5C0F;</span>
+        <span class="hljs-built_in">NSDirectoryEnumerator</span> *enumerator = [mgr enumeratorAtPath:<span class="hljs-keyword">self</span>];
+        <span class="hljs-keyword">for</span> (<span class="hljs-built_in">NSString</span> *subpath <span class="hljs-keyword">in</span> enumerator) {
+            <span class="hljs-comment">// &#x5168;&#x8DEF;&#x5F84;</span>
+            <span class="hljs-built_in">NSString</span> *fullSubpath = [<span class="hljs-keyword">self</span> stringByAppendingPathComponent:subpath];
+            <span class="hljs-comment">// &#x7D2F;&#x52A0;&#x6587;&#x4EF6;&#x5927;&#x5C0F;</span>
+            size += [mgr attributesOfItemAtPath:fullSubpath error:<span class="hljs-literal">nil</span>]<span class="hljs-variable">.fileSize</span>;
+        }
+    } <span class="hljs-keyword">else</span> { <span class="hljs-comment">// &#x6587;&#x4EF6;</span>
+        size = [mgr attributesOfItemAtPath:<span class="hljs-keyword">self</span> error:<span class="hljs-literal">nil</span>]<span class="hljs-variable">.fileSize</span>;
+    }
+
+    <span class="hljs-keyword">return</span> size;
+}
+<span class="hljs-keyword">@end</span>
+
+XMGLog(<span class="hljs-string">@&quot;%zd&quot;</span>, <span class="hljs-string">@&quot;/Users/xiaomage/Desktop&quot;</span><span class="hljs-variable">.fileSize</span>);
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2016-05-01 17:09:43
+</span></footer>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../const/index.html" class="navigation navigation-prev " aria-label="Previous page: Const"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../supersuperclass/index.html" class="navigation navigation-next " aria-label="Next page: super、superClass"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"tbfed-pagefooter":{"copyright":"Copyright &copy fzq2016 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book Foundation（基础框架） -->
+</html>
