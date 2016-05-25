@@ -1,0 +1,358 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    <!-- Start book 一、runtime简介 -->
+    <head>
+        <!-- head:start -->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>runtime-addMethod(添加方法) | 一、runtime简介</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.6.7">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-splitter/splitter.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-tbfed-pagefooter/footer.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-highlight/website.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-search/search.css">
+        
+    
+        
+        <link rel="stylesheet" href="../gitbook/plugins/gitbook-plugin-fontsettings/website.css">
+        
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../runtime-addproperty/index.html" />
+    
+    
+    <link rel="prev" href="../runtime-exchangemethod/index.html" />
+    
+
+        <!-- head:end -->
+    </head>
+    <body>
+        <!-- body:start -->
+        
+    <div class="book"
+        data-level="3"
+        data-chapter-title="runtime-addMethod(添加方法)"
+        data-filepath="runtime-addmethod/README.md"
+        data-basepath=".."
+        data-revision="Wed May 25 2016 11:17:53 GMT+0800 (CST)"
+        data-innerlanguage="">
+    
+
+<div class="book-summary">
+    <nav role="navigation">
+        <ul class="summary">
+            
+            
+            
+                
+                <li>
+                    <a href="http://fzq2016.github.io/index.html" target="blank" class="custom-link">Home</a>
+                </li>
+            
+            
+
+            
+            <li class="divider"></li>
+            
+
+            
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        runtime简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="runtimeessence/index.html">
+            
+                
+                    <a href="../runtimeessence/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        runtimeEssence（运行时本质）
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="runtime-exchangemethod/index.html">
+            
+                
+                    <a href="../runtime-exchangemethod/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        runtime-exchangeMethod(交换方法)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="3" data-path="runtime-addmethod/index.html">
+            
+                
+                    <a href="../runtime-addmethod/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        runtime-addMethod(添加方法)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="runtime-addproperty/index.html">
+            
+                
+                    <a href="../runtime-addproperty/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        runtime-addProperty(添加属性)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="runtime-dictionary-model/index.html">
+            
+                
+                    <a href="../runtime-dictionary-model/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        runtime-dictionary-&gt;model(字典转模型)
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="6" data-path="runtime-clang/index.html">
+            
+                
+                    <a href="../runtime-clang/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>6.</b>
+                        
+                        runtime-Clang
+                    </a>
+            
+            
+        </li>
+    
+
+
+            
+            <li class="divider"></li>
+            <li>
+                <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                    Published with GitBook
+                </a>
+            </li>
+            
+        </ul>
+    </nav>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header" role="navigation">
+    <!-- Actions Left -->
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >一、runtime简介</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1" role="main">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h2 id="runtimeaddmethod&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;">runtime-addMethod(&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;)</h2>
+<ul>
+<li><p>&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x4E2D;&#x65B9;&#x6CD5;&#x4EC5;&#x4EC5;&#x662F;&#x58F0;&#x660E;,&#x5E76;&#x4E0D;&#x4F1A;&#x52A0;&#x8F7D;&#x5230;&#x5185;&#x5B58;,&#x53EA;&#x6709;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x624D;&#x4F1A;&#x52A0;&#x8F7D;&#x5230;&#x5185;&#x5B58;&#x4E2D;</p>
+</li>
+<li><p>&#x5F00;&#x53D1;&#x4F7F;&#x7528;&#x573A;&#x666F;&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x7C7B;&#x65B9;&#x6CD5;&#x975E;&#x5E38;&#x591A;&#xFF0C;&#x52A0;&#x8F7D;&#x7C7B;&#x5230;&#x5185;&#x5B58;&#x7684;&#x65F6;&#x5019;&#x4E5F;&#x6BD4;&#x8F83;&#x8017;&#x8D39;&#x8D44;&#x6E90;&#xFF0C;&#x9700;&#x8981;&#x7ED9;&#x6BCF;&#x4E2A;&#x65B9;&#x6CD5;&#x751F;&#x6210;&#x6620;&#x5C04;&#x8868;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x52A8;&#x6001;&#x7ED9;&#x67D0;&#x4E2A;&#x7C7B;&#xFF0C;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x89E3;&#x51B3;&#x3002;</p>
+</li>
+<li><p>&#x7ECF;&#x5178;&#x9762;&#x8BD5;&#x9898;&#xFF1A;&#x6709;&#x6CA1;&#x6709;&#x4F7F;&#x7528;performSelector&#xFF0C;&#x5176;&#x5B9E;&#x4E3B;&#x8981;&#x60F3;&#x95EE;&#x4F60;&#x6709;&#x6CA1;&#x6709;&#x8FD0;&#x7528;runtime&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x8FC7;&#x65B9;&#x6CD5;&#x3002;</p>
+</li>
+</ul>
+<pre><code class="lang-objc"><span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">ViewController</span></span>
+
+- (<span class="hljs-keyword">void</span>)viewDidLoad {
+    [<span class="hljs-keyword">super</span> viewDidLoad];
+
+<span class="hljs-comment">/*  &#x83B7;&#x53D6;Person&#x7C7B;&#x4E2D;&#x6240;&#x6709;&#x65B9;&#x6CD5;
+
+    unsigned int count = 0;
+
+    // &#x53C2;&#x6570;&#x4E00;:&#x83B7;&#x53D6;&#x54EA;&#x4E2A;&#x7C7B;&#x7684;&#x65B9;&#x6CD5;&#x5217;&#x8868;
+    // &#x53C2;&#x6570;&#x4E8C;:&#x65B9;&#x6CD5;&#x5217;&#x8868;&#x603B;&#x6570;
+    // &#x8C03;&#x7528;&#x5B8C;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;,count&#x5C31;&#x6709;&#x503C;,&#x8BB0;&#x5F55;&#x65B9;&#x6CD5;&#x5217;&#x8868;&#x603B;&#x6570;
+    // &#x83B7;&#x53D6;&#x4EC5;&#x4EC5;&#x662F;&#x5F53;&#x524D;&#x7C7B;
+    // &#x8FD4;&#x56DE;&#x6307;&#x5411;&#x65B9;&#x6CD5;&#x5217;&#x8868;&#x6570;&#x7EC4;
+    Method *methodList = class_copyMethodList([Person class], &amp;count);
+
+    for (int i = 0; i &lt; count; i++) {
+
+        // &#x53D6;&#x51FA;&#x5BF9;&#x5E94;&#x7684;&#x65B9;&#x6CD5;
+        Method method = methodList[i];
+
+        // &#x83B7;&#x53D6;&#x65B9;&#x6CD5;&#x540D;(&#x65B9;&#x6CD5;&#x7F16;&#x53F7;)
+        SEL methodSel =  method_getName(method);
+
+        NSLog(@&quot;%@&quot;,NSStringFromSelector(methodSel));
+*/</span>
+
+    Person *p = [[Person alloc] init];
+
+    <span class="hljs-comment">// &#x9ED8;&#x8BA4;person&#xFF0C;&#x6CA1;&#x6709;&#x5B9E;&#x73B0;eat&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;performSelector&#x8C03;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x62A5;&#x9519;&#x3002;</span>
+    <span class="hljs-comment">// performSelector&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x79C1;&#x6709;&#x65B9;&#x6CD5;</span>
+    <span class="hljs-comment">// &#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x5C31;&#x4E0D;&#x4F1A;&#x62A5;&#x9519;</span>
+    [p performSelector:<span class="hljs-keyword">@selector</span>(eat)];
+
+}
+<span class="hljs-keyword">@end</span>
+
+
+<span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">Person</span></span>
+<span class="hljs-comment">// &#x9ED8;&#x8BA4;&#x65B9;&#x6CD5;&#x90FD;&#x6709;&#x4E24;&#x4E2A;&#x9690;&#x5F0F;&#x53C2;&#x6570;&#xFF0C;</span>
+<span class="hljs-keyword">void</span> eat(<span class="hljs-keyword">id</span> <span class="hljs-keyword">self</span>,SEL sel)
+{
+    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@ %@&quot;</span>,<span class="hljs-keyword">self</span>,<span class="hljs-built_in">NSStringFromSelector</span>(sel));
+}
+
+<span class="hljs-comment">// &#x5F53;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#x8C03;&#x7528;&#x672A;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4F1A;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5904;&#x7406;,&#x5E76;&#x4E14;&#x4F1A;&#x628A;&#x5BF9;&#x5E94;&#x7684;&#x65B9;&#x6CD5;&#x5217;&#x8868;&#x4F20;&#x8FC7;&#x6765;.</span>
+<span class="hljs-comment">// &#x521A;&#x597D;&#x53EF;&#x4EE5;&#x7528;&#x6765;&#x5224;&#x65AD;&#xFF0C;&#x672A;&#x5B9E;&#x73B0;&#x7684;&#x65B9;&#x6CD5;&#x662F;&#x4E0D;&#x662F;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x52A8;&#x6001;&#x6DFB;&#x52A0;&#x7684;&#x65B9;&#x6CD5;</span>
++ (<span class="hljs-built_in">BOOL</span>)resolveInstanceMethod:(SEL)sel
+{
+
+    <span class="hljs-keyword">if</span> (sel == <span class="hljs-keyword">@selector</span>(eat)) {
+        <span class="hljs-comment">// &#x52A8;&#x6001;&#x6DFB;&#x52A0;eat&#x65B9;&#x6CD5;</span>
+
+        <span class="hljs-comment">// &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x7ED9;&#x54EA;&#x4E2A;&#x7C7B;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;</span>
+        <span class="hljs-comment">// &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x7684;&#x65B9;&#x6CD5;&#x7F16;&#x53F7;</span>
+        <span class="hljs-comment">// &#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x6DFB;&#x52A0;&#x65B9;&#x6CD5;&#x7684;&#x51FD;&#x6570;&#x5B9E;&#x73B0;&#xFF08;&#x51FD;&#x6570;&#x5730;&#x5740;&#xFF09;</span>
+        <span class="hljs-comment">// &#x7B2C;&#x56DB;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x51FD;&#x6570;&#x7684;&#x7C7B;&#x578B;&#xFF0C;(&#x8FD4;&#x56DE;&#x503C;+&#x53C2;&#x6570;&#x7C7B;&#x578B;) v:void @:&#x5BF9;&#x8C61;-&gt;self :&#x8868;&#x793A;SEL-&gt;_cmd</span>
+        class_addMethod(<span class="hljs-keyword">self</span>, <span class="hljs-keyword">@selector</span>(eat), eat, <span class="hljs-string">&quot;v@:&quot;</span>);
+
+    }
+
+    <span class="hljs-keyword">return</span> [<span class="hljs-keyword">super</span> resolveInstanceMethod:sel];
+}
+<span class="hljs-keyword">@end</span>
+</code></pre>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2016-05-12 17:28:23
+</span></footer>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../runtime-exchangemethod/index.html" class="navigation navigation-prev " aria-label="Previous page: runtime-exchangeMethod(交换方法)"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../runtime-addproperty/index.html" class="navigation navigation-next " aria-label="Next page: runtime-addProperty(添加属性)"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-splitter/splitter.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-toggle-chapters/toggle.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/lunr.min.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-search/search.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-sharing/buttons.js"></script>
+    
+
+    
+    <script src="../gitbook/plugins/gitbook-plugin-fontsettings/buttons.js"></script>
+    
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"tbfed-pagefooter":{"copyright":"Copyright &copy fzq2016 2016","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"splitter":{},"toggle-chapters":{},"highlight":{},"search":{"maxIndexSize":1000000},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        <!-- body:end -->
+    </body>
+    <!-- End of book 一、runtime简介 -->
+</html>
