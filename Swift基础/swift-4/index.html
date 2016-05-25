@@ -65,7 +65,7 @@
         data-chapter-title="逻辑分支"
         data-filepath="swift-4/README.md"
         data-basepath=".."
-        data-revision="Sat May 21 2016 11:23:33 GMT+0800 (CST)"
+        data-revision="Wed May 25 2016 11:05:10 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -113,42 +113,6 @@
                         Swift初体验
                     </a>
             
-            
-            <ul class="articles">
-                
-    
-        <li class="chapter " data-level="1.1" data-path="swift/321.html">
-            
-                
-                    <a href="../swift/321.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.1.</b>
-                        
-                        321
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.2" data-path="swift/32432.html">
-            
-                
-                    <a href="../swift/32432.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.2.</b>
-                        
-                        32432
-                    </a>
-            
-            
-        </li>
-    
-
-            </ul>
             
         </li>
     
@@ -281,7 +245,7 @@
                         
                             <b>10.</b>
                         
-                        可选类型？？？
+                        可选类型
                     </a>
             
             
@@ -311,7 +275,7 @@
                         
                             <b>12.</b>
                         
-                        函数？？？
+                        函数
                     </a>
             
             
@@ -326,7 +290,7 @@
                         
                             <b>13.</b>
                         
-                        枚举类型???
+                        枚举类型
                     </a>
             
             
@@ -341,7 +305,7 @@
                         
                             <b>14.</b>
                         
-                        结构体 ???
+                        结构体
                     </a>
             
             
@@ -356,7 +320,7 @@
                         
                             <b>15.</b>
                         
-                        类的定义???
+                        类的定义
                     </a>
             
             
@@ -401,7 +365,7 @@
                         
                             <b>18.</b>
                         
-                        自动引用计数？？？
+                        自动引用计数
                     </a>
             
             
@@ -446,7 +410,7 @@
                         
                             <b>21.</b>
                         
-                        闭包？？？
+                        闭包
                     </a>
             
             
@@ -506,7 +470,7 @@
                         
                             <b>25.</b>
                         
-                        异常处理???
+                        异常处理
                     </a>
             
             
@@ -546,30 +510,64 @@
                     <section class="normal" id="section-">
                     
                         <h2 id="&#x903B;&#x8F91;&#x5206;&#x652F;">&#x903B;&#x8F91;&#x5206;&#x652F;</h2>
-<p>/*:
-Bool&#x7C7B;&#x578B;</p>
-<ul>
-<li>C&#x8BED;&#x8A00;&#x548C;OC&#x5E76;&#x6CA1;&#x6709;&#x771F;&#x6B63;&#x7684;Bool&#x7C7B;&#x578B;</li>
-<li>OC&#x8BED;&#x8A00;&#x7684;Bool&#x7C7B;&#x578B;YES/NO&#x662F;<code>typedef signed char BOOL;</code>&#x975E;0&#x5373;&#x771F;</li>
-</ul>
-<p>Swift&#x5F15;&#x5165;&#x4E86;&#x771F;&#x6B63;&#x7684;Bool&#x7C7B;&#x578B;true/false</p>
-<ul>
-<li>Swift&#x4E2D;&#x6CA1;&#x6709;C&#x548C;OC&#x4E2D;&#x975E;&#x96F6;&#x5373;&#x771F;&#x7684;&#x6982;&#x5FF5;</li>
-<li>Swfit&#x4E2D;&#x903B;&#x8F91;&#x503C;&#x53EA;&#x6709;&#x4E24;&#x4E2A;true/false</li>
-<li>&#x5982;&#x679C;&#x4F60;&#x5728;&#x9700;&#x8981;&#x4F7F;&#x7528;Bool&#x7C7B;&#x578B;&#x7684;&#x5730;&#x65B9;&#x4F7F;&#x7528;&#x4E86;&#x975E;&#x5E03;&#x5C14;&#x503C;&#xFF0C;Swift &#x7684;&#x7C7B;&#x578B;&#x5B89;&#x5168;&#x673A;&#x5236;&#x4F1A;&#x62A5;&#x9519;
-*/</li>
-</ul>
-<h4 id="&#x4E00;-&#x5206;&#x652F;&#x7684;&#x4ECB;&#x7ECD;">&#x4E00;. &#x5206;&#x652F;&#x7684;&#x4ECB;&#x7ECD;</h4>
+<h3 id="&#x5206;&#x652F;&#x7684;&#x4ECB;&#x7ECD;">&#x5206;&#x652F;&#x7684;&#x4ECB;&#x7ECD;</h3>
 <ul>
 <li>&#x5206;&#x652F;&#x5373;if/switch/&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;&#x7B49;&#x5224;&#x65AD;&#x8BED;&#x53E5;</li>
 <li>&#x901A;&#x8FC7;&#x5206;&#x652F;&#x8BED;&#x53E5;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x7A0B;&#x5E8F;&#x7684;&#x6267;&#x884C;&#x6D41;&#x7A0B;</li>
 </ul>
-<h4 id="&#x4E8C;-if&#x5206;&#x652F;&#x8BED;&#x53E5;">&#x4E8C;. if&#x5206;&#x652F;&#x8BED;&#x53E5;</h4>
+<h3 id="bool&#x7C7B;&#x578B;">Bool&#x7C7B;&#x578B;</h3>
+<table>
+<thead>
+<tr>
+<th>Bool&#x7C7B;&#x578B;</th>
+<th>C</th>
+<th>OC</th>
+<th>Swift</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&#x5E95;&#x5C42;&#x7C7B;&#x578B;</td>
+<td></td>
+<td><code>typedef signed char BOOL</code></td>
+<td><code>&#x771F;&#x6B63;&#x7684;Bool&#x7C7B;&#x578B;true/false</code></td>
+</tr>
+<tr>
+<td>&#x662F;&#x5426;&#x662F;&#x771F;&#x6B63;&#x7684;Bool&#x7C7B;&#x578B;</td>
+<td>&#x4E0D;&#x662F;</td>
+<td>&#x4E0D;&#x662F;</td>
+<td>&#x662F;</td>
+</tr>
+<tr>
+<td>Bool&#x503C;</td>
+<td>YES/NO</td>
+<td>YES/NO</td>
+<td>true/false</td>
+</tr>
+<tr>
+<td>&#x80FD;&#x5426;&#x4F7F;&#x7528;&#x975E;&#x5E03;&#x5C14;&#x503C;&#xFF08;true/false&#x4EE5;&#x5916;&#x7684;&#x503C;&#xFF09;</td>
+<td>&#x6B63;&#x5E38;</td>
+<td>&#x6B63;&#x5E38;</td>
+<td>&#x62A5;&#x9519;</td>
+</tr>
+<tr>
+<td>&#x662F;&#x5426;&#x975E;0&#x5373;&#x771F;</td>
+<td>&#x662F;</td>
+<td>&#x662F;</td>
+<td>&#x4E0D;&#x662F;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="if&#x5206;&#x652F;&#x8BED;&#x53E5;">if&#x5206;&#x652F;&#x8BED;&#x53E5;</h3>
 <ul>
-<li>&#x548C;OC&#x4E2D;if&#x8BED;&#x53E5;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x533A;&#x522B;</li>
-<li>&#x5224;&#x65AD;&#x53E5;&#x53EF;&#x4EE5;&#x4E0D;&#x52A0;()</li>
-<li>&#x5728;Swift&#x7684;&#x5224;&#x65AD;&#x53E5;&#x4E2D;&#x5FC5;&#x987B;&#x6709;&#x660E;&#x786E;&#x7684;&#x771F;&#x5047;&#xFF0C;&#x4E0D;&#x518D;&#x6709;&#x975E;0&#x5373;&#x771F;</li>
-<li>&#x5FC5;&#x987B;&#x6709;&#x660E;&#x786E;&#x7684;Bool&#x503C;&#xFF0C;Bool&#x6709;&#x4E24;&#x4E2A;&#x53D6;&#x503C;:false/true</li>
+<li><p>&#x548C;OC&#x4E2D;if&#x8BED;&#x53E5;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x533A;&#x522B;</p>
+<ul>
+<li><p>&#x5224;&#x65AD;&#x53E5;&#x53EF;&#x4EE5;&#x4E0D;&#x52A0;()</p>
+</li>
+<li><p>if&#x5224;&#x65AD;&#x65F6;&#x9700;&#x9075;&#x5B88;swift&#x4E2D;Bool&#x7C7B;&#x578B;&#x7684;&#x89C4;&#x5B9A;</p>
+</li>
+</ul>
+</li>
 </ul>
 <pre><code class="lang-swift"><span class="hljs-comment">// &#x6F14;&#x7EC3;&#x4E00;:</span>
 <span class="hljs-keyword">let</span> a = <span class="hljs-number">10</span>
@@ -584,22 +582,8 @@ Bool&#x7C7B;&#x578B;</p>
     <span class="hljs-built_in">print</span>(a)
 }
 
+
 <span class="hljs-comment">// &#x6F14;&#x7EC3;&#x4E8C;:</span>
-<span class="hljs-keyword">let</span> score = <span class="hljs-number">87</span>
-
-<span class="hljs-keyword">if</span> score &lt; <span class="hljs-number">60</span> {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x4E0D;&#x53CA;&#x683C;&quot;</span>)
-} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> score &lt;= <span class="hljs-number">70</span> {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x53CA;&#x683C;&quot;</span>)
-} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> score &lt;= <span class="hljs-number">80</span> {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x826F;&#x597D;&quot;</span>)
-} <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> score &lt;= <span class="hljs-number">90</span> {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x4F18;&#x79C0;&quot;</span>)
-} <span class="hljs-keyword">else</span> {
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x5B8C;&#x7F8E;&quot;</span>)
-}
-
-<span class="hljs-comment">// &#x6F14;&#x7EC3;&#x4E09;:</span>
 <span class="hljs-comment">// &#x8FD9;&#x4E2A;&#x662F;&#x53EF;&#x9009;&#x7C7B;&#x578B;,&#x56E0;&#x4E3A;&#x53EA;&#x6709;&#x58F0;&#x660E;&#x6210;&#x53EF;&#x9009;&#x7C7B;&#x578B;&#x540E;,&#x624D;&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x662F;&#x5426;&#x4E3A;&#x7A7A;</span>
 <span class="hljs-comment">// &#x53EF;&#x9009;&#x7C7B;&#x578B;&#x4F1A;&#x5728;&#x540E;&#x7EED;&#x8BB2;&#x89E3;,&#x53EF;&#x5148;&#x4E86;&#x89E3;&#x5373;&#x53EF;</span>
 <span class="hljs-keyword">let</span> view : <span class="hljs-type">UIView</span>? = <span class="hljs-type">UIView</span>()
@@ -614,7 +598,7 @@ Bool&#x7C7B;&#x578B;</p>
     view!.backgroundColor = <span class="hljs-type">UIColor</span>.redColor()
 }
 </code></pre>
-<h4 id="&#x4E09;-&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;">&#x4E09;. &#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;</h4>
+<h3 id="&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;">&#x4E09;&#x76EE;&#x8FD0;&#x7B97;&#x7B26;</h3>
 <ul>
 <li>Swift &#x4E2D;&#x7684; &#x4E09;&#x76EE; &#x8FD0;&#x7B97;&#x4FDD;&#x6301;&#x4E86;&#x548C; OC &#x4E00;&#x81F4;&#x7684;&#x98CE;&#x683C;</li>
 </ul>
@@ -624,7 +608,7 @@ Bool&#x7C7B;&#x578B;</p>
 <span class="hljs-keyword">var</span> result = a &gt; b ? a : b
 <span class="hljs-built_in">println</span>(result)
 </code></pre>
-<h4 id="&#x56DB;guard&#x7684;&#x4F7F;&#x7528;">&#x56DB;.guard&#x7684;&#x4F7F;&#x7528;</h4>
+<h3 id="guard&#x7684;&#x4F7F;&#x7528;">guard&#x7684;&#x4F7F;&#x7528;</h3>
 <ul>
 <li>guard&#x662F;Swift2.0&#x65B0;&#x589E;&#x7684;&#x8BED;&#x6CD5;</li>
 <li>&#x5B83;&#x4E0E;if&#x8BED;&#x53E5;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#xFF0C;&#x5B83;&#x8BBE;&#x8BA1;&#x7684;&#x76EE;&#x7684;&#x662F;&#x63D0;&#x9AD8;&#x7A0B;&#x5E8F;&#x7684;&#x53EF;&#x8BFB;&#x6027;</li>
@@ -655,107 +639,105 @@ Bool&#x7C7B;&#x578B;</p>
 
 online(age)
 </code></pre>
-<h4 id="&#x4E94;-switch&#x5206;&#x652F;">&#x4E94;. switch&#x5206;&#x652F;</h4>
+<h3 id="switch&#x5206;&#x652F;">switch&#x5206;&#x652F;</h3>
 <ul>
 <li>Switch&#x4F5C;&#x4E3A;&#x9009;&#x62E9;&#x7ED3;&#x6784;&#x4E2D;&#x5FC5;&#x4E0D;&#x53EF;&#x5C11;&#x7684;&#x8BED;&#x53E5;&#x4E5F;&#x88AB;&#x52A0;&#x5165;&#x5230;&#x4E86;Swift&#x4E2D;</li>
-<li>&#x53EA;&#x8981;&#x6709;&#x8FC7;&#x7F16;&#x7A0B;&#x7ECF;&#x9A8C;&#x7684;&#x4EBA;&#x5BF9;Switch&#x8BED;&#x53E5;&#x90FD;&#x4E0D;&#x4F1A;&#x611F;&#x5230;&#x964C;&#x751F;</li>
-<li>&#x4F46;&#x82F9;&#x679C;&#x5BF9;Switch&#x8FDB;&#x884C;&#x4E86;&#x5927;&#x5927;&#x7684;&#x589E;&#x5F3A;&#xFF0C;&#x4F7F;&#x5176;&#x62E5;&#x6709;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x6CA1;&#x6709;&#x7684;&#x7279;&#x6027;</li>
+<li>&#x82F9;&#x679C;&#x5BF9;Switch&#x8FDB;&#x884C;&#x4E86;&#x5927;&#x5927;&#x7684;&#x589E;&#x5F3A;&#xFF0C;&#x4F7F;&#x5176;&#x62E5;&#x6709;&#x5176;&#x4ED6;&#x8BED;&#x8A00;&#x4E2D;&#x6CA1;&#x6709;&#x7684;&#x7279;&#x6027;</li>
 </ul>
 <h5 id="&#x57FA;&#x672C;&#x7528;&#x6CD5;&#x548C;oc&#x7528;&#x6CD5;&#x4E00;&#x81F4;">&#x57FA;&#x672C;&#x7528;&#x6CD5;&#x548C;OC&#x7528;&#x6CD5;&#x4E00;&#x81F4;</h5>
 <ul>
-<li>&#x4E0D;&#x540C;&#x4E4B;&#x5904;:<ul>
+<li>&#x4E0D;&#x540C;&#x4E4B;&#x5904;&#x4E00;:<ul>
 <li>switch&#x540E;&#x53EF;&#x4EE5;&#x4E0D;&#x8DDF;()</li>
 <li>case&#x540E;&#x53EF;&#x4EE5;&#x4E0D;&#x8DDF;break(&#x9ED8;&#x8BA4;&#x4F1A;&#x6709;break)</li>
 <li>OC&#x4E2D;&#x53EF;&#x4EE5;&#x4E0D;&#x5199;default,Swift&#x4E2D;&#x53EA;&#x6709;&#x6EE1;&#x8DB3;&#x6240;&#x6709;&#x6761;&#x4EF6;&#x624D;&#x80FD;&#x5FFD;&#x7565;default</li>
 <li>OC&#x4E2D;default&#x4F4D;&#x7F6E;&#x53EF;&#x4EE5;&#x968F;&#x4FBF;&#x653E;,Swift&#x4E0D;&#x53EF;&#x4EE5;</li>
-<li>OC&#x4E2D;&#x5728;case&#x4E2D;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x9700;&#x8981;&#x52A0;&#x5927;&#x62EC;&#x53F7;, &#x5426;&#x5219;&#x4F5C;&#x7528;&#x57DF;&#x6DF7;&#x4E71;, Swift&#x4E0D;&#x7528;&#x52A0;&#x5927;&#x62EC;&#x53F7;</li>
-<li>Swift&#x4E2D;&#x7684;switch&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x533A;&#x95F4;&#x548C;&#x5143;&#x7956;</li>
-<li>Swift&#x4E2D;case &#x5206;&#x652F;&#x7684;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;where&#x8BED;&#x53E5;&#x6765;&#x5224;&#x65AD;&#x989D;&#x5916;&#x7684;&#x6761;&#x4EF6;</li>
+<li>OC&#x4E2D;&#x5728;case&#x4E2D;&#x5B9A;&#x4E49;&#x53D8;&#x91CF;&#x9700;&#x8981;&#x52A0;&#x5927;&#x62EC;&#x53F7;, &#x5426;&#x5219;&#x4F5C;&#x7528;&#x57DF;&#x6DF7;&#x4E71;, Swift&#x4E0D;&#x7528;&#x52A0;&#x5927;&#x62EC;&#x53F7;<pre><code class="lang-swift"><span class="hljs-keyword">let</span> age = <span class="hljs-number">18</span>
+<span class="hljs-keyword">switch</span> age {
+<span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x521A;&#x51FA;&#x751F;&quot;</span>)
+<span class="hljs-keyword">case</span> <span class="hljs-number">18</span>:
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x521A;&#x6210;&#x5E74;&quot;</span>)
+<span class="hljs-keyword">case</span> <span class="hljs-number">40</span>:
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x4E00;&#x679D;&#x82B1;&quot;</span>)
+  <span class="hljs-keyword">var</span> name = <span class="hljs-string">&quot;lnj&quot;</span>
+<span class="hljs-keyword">default</span>:
+  <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;other&quot;</span>)
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li>&#x7B80;&#x5355;&#x4F7F;&#x7528;&#x8865;&#x5145;1:<ul>
+<li>Swift&#x4E2D;&#x7684;switch&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x533A;&#x95F4;&#x548C;&#x5143;&#x7956;<pre><code class="lang-objc"><span class="hljs-comment">// &#x5224;&#x65AD;&#x5143;&#x7956;</span>
+let point = (<span class="hljs-number">0</span>, <span class="hljs-number">50</span>)
+<span class="hljs-keyword">switch</span> point {
+<span class="hljs-keyword">case</span> (<span class="hljs-number">0</span>, <span class="hljs-number">0</span>):
+    print(<span class="hljs-string">&quot;&#x539F;&#x70B9;&quot;</span>)
+<span class="hljs-keyword">case</span> (<span class="hljs-number">50</span>, <span class="hljs-number">50</span>):
+    print(<span class="hljs-string">&quot;&#x4E2D;&#x70B9;&quot;</span>)
+<span class="hljs-keyword">case</span> (<span class="hljs-number">100</span>, <span class="hljs-number">100</span>):
+    print(<span class="hljs-string">&quot;&#x53F3;&#x4E0B;&#x89D2;&quot;</span>)
+<span class="hljs-keyword">default</span>:
+    print(<span class="hljs-string">&quot;other&quot;</span>)
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>&#x7B80;&#x5355;&#x4F7F;&#x7528;&#x8865;&#x5145;2:</p>
+<ul>
+<li>Swift&#x4E2D;case &#x5206;&#x652F;&#x7684;&#x6A21;&#x5F0F;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;where&#x8BED;&#x53E5;&#x6765;&#x5224;&#x65AD;&#x989D;&#x5916;&#x7684;&#x6761;&#x4EF6;<pre><code class="lang-objc"><span class="hljs-comment">// &#x4E86;&#x89E3;</span>
+<span class="hljs-keyword">switch</span> point {
+<span class="hljs-keyword">case</span> let (x, y) where x == <span class="hljs-number">0</span> &amp;&amp; y == <span class="hljs-number">0</span>:
+  print(x)
+  print(y)
+<span class="hljs-keyword">case</span> let (x, y) where x == <span class="hljs-number">50</span> &amp;&amp; y == <span class="hljs-number">50</span>:
+  print(x)
+  print(y)
+<span class="hljs-keyword">case</span> let (x, y):
+  print(x)
+  print(y)
+<span class="hljs-keyword">default</span>:
+  print(<span class="hljs-string">&quot;other&quot;</span>)
+}
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>&#x7B80;&#x5355;&#x4F7F;&#x7528;&#x8865;&#x5145;3:</p>
+<ul>
+<li>&#x4E00;&#x4E2A;case&#x5224;&#x65AD;&#x4E2D;,&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x591A;&#x4E2A;&#x503C;</li>
+<li>&#x591A;&#x4E2A;&#x503C;&#x4EE5;,&#x9694;&#x5F00;</li>
 </ul>
 </li>
 </ul>
-<p>let age = 18
-switch age {
-    case 0:
-        print(&quot;&#x521A;&#x51FA;&#x751F;&quot;)
-    case 18:
-        print(&quot;&#x521A;&#x6210;&#x5E74;&quot;)
-        fallthrough
-    case 40:
-        print(&quot;&#x4E00;&#x679D;&#x82B1;&quot;)
-        var name = &quot;lnj&quot;
-    default:
-        print(&quot;other&quot;)
-}</p>
-<p>// &#x5224;&#x65AD;&#x5143;&#x7956;
-let point = (0, 50)
-switch point {
-    case (0, 0):
-        print(&quot;&#x539F;&#x70B9;&quot;)
-    case (50, 50):
-        print(&quot;&#x4E2D;&#x70B9;&quot;)
-    case (100, 100):
-        print(&quot;&#x53F3;&#x4E0B;&#x89D2;&quot;)
-    default:
-        print(&quot;other&quot;)
-}</p>
-<p>// &#x4E86;&#x89E3;
-switch point {
-    case let (x, y) where x == 0 &amp;&amp; y == 0:
-        print(x)
-        print(y)
-    case let (x, y) where x == 50 &amp;&amp; y == 50:
-        print(x)
-        print(y)
-    case let (x, y):
-        print(x)
-        print(y)
-    default:
-        print(&quot;other&quot;)
-}</p>
-<pre><code class="lang-swift">&#x4F8B;&#x5B50;:
-<span class="hljs-keyword">let</span> sex = <span class="hljs-number">0</span>
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> sex = <span class="hljs-number">0</span>
 
 <span class="hljs-keyword">switch</span> sex {
-<span class="hljs-keyword">case</span> <span class="hljs-number">0</span> :
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x7537;&quot;</span>)
-<span class="hljs-keyword">case</span> <span class="hljs-number">1</span> :
-    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x5973;&quot;</span>)
-<span class="hljs-keyword">default</span> :
+<span class="hljs-keyword">case</span> <span class="hljs-number">0</span>, <span class="hljs-number">1</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x6B63;&#x5E38;&#x4EBA;&quot;</span>)
+<span class="hljs-keyword">default</span>:
     <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x5176;&#x4ED6;&quot;</span>)
 }
 </code></pre>
 <ul>
-<li>&#x7B80;&#x5355;&#x4F7F;&#x7528;&#x8865;&#x5145;:<ul>
-<li>&#x4E00;&#x4E2A;case&#x5224;&#x65AD;&#x4E2D;,&#x53EF;&#x4EE5;&#x5224;&#x65AD;&#x591A;&#x4E2A;&#x503C;</li>
-<li>&#x591A;&#x4E2A;&#x503C;&#x4EE5;,&#x9694;&#x5F00;
-```swift
-let sex = 0</li>
+<li>&#x7B80;&#x5355;&#x4F7F;&#x7528;&#x8865;&#x5145;4:<ul>
+<li>&#x5982;&#x679C;&#x5E0C;&#x671B;&#x51FA;&#x73B0;&#x4E4B;&#x524D;&#x7684;case&#x7A7F;&#x900F;,&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;fallthrough</li>
 </ul>
 </li>
 </ul>
-<p>switch sex {
-case 0, 1:
-    print(&quot;&#x6B63;&#x5E38;&#x4EBA;&quot;)
-default:
-    print(&quot;&#x5176;&#x4ED6;&quot;)
-}</p>
-<pre><code>
-* &#x7B80;&#x5355;&#x4F7F;&#x7528;&#x8865;&#x5145;:
-    * &#x5982;&#x679C;&#x5E0C;&#x671B;&#x51FA;&#x73B0;&#x4E4B;&#x524D;&#x7684;case&#x7A7F;&#x900F;,&#x5219;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x5173;&#x952E;&#x5B57;fallthrough
+<pre><code class="lang-swift"><span class="hljs-keyword">let</span> sex = <span class="hljs-number">0</span>
 
-```swift
-let sex = 0
-
-switch sex {
-case 0:
-    fallthrough
-case 1:
-    print(&quot;&#x6B63;&#x5E38;&#x4EBA;&quot;)
-default:
-    print(&quot;&#x5176;&#x4ED6;&quot;)
+<span class="hljs-keyword">switch</span> sex {
+<span class="hljs-keyword">case</span> <span class="hljs-number">0</span>:
+    <span class="hljs-keyword">fallthrough</span>
+<span class="hljs-keyword">case</span> <span class="hljs-number">1</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x6B63;&#x5E38;&#x4EBA;&quot;</span>)
+<span class="hljs-keyword">default</span>:
+    <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;&#x5176;&#x4ED6;&quot;</span>)
 }
-</code></pre><h5 id="switch&#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;">Switch&#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;</h5>
+</code></pre>
+<h5 id="switch&#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;">Switch&#x652F;&#x6301;&#x591A;&#x79CD;&#x6570;&#x636E;&#x7C7B;&#x578B;</h5>
 <ul>
 <li><p>&#x6D6E;&#x70B9;&#x578B;&#x7684;switch&#x5224;&#x65AD;</p>
 <pre><code class="lang-swift"><span class="hljs-keyword">let</span> f = <span class="hljs-number">3.14</span>
@@ -822,7 +804,7 @@ default:
 }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-17 19:10:19
+2016-05-22 17:58:17
 </span></footer>
                     
                     </section>
