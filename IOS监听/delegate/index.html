@@ -65,7 +65,7 @@
         data-chapter-title="delegate(代理)"
         data-filepath="delegate/README.md"
         data-basepath=".."
-        data-revision="Wed May 25 2016 16:56:54 GMT+0800 (CST)"
+        data-revision="Sun May 29 2016 15:00:05 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -242,48 +242,40 @@
                         <h2 id="delegate&#x4EE3;&#x7406;">delegate(&#x4EE3;&#x7406;)</h2>
 <h3 id="&#x4EE3;&#x7406;&#x7684;&#x4F7F;&#x7528;&#x6B65;&#x9AA4;">&#x4EE3;&#x7406;&#x7684;&#x4F7F;&#x7528;&#x6B65;&#x9AA4;</h3>
 <ul>
-<li>&#x5B9A;&#x4E49;&#x4E00;&#x4EFD;&#x4EE3;&#x7406;&#x534F;&#x8BAE;<ol>
-<li>&#x534F;&#x8BAE;&#x540D;&#x5B57;&#x7684;&#x683C;&#x5F0F;&#x4E00;&#x822C;&#x662F;&#xFF1A;<code>&#x7C7B;&#x540D; + Delegate</code>&#xFF1A;&#x6BD4;&#x5982;<code>UITableViewDelegate</code></li>
-<li>&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x7EC6;&#x8282;<ol>
-<li>&#x4E00;&#x822C;&#x90FD;&#x662F;<code>@optional</code></li>
-<li><code>&#x65B9;&#x6CD5;&#x540D;</code>&#x4E00;&#x822C;&#x90FD;&#x4EE5;<code>&#x7C7B;&#x540D;</code>&#x5F00;&#x5934;:&#x6BD4;&#x5982;<code>-(void)scrollViewDidScroll:</code></li>
-<li>&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x4E00;&#x822C;&#x662F;<code>&#x63A7;&#x5236;&#x5668;</code></li>
-<li>&#x4E00;&#x822C;&#x90FD;&#x9700;&#x8981;<code>&#x5C06;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;</code></li>
-</ol>
-</li>
-<li>&#x5FC5;&#x987B;&#x8981;&#x9075;&#x5B88;<code>NSObject&#x534F;&#x8BAE;</code><ul>
-<li>&#x6BD4;&#x5982;<code>@protocol XMGWineCellDelegate &lt;NSObject&gt;</code></li>
-</ul>
-</li>
-</ol>
-</li>
-<li>&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x5C5E;&#x6027;&#xFF0C;<code>&#x5F31;&#x6307;&#x9488;</code><ul>
-<li>&#x4EE3;&#x7406;&#x7684;&#x7C7B;&#x578B;&#x683C;&#x5F0F;&#xFF1A;id&lt;&#x534F;&#x8BAE;&gt; delegate</li>
-</ul>
-</li>
-</ul>
-<pre><code class="lang-objc"><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">weak</span>) <span class="hljs-keyword">id</span>&lt;XMGWineCellDelegate&gt; delegate;
-</code></pre>
+<li>&#x5B9A;&#x4E49;&#x4E00;&#x4EFD;&#x4EE3;&#x7406;&#x534F;&#x8BAE;<pre><code>  1. &#x534F;&#x8BAE;&#x540D;&#x5B57;&#x7684;&#x683C;&#x5F0F;&#x4E00;&#x822C;&#x662F;&#xFF1A;`&#x7C7B;&#x540D; + Delegate`&#xFF1A;&#x6BD4;&#x5982;`UITableViewDelegate`
+  2. &#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x7EC6;&#x8282;
+      1. &#x4E00;&#x822C;&#x90FD;&#x662F;`@optional`
+      2. `&#x65B9;&#x6CD5;&#x540D;`&#x4E00;&#x822C;&#x90FD;&#x4EE5;`&#x7C7B;&#x540D;`&#x5F00;&#x5934;:&#x6BD4;&#x5982;`-(void)scrollViewDidScroll:`
+      3. &#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x4E00;&#x822C;&#x662F;`&#x63A7;&#x5236;&#x5668;`
+      4. &#x4E00;&#x822C;&#x90FD;&#x9700;&#x8981;`&#x5C06;&#x5BF9;&#x8C61;&#x4F5C;&#x4E3A;&#x53C2;&#x6570;&#x4F20;&#x9012;`
+  3. &#x5FC5;&#x987B;&#x8981;&#x9075;&#x5B88;`NSObject&#x534F;&#x8BAE;`
+      1. &#x6BD4;&#x5982;`@protocol XMGWineCellDelegate &lt;NSObject&gt;`
+</code></pre></li>
+<li><p>&#x58F0;&#x660E;&#x4E00;&#x4E2A;&#x4EE3;&#x7406;&#x5C5E;&#x6027;&#xFF0C;<code>&#x5F31;&#x6307;&#x9488;</code></p>
 <ul>
-<li>&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;</li>
+<li>&#x4EE3;&#x7406;&#x7684;&#x7C7B;&#x578B;&#x683C;&#x5F0F;&#xFF1A;id&lt;&#x534F;&#x8BAE;&gt; delegate<pre><code class="lang-objc"><span class="hljs-keyword">@property</span> (<span class="hljs-keyword">nonatomic</span>, <span class="hljs-keyword">weak</span>) <span class="hljs-keyword">id</span>&lt;XMGWineCellDelegate&gt; delegate;
+</code></pre>
+</li>
 </ul>
+</li>
+<li><p>&#x8BBE;&#x7F6E;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;</p>
 <pre><code class="lang-objc">xxx<span class="hljs-variable">.delegate</span> = yyy;
 </code></pre>
-<ul>
+</li>
 <li><p>&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x9075;&#x5B88;&#x534F;&#x8BAE;&#xFF0C;&#x5B9E;&#x73B0;&#x534F;&#x8BAE;&#x91CC;&#x9762;&#x76F8;&#x5E94;&#x7684;&#x65B9;&#x6CD5;</p>
 </li>
 <li><p>&#x5F53;&#x63A7;&#x4EF6;&#x5185;&#x90E8;&#x53D1;&#x751F;&#x4E86;&#x4E00;&#x4E9B;&#x4E8B;&#x60C5;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x8C03;&#x7528;&#x4EE3;&#x7406;&#x7684;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x901A;&#x77E5;&#x4EE3;&#x7406;</p>
 <ul>
-<li>&#x5982;&#x679C;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x662F;@optional&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x5224;&#x65AD;&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x6709;&#x5B9E;&#x73B0;</li>
+<li>&#x5982;&#x679C;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;&#x662F;@optional&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x5224;&#x65AD;&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x6709;&#x5B9E;<pre><code class="lang-objc"><span class="hljs-keyword">if</span> ([<span class="hljs-keyword">self</span><span class="hljs-variable">.delegate</span> respondsToSelector:<span class="hljs-keyword">@selector</span>(wineCellDidClickPlusButton:)]) {
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.delegate</span> wineCellDidClickPlusButton:<span class="hljs-keyword">self</span>];
+}
+</code></pre>
+</li>
 </ul>
 </li>
 </ul>
-<pre><code class="lang-objc"><span class="hljs-keyword">if</span> ([<span class="hljs-keyword">self</span><span class="hljs-variable">.delegate</span> respondsToSelector:<span class="hljs-keyword">@selector</span>(wineCellDidClickPlusButton:)]) {
-    [<span class="hljs-keyword">self</span><span class="hljs-variable">.delegate</span> wineCellDidClickPlusButton:<span class="hljs-keyword">self</span>];
-}
-</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-25 15:49:05
+2016-05-28 16:23:29
 </span></footer>
                     
                     </section>
