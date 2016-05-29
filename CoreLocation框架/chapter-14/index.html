@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en" >
-    <!-- Start book 简介 -->
+    <!-- Start book 目录--回到所有书目录 -->
     <head>
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>(反)地理编码 | 简介</title>
+        <title>(反)地理编码 | 目录--回到所有书目录</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -65,7 +65,7 @@
         data-chapter-title="(反)地理编码"
         data-filepath="chapter-14/README.md"
         data-basepath=".."
-        data-revision="Wed May 25 2016 17:00:20 GMT+0800 (CST)"
+        data-revision="Sun May 29 2016 21:27:08 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -95,7 +95,7 @@
                 
                         <i class="fa fa-check"></i>
                         
-                        前言
+                        目录
                     </a>
             
             
@@ -110,7 +110,7 @@
                         
                             <b>1.</b>
                         
-                        目录
+                        前言
                     </a>
             
             
@@ -350,8 +350,15 @@
                         
                             <b>17.</b>
                         
-                        Chapter-17
+                        地标
                     </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="18" data-path="chapter-18/index.html">
+            
+            <span><b>18.</b> Chapter-18</span>
             
             
         </li>
@@ -379,7 +386,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >简介</a>
+        <a href="../" >目录--回到所有书目录</a>
     </h1>
 </div>
 
@@ -391,76 +398,130 @@
                     
                         <h2 id="&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;">(&#x53CD;)&#x5730;&#x7406;&#x7F16;&#x7801;</h2>
 <h3 id="1-&#x6982;&#x5FF5;&#x89E3;&#x91CA;">1. &#x6982;&#x5FF5;&#x89E3;&#x91CA;</h3>
-<pre><code>&#x5730;&#x7406;&#x7F16;&#x7801;:     &#x662F;&#x6307;&#x6839;&#x636E;&#x5730;&#x5740;&#x5173;&#x952E;&#x5B57;, &#x5C06;&#x5176;&#x8F6C;&#x6362;&#x6210;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x7ECF;&#x7EAC;&#x5EA6;&#x7B49;&#x4FE1;&#x606F;;
-&#x53D1;&#x5730;&#x7406;&#x7F16;&#x7801;:    &#x662F;&#x6307;&#x6839;&#x636E;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;, &#x5C06;&#x5176;&#x8F6C;&#x6362;&#x6210;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x7701;&#x5E02;&#x533A;&#x8857;&#x9053;&#x7B49;&#x4FE1;&#x606F;;
-</code></pre><h3 id="2-&#x5730;&#x7406;&#x7F16;&#x7801;">2. &#x5730;&#x7406;&#x7F16;&#x7801;</h3>
+<ul>
+<li>&#x5730;&#x7406;&#x7F16;&#x7801;:     &#x662F;&#x6307;&#x6839;&#x636E;&#x5730;&#x5740;&#x5173;&#x952E;&#x5B57;, &#x5C06;&#x5176;&#x8F6C;&#x6362;&#x6210;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x7ECF;&#x7EAC;&#x5EA6;&#x7B49;&#x4FE1;&#x606F;;</li>
+<li>&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;:    &#x662F;&#x6307;&#x6839;&#x636E;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;, &#x5C06;&#x5176;&#x8F6C;&#x6362;&#x6210;&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x7701;&#x5E02;&#x533A;&#x8857;&#x9053;&#x7B49;&#x4FE1;&#x606F;;</li>
+</ul>
+<h3 id="2-&#x6D4B;&#x8BD5;&#x73AF;&#x5883;">2. &#x6D4B;&#x8BD5;&#x73AF;&#x5883;</h3>
+<ul>
+<li>&#x5FC5;&#x987B;&#x8054;&#x7F51;</li>
+<li>XCode&#x7248;&#x672C;&#x4E0D;&#x9650;</li>
+<li>iOS&#x6A21;&#x62DF;&#x5668;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x4E0D;&#x9650;</li>
+</ul>
+<h3 id="3-&#x5730;&#x7406;&#x7F16;&#x7801;">3. &#x5730;&#x7406;&#x7F16;&#x7801;</h3>
+<pre><code class="lang-objc"><span class="hljs-number">1.</span> &#x5BFC;&#x5165;CoreLocation&#x6846;&#x67B6;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x5934;&#x6587;&#x4EF6;
+
+        <span class="hljs-preprocessor">#import <span class="hljs-title">&lt;CoreLocation/CoreLocation.h&gt;</span></span>
+
+<span class="hljs-number">2.</span> &#x521B;&#x5EFA;CLGeocoder&#x5BF9;&#x8C61;
+
+        <span class="hljs-keyword">self</span><span class="hljs-variable">.geoC</span> = [[CLGeocoder alloc] init];
+
+<span class="hljs-number">3.</span> &#x6839;&#x636E;&#x5730;&#x5740;&#x5173;&#x952E;&#x5B57;, &#x8FDB;&#x884C;&#x5730;&#x7406;&#x7F16;&#x7801;
+
+        <span class="hljs-comment">// &#x76F4;&#x63A5;&#x6839;&#x636E;&#x5730;&#x5740;&#x8FDB;&#x884C;&#x5730;&#x7406;&#x7F16;&#x7801;&#xFF08;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x5730;&#x70B9;&#x6709;&#x91CD;&#x540D;&#xFF09;</span>
+        [<span class="hljs-keyword">self</span><span class="hljs-variable">.geoC</span> geocodeAddressString:<span class="hljs-string">@&quot;&#x5E7F;&#x5DDE;&quot;</span> completionHandler:^(<span class="hljs-built_in">NSArray</span>&lt;CLPlacemark *&gt; * __nullable placemarks, <span class="hljs-built_in">NSError</span> * __nullable error)
+        {
+            <span class="hljs-comment">// &#x5305;&#x542B;&#x533A;&#xFF0C;&#x8857;&#x9053;&#x7B49;&#x4FE1;&#x606F;&#x7684;&#x5730;&#x6807;&#x5BF9;&#x8C61;</span>
+            CLPlacemark *placemark = [placemarks firstObject];
+            <span class="hljs-comment">// &#x57CE;&#x5E02;&#x540D;&#x79F0;</span>
+            <span class="hljs-built_in">NSString</span> *city = placemark<span class="hljs-variable">.locality</span>;
+            <span class="hljs-comment">// &#x8857;&#x9053;&#x540D;&#x79F0;</span>
+            <span class="hljs-built_in">NSString</span> *street = placemark<span class="hljs-variable">.thoroughfare</span>;
+            <span class="hljs-comment">// &#x5168;&#x79F0;</span>
+            <span class="hljs-built_in">NSString</span> *name = placemark<span class="hljs-variable">.name</span>;
+        }];
+</code></pre>
+<h3 id="4-&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;">4. &#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;</h3>
+<pre><code class="lang-objc"><span class="hljs-number">1.</span> &#x5BFC;&#x5165;CoreLocation&#x6846;&#x67B6;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x5934;&#x6587;&#x4EF6;
+
+        <span class="hljs-preprocessor">#import <span class="hljs-title">&lt;CoreLocation/CoreLocation.h&gt;</span></span>
+
+<span class="hljs-number">2.</span> &#x521B;&#x5EFA;CLGeocoder&#x5BF9;&#x8C61;
+
+        <span class="hljs-keyword">self</span><span class="hljs-variable">.geoC</span> = [[CLGeocoder alloc] init];
+
+<span class="hljs-number">3.</span> &#x6839;&#x636E;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;, &#x8FDB;&#x884C;&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;
+
+        <span class="hljs-comment">// &#x6839;&#x636E;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;</span>
+        [<span class="hljs-keyword">self</span><span class="hljs-variable">.geoC</span> reverseGeocodeLocation:[[CLLocation alloc] initWithLatitude:<span class="hljs-number">21.123</span> longitude:<span class="hljs-number">123.345</span>] completionHandler:^(<span class="hljs-built_in">NSArray</span>&lt;CLPlacemark *&gt; * __nullable placemarks, <span class="hljs-built_in">NSError</span> * __nullable error)
+        {
+            <span class="hljs-comment">// &#x5305;&#x542B;&#x533A;&#xFF0C;&#x8857;&#x9053;&#x7B49;&#x4FE1;&#x606F;&#x7684;&#x5730;&#x6807;&#x5BF9;&#x8C61;</span>
+            CLPlacemark *placemark = [placemarks firstObject];
+            <span class="hljs-comment">// &#x57CE;&#x5E02;&#x540D;&#x79F0;</span>
+            <span class="hljs-built_in">NSString</span> *city = placemark<span class="hljs-variable">.locality</span>;
+            <span class="hljs-comment">// &#x8857;&#x9053;&#x540D;&#x79F0;</span>
+            <span class="hljs-built_in">NSString</span> *street = placemark<span class="hljs-variable">.thoroughfare</span>;
+            <span class="hljs-comment">// &#x5168;&#x79F0;</span>
+            <span class="hljs-built_in">NSString</span> *name = placemark<span class="hljs-variable">.name</span>;
+        }];
+</code></pre>
+<h3 id="5--clplacemark&#xFF08;&#x5730;&#x6807;&#xFF09;">5.  <a href="../chapter-17/index.html">CLPlacemark&#xFF08;&#x5730;&#x6807;&#xFF09;</a></h3>
+<table>
+<thead>
+<tr>
+<th>&#x5C5E;&#x6027;</th>
+<th>&#x7C7B;&#x578B;</th>
+<th>&#x542B;&#x4E49;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>location</td>
+<td>CLLocation</td>
+<td>&#x4F4D;&#x7F6E;&#x5BF9;&#x8C61;&#x4FE1;&#x606F;, &#x91CC;&#x9762;&#x5305;&#x542B;&#x7ECF;&#x7EAC;&#x5EA6;, &#x6D77;&#x62D4;&#x7B49;&#x7B49;</td>
+</tr>
+<tr>
+<td>region</td>
+<td>CLRegion</td>
+<td>&#x5730;&#x6807;&#x5BF9;&#x8C61;&#x5BF9;&#x5E94;&#x7684;&#x533A;&#x57DF;</td>
+</tr>
+<tr>
+<td>addressDictionary</td>
+<td>NSDictionary</td>
+<td>&#x5B58;&#x653E;&#x8857;&#x9053;,&#x7701;&#x5E02;&#x7B49;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>name</td>
+<td>NSString</td>
+<td>&#x5730;&#x5740;&#x5168;&#x79F0;</td>
+</tr>
+<tr>
+<td>thoroughfare</td>
+<td>NSString</td>
+<td>&#x8857;&#x9053;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>locality</td>
+<td>NSString</td>
+<td>&#x57CE;&#x5E02;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>administrativeArea</td>
+<td>NSString</td>
+<td>&#x7701;&#x540D;&#x79F0;</td>
+</tr>
+<tr>
+<td>country</td>
+<td>NSString</td>
+<td>&#x56FD;&#x5BB6;&#x540D;&#x79F0;</td>
+</tr>
+</tbody>
+</table>
+<h3 id="6-&#x5E38;&#x89C1;&#x95EE;&#x9898;">6. &#x5E38;&#x89C1;&#x95EE;&#x9898;</h3>
 <ol>
-<li><p>&#x5BFC;&#x5165;CoreLocation&#x6846;&#x67B6;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x5934;&#x6587;&#x4EF6;</p>
-<pre><code> #import &lt;CoreLocation/CoreLocation.h&gt;
-</code></pre></li>
-<li><p>&#x521B;&#x5EFA;CLGeocoder&#x5BF9;&#x8C61;</p>
-<pre><code> self.geoC = [[CLGeocoder alloc] init];
-</code></pre></li>
-<li><p>&#x6839;&#x636E;&#x5730;&#x5740;&#x5173;&#x952E;&#x5B57;, &#x8FDB;&#x884C;&#x5730;&#x7406;&#x7F16;&#x7801;</p>
-<pre><code> // &#x76F4;&#x63A5;&#x6839;&#x636E;&#x5730;&#x5740;&#x8FDB;&#x884C;&#x5730;&#x7406;&#x7F16;&#x7801;&#xFF08;&#x8FD4;&#x56DE;&#x7ED3;&#x679C;&#x53EF;&#x80FD;&#x6709;&#x591A;&#x4E2A;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x4E2A;&#x5730;&#x70B9;&#x6709;&#x91CD;&#x540D;&#xFF09;
- [self.geoC geocodeAddressString:@&quot;&#x5E7F;&#x5DDE;&quot; completionHandler:^(NSArray&lt;CLPlacemark *&gt; * __nullable placemarks, NSError * __nullable error)
- {
-     // &#x5305;&#x542B;&#x533A;&#xFF0C;&#x8857;&#x9053;&#x7B49;&#x4FE1;&#x606F;&#x7684;&#x5730;&#x6807;&#x5BF9;&#x8C61;
-     CLPlacemark *placemark = [placemarks firstObject];
-     // &#x57CE;&#x5E02;&#x540D;&#x79F0;
-     NSString *city = placemark.locality;
-     // &#x8857;&#x9053;&#x540D;&#x79F0;
-     NSString *street = placemark.thoroughfare;
-     // &#x5168;&#x79F0;
-     NSString *name = placemark.name;
- }];
-</code></pre></li>
+<li>&#x6D4B;&#x8BD5;&#x65E0;&#x6570;&#x636E;?<ul>
+<li>&#x9996;&#x5148;, &#x68C0;&#x67E5;&#x662F;&#x5426;&#x6709;&#x8054;&#x7F51;;</li>
+<li>&#x5176;&#x6B21;, &#x5982;&#x679C;&#x662F;&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;,&#x53EF;&#x5C1D;&#x8BD5;&#x66F4;&#x6362;&#x7ECF;&#x7EAC;&#x5EA6;&#x518D;&#x6B21;&#x5C1D;&#x8BD5;, &#x6709;&#x7684;&#x7ECF;&#x7EAC;&#x5EA6;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x4FE1;&#x606F;</li>
+</ul>
+</li>
 </ol>
-<h3 id="3-&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;">3. &#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;</h3>
-<ol>
-<li><p>&#x5BFC;&#x5165;CoreLocation&#x6846;&#x67B6;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x4E3B;&#x5934;&#x6587;&#x4EF6;</p>
-<pre><code> #import &lt;CoreLocation/CoreLocation.h&gt;
-</code></pre></li>
-<li><p>&#x521B;&#x5EFA;CLGeocoder&#x5BF9;&#x8C61;</p>
-<pre><code> self.geoC = [[CLGeocoder alloc] init];
-</code></pre></li>
-<li><p>&#x6839;&#x636E;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;, &#x8FDB;&#x884C;&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;</p>
-<pre><code> // &#x6839;&#x636E;&#x7ECF;&#x7EAC;&#x5EA6;&#x4FE1;&#x606F;&#x8FDB;&#x884C;&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;
- [self.geoC reverseGeocodeLocation:[[CLLocation alloc] initWithLatitude:21.123 longitude:123.345] completionHandler:^(NSArray&lt;CLPlacemark *&gt; * __nullable placemarks, NSError * __nullable error)
- {
-     // &#x5305;&#x542B;&#x533A;&#xFF0C;&#x8857;&#x9053;&#x7B49;&#x4FE1;&#x606F;&#x7684;&#x5730;&#x6807;&#x5BF9;&#x8C61;
-     CLPlacemark *placemark = [placemarks firstObject];
-     // &#x57CE;&#x5E02;&#x540D;&#x79F0;
-     NSString *city = placemark.locality;
-     // &#x8857;&#x9053;&#x540D;&#x79F0;
-     NSString *street = placemark.thoroughfare;
-     // &#x5168;&#x79F0;
-     NSString *name = placemark.name;
- }];
-</code></pre></li>
-</ol>
-<h3 id="4-clplacemark-&#x5730;&#x6807;&#x5BF9;&#x8C61;&#x8BE6;&#x89E3;">4. CLPlacemark &#x5730;&#x6807;&#x5BF9;&#x8C61;&#x8BE6;&#x89E3;</h3>
-<pre><code>    location             : CLLocation &#x7C7B;&#x578B;, &#x4F4D;&#x7F6E;&#x5BF9;&#x8C61;&#x4FE1;&#x606F;, &#x91CC;&#x9762;&#x5305;&#x542B;&#x7ECF;&#x7EAC;&#x5EA6;, &#x6D77;&#x62D4;&#x7B49;&#x7B49;
-    region                 : CLRegion &#x7C7B;&#x578B;, &#x5730;&#x6807;&#x5BF9;&#x8C61;&#x5BF9;&#x5E94;&#x7684;&#x533A;&#x57DF;
-    addressDictionary  : NSDictionary &#x7C7B;&#x578B;, &#x5B58;&#x653E;&#x8857;&#x9053;,&#x7701;&#x5E02;&#x7B49;&#x4FE1;&#x606F;
-    name                : NSString &#x7C7B;&#x578B;, &#x5730;&#x5740;&#x5168;&#x79F0;
-    thoroughfare        : NSString &#x7C7B;&#x578B;, &#x8857;&#x9053;&#x540D;&#x79F0;
-    locality            : NSString &#x7C7B;&#x578B;, &#x57CE;&#x5E02;&#x540D;&#x79F0;
-    administrativeArea : NSString &#x7C7B;&#x578B;, &#x7701;&#x540D;&#x79F0;
-    country                : NSString &#x7C7B;&#x578B;, &#x56FD;&#x5BB6;&#x540D;&#x79F0;
-</code></pre><h3 id="5-&#x6D4B;&#x8BD5;&#x73AF;&#x5883;">5. &#x6D4B;&#x8BD5;&#x73AF;&#x5883;</h3>
-<pre><code>*     &#x5FC5;&#x987B;&#x8054;&#x7F51;
-    XCode&#x7248;&#x672C;&#x4E0D;&#x9650;
-    iOS&#x6A21;&#x62DF;&#x5668;&#x7CFB;&#x7EDF;&#x7248;&#x672C;&#x4E0D;&#x9650;
-</code></pre><h3 id="6-&#x5E38;&#x89C1;&#x95EE;&#x9898;">6. &#x5E38;&#x89C1;&#x95EE;&#x9898;</h3>
-<pre><code>1. &#x6D4B;&#x8BD5;&#x65E0;&#x6570;&#x636E;?
-   &#x9996;&#x5148;, &#x68C0;&#x67E5;&#x662F;&#x5426;&#x6709;&#x8054;&#x7F51;;
-   &#x5176;&#x6B21;, &#x5982;&#x679C;&#x662F;&#x53CD;&#x5730;&#x7406;&#x7F16;&#x7801;,&#x53EF;&#x5C1D;&#x8BD5;&#x66F4;&#x6362;&#x7ECF;&#x7EAC;&#x5EA6;&#x518D;&#x6B21;&#x5C1D;&#x8BD5;, &#x6709;&#x7684;&#x7ECF;&#x7EAC;&#x5EA6;&#x6CA1;&#x6709;&#x5BF9;&#x5E94;&#x4FE1;&#x606F;
-</code></pre><h3 id="7-&#x5E94;&#x7528;&#x573A;&#x666F;">7. &#x5E94;&#x7528;&#x573A;&#x666F;</h3>
-<pre><code>1. &#x4E00;&#x822C;&#x4E0E;&#x5B9A;&#x4F4D;&#x7ED3;&#x5408;&#x4F7F;&#x7528;, &#x786E;&#x5B9A;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x7684;&#x5177;&#x4F53;&#x5730;&#x7406;&#x4FE1;&#x606F;
-</code></pre><hr>
+<h3 id="7-&#x5E94;&#x7528;&#x573A;&#x666F;">7. &#x5E94;&#x7528;&#x573A;&#x666F;</h3>
+<ul>
+<li>&#x4E00;&#x822C;&#x4E0E;&#x5B9A;&#x4F4D;&#x7ED3;&#x5408;&#x4F7F;&#x7528;, &#x786E;&#x5B9A;&#x5F53;&#x524D;&#x4F4D;&#x7F6E;&#x7684;&#x5177;&#x4F53;&#x5730;&#x7406;&#x4FE1;&#x606F;</li>
+</ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-22 15:58:03
+2016-05-26 11:52:57
 </span></footer>
                     
                     </section>
@@ -515,5 +576,5 @@ require(["gitbook"], function(gitbook) {
 
         <!-- body:end -->
     </body>
-    <!-- End of book 简介 -->
+    <!-- End of book 目录--回到所有书目录 -->
 </html>

@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en" >
-    <!-- Start book 简介 -->
+    <!-- Start book 目录--回到所有书目录 -->
     <head>
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>位置 | 简介</title>
+        <title>位置 | 目录--回到所有书目录</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -65,7 +65,7 @@
         data-chapter-title="位置"
         data-filepath="chapter-4/README.md"
         data-basepath=".."
-        data-revision="Wed May 25 2016 17:00:20 GMT+0800 (CST)"
+        data-revision="Sun May 29 2016 21:27:08 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -95,7 +95,7 @@
                 
                         <i class="fa fa-check"></i>
                         
-                        前言
+                        目录
                     </a>
             
             
@@ -110,7 +110,7 @@
                         
                             <b>1.</b>
                         
-                        目录
+                        前言
                     </a>
             
             
@@ -350,8 +350,15 @@
                         
                             <b>17.</b>
                         
-                        Chapter-17
+                        地标
                     </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="18" data-path="chapter-18/index.html">
+            
+            <span><b>18.</b> Chapter-18</span>
             
             
         </li>
@@ -379,7 +386,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >简介</a>
+        <a href="../" >目录--回到所有书目录</a>
     </h1>
 </div>
 
@@ -403,7 +410,7 @@
 <pre><code class="lang-objc"><span class="hljs-keyword">@property</span>(<span class="hljs-keyword">readonly</span>, <span class="hljs-keyword">nonatomic</span>) CLLocationDistance altitude;
 </code></pre>
 </li>
-<li><p>&#x8DEF;&#x7EBF;&#xFF0C;&#x822A;&#x5411;&#xFF08;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x662F;0.0&#xB0; ~ 359.9&#xB0;&#xFF0C;0.0&#xB0;&#x4EE3;&#x8868;&#x6B63;&#x5317;&#x65B9;&#x5411;&#xFF09;</p>
+<li><p>&#x8DEF;&#x7EBF;&#xFF0C;&#x822A;&#x5411;&#xFF08;&#x53D6;&#x503C;&#x8303;&#x56F4;&#x662F;0.0&#xB0; ~ 359.9&#xB0;&#xFF0C;0.0&#xB0;&#x4EE3;&#x8868;&#x6B63;&#x5317;&#x65B9;&#x5411;&#xFF09;&#xFF0C;&#x8D1F;&#x6570;&#x4EE3;&#x8868;&#x822A;&#x5411;&#x4E0D;&#x53EF;&#x7528;</p>
 <pre><code class="lang-objc"><span class="hljs-keyword">@property</span>(<span class="hljs-keyword">readonly</span>, <span class="hljs-keyword">nonatomic</span>) CLLocationDirection course;
 </code></pre>
 </li>
@@ -426,16 +433,59 @@
     2&gt; &#x83B7;&#x53D6;&#x5BF9;&#x5E94;&#x7684;&#x504F;&#x79BB;&#x89D2;&#x5EA6;(&#x5E76;&#x5224;&#x65AD;&#x662F;&#x5426;&#x662F;&#x6B63;&#x65B9;&#x5411;)
     3&gt; &#x8BA1;&#x7B97;&#x884C;&#x8D70;&#x8DDD;&#x79BB;
     4&gt; &#x6253;&#x5370;&#x4FE1;&#x606F;
-</code></pre><h3 id="4-&#x6CE8;&#x610F;&#x4E8B;&#x9879;">4. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
+</code></pre><pre><code class="lang-swift">        <span class="hljs-comment">// 1.&#x53D6;&#x51FA;&#x4F4D;&#x7F6E;,&#x5EFA;&#x8BAE;&#x53D6;&#x51FA;&#x6700;&#x540E;&#x4E00;&#x4E2A;,&#x56E0;&#x4E3A;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x6700;&#x51C6;&#x786E;</span>
+        guard <span class="hljs-keyword">let</span> location = locations.last <span class="hljs-keyword">else</span> {<span class="hljs-keyword">return</span>}
+
+        <span class="hljs-comment">// 2.&#x5224;&#x65AD;&#x4F4D;&#x7F6E;&#x662F;&#x5426;&#x53EF;&#x7528;</span>
+        <span class="hljs-keyword">if</span> location.horizontalAccuracy &lt; <span class="hljs-number">0</span> {<span class="hljs-keyword">return</span>}
+
+        <span class="hljs-comment">// 3.&#x5224;&#x65AD;&#x822A;&#x5411;&#x662F;&#x5426;&#x53EF;&#x7528;</span>
+        <span class="hljs-keyword">if</span> location.course &lt; <span class="hljs-number">0</span> {<span class="hljs-keyword">return</span>}
+
+
+<span class="hljs-comment">//         &#x573A;&#x666F;&#x6F14;&#x793A;:&#x6253;&#x5370;&#x5F53;&#x524D;&#x7528;&#x6237;&#x7684;&#x884C;&#x8D70;&#x65B9;&#x5411;,&#x504F;&#x79BB;&#x89D2;&#x5EA6;&#x4EE5;&#x53CA;&#x5BF9;&#x5E94;&#x7684;&#x884C;&#x8D70;&#x8DDD;&#x79BB;,</span>
+<span class="hljs-comment">//        &#x4F8B;&#x5982;:&#x201D;&#x5317;&#x504F;&#x4E1C; 30&#x5EA6;&#x65B9;&#x5411;,&#x79FB;&#x52A8;&#x4E86;8&#x7C73;&#x201D;</span>
+
+        <span class="hljs-comment">// &#x786E;&#x5B9A;&#x65B9;&#x5411;</span>
+        <span class="hljs-keyword">let</span> angleStrs = [<span class="hljs-string">&quot;&#x5317;&#x504F;&#x4E1C;&quot;</span>, <span class="hljs-string">&quot;&#x4E1C;&#x504F;&#x5357;&quot;</span>, <span class="hljs-string">&quot;&#x5357;&#x504F;&#x897F;&quot;</span>, <span class="hljs-string">&quot;&#x897F;&#x504F;&#x5317;&quot;</span>];
+        <span class="hljs-keyword">let</span> index = <span class="hljs-type">Int</span>(location.course / <span class="hljs-number">90</span>)
+        <span class="hljs-keyword">var</span> angleStr = angleStrs[index]
+
+        <span class="hljs-comment">// &#x786E;&#x5B9A;&#x504F;&#x79FB;&#x89D2;&#x5EA6;</span>
+        <span class="hljs-keyword">let</span> angle = location.course % <span class="hljs-number">90</span>
+
+        <span class="hljs-keyword">if</span> <span class="hljs-type">Int</span>(angle) == <span class="hljs-number">0</span> {
+            <span class="hljs-comment">// swift</span>
+<span class="hljs-comment">//            let index = angleStr.startIndex.advancedBy(1)</span>
+<span class="hljs-comment">//            angleStr = &quot;&#x6B63;&quot; + angleStr.substringToIndex(index)</span>
+
+            <span class="hljs-comment">// OC</span>
+            angleStr = <span class="hljs-string">&quot;&#x6B63;&quot;</span> + (angleStr <span class="hljs-keyword">as</span> <span class="hljs-type">NSString</span>).substringToIndex(<span class="hljs-number">1</span>)
+        }
+
+        <span class="hljs-comment">// &#x8BA1;&#x7B97;&#x79FB;&#x52A8;&#x4E86;&#x591A;&#x5C11;&#x7C73;</span>
+        <span class="hljs-keyword">let</span> lastLoc = lastLocation ?? location
+        <span class="hljs-keyword">let</span> <span class="hljs-built_in">distance</span> = location.distanceFromLocation(lastLoc)
+        lastLocation = location
+
+        <span class="hljs-comment">// &#x62FC;&#x63A5;&#x5B57;&#x7B26;&#x4E32;,&#x5E76;&#x6253;&#x5370;</span>
+        <span class="hljs-keyword">if</span> <span class="hljs-type">Int</span>(angle) == <span class="hljs-number">0</span> {
+             <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;<span class="hljs-subst">\(angleStr)</span>, &#x79FB;&#x52A8;&#x4E86;<span class="hljs-subst">\(<span class="hljs-built_in">distance</span>)</span>&#x7C73;&quot;</span>)
+        } <span class="hljs-keyword">else</span> {
+             <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;<span class="hljs-subst">\(angleStr)</span> <span class="hljs-subst">\(angle)</span>&#x89D2;&#x5EA6;, &#x79FB;&#x52A8;&#x4E86;<span class="hljs-subst">\(<span class="hljs-built_in">distance</span>)</span>&#x7C73;&quot;</span>)
+        }
+</code></pre>
+<h3 id="4-&#x6CE8;&#x610F;&#x4E8B;&#x9879;">4. &#x6CE8;&#x610F;&#x4E8B;&#x9879;</h3>
 <ol>
-<li><p>&#x4F7F;&#x7528;&#x4F4D;&#x7F6E;&#x524D;, &#x52A1;&#x5FC5;&#x5224;&#x65AD;&#x5F53;&#x524D;&#x83B7;&#x53D6;&#x7684;&#x4F4D;&#x7F6E;&#x662F;&#x5426;&#x6709;&#x6548;</p>
-<pre><code> &#x4EE3;&#x7801;: if (location.horizontalAccuracy &lt; 0) return;
- &#x529F;&#x80FD;: &#x5982;&#x679C;&#x6C34;&#x5E73;&#x7CBE;&#x786E;&#x5EA6;&#x5C0F;&#x4E8E;&#x96F6;, &#x4EE3;&#x8868;&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x4F4D;&#x7F6E;&#x5BF9;&#x8C61;, &#x4F46;&#x662F;&#x6570;&#x636E;&#x9519;&#x8BEF;, &#x4E0D;&#x53EF;&#x7528;
-</code></pre></li>
+<li>&#x4F7F;&#x7528;&#x4F4D;&#x7F6E;&#x524D;, &#x52A1;&#x5FC5;&#x5224;&#x65AD;&#x5F53;&#x524D;&#x83B7;&#x53D6;&#x7684;&#x4F4D;&#x7F6E;&#x662F;&#x5426;&#x6709;&#x6548;<ul>
+<li>&#x5982;&#x679C;&#x6C34;&#x5E73;&#x7CBE;&#x786E;&#x5EA6;&#x5C0F;&#x4E8E;&#x96F6;, &#x4EE3;&#x8868;&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x4F4D;&#x7F6E;&#x5BF9;&#x8C61;, &#x4F46;&#x662F;&#x6570;&#x636E;&#x9519;&#x8BEF;, &#x4E0D;&#x53EF;&#x7528;<pre><code class="lang-objc"><span class="hljs-keyword">if</span> (location<span class="hljs-variable">.horizontalAccuracy</span> &lt; <span class="hljs-number">0</span>) <span class="hljs-keyword">return</span>;
+</code></pre>
+</li>
+</ul>
+</li>
 </ol>
-<hr>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-22 15:57:33
+2016-05-26 11:35:37
 </span></footer>
                     
                     </section>
@@ -490,5 +540,5 @@ require(["gitbook"], function(gitbook) {
 
         <!-- body:end -->
     </body>
-    <!-- End of book 简介 -->
+    <!-- End of book 目录--回到所有书目录 -->
 </html>
