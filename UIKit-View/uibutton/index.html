@@ -65,7 +65,7 @@
         data-chapter-title="UIButton"
         data-filepath="uibutton/README.md"
         data-basepath=".."
-        data-revision="Sun May 29 2016 20:22:24 GMT+0800 (CST)"
+        data-revision="Sun Jun 05 2016 22:24:52 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -339,14 +339,65 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="uinavigationbar/index.html">
+        <li class="chapter " data-level="2.7" data-path="uicollectionreusableview/index.html">
+            
+                
+                    <a href="../uicollectionreusableview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        UICollectionReusableView
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="uicollectionreusableview/uicollectionviewcell.html">
+            
+                
+                    <a href="../uicollectionreusableview/uicollectionviewcell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.1.</b>
+                        
+                        UICollectionViewCell
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="uipickerview/index.html">
+            
+                
+                    <a href="../uipickerview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        UIPickerView
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="uinavigationbar/index.html">
             
                 
                     <a href="../uinavigationbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.7.</b>
+                            <b>2.9.</b>
                         
                         UINavigationBar
                     </a>
@@ -354,14 +405,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.8" data-path="uitabbar/index.html">
+        <li class="chapter " data-level="2.10" data-path="uitabbar/index.html">
             
                 
                     <a href="../uitabbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.8.</b>
+                            <b>2.10.</b>
                         
                         UITabBar
                     </a>
@@ -369,14 +420,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.9" data-path="uitoolbar/index.html">
+        <li class="chapter " data-level="2.11" data-path="uitoolbar/index.html">
             
                 
                     <a href="../uitoolbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.9.</b>
+                            <b>2.11.</b>
                         
                         UIToolbar
                     </a>
@@ -384,14 +435,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.10" data-path="uiactionsheet/index.html">
+        <li class="chapter " data-level="2.12" data-path="uiactionsheet/index.html">
             
                 
                     <a href="../uiactionsheet/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.10.</b>
+                            <b>2.12.</b>
                         
                         UIActionSheet
                     </a>
@@ -399,14 +450,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.11" data-path="uialertview/index.html">
+        <li class="chapter " data-level="2.13" data-path="uialertview/index.html">
             
                 
                     <a href="../uialertview/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.11.</b>
+                            <b>2.13.</b>
                         
                         UIAlertView
                     </a>
@@ -414,31 +465,16 @@
             
         </li>
     
-        <li class="chapter " data-level="2.12" data-path="uiactivityindicatorview/index.html">
+        <li class="chapter " data-level="2.14" data-path="uiactivityindicatorview/index.html">
             
                 
                     <a href="../uiactivityindicatorview/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.12.</b>
+                            <b>2.14.</b>
                         
                         UIActivityIndicatorView(菊花)
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.13" data-path="uipickerview/index.html">
-            
-                
-                    <a href="../uipickerview/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.13.</b>
-                        
-                        UIPickerView
                     </a>
             
             
@@ -687,51 +723,74 @@
 <ol>
 <li><p>normal&#xFF08;&#x666E;&#x901A;&#x72B6;&#x6001;&#xFF09;</p>
 <ul>
-<li>&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#xFF08;Default&#xFF09;</li>
-<li>&#x5BF9;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x5E38;&#x91CF;&#xFF1A;UIControlStateNormal</li>
+<li>&#x6309;&#x94AE;&#x9ED8;&#x8BA4;&#x72B6;&#x6001;&#xFF08;Default&#xFF09;</li>
+<li>&#x5BF9;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x5E38;&#x91CF;&#xFF1A;UIControlStateNormal<pre><code class="lang-objc">[button setImage:image forState:<span class="hljs-built_in">UIControlStateNormal</span>];
+</code></pre>
+</li>
 </ul>
 </li>
 <li><p>highlighted&#xFF08;&#x9AD8;&#x4EAE;&#x72B6;&#x6001;&#xFF09;</p>
 <ul>
 <li>&#x6309;&#x94AE;&#x88AB;&#x6309;&#x4E0B;&#x53BB;&#x7684;&#x65F6;&#x5019;&#xFF08;&#x624B;&#x6307;&#x8FD8;&#x672A;&#x677E;&#x5F00;&#xFF09;</li>
 <li>&#x5BF9;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x5E38;&#x91CF;&#xFF1A;UIControlStateHighlighted</li>
-<li>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x9AD8;&#x4EAE;&#x72B6;&#x6001;&#x4E0B;&#x7684;&#x56FE;&#x7247;&#x6B63;&#x5E38;&#x663E;&#x793A;&#xFF0C;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;type&#x4E3A;custom</li>
+<li>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x9AD8;&#x4EAE;&#x72B6;&#x6001;&#x4E0B;&#x7684;&#x56FE;&#x7247;&#x6B63;&#x5E38;&#x663E;&#x793A;&#xFF0C;&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;type&#x4E3A;custom<pre><code class="lang-objc">[button setImage:image forState:<span class="hljs-built_in">UIControlStateSelected</span>];
+</code></pre>
+</li>
 </ul>
 </li>
 <li><p>selected&#xFF08;&#x9009;&#x4E2D;&#x72B6;&#x6001;&#xFF09;</p>
 <ul>
 <li>&#x6309;&#x94AE;&#x88AB;&#x9009;&#x4E2D;&#x7684;&#x65F6;&#x5019;</li>
-<li>&#x5BF9;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x5E38;&#x91CF;&#xFF1A;UIControlStateSelected</li>
+<li>&#x5BF9;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x5E38;&#x91CF;&#xFF1A;UIControlStateSelected<pre><code class="lang-objc">[button setImage:image forState:<span class="hljs-built_in">UIControlStateSelected</span>];
+</code></pre>
+</li>
 </ul>
 </li>
-<li><p>disabled&#xFF08;&#x5931;&#x6548;&#x72B6;&#x6001;&#xFF0C;&#x4E0D;&#x53EF;&#x7528;&#x72B6;&#x6001;&#xFF09;</p>
+<li><p>disabled&#xFF08;&#x5931;&#x6548;&#x72B6;&#x6001;&#xFF09;</p>
 <ul>
 <li>&#x5982;&#x679C;enabled&#x5C5E;&#x6027;&#x4E3A;NO&#xFF0C;&#x5C31;&#x662F;&#x5904;&#x4E8E;disable&#x72B6;&#x6001;&#xFF0C;&#x4EE3;&#x8868;&#x6309;&#x94AE;&#x4E0D;&#x53EF;&#x4EE5;&#x88AB;&#x70B9;&#x51FB;</li>
-<li>&#x5BF9;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x5E38;&#x91CF;&#xFF1A;UIControlStateDisabled</li>
+<li>&#x5BF9;&#x5E94;&#x7684;&#x679A;&#x4E3E;&#x5E38;&#x91CF;&#xFF1A;UIControlStateDisabled<pre><code class="lang-objc">[button setImage:image forState:<span class="hljs-built_in">UIControlStateDisabled</span>];
+</code></pre>
+</li>
 </ul>
 </li>
 </ol>
 <h3 id="uibutton-&#x5E38;&#x7528;&#x65B9;&#x6CD5;">UIButton &#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
 <pre><code class="lang-objc"><span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;</span>
-- (<span class="hljs-keyword">void</span>)setTitle:(<span class="hljs-built_in">NSString</span> *)title forState:(<span class="hljs-built_in">UIControlState</span>)state;
-
-
+[button setTitle:<span class="hljs-string">@&quot;&#x70B9;&#x6211;&#x554A;&quot;</span> forState:<span class="hljs-built_in">UIControlStateNormal</span>];
 <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x989C;&#x8272;</span>
-- (<span class="hljs-keyword">void</span>)setTitleColor:(<span class="hljs-built_in">UIColor</span> *)color forState:(<span class="hljs-built_in">UIControlState</span>)state;
+[button setTitleColor:[<span class="hljs-built_in">UIColor</span> redColor] forState:<span class="hljs-built_in">UIControlStateNormal</span>];
 
-
-<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x5185;&#x90E8;&#x7684;&#x5C0F;&#x56FE;&#x7247;</span>
-- (<span class="hljs-keyword">void</span>)setImage:(<span class="hljs-built_in">UIImage</span> *)image forState:(<span class="hljs-built_in">UIControlState</span>)state;
-
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x5185;&#x90E8;&#x7684;&#x56FE;&#x7247;</span>
+[button setImage:image forState:<span class="hljs-built_in">UIControlStateNormal</span>];
 
 <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x80CC;&#x666F;&#x56FE;&#x7247;</span>
-- (<span class="hljs-keyword">void</span>)setBackgroundImage:(<span class="hljs-built_in">UIImage</span> *)image forState:(<span class="hljs-built_in">UIControlState</span>)state;
+[button setBackgroundImage:image forState:<span class="hljs-built_in">UIControlStateNormal</span>];
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x80CC;&#x666F;&#x989C;&#x8272;</span>
+[button setBackgroundColor:[<span class="hljs-built_in">UIColor</span> redColor]];
 
 <span class="hljs-comment">// &#x76D1;&#x542C;&#x6309;&#x94AE;</span>
+<span class="hljs-comment">// UIControlEventTouchUpInside&#xFF1A;&#x624B;&#x6307;&#x6309;&#x4E0B;&#x540E;&#x62AC;&#x8D77;&#x6267;&#x884C;&#x76D1;&#x542C;&#x65B9;&#x6CD5;</span>
 [button addTarget:<span class="hljs-keyword">self</span> action:<span class="hljs-keyword">@selector</span>(buttonClick:) forControlEvents:<span class="hljs-built_in">UIControlEventTouchUpInside</span>];
 
-<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x5B57;&#x4F53;&#xFF08;&#x9700;&#x8981;&#x62FF;&#x5230;&#x6309;&#x94AE;&#x5185;&#x90E8;&#x7684;label&#x6765;&#x8BBE;&#x7F6E;&#xFF09;</span>
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x8FB9;&#x6846;&#x989C;&#x8272;</span>
+button<span class="hljs-variable">.layer</span><span class="hljs-variable">.borderColor</span> = [<span class="hljs-built_in">UIColor</span> redColor]<span class="hljs-variable">.CGColor</span>;
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x8FB9;&#x6846;&#x5BBD;&#x5EA6;</span>
+button<span class="hljs-variable">.layer</span><span class="hljs-variable">.borderWidth</span> = <span class="hljs-number">1</span>;
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x5706;&#x5F62;&#x8FB9;&#x6846;</span>
+button<span class="hljs-variable">.layer</span><span class="hljs-variable">.cornerRadius</span> = button<span class="hljs-variable">.frame</span><span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span>;
+
+<span class="hljs-comment">// &#x6309;&#x94AE;&#x53EF;&#x7528;&#x8BBE;&#x7F6E;</span>
+button<span class="hljs-variable">.enabled</span> = !button<span class="hljs-variable">.enabled</span>;
+</code></pre>
+<h3 id="uibutton-&#x5176;&#x4ED6;&#x65B9;&#x6CD5;">UIButton &#x5176;&#x4ED6;&#x65B9;&#x6CD5;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x7684;&#x6587;&#x5B57;&#x5B57;&#x4F53;&#xFF08;&#x9700;&#x8981;&#x62FF;&#x5230;&#x6309;&#x94AE;&#x5185;&#x90E8;&#x7684;label&#x6765;&#x8BBE;&#x7F6E;&#xFF09;</span>
 btn<span class="hljs-variable">.titleLabel</span><span class="hljs-variable">.font</span> = [<span class="hljs-built_in">UIFont</span> systemFontOfSize:<span class="hljs-number">13</span>];
+
+<span class="hljs-comment">//&#x6C34;&#x5E73;&#x5BF9;&#x9F50;</span>
+[button setContentHorizontalAlignment:<span class="hljs-built_in">UIControlContentHorizontalAlignmentCenter</span>];
+<span class="hljs-comment">//&#x5782;&#x76F4;&#x5BF9;&#x9F50;</span>
+[button setContentVerticalAlignment:<span class="hljs-built_in">UIControlContentVerticalAlignmentBottom</span>];
 </code></pre>
 <h3 id="&#x6309;&#x94AE;&#x5E38;&#x89C1;&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x6CD5;">&#x6309;&#x94AE;&#x5E38;&#x89C1;&#x7684;&#x8BBF;&#x95EE;&#x65B9;&#x6CD5;</h3>
 <pre><code class="lang-objc"><span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x72B6;&#x6001;&#x6309;&#x94AE;&#x56FE;&#x7247;</span>
@@ -753,12 +812,19 @@ button<span class="hljs-variable">.currentTitleColor</span>;
 <h3 id="&#x6309;&#x94AE;&#x5E03;&#x5C40;">&#x6309;&#x94AE;&#x5E03;&#x5C40;</h3>
 <ul>
 <li><p>&#x65B9;&#x6848;&#x4E00;&#xFF1A;&#x8C03;&#x6574;&#x6309;&#x94AE;&#x7684;&#x5185;&#x8FB9;&#x8DDD;</p>
-<pre><code class="lang-objc"><span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x5185;&#x5BB9;&#x7684;&#x5185;&#x8FB9;&#x8DDD;&#xFF08;&#x5F71;&#x54CD;&#x5230;imageView&#x548C;titleLabel&#xFF09;&#xFF08;&#x7EDF;&#x4E00;&#x79FB;&#x52A8;&#xFF0C;&#x4F8B;&#x5982;left 4&#x8868;&#x793A;&#x5F80;&#x53F3;&#x79FB;&#xFF0C;&#x4E0B;&#x540C;&#xFF09;</span>
-<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>)          <span class="hljs-built_in">UIEdgeInsets</span> contentEdgeInsets;
-<span class="hljs-comment">// &#x8BBE;&#x7F6E;titleLabel&#x7684;&#x5185;&#x8FB9;&#x8DDD;&#xFF08;&#x56FE;&#x7247;&#x4E0D;&#x52A8;&#xFF0C;&#x6587;&#x672C;&#x52A8;&#xFF09;</span>
-<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>)          <span class="hljs-built_in">UIEdgeInsets</span> titleEdgeInsets;
-<span class="hljs-comment">// &#x8BBE;&#x7F6E;imageView&#x7684;&#x5185;&#x8FB9;&#x8DDD;&#xFF08;&#x6587;&#x672C;&#x4E0D;&#x52A8;&#xFF0C;&#x56FE;&#x7247;&#x52A8;&#xFF09;</span>
-<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>)          <span class="hljs-built_in">UIEdgeInsets</span> imageEdgeInsets;
+<pre><code class="lang-objc">  <span class="hljs-comment">// &#x8FB9;&#x8DDD;&#x7ED3;&#x6784;&#x4F53;</span>
+  <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> <span class="hljs-built_in">UIEdgeInsets</span> {
+  <span class="hljs-built_in">CGFloat</span> top, left, bottom, right;
+} <span class="hljs-built_in">UIEdgeInsets</span>;
+
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x6309;&#x94AE;&#x5185;&#x5BB9;&#x7684;&#x5185;&#x8FB9;&#x8DDD;&#xFF08;&#x5F71;&#x54CD;&#x5230;imageView&#x548C;titleLabel&#xFF09;</span>
+  btn<span class="hljs-variable">.contentEdgeInsets</span> = <span class="hljs-built_in">UIEdgeInsetsMake</span>(<span class="hljs-number">10</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">//imageView&#x548C;titleLabel&#x5747;&#x4E0B;&#x79FB;10</span>
+
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E;titleLabel&#x7684;&#x5185;&#x8FB9;&#x8DDD;&#xFF08;imageView&#x4E0D;&#x52A8;&#xFF0C;&#x6587;&#x672C;&#x52A8;&#xFF09;</span>
+  btn<span class="hljs-variable">.titleEdgeInsets</span> = <span class="hljs-built_in">UIEdgeInsetsMake</span>(<span class="hljs-number">0</span>, <span class="hljs-number">10</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>); <span class="hljs-comment">//titleLabel&#x53F3;&#x79FB;10</span>
+
+  <span class="hljs-comment">// &#x8BBE;&#x7F6E;imageView&#x7684;&#x5185;&#x8FB9;&#x8DDD;&#xFF08;&#x6587;&#x672C;&#x4E0D;&#x52A8;&#xFF0C;imageView&#x52A8;&#xFF09;</span>
+  btn<span class="hljs-variable">.imageEdgeInsets</span> = <span class="hljs-built_in">UIEdgeInsetsMake</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">0</span>, <span class="hljs-number">10</span>); <span class="hljs-comment">//imageView&#x5DE6;&#x79FB;10</span>
 </code></pre>
 </li>
 <li><p>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;layoutSubviews&#x65B9;&#x6CD5;&#x4E2D;&#x91CD;&#x65B0;&#x5E03;&#x5C40;&#x6309;&#x94AE;&#x63A7;&#x4EF6;</p>
@@ -772,15 +838,15 @@ button<span class="hljs-variable">.currentTitleColor</span>;
 </li>
 <li><p>&#x65B9;&#x6848;&#x4E09;&#xFF1A;&#x5B9E;&#x73B0;<code>titleRectForContentRect:</code>&#x548C;<code>imageRectForContentRect:</code>&#x65B9;&#x6CD5;&#xFF0C;&#x4FEE;&#x6539;titleLabel&#x548C;imageView&#x7684;frame&#x3002;</p>
 <ul>
-<li><p>&#x65B9;&#x6848;&#x4E8C;&#x53EF;&#x4EE5;&#x7EDF;&#x4E00;&#x8BBE;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x822C;&#x4E0D;&#x9002;&#x7528;&#x65B9;&#x6848;&#x4E09;</p>
+<li><p>&#x65B9;&#x6848;&#x4E8C;&#x53EF;&#x4EE5;&#x7EDF;&#x4E00;&#x8BBE;&#x7F6E;&#xFF0C;&#x6240;&#x4EE5;&#x4E00;&#x822C;&#x4E0D;&#x4F7F;&#x7528;&#x65B9;&#x6848;&#x4E09;</p>
 <pre><code class="lang-objc">-(<span class="hljs-built_in">CGRect</span>)titleRectForContentRect:(<span class="hljs-built_in">CGRect</span>)contentRect
 {
-  <span class="hljs-comment">// &#x6587;&#x672C;&#x5E03;&#x5C40;&#x4EE3;&#x7801;</span>
+  <span class="hljs-comment">// &#x6587;&#x672C;&#x63A7;&#x4EF6;&#x5E03;&#x5C40;&#x4EE3;&#x7801;</span>
 }
 
 -(<span class="hljs-built_in">CGRect</span>)imageRectForContentRect:(<span class="hljs-built_in">CGRect</span>)contentRect
 {
-  <span class="hljs-comment">// &#x56FE;&#x7247;&#x5E03;&#x5C40;&#x4EE3;&#x7801;</span>
+  <span class="hljs-comment">// &#x56FE;&#x7247;&#x63A7;&#x4EF6;&#x5E03;&#x5C40;&#x4EE3;&#x7801;</span>
 }
 </code></pre>
 </li>
@@ -806,8 +872,38 @@ button<span class="hljs-variable">.currentTitleColor</span>;
 </li>
 </ul>
 <h3 id="&#x4E5D;&#x5BAB;&#x683C;&#x5E03;&#x5C40;">&#x4E5D;&#x5BAB;&#x683C;&#x5E03;&#x5C40;</h3>
+<p><img src="&#x4E5D;&#x5BAB;&#x683C;.png" alt=""></p>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x6BCF;&#x884C;&#x6700;&#x591A;&#x663E;&#x793A;&#x6570;&#x91CF;</span>
+<span class="hljs-comment">// maxNumPerRow = 3&#x5219;&#x662F;&#x4E0A;&#x56FE;&#x7684;&#x4E5D;&#x5BAB;&#x683C;&#xFF1B;&#x4E5F;&#x53EF;&#x4EE5;&#x4E0D;&#x4E3A;3</span>
+<span class="hljs-preprocessor">#define maxNumPerRow 10</span>
+
+<span class="hljs-comment">/** &#x8BA1;&#x7B97;&#x4F4D;&#x7F6E; */</span>
+-(<span class="hljs-built_in">CGRect</span>)calculateFrame
+{
+    <span class="hljs-comment">/** &#x5B50;&#x63A7;&#x4EF6;&#x6570;&#x91CF; */</span>
+    <span class="hljs-built_in">NSInteger</span> count = <span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.subviews</span><span class="hljs-variable">.count</span>;
+
+    <span class="hljs-comment">/** &#x8BA1;&#x7B97;&#x884C;&#x3001;&#x5217;&#x6807; */</span>
+    <span class="hljs-built_in">NSInteger</span> rowIndex = count / maxNumPerRow;
+    <span class="hljs-built_in">NSInteger</span> colIndex = count % maxNumPerRow;
+
+    <span class="hljs-comment">/** &#x8BBE;&#x7F6E;&#x95F4;&#x9694; */</span>
+    <span class="hljs-built_in">CGFloat</span> marginX = <span class="hljs-number">20</span>;
+    <span class="hljs-built_in">CGFloat</span> marginY = <span class="hljs-number">20</span>;
+
+    <span class="hljs-comment">/** &#x8BA1;&#x7B97;&#x63A7;&#x4EF6;&#x7684;&#x5BBD;&#x9AD8; */</span>
+    <span class="hljs-built_in">CGFloat</span> viewW = (<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.frame</span><span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> - marginX * (maxNumPerRow - <span class="hljs-number">1</span>)) / maxNumPerRow;
+    <span class="hljs-built_in">CGFloat</span> viewH = viewW;
+
+    <span class="hljs-comment">/** &#x8BA1;&#x7B97;&#x63A7;&#x4EF6;X,Y */</span>
+    <span class="hljs-built_in">CGFloat</span> viewX = (viewW + marginX) *colIndex;
+    <span class="hljs-built_in">CGFloat</span> viewY = (viewH + marginY) *rowIndex;
+
+    <span class="hljs-keyword">return</span> <span class="hljs-built_in">CGRectMake</span>(viewX, viewY, viewW, viewH);
+}
+</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-29 16:52:07
+2016-06-04 22:40:02
 </span></footer>
                     
                     </section>

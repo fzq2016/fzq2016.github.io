@@ -65,7 +65,7 @@
         data-chapter-title="UIView属性与功能"
         data-filepath="uiview/README.md"
         data-basepath=".."
-        data-revision="Sun May 29 2016 20:22:24 GMT+0800 (CST)"
+        data-revision="Sun Jun 05 2016 22:24:52 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -339,14 +339,65 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="uinavigationbar/index.html">
+        <li class="chapter " data-level="2.7" data-path="uicollectionreusableview/index.html">
+            
+                
+                    <a href="../uicollectionreusableview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        UICollectionReusableView
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="uicollectionreusableview/uicollectionviewcell.html">
+            
+                
+                    <a href="../uicollectionreusableview/uicollectionviewcell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.1.</b>
+                        
+                        UICollectionViewCell
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="uipickerview/index.html">
+            
+                
+                    <a href="../uipickerview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        UIPickerView
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="uinavigationbar/index.html">
             
                 
                     <a href="../uinavigationbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.7.</b>
+                            <b>2.9.</b>
                         
                         UINavigationBar
                     </a>
@@ -354,14 +405,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.8" data-path="uitabbar/index.html">
+        <li class="chapter " data-level="2.10" data-path="uitabbar/index.html">
             
                 
                     <a href="../uitabbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.8.</b>
+                            <b>2.10.</b>
                         
                         UITabBar
                     </a>
@@ -369,14 +420,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.9" data-path="uitoolbar/index.html">
+        <li class="chapter " data-level="2.11" data-path="uitoolbar/index.html">
             
                 
                     <a href="../uitoolbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.9.</b>
+                            <b>2.11.</b>
                         
                         UIToolbar
                     </a>
@@ -384,14 +435,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.10" data-path="uiactionsheet/index.html">
+        <li class="chapter " data-level="2.12" data-path="uiactionsheet/index.html">
             
                 
                     <a href="../uiactionsheet/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.10.</b>
+                            <b>2.12.</b>
                         
                         UIActionSheet
                     </a>
@@ -399,14 +450,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.11" data-path="uialertview/index.html">
+        <li class="chapter " data-level="2.13" data-path="uialertview/index.html">
             
                 
                     <a href="../uialertview/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.11.</b>
+                            <b>2.13.</b>
                         
                         UIAlertView
                     </a>
@@ -414,31 +465,16 @@
             
         </li>
     
-        <li class="chapter " data-level="2.12" data-path="uiactivityindicatorview/index.html">
+        <li class="chapter " data-level="2.14" data-path="uiactivityindicatorview/index.html">
             
                 
                     <a href="../uiactivityindicatorview/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.12.</b>
+                            <b>2.14.</b>
                         
                         UIActivityIndicatorView(菊花)
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.13" data-path="uipickerview/index.html">
-            
-                
-                    <a href="../uipickerview/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.13.</b>
-                        
-                        UIPickerView
                     </a>
             
             
@@ -675,88 +711,198 @@
                     <section class="normal" id="section-">
                     
                         <h2 id="uiview&#xFF08;&#x63A7;&#x4EF6;&#xFF09;">UIView&#xFF08;&#x63A7;&#x4EF6;&#xFF09;</h2>
-<h3 id="&#x5E38;&#x7528;&#x5C5E;&#x6027;">&#x5E38;&#x7528;&#x5C5E;&#x6027;</h3>
-<pre><code class="lang-objc"><span class="hljs-comment">//superview&#xFF1A;&#x83B7;&#x5F97;&#x81EA;&#x5DF1;&#x7684;&#x7236;&#x63A7;&#x4EF6;&#x5BF9;&#x8C61;,&#x6BCF;&#x4E2A;&#x5B50;&#x63A7;&#x4EF6;&#x7684;superview&#x53EA;&#x6709;&#x4E00;&#x4E2A;</span>
-<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>,<span class="hljs-keyword">readonly</span>) <span class="hljs-built_in">UIView</span> *superview;
+<h3 id="uiview&#x7684;&#x521B;&#x5EFA;">UIView&#x7684;&#x521B;&#x5EFA;</h3>
+<ol>
+<li><code>alloc init</code>&#x65B9;&#x6CD5;&#x521B;&#x5EFA;</li>
+<li>&#x901A;&#x8FC7;<code>UIStoryboard&#x52A0;&#x8F7D;</code>&#x63A7;&#x4EF6;&#x8BE6;&#x89C1;<a href="../../UIKit-Controller/uistoryboard/index.html">UIStoryboard</a></li>
+<li>&#x901A;&#x8FC7;<code>xib&#x52A0;&#x8F7D;</code>&#x63A7;&#x4EF6;&#x8BE6;&#x89C1;<a href="../../UIKit-Controller/uinib/index.html">XIB</a></li>
+</ol>
+<h3 id="uiview&#x7684;&#x5E38;&#x7528;&#x5C5E;&#x6027;">UIView&#x7684;&#x5E38;&#x7528;&#x5C5E;&#x6027;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">// superview&#xFF1A;&#x83B7;&#x5F97;&#x81EA;&#x5DF1;&#x7684;&#x7236;&#x63A7;&#x4EF6;&#x5BF9;&#x8C61;,&#x6BCF;&#x4E2A;&#x5B50;&#x63A7;&#x4EF6;&#x7684;superview&#x53EA;&#x6709;&#x4E00;&#x4E2A;,&#x8BE5;&#x5C5E;&#x6027;&#x53EA;&#x8BFB;</span>
+<span class="hljs-comment">// &#x4E00;&#x822C;&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5DF2;&#x7ECF;&#x52A0;&#x5165;&#x5230;&#x89C6;&#x56FE;&#x4E2D;&#xFF0C;&#x907F;&#x514D;&#x91CD;&#x590D;&#x6DFB;&#x52A0;</span>
+<span class="hljs-keyword">if</span> (view<span class="hljs-variable">.superview</span>) <span class="hljs-keyword">return</span>;
 
+<span class="hljs-comment">// subviews&#xFF1A;&#x83B7;&#x5F97;&#x81EA;&#x5DF1;&#x7684;&#x6240;&#x6709;&#x5B50;&#x63A7;&#x4EF6;&#x5BF9;&#x8C61;,&#x53EA;&#x8BFB;</span>
+<span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>,view<span class="hljs-variable">.subviews</span>);
 
-<span class="hljs-comment">//subviews&#xFF1A;&#x83B7;&#x5F97;&#x81EA;&#x5DF1;&#x7684;&#x6240;&#x6709;&#x5B50;&#x63A7;&#x4EF6;&#x5BF9;&#x8C61;</span>
-<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>,<span class="hljs-keyword">readonly</span>,<span class="hljs-keyword">copy</span>) <span class="hljs-built_in">NSArray</span> *subviews;
+<span class="hljs-comment">// &#x662F;&#x5426;&#x53EF;&#x4E0E;&#x7528;&#x6237;&#x4EA4;&#x4E92;</span>
+view<span class="hljs-variable">.userInteractionEnabled</span> = <span class="hljs-literal">YES</span>;
 
+<span class="hljs-comment">// &#x88C1;&#x526A;&#x8D85;&#x51FA;&#x8303;&#x56F4;&#x7684;&#x63A7;&#x4EF6;</span>
+view<span class="hljs-variable">.clipsToBounds</span> = <span class="hljs-literal">YES</span>;
 
-<span class="hljs-comment">//tag&#xFF1A;&#x63A7;&#x4EF6;&#x7684;ID(&#x6807;&#x8BC6;)&#xFF0C;&#x7236;&#x63A7;&#x4EF6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;tag&#x6765;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x5B50;&#x63A7;&#x4EF6;;tag&#x503C;&#x662F;&#x968F;&#x610F;&#x8BBE;&#x7F6E;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x6DF7;&#x4E71;&#xFF0C;&#x80FD;&#x4E0D;&#x7528;&#x5C31;&#x4E0D;&#x7528;</span>
-<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>) <span class="hljs-built_in">NSInteger</span> tag;
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x900F;&#x660E;&#x5EA6;</span>
+view<span class="hljs-variable">.alpha</span> = <span class="hljs-number">1</span>;
 
-
-<span class="hljs-comment">//&#x662F;&#x5426;&#x53EF;&#x4E0E;&#x7528;&#x6237;&#x4EA4;&#x4E92;</span>
-<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>,getter=isUserInteractionEnabled) <span class="hljs-built_in">BOOL</span> userInteractionEnabled;
-
-
-<span class="hljs-comment">//&#x88C1;&#x526A;&#x8D85;&#x51FA;&#x8303;&#x56F4;&#x7684;&#x63A7;&#x4EF6;</span>
-<span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>) <span class="hljs-built_in">BOOL</span>  clipsToBounds;
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x80CC;&#x666F;&#x989C;&#x8272;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;clearColor</span>
+view<span class="hljs-variable">.backgroundColor</span> = [<span class="hljs-built_in">UIColor</span> colorWithRed:<span class="hljs-number">1</span> green:<span class="hljs-number">1</span> blue:<span class="hljs-number">0</span> alpha:<span class="hljs-number">0.3</span>];<span class="hljs-comment">//&#x989C;&#x8272;&#x7531;&#x4E09;&#x539F;&#x8272;&#x7EC4;&#x6210;</span>
 </code></pre>
-<h3 id="&#x5E38;&#x7528;&#x65B9;&#x6CD5;">&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
+<h3 id="uiview&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">UIView&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
 <pre><code class="lang-objc"><span class="hljs-comment">// &#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x5B50;&#x63A7;&#x4EF6;view</span>
 <span class="hljs-comment">// &#x5E95;&#x5C42;&#x5B9E;&#x73B0;&#xFF1A;</span>
     <span class="hljs-comment">// 1.&#x5224;&#x65AD;&#x4F20;&#x5165;view&#x4E4B;&#x524D;&#x6709;&#x6CA1;&#x6709;&#x7236;&#x63A7;&#x4EF6;</span>
     <span class="hljs-comment">// 2.&#x5982;&#x679C;&#x6709;,&#x5148;&#x79FB;&#x9664;&#x4E4B;&#x524D;&#x7236;&#x63A7;&#x4EF6;</span>
     <span class="hljs-comment">// 3.&#x518D;&#x91CD;&#x65B0;&#x6DFB;&#x52A0;view</span>
-- (<span class="hljs-keyword">void</span>)addSubview:(<span class="hljs-built_in">UIView</span> *)view;
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> addSubview:view];
 
 <span class="hljs-comment">// &#x4ECE;&#x7236;&#x63A7;&#x4EF6;&#x4E2D;&#x79FB;&#x9664;</span>
-- (<span class="hljs-keyword">void</span>)removeFromSuperview;
-
-<span class="hljs-comment">// &#x6839;&#x636E;&#x4E00;&#x4E2A;tag&#x6807;&#x8BC6;&#x627E;&#x51FA;&#x5BF9;&#x5E94;&#x7684;&#x63A7;&#x4EF6;&#xFF08;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x5B50;&#x63A7;&#x4EF6;&#xFF09;</span>
-- (<span class="hljs-built_in">UIView</span> *)viewWithTag:(<span class="hljs-built_in">NSInteger</span>)tag;
+<span class="hljs-comment">// &#x591A;&#x7528;&#x4E8E;&#x52A8;&#x753B;&#x63A7;&#x4EF6;&#x5B8C;&#x6210;&#x52A8;&#x753B;&#x540E;&#x79FB;&#x9664;</span>
+[<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> removeFromSuperview];
 </code></pre>
-<h3 id="viewwithtag&#x5185;&#x90E8;&#x7684;&#x5927;&#x81F4;&#x5B9E;&#x73B0;&#x601D;&#x8DEF;">viewWithTag:&#x5185;&#x90E8;&#x7684;&#x5927;&#x81F4;&#x5B9E;&#x73B0;&#x601D;&#x8DEF;</h3>
-<pre><code class="lang-objc"><span class="hljs-class"><span class="hljs-keyword">@implementation</span> <span class="hljs-title">UIView</span></span>
-- (<span class="hljs-built_in">UIView</span> *)viewWithTag:(<span class="hljs-built_in">NSInteger</span>)tag
-{
-    <span class="hljs-keyword">if</span> (<span class="hljs-keyword">self</span><span class="hljs-variable">.tag</span> == tag) <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>;
-
-    <span class="hljs-keyword">for</span> (<span class="hljs-built_in">UIView</span> *subview <span class="hljs-keyword">in</span> <span class="hljs-keyword">self</span><span class="hljs-variable">.subviews</span>) {
-        <span class="hljs-keyword">return</span> [subview viewWithTag:tag];
-    }
-}
-<span class="hljs-keyword">@end</span>
-</code></pre>
-<h4 id="uiviewcontentmode&#x5C5E;&#x6027;&#xFF08;&#x53EA;&#x5BF9;uiimageview&#x63A7;&#x4EF6;&#x6709;&#x6548;&#xFF09;">UIViewContentMode&#x5C5E;&#x6027;&#xFF08;&#x53EA;&#x5BF9;UIImageView&#x63A7;&#x4EF6;&#x6709;&#x6548;&#xFF09;</h4>
+<h3 id="uiview&#x83B7;&#x53D6;&#x5B50;&#x63A7;&#x4EF6;&#x6216;&#x5176;&#x6807;&#x8BC6;">UIView&#x83B7;&#x53D6;&#x5B50;&#x63A7;&#x4EF6;&#x6216;&#x5176;&#x6807;&#x8BC6;</h3>
 <ul>
-<li><p>&#x5E26;&#x6709;<code>scale</code>&#x5355;&#x8BCD;&#x7684;&#xFF1A;&#x56FE;&#x7247;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x62C9;&#x4F38;</p>
+<li><p>&#x5F00;&#x53D1;&#x4E2D;&#xFF0C;&#x7ECF;&#x5E38;&#x9700;&#x8981;&#x4F7F;&#x7528;&#x5230;&#x6807;&#x8BC6;&#x6765;&#x83B7;&#x53D6;&#x63A7;&#x4EF6;&#x6216;&#x5176;&#x6807;&#x8BC6;&#xFF0C;&#x7528;&#x4E8E;&#x63A7;&#x4EF6;&#x95F4;&#x7684;&#x8054;&#x52A8;&#xFF0C;&#x8FD9;&#x65F6;&#x7684;&#x53EF;&#x9009;&#x65B9;&#x6848;&#x5982;&#x4E0B;&#xFF1A;</p>
 <ul>
-<li><code>UIViewContentModeScaleToFill</code><ul>
-<li>&#x5C06;&#x56FE;&#x7247;&#x62C9;&#x4F38;&#x81F3;<code>&#x586B;&#x5145;&#x6574;&#x4E2A;imageView</code></li>
-<li>&#x56FE;&#x7247;&#x663E;&#x793A;&#x7684;&#x5C3A;&#x5BF8;&#x8DDF;imageView&#x7684;&#x5C3A;&#x5BF8;&#x662F;&#x4E00;&#x6837;&#x7684;</li>
-</ul>
-</li>
-<li>&#x5E26;&#x6709;aspect&#x5355;&#x8BCD;&#x7684;&#xFF1A;&#x4FDD;&#x6301;&#x56FE;&#x7247;&#x539F;&#x6765;&#x7684;&#x5BBD;&#x9AD8;&#x6BD4;<ul>
-<li><code>UIViewContentModeScaleAspectFit</code><ul>
-<li>&#x4FDD;&#x8BC1;&#x521A;&#x597D;&#x80FD;&#x770B;&#x5230;&#x56FE;&#x7247;&#x7684;&#x5168;&#x90E8;(<code>&#x957F;&#x8FB9;&#x4F38;&#x7F29;&#x81F3;&#x4E0E;&#x7236;&#x63A7;&#x4EF6;&#x4E00;&#x81F4;</code>&#xFF09;</li>
-</ul>
-</li>
-<li><code>UIViewContentModeScaleAspectFill</code><ul>
-<li>&#x62C9;&#x4F38;&#x81F3;&#x56FE;&#x7247;&#x7684;&#x5BBD;&#x5EA6;&#x6216;&#x8005;&#x9AD8;&#x5EA6;&#x8DDF;imageView&#x4E00;&#x6837;&#xFF08;<code>&#x77ED;&#x8FB9;&#x4F38;&#x7F29;&#x81F3;&#x4E0E;&#x7236;&#x63A7;&#x4EF6;&#x4E00;&#x81F4;</code>&#xFF09;</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>&#x6CA1;&#x6709;<code>scale</code>&#x5355;&#x8BCD;&#x7684;&#xFF1A;&#x56FE;&#x7247;&#x7EDD;&#x5BF9;&#x4E0D;&#x4F1A;&#x88AB;&#x62C9;&#x4F38;&#xFF0C;<code>&#x4FDD;&#x6301;&#x56FE;&#x7247;&#x7684;&#x539F;&#x5C3A;&#x5BF8;</code></p>
+<li><p>&#x65B9;&#x6848;&#x4E00;&#xFF1A;&#x901A;&#x8FC7;tag&#x503C;&#xFF08;&#x4E0D;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#xFF09;</p>
 <ol>
-<li>UIViewContentModeCenter</li>
-<li>UIViewContentModeTop</li>
-<li>UIViewContentModeBottom</li>
-<li>UIViewContentModeLeft</li>
-<li>UIViewContentModeRight</li>
-<li>UIViewContentModeTopLeft</li>
-<li>UIViewContentModeTopRight</li>
-<li>UIViewContentModeBottomLeft</li>
-<li>UIViewContentModeBottomRight</li>
+<li>tag&#xFF1A;&#x63A7;&#x4EF6;&#x7684;ID(&#x6807;&#x8BC6;)&#xFF0C;&#x7236;&#x63A7;&#x4EF6;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;tag&#x6765;&#x627E;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x5B50;&#x63A7;&#x4EF6;;</li>
+<li>tag&#x9ED8;&#x8BA4;&#x503C;&#x662F;0</li>
+<li><p>tag&#x503C;&#x662F;&#x968F;&#x610F;&#x8BBE;&#x7F6E;&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x6DF7;&#x4E71;&#xFF0C;&#x80FD;&#x4E0D;&#x7528;&#x5C31;&#x4E0D;&#x7528;&#xFF0C;&#x5F00;&#x53D1;&#x65F6;&#x95F4;&#x8D8A;&#x957F;&#xFF0C;tag&#x503C;&#x7BA1;&#x7406;&#x4F1A;&#x8D8A;&#x6765;&#x8D8A;&#x56F0;&#x96BE;</p>
+<pre><code class="lang-objc"> <span class="hljs-comment">// &#x8BBE;&#x7F6E;tag&#x503C;</span>
+ view<span class="hljs-variable">.tag</span> = <span class="hljs-number">10</span>;
+
+ <span class="hljs-comment">// &#x6839;&#x636E;tag&#x83B7;&#x53D6;view&#xFF0C;&#x6CA1;&#x627E;&#x5230;&#x8FD4;&#x56DE;nil</span>
+ <span class="hljs-built_in">UIView</span> *view = [<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span> viewWithTag:<span class="hljs-number">10</span>];
+
+ <span class="hljs-comment">// viewWithTag:&#x5185;&#x90E8;&#x7684;&#x5927;&#x81F4;&#x5B9E;&#x73B0;&#x601D;&#x8DEF;</span>
+ - (<span class="hljs-built_in">UIView</span> *)viewWithTag:(<span class="hljs-built_in">NSInteger</span>)tag
+ {
+     <span class="hljs-keyword">if</span> (<span class="hljs-keyword">self</span><span class="hljs-variable">.tag</span> == tag) <span class="hljs-keyword">return</span> <span class="hljs-keyword">self</span>;
+
+     <span class="hljs-keyword">for</span> (<span class="hljs-built_in">UIView</span> *subview <span class="hljs-keyword">in</span> <span class="hljs-keyword">self</span><span class="hljs-variable">.subviews</span>) {
+     <span class="hljs-comment">// &#x8FD4;&#x56DE;tag&#x6807;&#x8BC6;&#x627E;&#x51FA;&#x5BF9;&#x5E94;&#x7684;&#x63A7;&#x4EF6;&#xFF08;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x5B50;&#x63A7;&#x4EF6;&#xFF09;</span>
+         <span class="hljs-keyword">return</span> [subview viewWithTag:tag];
+     }
+ }
+</code></pre>
+</li>
 </ol>
 </li>
+<li><p>&#x65B9;&#x6848;&#x4E8C;&#xFF1A;&#x901A;&#x8FC7;subviews&#x6570;&#x7EC4;&#x83B7;&#x53D6;&#xFF08;&#x4E0D;&#x63A8;&#x8350;&#xFF09;</p>
+<ul>
+<li><p>&#x4E0D;&#x8DB3;&#xFF1A;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x7684;subviews&#x83B7;&#x53D6;&#x5B50;&#x63A7;&#x4EF6;&#x6216;&#x5176;&#x6807;&#x8BC6;&#xFF0C;&#x4F46;&#x8BE5;view&#x4E0D;&#x4EC5;&#x6709;&#x6211;&#x4EEC;&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x7684;&#x63A7;&#x4EF6;&#xFF0C;&#x4E5F;&#x6709;&#x7CFB;&#x7EDF;&#x521B;&#x5EFA;&#x7684;&#x63A7;&#x4EF6;&#xFF0C;&#x4E0D;&#x597D;&#x628A;&#x63E1;&#xFF0C;&#x5BB9;&#x6613;&#x51FA;&#x9519;;&#x53E6;&#x5916;&#x5B50;&#x5143;&#x7D20;&#x79CD;&#x7C7B;&#x4E00;&#x822C;&#x4E0D;&#x76F8;&#x540C;&#xFF0C;&#x4E0D;&#x65B9;&#x4FBF;&#x7BA1;&#x7406;</p>
+<pre><code class="lang-objc">  <span class="hljs-comment">// &#x83B7;&#x53D6;&#x67D0;&#x4E2A;&#x5B50;&#x63A7;&#x4EF6;</span>
+  <span class="hljs-built_in">UIView</span> *view = <span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.subviews</span>[<span class="hljs-number">0</span>];
+
+  <span class="hljs-comment">// &#x83B7;&#x53D6;&#x63A7;&#x4EF6;&#x6807;&#x8BC6;</span>
+  <span class="hljs-built_in">NSInteger</span> index = [<span class="hljs-keyword">self</span><span class="hljs-variable">.views</span> indexOfObject:view]
+</code></pre>
+</li>
 </ul>
+</li>
+<li><p>&#x65B9;&#x6848;&#x4E09;&#xFF1A;&#x65B0;&#x5EFA;&#x6570;&#x7EC4;&#xFF0C;&#x83B7;&#x53D6;&#x89D2;&#x6807;&#x83B7;&#x53D6;&#x63A7;&#x4EF6;&#xFF08;&#x63A8;&#x8350;&#x65B9;&#x6848;&#xFF09;</p>
+<pre><code class="lang-objc">  <span class="hljs-comment">// &#x65B0;&#x5EFA;&#x63A7;&#x4EF6;&#x6570;&#x7EC4;&#x5E76;&#x4F5C;&#x4E3A;&#x6210;&#x5458;&#x5C5E;&#x6027;</span>
+  <span class="hljs-built_in">NSMutableArray</span> *views = [<span class="hljs-built_in">NSMutableArray</span> array];
+  <span class="hljs-keyword">self</span><span class="hljs-variable">.views</span> = views;
+
+  <span class="hljs-comment">// &#x5C06;&#x63A7;&#x4EF6;&#x6DFB;&#x52A0;&#x5230;&#x63A7;&#x4EF6;&#x6570;&#x7EC4;&#x4E2D;</span>
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.views</span> addObject:view];
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.views</span> addObject:view1];
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.views</span> addObject:view2];
+
+  <span class="hljs-comment">// &#x83B7;&#x53D6;&#x63A7;&#x4EF6;&#x6807;&#x8BC6;</span>
+  <span class="hljs-built_in">NSInteger</span> index = [<span class="hljs-keyword">self</span><span class="hljs-variable">.views</span> indexOfObject:view]
+
+  <span class="hljs-comment">// &#x83B7;&#x53D6;&#x63A7;&#x4EF6;</span>
+  <span class="hljs-built_in">UIView</span> *view = <span class="hljs-keyword">self</span><span class="hljs-variable">.views</span>[index];
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="uiviewcontentmode&#x5C5E;&#x6027;&#xFF08;&#x53EA;&#x5BF9;uiimageview&#x63A7;&#x4EF6;&#x4E2D;&#x56FE;&#x7247;&#x6709;&#x6548;&#xFF09;">UIViewContentMode&#x5C5E;&#x6027;&#xFF08;&#x53EA;&#x5BF9;UIImageView&#x63A7;&#x4EF6;&#x4E2D;&#x56FE;&#x7247;&#x6709;&#x6548;&#xFF09;</h4>
+<ul>
+<li>&#x5E26;&#x6709;<code>scale</code>&#x5355;&#x8BCD;&#x7684;&#xFF1A;&#x56FE;&#x7247;&#x6709;&#x53EF;&#x80FD;&#x4F1A;&#x62C9;&#x4F38;&#xFF08;&#x5E38;&#x7528;&#xFF09;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x542B;<code>scale</code>&#x7684;&#x5C5E;&#x6027;</th>
+<th>&#x62C9;&#x4F38;&#x65B9;&#x5F0F;&#xFF08;<code>&#x4E0D;&#x65CB;&#x8F6C;&#x56FE;&#x7247;</code>&#xFF09;</th>
+<th>&#x4FDD;&#x6301;&#x539F;&#x5BBD;&#x9AD8;&#x6BD4;&#xFF1F;</th>
+<th>&#x5907;&#x6CE8;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UIViewContentMode<code>Scale</code>ToFill</td>
+<td><code>&#x4E0D;&#x6309;&#x6BD4;&#x4F8B;&#x62C9;&#x4F38;</code>&#x62C9;&#x4F38;&#x56FE;&#x7247;&#x81F3;&#x586B;&#x5145;&#x6574;&#x4E2A;&#x63A7;&#x4EF6;</td>
+<td>&#x5426;</td>
+<td>&#x56FE;&#x7247;&#x8DDF;&#x63A7;&#x4EF6;<code>&#x540C;&#x5BBD;&#x540C;&#x9AD8;</code>&#xFF1B;<code>&#x9ED8;&#x8BA4;&#x5C5E;&#x6027;</code></td>
+</tr>
+<tr>
+<td>UIViewContentMode<code>ScaleAspect</code>Fill</td>
+<td><code>&#x6309;&#x6BD4;&#x4F8B;&#x62C9;&#x4F38;</code>&#x56FE;&#x7247;&#xFF0C;&#x76F4;&#x81F3;&#x56FE;&#x7247;&#x62C9;&#x4F38;&#x81F3;&#x586B;&#x5145;&#x6574;&#x4E2A;&#x63A7;&#x4EF6;</td>
+<td>&#x662F;</td>
+<td>&#x56FE;&#x7247;&#x4E00;&#x8FB9;&#x4E0E;&#x63A7;&#x4EF6;&#x76F8;&#x7B49;&#xFF0C;&#x53E6;&#x4E00;&#x8FB9;<code>&#x5927;</code>&#x4E8E;&#x63A7;&#x4EF6;</td>
+</tr>
+<tr>
+<td>UIViewContentMode<code>ScaleAspect</code>Fit</td>
+<td><code>&#x6309;&#x6BD4;&#x4F8B;&#x62C9;&#x4F38;</code>&#x56FE;&#x7247;&#xFF0C;&#x76F4;&#x81F3;&#x56FE;&#x7247;&#x4EFB;&#x4E00;&#x8FB9;&#x4E0E;&#x63A7;&#x4EF6;&#x5BF9;&#x5E94;&#x8FB9;&#x4E00;&#x6837;&#x5927;</td>
+<td>&#x662F;</td>
+<td>&#x56FE;&#x7247;&#x4E00;&#x8FB9;&#x4E0E;&#x63A7;&#x4EF6;&#x76F8;&#x7B49;&#xFF0C;&#x53E6;&#x4E00;&#x8FB9;<code>&#x5C0F;</code>&#x4E8E;&#x63A7;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>&#x6CA1;&#x6709;<code>scale</code>&#x5355;&#x8BCD;&#x7684;&#xFF1A;&#x56FE;&#x7247;&#x7EDD;&#x5BF9;&#x4E0D;&#x4F1A;&#x88AB;&#x62C9;&#x4F38;</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>&#x4E0D;&#x542B;<code>scale</code>&#x7684;&#x5C5E;&#x6027;</th>
+<th>&#x662F;&#x5426;&#x62C9;&#x4F38;</th>
+<th>&#x5728;&#x63A7;&#x4EF6;&#x4E2D;&#x7684;&#x663E;&#x793A;&#x4F4D;&#x7F6E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>UIViewContentModeCenter</td>
+<td>&#x4FDD;&#x6301;&#x56FE;&#x7247;&#x7684;&#x539F;&#x5C3A;&#x5BF8;</td>
+<td>&#x5C45;&#x4E2D;</td>
+</tr>
+<tr>
+<td>UIViewContentModeTop</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>&#x4E0A;&#x9762;</td>
+</tr>
+<tr>
+<td>UIViewContentModeBottom</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>&#x4E0B;&#x9762;</td>
+</tr>
+<tr>
+<td>UIViewContentModeLeft</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>&#x5DE6;&#x9762;</td>
+</tr>
+<tr>
+<td>UIViewContentModeRight</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>&#x53F3;&#x9762;</td>
+</tr>
+<tr>
+<td>UIViewContentModeTopLeft</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>&#x5DE6;&#x4E0A;</td>
+</tr>
+<tr>
+<td>UIViewContentModeTopRight</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>&#x53F3;&#x4E0A;</td>
+</tr>
+<tr>
+<td>UIViewContentModeBottomLeft</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>&#x5DE6;&#x4E0B;</td>
+</tr>
+<tr>
+<td>UIViewContentModeBottomRight</td>
+<td>&#x540C;&#x4E0A;</td>
+<td>&#x53F3;&#x4E0B;</td>
+</tr>
+</tbody>
+</table>
 <h3 id="uiview&#x7684;&#x5C01;&#x88C5;&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x4EF6;&#xFF09;">UIView&#x7684;&#x5C01;&#x88C5;(&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x4EF6;&#xFF09;</h3>
 <ol>
 <li><p>&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x4EF6;&#x57FA;&#x7840;&#xFF1A;&#x7236;&#x5B50;&#x63A7;&#x4EF6;</p>
@@ -765,21 +911,21 @@
      2. &#x5927;&#x63A7;&#x4EF6;&#x662F;&#x5185;&#x90E8;&#x5C0F;&#x63A7;&#x4EF6;&#x7684;&#x7236;&#x63A7;&#x4EF6;
 </code></pre></li>
 <li><p>&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x4EF6;&#x7684;&#x610F;&#x4E49;</p>
-<pre><code>  1. &#x5982;&#x679C;&#x4E00;&#x4E2A;view&#x5185;&#x90E8;&#x7684;&#x5B50;&#x63A7;&#x4EF6;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x8003;&#x8651;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;view&#xFF0C;&#x628A;&#x5B83;&#x5185;&#x90E8;&#x5B50;&#x63A7;&#x4EF6;&#x7684;&#x521B;&#x5EFA;&#x5C4F;&#x853D;&#x8D77;&#x6765;&#xFF0C;&#x4E0D;&#x8BA9;&#x5916;&#x754C;&#x5173;&#x5FC3;
+<pre><code>  1. &#x5982;&#x679C;&#x4E00;&#x4E2A;view&#x5185;&#x90E8;&#x7684;&#x5B50;&#x63A7;&#x4EF6;&#x6BD4;&#x8F83;&#x591A;&#xFF0C;&#x4E00;&#x822C;&#x4F1A;&#x8003;&#x8651;&#x81EA;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;view&#xFF0C;&#x628A;&#x5B83;&#x5185;&#x90E8;&#x5B50;&#x63A7;&#x4EF6;&#x7684;&#x521B;&#x5EFA;&#x5C4F;&#x853D;&#x8D77;&#x6765;&#xFF0C;&#x4E0D;&#x66B4;&#x9732;&#x7ED9;&#x5916;&#x754C;
 
   2. &#x5916;&#x754C;&#x53EF;&#x4EE5;&#x4F20;&#x5165;&#x5BF9;&#x5E94;&#x7684;&#x6A21;&#x578B;&#x6570;&#x636E;&#x7ED9;view&#xFF0C;view&#x62FF;&#x5230;&#x6A21;&#x578B;&#x6570;&#x636E;&#x540E;&#x7ED9;&#x5185;&#x90E8;&#x7684;&#x5B50;&#x63A7;&#x4EF6;&#x8BBE;&#x7F6E;&#x5BF9;&#x5E94;&#x7684;&#x6570;&#x636E;
 </code></pre></li>
 <li><p>&#x6B65;&#x9AA4;&#xFF1A;</p>
 <ol>
 <li>&#x65B0;&#x5EFA;&#x4E00;&#x4E2A;&#x7EE7;&#x627F;<code>UIView</code>&#x7684;&#x7C7B;</li>
-<li><p>&#x521B;&#x5EFA;&#x5B50;&#x63A7;&#x4EF6;&#x5E76;&#x5E03;&#x5C40;&#x5B50;&#x63A7;&#x4EF6;&#xFF08;&#x7EAF;&#x4EE3;&#x7801;&#x6216;&#x8005;xib&#x65B9;&#x5F0F;&#xFF09;</p>
+<li><p>&#x521B;&#x5EFA;&#x5E76;&#x5E03;&#x5C40;&#x5B50;&#x63A7;&#x4EF6;&#xFF08;&#x7EAF;&#x4EE3;&#x7801;&#x6216;&#x8005;xib&#x65B9;&#x5F0F;&#xFF09;</p>
 <ol>
 <li><p>&#x7EAF;&#x4EE3;&#x7801;&#x65B9;&#x5F0F;</p>
 <pre><code> 1. &#x63D0;&#x4F9B;&#x7C7B;&#x65B9;&#x6CD5;&#x53CA;&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;
      1. &#x53EF;&#x4EE5;&#x91CD;&#x5199;init&#x6216;initWithFrame&#x65B9;&#x6CD5;
-     2. &#x91CD;&#x5199;init&#x521B;&#x5EFA;&#x65F6;&#xFF0C;&#x5E95;&#x5C42;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;nitWithFrame&#x65B9;&#x6CD5;&#xFF0C;&#x5148;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#xFF0C;&#x518D;&#x8C03;&#x7528;&#x5B50;&#x7C7B;&#x81EA;&#x8EAB;&#xFF1B;
- 2. initWithFrame:&#x65B9;&#x6CD5;&#x4E2D;&#x6DFB;&#x52A0;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x5B50;&#x63A7;&#x4EF6;
- 3. layoutSubviews&#x65B9;&#x6CD5;&#x4E2D;&#x5E03;&#x5C40;&#x5B50;&#x63A7;&#x4EF6;&#xFF0C;&#x5E03;&#x5C40;&#x524D;&#x5FC5;&#x987B;&#x8C03;&#x7528;[super layoutSubviews];
+     2. &#x91CD;&#x5199;init&#x521B;&#x5EFA;&#x65F6;&#xFF0C;&#x5E95;&#x5C42;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;initWithFrame&#x65B9;&#x6CD5;&#xFF0C;&#x5148;&#x8C03;&#x7528;&#x7236;&#x7C7B;&#x7684;&#xFF0C;&#x518D;&#x8C03;&#x7528;&#x5B50;&#x7C7B;&#x81EA;&#x8EAB;&#xFF1B;
+ 2. &#x5728;initWithFrame:&#x65B9;&#x6CD5;&#x4E2D;&#x6DFB;&#x52A0;&#x5E76;&#x521D;&#x59CB;&#x5316;&#x5B50;&#x63A7;&#x4EF6;
+ 3. &#x5728;layoutSubviews&#x65B9;&#x6CD5;&#x4E2D;&#x5E03;&#x5C40;&#x5B50;&#x63A7;&#x4EF6;&#xFF0C;&#x5E03;&#x5C40;&#x524D;&#x5FC5;&#x987B;&#x8C03;&#x7528;[super layoutSubviews];
 </code></pre></li>
 <li><p>xib&#x65B9;&#x5F0F;</p>
 <pre><code> 1. &#x65B0;&#x5EFA;&#x4E00;&#x4E2A;xib&#x6587;&#x4EF6;&#xFF08;xib&#x7684;&#x6587;&#x4EF6;&#x540D;&#x6700;&#x597D;&#x8DDF;&#x63A7;&#x4EF6;&#x7C7B;&#x540D;&#x4E00;&#x6837;&#xFF09;
@@ -787,9 +933,9 @@
      2. &#x4FEE;&#x6539;&#x6700;&#x5927;&#x7684;&#x7236;&#x63A7;&#x4EF6;&#x7684;class&#x4E3A;&#x63A7;&#x4EF6;&#x7C7B;&#x540D;
      3. &#x5C06;&#x5B50;&#x63A7;&#x4EF6;&#x8FDB;&#x884C;&#x8FDE;&#x7EBF;
  2. &#x63D0;&#x4F9B;&#x4E00;&#x4E2A;&#x7C7B;&#x65B9;&#x6CD5;&#x53CA;&#x5BF9;&#x8C61;&#x65B9;&#x6CD5;&#x7528;&#x4E8E;&#x52A0;&#x8F7D;xib
-     1. xib&#x7684;&#x52A0;&#x8F7D;&#xFF0C;&#x521D;&#x59CB;&#x5316;&#x65F6;&#x5E95;&#x5C42;&#x4E0D;&#x8C03;&#x7528;initWithFrame:&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x662F;&#x8C03;&#x7528;`initWithCoder:&#x65B9;&#x6CD5;&#x3002;
-     2. xib&#x52A0;&#x8F7D;&#x65F6;&#xFF0C;initWithCoder&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;
-     3. -(id)awakeAfterUsingCoder:(NSCoder *)aDecoder&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;
+     1. &#x521D;&#x59CB;&#x5316;&#x65F6;&#x5E95;&#x5C42;&#x4E0D;&#x8C03;&#x7528;initWithFrame:&#x65B9;&#x6CD5;&#xFF0C;&#x800C;&#x662F;&#x8C03;&#x7528;`initWithCoder:&#x65B9;&#x6CD5;&#x3002;&#x52A0;&#x8F7D;&#x65F6;&#xFF1A;
+     2. initWithCoder&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;
+     3. awakeAfterUsingCoder:&#x662F;&#x7B2C;&#x4E8C;&#x4E2A;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;
      3. awakeFromNib&#x662F;&#x6700;&#x540E;&#x6267;&#x884C;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x53EF;&#x5728;&#x8FD9;&#x91CC;&#x521D;&#x59CB;&#x5316;&#x63A7;&#x4EF6;
 </code></pre></li>
 </ol>
@@ -805,20 +951,31 @@
 <h3 id="&#x6E10;&#x53D8;&#x5F0F;&#x52A8;&#x753B;">&#x6E10;&#x53D8;&#x5F0F;&#x52A8;&#x753B;</h3>
 <ol>
 <li><p>&#x5934;&#x5C3E;&#x5F0F;</p>
-<pre><code class="lang-objc">[<span class="hljs-built_in">UIView</span> beginAnimations:<span class="hljs-literal">nil</span> context:<span class="hljs-literal">nil</span>];
-[<span class="hljs-built_in">UIView</span> setAnimationDuration:<span class="hljs-number">2.0</span>];
-<span class="hljs-comment">/* &#x9700;&#x8981;&#x6267;&#x884C;&#x52A8;&#x753B;&#x7684;&#x4EE3;&#x7801; */</span>
-[<span class="hljs-built_in">UIView</span> commitAnimations];
+<pre><code class="lang-objc"> <span class="hljs-comment">// &#x5F00;&#x59CB;&#x52A8;&#x753B;</span>
+ [<span class="hljs-built_in">UIView</span> beginAnimations:<span class="hljs-literal">nil</span> context:<span class="hljs-literal">nil</span>];
+
+ <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x52A8;&#x753B;&#x5C5E;&#x6027;</span>
+ <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x52A8;&#x753B;&#x65F6;&#x95F4;</span>
+ [<span class="hljs-built_in">UIView</span> setAnimationDuration:<span class="hljs-number">2.0</span>];
+
+ <span class="hljs-comment">/* &#x9700;&#x8981;&#x6267;&#x884C;&#x52A8;&#x753B;&#x7684;&#x4EE3;&#x7801; */</span>
+
+ <span class="hljs-comment">// &#x63D0;&#x4EA4;&#x52A8;&#x753B;</span>
+ [<span class="hljs-built_in">UIView</span> commitAnimations];
 </code></pre>
 </li>
-<li><p>block&#x5F0F;&#xFF08;&#x5B9E;&#x8D28;&#x662F;&#x82F9;&#x679C;&#x5BF9;&#x5934;&#x5C3E;&#x5F0F;&#x7684;&#x5C01;&#x88C5;&#xFF09;</p>
-<pre><code class="lang-objc">  <span class="hljs-comment">//&#x5728;1&#x79D2;&#x5185;&#x9010;&#x6E10;&#x663E;&#x793A;&#x6307;&#x793A;&#x7248;</span>
+<li><p>block&#x5F0F;&#xFF08;&#x5B9E;&#x8D28;&#x662F;&#x82F9;&#x679C;&#x5BF9;&#x5934;&#x5C3E;&#x5F0F;&#x52A8;&#x753B;&#x7684;&#x5C01;&#x88C5;&#xFF09;</p>
+<pre><code class="lang-objc">  <span class="hljs-comment">// &#x5728;1&#x79D2;&#x5185;&#x6267;&#x884C;&#x52A8;&#x753B;</span>
   [<span class="hljs-built_in">UIView</span> animateWithDuration:<span class="hljs-number">1.0</span> animations:^{
+      <span class="hljs-comment">// &#x663E;&#x793A;&#x6307;&#x793A;&#x7248;</span>
       <span class="hljs-keyword">self</span><span class="hljs-variable">.hudLbl</span><span class="hljs-variable">.alpha</span> = <span class="hljs-number">1</span>;<span class="hljs-comment">//&#x4E0D;&#x900F;&#x660E;</span>
+
   } completion:^(<span class="hljs-built_in">BOOL</span> finished) {
-      <span class="hljs-comment">//&#x4E0A;&#x4E00;&#x4E2A;&#x52A8;&#x753B;&#x5B8C;&#x6BD5;&#x540E;&#x5EF6;&#x8FDF;3&#x79D2;&#x540E;&#xFF0C;&#x5728;1&#x79D2;&#x5185;&#x6267;&#x884C;&#x4E0B;&#x5217;&#x52A8;&#x753B;</span>
+
+      <span class="hljs-comment">// &#x4E0A;&#x4E00;&#x4E2A;&#x52A8;&#x753B;&#x5B8C;&#x6BD5;&#x540E;&#x5EF6;&#x8FDF;3&#x79D2;&#x540E;&#xFF0C;&#x5728;1&#x79D2;&#x5185;&#x6267;&#x884C;&#x4E0B;&#x5217;&#x52A8;&#x753B;</span>
       [<span class="hljs-built_in">UIView</span> animateWithDuration:<span class="hljs-number">1.0</span> delay:<span class="hljs-number">3.0</span> options:kNilOptions animations:^{
-          <span class="hljs-comment">//&#x663E;&#x793A;&#x6307;&#x793A;&#x7248;</span>
+
+          <span class="hljs-comment">// &#x9690;&#x85CF;&#x6307;&#x793A;&#x7248;</span>
           <span class="hljs-keyword">self</span><span class="hljs-variable">.hudLbl</span><span class="hljs-variable">.alpha</span> = <span class="hljs-number">0</span>;<span class="hljs-comment">//&#x5B8C;&#x5168;&#x900F;&#x660E;</span>
       } completion:<span class="hljs-literal">nil</span>];
   }];
@@ -827,30 +984,35 @@
 </ol>
 <h3 id="uiview&#x754C;&#x9762;&#x8DF3;&#x8F6C;">UIView&#x754C;&#x9762;&#x8DF3;&#x8F6C;</h3>
 <ol>
-<li><p>&#x754C;&#x9762;&#x95F4;&#x7684;&#x8DF3;&#x8F6C;&#x5C31;&#x662F;&#x4E00;&#x5C42;&#x4E00;&#x5C42;&#x53E0;&#x8D77;&#x6765;&#x7684;View&#xFF0C;&#x8FD9;&#x662F;&#x6307;&#x5982;&#x679C;2&#x4E2A;&#x63A7;&#x4EF6;&#x5982;&#x679C;&#x6709;&#x91CD;&#x53E0;&#x90E8;&#x5206;&#xFF0C;&#x90A3;&#x4E48;&#x5904;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x90A3;&#x4E2A;&#x63A7;&#x4EF6;&#x4F1A;&#x76D6;&#x4F4F;&#x4E0B;&#x9762;&#x7684;&#x3002;</p>
+<li><p>&#x5982;&#x679C;2&#x4E2A;&#x63A7;&#x4EF6;&#x5982;&#x679C;&#x6709;&#x91CD;&#x53E0;&#x90E8;&#x5206;&#xFF0C;&#x90A3;&#x4E48;&#x5904;&#x4E8E;&#x4E0A;&#x9762;&#x7684;&#x90A3;&#x4E2A;&#x63A7;&#x4EF6;&#x4F1A;&#x76D6;&#x4F4F;&#x4E0B;&#x9762;&#x7684;&#x3002;&#x4E0A;&#x9762;&#x7684;&#x63A7;&#x4EF6;&#x4E0D;&#x662F;&#x900F;&#x660E;&#x6216;&#x989C;&#x8272;&#x4E3A;clearColor&#xFF0C;&#x4F1A;&#x6321;&#x4F4F;&#x4E0B;&#x9762;&#x63A7;&#x4EF6;&#x7684;&#x663E;&#x793A;</p>
 </li>
-<li><p>UIView&#x754C;&#x9762;&#x8DF3;&#x8F6C;&#x7684;&#x5B9E;&#x8D28;&#x662F;&#x91CD;&#x65B0;&#x8C03;&#x6574;&#x7A97;&#x53E3;subView&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x9996;&#x5148;&#x663E;&#x793A;</p>
+<li><p>&#x5F00;&#x53D1;&#x4E2D;&#x9700;&#x8981;&#x5728;&#x67D0;&#x4E9B;&#x65F6;&#x523B;&#x5C06;&#x6307;&#x5B9A;&#x7684;&#x63A7;&#x4EF6;&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF0C;&#x5373;&#x653E;&#x5728;&#x6700;&#x4E0A;&#x9762;&#xFF1B;&#x8FD9;&#x65F6;&#x9700;&#x8981;&#x754C;&#x9762;&#x8DF3;&#x8F6C;&#x3002;</p>
 </li>
 <li><p>&#x754C;&#x9762;&#x8DF3;&#x8F6C;&#x4E3B;&#x8981;&#x7684;&#x65B9;&#x6CD5;&#x6709;3&#x79CD;&#xFF1A;</p>
 <ol>
-<li>&#x7528; UINavigationController &#x628A; View B push &#x8FDB;&#x6765;&#x3002;<pre><code class="lang-objc">[<span class="hljs-keyword">self</span><span class="hljs-variable">.navigationController</span> pushViewController:nextView animated:<span class="hljs-literal">YES</span>];
+<li>&#x7528; UINavigationController &#x628A; View B push &#x8FDB;&#x6765;&#x3002;<pre><code class="lang-objc"> [<span class="hljs-keyword">self</span><span class="hljs-variable">.navigationController</span> pushViewController:nextView animated:<span class="hljs-literal">YES</span>];
 </code></pre>
 </li>
-<li>&#x7528;Modal&#x7684; presentModalViewController &#x65B9;&#x6CD5;&#x628A; View B &#x76D6;&#x5728;&#x4E0A;&#x9762;&#x3002;<pre><code class="lang-objc">[<span class="hljs-keyword">self</span> presentModalViewController:nextView animated:<span class="hljs-literal">YES</span>];
+<li>&#x7528;Modal&#x7684; presentModalViewController &#x65B9;&#x6CD5;&#x628A; View B &#x76D6;&#x5728;&#x4E0A;&#x9762;&#x3002;<pre><code class="lang-objc">  [<span class="hljs-keyword">self</span> presentModalViewController:nextView animated:<span class="hljs-literal">YES</span>];
 </code></pre>
 </li>
-<li>&#x628A; View A &#x548C; View B &#x90FD;&#x7528; addSubView &#x52A0;&#x5230; AppDelegate &#x7C7B;&#x7684; self.window &#x4E0A;&#x3002;&#x7136;&#x540E;&#x8C03;&#x7528; bringSubviewToFront &#x628A; View B &#x663E;&#x793A;&#x51FA;&#x6765;;<pre><code class="lang-objc"><span class="hljs-comment">//AppDelegate.m &#x7C7B;</span>
-[<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> addSubview:viewB];
-[<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> addSubview:viewA];
-<span class="hljs-comment">// &#x5728;&#x9700;&#x8981;&#x65F6;&#x8C03;&#x7528;</span>
-[<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> bringSubviewToFront:viewB];
+<li><p>&#x8C03;&#x6574;&#x7A97;&#x53E3;subView&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x4E5F;&#x53EF;&#x5E94;&#x7528;&#x4E8E;&#x5F53;&#x524D;&#x663E;&#x793A;&#x7684;&#x7236;&#x63A7;&#x4EF6;&#x4E2D;&#xFF0C;&#x8BA9;&#x5176;&#x67D0;&#x4E2A;&#x5B50;&#x63A7;&#x4EF6;&#x663E;&#x793A;&#x51FA;&#x6765;;</p>
+<pre><code class="lang-objc">  <span class="hljs-comment">// AppDelegate.m &#x7C7B;</span>
+  <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x5230;&#x7A97;&#x53E3;&#x4E0A;</span>
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> addSubview:viewB];
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> addSubview:viewA];
+
+  <span class="hljs-comment">// &#x8C03;&#x6574;&#x63A7;&#x4EF6;&#x4F4D;&#x7F6E;&#x987A;&#x5E8F;&#xFF0C;&#x8BA9;&#x5176;&#x663E;&#x793A;&#x51FA;&#x6765;</span>
+  [<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> bringSubviewToFront:viewB];
 </code></pre>
 </li>
 </ol>
+</li>
+<li><p>&#x754C;&#x9762;&#x8DF3;&#x8F6C;&#x7684;&#x672C;&#x8D28;&#x91CD;&#x65B0;&#x8C03;&#x6574;&#x7A97;&#x53E3;subViews&#x4E2D;&#x5143;&#x7D20;&#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x8BA9;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x663E;&#x793A;</p>
 </li>
 </ol>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-28 17:12:52
+2016-06-05 15:05:26
 </span></footer>
                     
                     </section>

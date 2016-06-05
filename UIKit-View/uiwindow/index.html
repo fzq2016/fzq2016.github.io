@@ -65,7 +65,7 @@
         data-chapter-title="UIWindow"
         data-filepath="uiwindow/README.md"
         data-basepath=".."
-        data-revision="Sun May 29 2016 20:22:24 GMT+0800 (CST)"
+        data-revision="Sun Jun 05 2016 22:24:52 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -339,14 +339,65 @@
             
         </li>
     
-        <li class="chapter " data-level="2.7" data-path="uinavigationbar/index.html">
+        <li class="chapter " data-level="2.7" data-path="uicollectionreusableview/index.html">
+            
+                
+                    <a href="../uicollectionreusableview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.</b>
+                        
+                        UICollectionReusableView
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.7.1" data-path="uicollectionreusableview/uicollectionviewcell.html">
+            
+                
+                    <a href="../uicollectionreusableview/uicollectionviewcell.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.7.1.</b>
+                        
+                        UICollectionViewCell
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="uipickerview/index.html">
+            
+                
+                    <a href="../uipickerview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.8.</b>
+                        
+                        UIPickerView
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="uinavigationbar/index.html">
             
                 
                     <a href="../uinavigationbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.7.</b>
+                            <b>2.9.</b>
                         
                         UINavigationBar
                     </a>
@@ -354,14 +405,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.8" data-path="uitabbar/index.html">
+        <li class="chapter " data-level="2.10" data-path="uitabbar/index.html">
             
                 
                     <a href="../uitabbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.8.</b>
+                            <b>2.10.</b>
                         
                         UITabBar
                     </a>
@@ -369,14 +420,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.9" data-path="uitoolbar/index.html">
+        <li class="chapter " data-level="2.11" data-path="uitoolbar/index.html">
             
                 
                     <a href="../uitoolbar/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.9.</b>
+                            <b>2.11.</b>
                         
                         UIToolbar
                     </a>
@@ -384,14 +435,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.10" data-path="uiactionsheet/index.html">
+        <li class="chapter " data-level="2.12" data-path="uiactionsheet/index.html">
             
                 
                     <a href="../uiactionsheet/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.10.</b>
+                            <b>2.12.</b>
                         
                         UIActionSheet
                     </a>
@@ -399,14 +450,14 @@
             
         </li>
     
-        <li class="chapter " data-level="2.11" data-path="uialertview/index.html">
+        <li class="chapter " data-level="2.13" data-path="uialertview/index.html">
             
                 
                     <a href="../uialertview/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.11.</b>
+                            <b>2.13.</b>
                         
                         UIAlertView
                     </a>
@@ -414,31 +465,16 @@
             
         </li>
     
-        <li class="chapter " data-level="2.12" data-path="uiactivityindicatorview/index.html">
+        <li class="chapter " data-level="2.14" data-path="uiactivityindicatorview/index.html">
             
                 
                     <a href="../uiactivityindicatorview/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>2.12.</b>
+                            <b>2.14.</b>
                         
                         UIActivityIndicatorView(菊花)
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="2.13" data-path="uipickerview/index.html">
-            
-                
-                    <a href="../uipickerview/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>2.13.</b>
-                        
-                        UIPickerView
                     </a>
             
             
@@ -676,81 +712,13 @@
                     
                         <h2 id="uiwindow">UIWindow</h2>
 <ol>
-<li><p>&#x7236;&#x7C7B;&#x662F;UIView,&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x522B;&#x7684;UIView</p>
-</li>
-<li><p>&#x6BCF;&#x4E2A;App&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;UIWindow&#xFF0C;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x7684;&#x89C6;&#x56FE;&#x63A7;&#x4EF6;&#x3002;</p>
-</li>
-<li><p>&#x7279;&#x6B8A;&#x7684;&#x7A97;&#x53E3;&#xFF1A;&#x72B6;&#x6001;&#x680F;(&#x65E0;&#x6CD5;&#x901A;&#x8FC7;application.windows&#x6253;&#x5370;&#x663E;&#x793A;&#xFF0C;&#x539F;&#x56E0;&#x662F;&#x5B83;&#x6CA1;&#x6709;&#x4EA4;&#x7ED9;application&#x7BA1;&#x7406;&#xFF09;;&#x952E;&#x76D8;.</p>
-</li>
-<li><p>&#x65CB;&#x8F6C;&#x4E8B;&#x4EF6;&#x987A;&#x5E8F;-&gt;UIApplication-&gt;Window-&gt;rootViewController -&gt;&#x65CB;&#x8F6C;&#x63A7;&#x5236;&#x5668;&#x7684;view</p>
-</li>
-<li><p>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;&#x6839;&#x63A7;&#x5236;&#x5668;&#x5F00;&#x53D1;,&#x6CA1;&#x6709;&#x8DDF;&#x63A7;&#x5236;&#x5668;&#x4E00;&#x6837;&#x80FD;&#x663E;&#x793A;&#x754C;&#x9762;&#x3002;</p>
-<ul>
-<li>&#x539F;&#x56E0;&#xFF1A;&#x4EE5;&#x540E;&#x53EF;&#x80FD;&#x4F1A;&#x6709;&#x5F88;&#x591A;&#x754C;&#x9762;,&#x4E3A;&#x4E86;&#x907F;&#x514D;&#x4EE3;&#x7801;&#x7ED3;&#x6784;&#x6DF7;&#x4E71;,&#x901A;&#x8FC7;&#x4E00;&#x4E2A;&#x754C;&#x9762;&#x4EA4;&#x7ED9;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x7BA1;&#x7406;&#x540E;&#x5C31;&#x80FD;&#x6709;&#x6548;&#x907F;&#x514D;&#x6DF7;&#x4E71;&#xFF0C;&#x5E76;&#x4E14;&#x754C;&#x9762;&#x80FD;&#x591F;&#x5904;&#x7406;&#x4E8B;&#x4EF6;</li>
-</ul>
-</li>
-<li><p>&#x5207;&#x6362;&#x6839;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5E38;&#x89C1;&#x7528;&#x5904;:&#x6BD4;&#x5982;&#x65B0;&#x7279;&#x6027;&#x754C;&#x9762;&#x5C55;&#x793A;&#x5B8C;&#x6210;,&#x5207;&#x6362;&#x5230;&#x4E3B;&#x754C;&#x9762;,&#x8FD9;&#x65F6;&#x5207;&#x6362;&#x6839;&#x63A7;&#x5236;&#x5668;&#x5C31;&#x597D;&#x4E86;,&#x65B0;&#x7279;&#x6027;&#x754C;&#x9762;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x9500;&#x6BC1;,&#x5B83;&#x53EA;&#x9700;&#x8981;&#x5C55;&#x793A;&#x4E00;&#x6B21;&#x5C31;&#x597D;&#x4E86;&#x3002;</p>
-</li>
+<li>&#x7236;&#x7C7B;&#x662F;UIView,&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x7279;&#x522B;&#x7684;UIView</li>
+<li>&#x6BCF;&#x4E2A;App&#x81F3;&#x5C11;&#x6709;&#x4E00;&#x4E2A;UIWindow&#xFF0C;&#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x521B;&#x5EFA;&#x7684;&#x89C6;&#x56FE;&#x63A7;&#x4EF6;&#x3002;</li>
 </ol>
-<h3 id="uiwindow&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x4E0E;&#x663E;&#x793A;">UIWindow&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x4E0E;&#x663E;&#x793A;</h3>
+<h3 id="uiapplication&#x4E2D;&#x7684;&#x7A97;&#x53E3;&#x53CA;&#x5176;&#x5C42;&#x7EA7;">UIApplication&#x4E2D;&#x7684;&#x7A97;&#x53E3;&#x53CA;&#x5176;&#x5C42;&#x7EA7;</h3>
 <ol>
-<li><p>&#x88AB;AppDelegate&#x7528;&#x5F3A;&#x6307;&#x9488;&#x6307;&#x5411;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x4F1A;&#x88AB;&#x91CA;&#x653E;&#xFF1B;</p>
-</li>
-<li><p>&#x5FC5;&#x987B;&#x8BBE;&#x7F6E;AppDelegate.window = window(&#x65B0;&#x521B;&#x5EFA;&#x7684;window&#x5BF9;&#x8C61;&#xFF09;&#xFF0C;&#x5426;&#x5219;&#x76F4;&#x63A5;&#x8BA9;&#x65B0;&#x521B;&#x5EFA;&#x7684;window&#x6210;&#x4E3A;&#x4E3B;&#x7A97;&#x53E3;&#x5E76;&#x663E;&#x793A;&#xFF0C;&#x7ED3;&#x679C;&#x662F;&#x9ED1;&#x5C4F;&#xFF0C;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x7A97;&#x53E3;&#x5728;dealloc&#x4E2D;&#x6253;&#x5370;&#x8BED;&#x53E5;,&#x68C0;&#x6D4B;&#x7ED3;&#x679C;&#x662F;&#xFF1A;&#x7A97;&#x53E3;&#x9500;&#x6BC1;&#x4E86;</p>
-<ul>
-<li>&#x539F;&#x56E0;&#x731C;&#x6D4B;&#xFF1A;&#x5C3D;&#x7BA1;&#x65B0;&#x521B;&#x5EFA;&#x7684;window&#x88AB;UIApplication&#x7528;keyWindow&#x5F3A;&#x6307;&#x9488;&#x6307;&#x5411;&#xFF0C;&#x800C;&#x4E14;&#x52A0;&#x5165;&#x5230;windows&#x96C6;&#x5408;&#x4E2D;&#xFF0C;&#x6309;&#x9053;&#x7406;&#x4E0D;&#x5E94;&#x8BE5;&#x88AB;&#x9500;&#x6BC1;&#xFF0C;&#x4F46;&#x82F9;&#x679C;&#x5E95;&#x5C42;&#x53EF;&#x80FD;&#x5BF9;&#x6CA1;&#x6709;&#x88AB;AppDelegate.window&#x7684;&#x6307;&#x5411;&#x7684;window&#x8FDB;&#x884C;&#x5904;&#x7406;&#xFF0C;&#x4F1A;&#x79FB;&#x9664;&#x51FA;&#x96C6;&#x5408;&#xFF0C;&#x5E76;&#x79FB;&#x8D70;keyWindow&#x5F3A;&#x6307;&#x9488;</li>
-</ul>
-</li>
-</ol>
-<h3 id="uiwindow&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x6B65;&#x9AA4;">UIWindow&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x6B65;&#x9AA4;</h3>
-<ol>
-<li>&#x521B;&#x5EFA;&#x65F6;&#x95F4;&#xFF1A;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5B8C;&#x6BD5;&#x7684;&#x65F6;&#x5019;&#x624D;&#x521B;&#x5EFA;&#x7684;,&#x5982;&#x679C;&#x901A;&#x8FC7;storyboard&#x52A0;&#x8F7D;&#x7A0B;&#x5E8F;,&#x7A97;&#x53E3;&#x90FD;&#x4EA4;&#x7ED9;storyboard&#x7BA1;&#x7406;,&#x4E0D;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x7BA1;&#x7406;&#xFF0C;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x9700;&#x8981;&#x81EA;&#x5DF1;&#x7BA1;&#x7406;</li>
-<li><p>&#x521B;&#x5EFA;&#x6B65;&#x9AA4;&#xFF1A;</p>
-<pre><code>  1.1 &#x521B;&#x5EFA;&#x7A97;&#x53E3;
-  1.2 &#x52A0;&#x8F7D;&#x6839;&#x63A7;&#x5236;&#x5668;
-  1.3 &#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x7684;&#x6839;&#x63A7;&#x5236;&#x5668;,&#x663E;&#x793A;&#x7A97;&#x53E3;
-</code></pre><pre><code class="lang-objc">  <span class="hljs-comment">// &#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x901A;&#x5E38;&#x5728;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x7A97;&#x53E3;</span>
-  - (<span class="hljs-built_in">BOOL</span>)application:(<span class="hljs-built_in">UIApplication</span> *)application didFinishLaunchingWithOptions:(<span class="hljs-built_in">NSDictionary</span> *)launchOptions {
-      <span class="hljs-comment">// &#x7A97;&#x53E3;&#x663E;&#x793A;&#x7684;&#x6CE8;&#x610F;&#x70B9;:</span>
-      <span class="hljs-comment">// 1.&#x4E00;&#x5B9A;&#x8981;&#x5F3A;&#x5F15;&#x7528;</span>
-      <span class="hljs-comment">// 2.&#x63A7;&#x4EF6;&#x8981;&#x60F3;&#x663E;&#x793A;&#x51FA;&#x6765;,&#x5FC5;&#x987B;&#x8981;&#x6709;&#x5C3A;&#x5BF8;</span>
-
-      <span class="hljs-comment">// 1.&#x521B;&#x5EFA;&#x7A97;&#x53E3;</span>
-      <span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> = [[<span class="hljs-built_in">UIWindow</span> alloc] initWithFrame:[<span class="hljs-built_in">UIScreen</span> mainScreen]<span class="hljs-variable">.bounds</span>];
-
-      <span class="hljs-comment">//&#x4E0D;&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x989C;&#x8272;&#xFF0C;&#x6700;&#x540E;&#x4F1A;&#x663E;&#x793A;&#x7684;&#x662F;&#x5C4F;&#x5E55;&#x7684;&#x989C;&#x8272;&#x2014;&#x2014;&#x9ED1;&#x8272;</span>
-      <span class="hljs-comment">//self.window.backgroundColor = [UIColor yellowColor];</span>
-
-      <span class="hljs-comment">// 2.&#x521B;&#x5EFA;&#x6839;&#x63A7;&#x5236;&#x5668;,&#x5728;&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x7684;&#x6839;&#x63A7;&#x5236;&#x5668;</span>
-      <span class="hljs-built_in">UIViewController</span> *vc = [[<span class="hljs-built_in">UIViewController</span> alloc] init];
-
-      <span class="hljs-comment">//&#x6BCF;&#x4E2A;vc&#x521B;&#x5EFA;&#x90FD;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;view&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x5F53;&#x7B2C;&#x4E00;&#x6B21;&#x4F7F;&#x7528;&#x65F6;&#x61D2;&#x52A0;&#x8F7D;&#xFF0C;&#x8BE6;&#x89C1;view&#x7684;&#x52A0;&#x8F7D;</span>
-      <span class="hljs-comment">//vc.view.backgroundColor = [UIColor greenColor];</span>
-
-      <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x7684;&#x6839;&#x63A7;&#x5236;&#x5668;,&#x5E95;&#x5C42;&#x4F1A;&#x81EA;&#x52A8;&#x628A;&#x6839;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x6DFB;&#x52A0;&#x5230;&#x7A97;&#x53E3;&#x4E0A;,&#x5E76;&#x4E14;&#x8BA9;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x6709;&#x65CB;&#x8F6C;&#x529F;&#x80FD;</span>
-      <span class="hljs-comment">// IOS9&#x4E4B;&#x540E;&#x5FC5;&#x987B;&#x5728;`&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5B8C;&#x6BD5;&#x90A3;&#x4E00;&#x523B;`&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#x7A97;&#x53E3;`&#x5FC5;&#x987B;`&#x8981;&#x8BBE;&#x7F6E;`&#x6839;&#x63A7;&#x5236;&#x5668;`&#xFF1B;IOS9&#x4E4B;&#x524D;&#x4E0D;&#x5C3D;&#x7136;</span>
-      <span class="hljs-comment">// &#x5982;&#x679C;&#x901A;&#x8FC7;addSubView&#x52A0;&#x8F7D;&#x63A7;&#x5236;&#x5668;&#x7684;view,&#x63A7;&#x5236;&#x5668;&#x4F1A;&#x88AB;&#x91CA;&#x653E;,&#x63A7;&#x5236;&#x5668;&#x5C31;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#xFF0C;&#x53E6;&#x5916;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x65CB;&#x8F6C;&#x3002;</span>
-      <span class="hljs-keyword">self</span><span class="hljs-variable">.window</span><span class="hljs-variable">.rootViewController</span> = vc;
-
-      <span class="hljs-comment">// 3.&#x663E;&#x793A;&#x7A97;&#x53E3;</span>
-      <span class="hljs-comment">// makeKeyAndVisible:&#x8BA9;&#x7A97;&#x53E3;&#x6210;&#x4E3A;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x4E3B;&#x7A97;&#x53E3;,&#x5E76;&#x4E14;&#x663E;&#x793A;&#x7A97;&#x53E3;&#xFF08;hidden&#x5C5E;&#x6027;&#x4E3A;NO&#xFF09;&#xFF1B;&#x6CE8;&#x610F;&#xFF0C;&#x82E5;&#x518D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;window&#xFF0C;&#x8C03;&#x7528;makeKeyAndVisible&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x4F7F;&#x4E4B;&#x524D;&#x7684;window&#x9690;&#x85CF;</span>
-      [<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> makeKeyAndVisible];
-
-      <span class="hljs-comment">//&#x6253;&#x5370;&#x7A97;&#x53E3;</span>
-      <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>,application<span class="hljs-variable">.windows</span>);<span class="hljs-comment">//self.window&#x662F;&#x4EE3;&#x7406;AppDelegate&#x7684;&#x7A97;&#x53E3;&#xFF0C;&#x4E0D;&#x662F;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x4E0B;&#x7684;&#x7A97;&#x53E3;</span>
-      <span class="hljs-keyword">return</span> <span class="hljs-literal">YES</span>;
-  }
-</code></pre>
-</li>
-</ol>
-<h3 id="&#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;">&#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;</h3>
-<ul>
 <li>&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;,&#x5C42;&#x7EA7;&#x8C01;&#x5927;&#x5C31;&#x663E;&#x793A;&#x5728;&#x6700;&#x5916;&#x9762;</li>
-<li>&#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;&#x672C;&#x8D28;&#x662F;&#x679A;&#x4E3E;&#x503C;(&#x6570;&#x5B57;)<ul>
-<li>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x67D0;&#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;&#x4E3A;UIWindowLevelAlert+1&#xFF0C;&#x8FD9;&#x65F6;&#x7A97;&#x53E3;&#x6BD4;UIActionSheet&#x7B49;&#x5148;&#x663E;&#x793A;&#xFF09;</li>
-</ul>
-</li>
-</ul>
+</ol>
 <table>
 <thead>
 <tr>
@@ -762,12 +730,12 @@
 <tbody>
 <tr>
 <td>UIWindowLevelNormal</td>
-<td>&#x9ED8;&#x8BA4;&#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;</td>
+<td>&#x9ED8;&#x8BA4;&#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;(&#x542B;&#x4E3B;&#x7A97;&#x53E3;)</td>
 <td>&#x4F4E;</td>
 </tr>
 <tr>
 <td>UIWindowLevelStatusBar</td>
-<td>&#x72B6;&#x6001;&#x680F;,&#x952E;&#x76D8;</td>
+<td>&#x952E;&#x76D8;&#xFF1B;&#x72B6;&#x6001;&#x680F;&#xFF08;&#x65E0;&#x6CD5;&#x901A;&#x8FC7;application.windows&#x6253;&#x5370;&#x663E;&#x793A;&#xFF0C;&#x539F;&#x56E0;&#x662F;&#x5B83;&#x6CA1;&#x6709;&#x4EA4;&#x7ED9;application&#x7BA1;&#x7406;&#xFF09;</td>
 <td>&#x4E2D;</td>
 </tr>
 <tr>
@@ -777,28 +745,152 @@
 </tr>
 </tbody>
 </table>
-<pre><code class="lang-objc"><span class="hljs-keyword">self</span><span class="hljs-variable">.window1</span><span class="hljs-variable">.windowLevel</span> = <span class="hljs-built_in">UIWindowLevelAlert</span>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;&#x672C;&#x8D28;&#x662F;&#x679A;&#x4E3E;&#x503C;(&#x6570;&#x5B57;),&#x6570;&#x5B57;&#x8D8A;&#x5927;&#xFF0C;&#x5C42;&#x7EA7;&#x8D8A;&#x9AD8;</span>
+<span class="hljs-keyword">self</span><span class="hljs-variable">.window1</span><span class="hljs-variable">.windowLevel</span> = <span class="hljs-built_in">UIWindowLevelAlert</span>
 <span class="hljs-keyword">self</span><span class="hljs-variable">.window2</span><span class="hljs-variable">.windowLevel</span> = <span class="hljs-built_in">UIWindowLevelAlert</span> + <span class="hljs-number">1</span> <span class="hljs-comment">//&#x663E;&#x793A;&#x5728;&#x6700;&#x5916;&#x5C42;</span>
 </code></pre>
-<h3 id="&#x5E38;&#x7528;&#x65B9;&#x6CD5;">&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
-<pre><code class="lang-objc"><span class="hljs-comment">// &#x8BA9;&#x5F53;&#x524D;UIWindow&#x53D8;&#x6210;keyWindow&#xFF08;&#x4E3B;&#x7A97;&#x53E3;&#xFF09;&#xFF0C;&#x4F46;&#x8981;&#x9075;&#x5B88;&#x663E;&#x793A;&#x5C42;&#x7EA7;&#x6765;&#x663E;&#x793A;</span>
-- (<span class="hljs-keyword">void</span>)makeKeyWindow;
+<h3 id="uiwindow&#x521B;&#x5EFA;">UIWindow&#x521B;&#x5EFA;</h3>
+<ol>
+<li>&#x521B;&#x5EFA;&#x65F6;&#x95F4;&#xFF1A;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5B8C;&#x6BD5;&#x7684;&#x65F6;&#x5019;&#x624D;&#x521B;&#x5EFA;</li>
+<li><p>&#x521B;&#x5EFA;&#x65B9;&#x5F0F;&#xFF1A;</p>
+<ol>
+<li>&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x7A97;&#x53E3;&#x8BE6;&#x89C1;<a href="../../UIKit-Controller/uistoryboard/index.html">UIStoryboard</a>&#x4E2D;<code>&#x7CFB;&#x7EDF;&#x52A0;&#x8F7D;&#x6307;&#x5B9A;storyboard&#x7684;&#x6D41;&#x7A0B;</code><pre><code> &#x901A;&#x8FC7;storyboard&#x52A0;&#x8F7D;&#x7A0B;&#x5E8F;,&#x7A97;&#x53E3;&#x90FD;&#x4EA4;&#x7ED9;&#x7CFB;&#x7EDF;&#x521B;&#x5EFA;&#x53CA;&#x7BA1;&#x7406;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x6211;&#x4EEC;&#x7BA1;&#x7406;
+</code></pre></li>
+<li><p>&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#xFF08;&#x5E38;&#x7528;&#xFF09;&#xFF1A;</p>
+<pre><code> &#x6B65;&#x9AA4;&#xFF1A;
+ 1. &#x521B;&#x5EFA;&#x7A97;&#x53E3;
+ 2. &#x52A0;&#x8F7D;&#x6839;&#x63A7;&#x5236;&#x5668;
+ 3. &#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x7684;&#x6839;&#x63A7;&#x5236;&#x5668;,&#x663E;&#x793A;&#x7A97;&#x53E3;
+</code></pre><pre><code class="lang-objc"> <span class="hljs-comment">// &#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x901A;&#x5E38;&#x5728;&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5B8C;&#x6210;&#x7684;&#x65F6;&#x5019;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x7A97;&#x53E3;</span>
+ - (<span class="hljs-built_in">BOOL</span>)application:(<span class="hljs-built_in">UIApplication</span> *)application didFinishLaunchingWithOptions:(<span class="hljs-built_in">NSDictionary</span> *)launchOptions {
 
-<span class="hljs-comment">// &#x8BA9;&#x5F53;&#x524D;UIWindow&#x53D8;&#x6210;keyWindow&#xFF0C;&#x5E76;&#x663E;&#x793A;&#x51FA;&#x6765;</span>
-- (<span class="hljs-keyword">void</span>)makeKeyAndVisible;
+ <span class="hljs-comment">// 1.&#x521B;&#x5EFA;&#x7A97;&#x53E3;</span>
+ <span class="hljs-comment">// self -&gt; AppDelegate</span>
+ <span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> = [[<span class="hljs-built_in">UIWindow</span> alloc] initWithFrame:[<span class="hljs-built_in">UIScreen</span> mainScreen]<span class="hljs-variable">.bounds</span>];
+
+ <span class="hljs-comment">// 1.1&#x8BBE;&#x7F6E;&#x989C;&#x8272;&#xFF08;&#x53EF;&#x9009;&#xFF09;</span>
+ <span class="hljs-comment">// self.window.backgroundColor = [UIColor yellowColor];</span>
+
+ <span class="hljs-comment">// 2.&#x521B;&#x5EFA;&#x6839;&#x63A7;&#x5236;&#x5668;,&#x5728;&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x7684;&#x6839;&#x63A7;&#x5236;&#x5668;</span>
+ <span class="hljs-built_in">UIViewController</span> *vc = [[<span class="hljs-built_in">UIViewController</span> alloc] init];
+ <span class="hljs-keyword">self</span><span class="hljs-variable">.window</span><span class="hljs-variable">.rootViewController</span> = vc;
+
+ <span class="hljs-comment">// 3.&#x663E;&#x793A;&#x7A97;&#x53E3;</span>
+ [<span class="hljs-keyword">self</span><span class="hljs-variable">.window</span> makeKeyAndVisible];
+
+ <span class="hljs-keyword">return</span> <span class="hljs-literal">YES</span>;
+ }
+</code></pre>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="uiwindow&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;">UIWindow&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x8BA9;&#x5F53;&#x524D;UIWindow&#x53D8;&#x6210;keyWindow&#xFF08;&#x4E3B;&#x7A97;&#x53E3;&#xFF09;</span>
+[window makeKeyWindow];
+
+<span class="hljs-comment">// &#x8BA9;&#x5F53;&#x524D;UIWindow&#x53D8;&#x6210;keyWindow&#xFF0C;&#x5E76;&#x663E;&#x793A;&#x51FA;&#x6765;&#xFF08;hidden&#x5C5E;&#x6027;&#x4E3A;NO&#xFF09;</span>
+<span class="hljs-comment">// &#x6CE8;&#x610F;&#xFF0C;&#x82E5;&#x518D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;window&#xFF0C;&#x8C03;&#x7528;makeKeyAndVisible&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x4F7F;&#x4E4B;&#x524D;&#x7684;window&#x9690;&#x85CF;</span>
+[window makeKeyAndVisible];
 
 <span class="hljs-comment">// &#x5728;&#x672C;&#x5E94;&#x7528;&#x4E2D;&#x6253;&#x5F00;&#x7684;UIWindow&#x5217;&#x8868;</span>
-[<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.windows</span><span class="hljs-comment">//&#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x63A5;&#x89E6;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;UIView&#x5BF9;&#x8C61;(&#x5E73;&#x65F6;&#x8F93;&#x5165;&#x6587;&#x5B57;&#x5F39;&#x51FA;&#x7684;&#x952E;&#x76D8;&#xFF0C;&#x5C31;&#x5904;&#x5728;&#x4E00;&#x4E2A;&#x65B0;&#x7684;UIWindow&#x4E2D;)</span>
+<span class="hljs-comment">// &#x8FD9;&#x6837;&#x5C31;&#x53EF;&#x4EE5;&#x63A5;&#x89E6;&#x5E94;&#x7528;&#x4E2D;&#x7684;&#x4EFB;&#x4F55;&#x4E00;&#x4E2A;UIView&#x5BF9;&#x8C61;(&#x5E73;&#x65F6;&#x8F93;&#x5165;&#x6587;&#x5B57;&#x5F39;&#x51FA;&#x7684;&#x952E;&#x76D8;&#xFF0C;&#x5C31;&#x5904;&#x5728;&#x4E00;&#x4E2A;&#x65B0;&#x7684;UIWindow&#x4E2D;)</span>
+<span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@&quot;</span>,[<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.windows</span>);
 
 <span class="hljs-comment">// &#x7528;&#x6765;&#x63A5;&#x6536;&#x952E;&#x76D8;&#x4EE5;&#x53CA;&#x975E;&#x89E6;&#x6478;&#x7C7B;&#x7684;&#x6D88;&#x606F;&#x4E8B;&#x4EF6;&#x7684;UIWindow</span>
 <span class="hljs-comment">// &#x7A0B;&#x5E8F;&#x4E2D;&#x6BCF;&#x4E2A;&#x65F6;&#x523B;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;UIWindow&#x662F;keyWindow</span>
 [<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.keyWindow</span>
 
-<span class="hljs-comment">//&#x83B7;&#x5F97;&#x67D0;&#x4E2A;UIView&#x6240;&#x5728;&#x7684;UIWindow&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5DF2;&#x52A0;&#x5165;&#x5230;&#x63A7;&#x4EF6;&#x4E2D;</span>
-view<span class="hljs-variable">.window</span>
+<span class="hljs-comment">//&#x83B7;&#x5F97;&#x67D0;&#x4E2A;UIView&#x6240;&#x5728;&#x7684;UIWindow&#xFF0C;&#x53EF;&#x7528;&#x4E8E;&#x5224;&#x65AD;&#x662F;&#x5426;&#x5DF2;&#x52A0;&#x5165;&#x5230;&#x63A7;&#x4EF6;&#x4E2D;,&#x907F;&#x514D;&#x91CD;&#x590D;&#x6DFB;&#x52A0;</span>
+<span class="hljs-keyword">if</span> (view<span class="hljs-variable">.window</span>) <span class="hljs-keyword">return</span>;
 </code></pre>
+<h3 id="&#x7A97;&#x53E3;&#x4E0E;&#x6839;&#x63A7;&#x5236;&#x5668;">&#x7A97;&#x53E3;&#x4E0E;&#x6839;&#x63A7;&#x5236;&#x5668;</h3>
+<ol>
+<li><p>&#x8BBE;&#x7F6E;&#x7A97;&#x53E3;&#x7684;&#x6839;&#x63A7;&#x5236;&#x5668;,&#x5E95;&#x5C42;&#x4F1A;&#x81EA;&#x52A8;&#x628A;&#x6839;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x6DFB;&#x52A0;&#x5230;&#x7A97;&#x53E3;&#x4E0A;,&#x5E76;&#x4E14;&#x8BA9;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x6709;&#x65CB;&#x8F6C;&#x529F;&#x80FD;</p>
+</li>
+<li><p>&#x4E3A;&#x4EC0;&#x4E48;&#x8981;&#x7528;&#x6839;&#x63A7;&#x5236;&#x5668;&#x5F00;&#x53D1;,&#x6CA1;&#x6709;&#x8DDF;&#x63A7;&#x5236;&#x5668;&#x4E00;&#x6837;&#x80FD;&#x663E;&#x793A;&#x754C;&#x9762;&#x3002;</p>
+<pre><code>  &#x539F;&#x56E0;&#xFF1A;
+  1. &#x5F00;&#x53D1;&#x4E2D;&#x4F1A;&#x5B58;&#x5728;&#x5F88;&#x591A;&#x754C;&#x9762;,&#x4E3A;&#x4E86;&#x7BA1;&#x7406;&#x65B9;&#x4FBF;,&#x901A;&#x5E38;&#x4E00;&#x4E2A;&#x754C;&#x9762;&#x4EA4;&#x7ED9;&#x4E00;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x7BA1;&#x7406;&#xFF0C;&#x903B;&#x8F91;&#x6E05;&#x6670;
+  2. &#x63A7;&#x5236;&#x5668;&#x6709;&#x4E13;&#x95E8;&#x7684;view&#x751F;&#x547D;&#x5468;&#x671F;&#x65B9;&#x6CD5;&#xFF0C;&#x7528;&#x4E8E;&#x5904;&#x7406;UIView&#x9047;&#x5230;&#x7684;&#x4E8B;&#x4EF6;
+  3. &#x82E5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;addSubView&#x5C06;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x6DFB;&#x52A0;&#x5230;&#x7A97;&#x53E3;&#x4E2D;,&#x63A7;&#x5236;&#x5668;&#x4F1A;&#x88AB;&#x91CA;&#x653E;,&#x63A7;&#x5236;&#x5668;&#x5C31;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#xFF0C;&#x53E6;&#x5916;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x4E0D;&#x4F1A;&#x81EA;&#x52A8;&#x65CB;&#x8F6C;&#x3002;
+</code></pre></li>
+<li><p>&#x6BCF;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x7684;view&#x90FD;&#x662F;&#x61D2;&#x52A0;&#x8F7D;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x8981;&#x5728;&#x7A97;&#x53E3;&#x4E2D;&#x8BBE;&#x7F6E;&#x6839;&#x63A7;&#x5236;&#x5668;view&#x7684;&#x5C5E;&#x6027;&#xFF1B;&#x800C;&#x5E94;&#x8BE5;&#x5728;&#x6839;&#x63A7;&#x5236;&#x5668;&#x4E2D;&#x8BBE;&#x7F6E;</p>
+</li>
+<li><p>&#x5207;&#x6362;&#x6839;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5E38;&#x89C1;&#x7528;&#x5904;:</p>
+<pre><code>  &#x5F53;&#x65B0;&#x7279;&#x6027;&#x754C;&#x9762;&#x5C55;&#x793A;&#x5B8C;&#x6210;,&#x5207;&#x6362;&#x5230;&#x4E3B;&#x754C;&#x9762;,&#x8FD9;&#x65F6;&#x53EA;&#x9700;&#x8981;&#x5207;&#x6362;&#x6839;&#x63A7;&#x5236;&#x5668;,&#x65B0;&#x7279;&#x6027;&#x754C;&#x9762;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x9500;&#x6BC1;&#xFF0C;&#x663E;&#x793A;&#x4E3B;&#x754C;&#x9762;&#x3002;
+</code></pre></li>
+<li><p>IOS9&#x4E4B;&#x540E;&#x5FC5;&#x987B;&#x5728;<code>&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5B8C;&#x6BD5;&#x90A3;&#x4E00;&#x523B;</code>&#x663E;&#x793A;&#x51FA;&#x6765;&#x7684;&#x7A97;&#x53E3;<code>&#x5FC5;&#x987B;</code>&#x8981;&#x8BBE;&#x7F6E;<code>&#x6839;&#x63A7;&#x5236;&#x5668;</code>&#xFF1B;IOS9&#x4E4B;&#x524D;&#x4E0D;&#x5C3D;&#x7136;</p>
+</li>
+</ol>
+<h3 id="uiwindow&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x4E0E;&#x663E;&#x793A;&#x6CE8;&#x610F;&#x7EC6;&#x8282;">UIWindow&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#x4E0E;&#x663E;&#x793A;&#x6CE8;&#x610F;&#x7EC6;&#x8282;</h3>
+<ol>
+<li><p>&#x4E00;&#x5B9A;&#x8981;&#x5F3A;&#x5F15;&#x7528;&#x7A97;&#x53E3;</p>
+<pre><code> 1. &#x5FC5;&#x987B;&#x8BBE;&#x7F6E;AppDelegate.window = window&#xFF0C;&#x8FD9;&#x6837;&#x4F1A;&#x88AB;AppDelegate&#x7528;&#x5F3A;&#x6307;&#x9488;&#x6307;&#x5411;&#xFF0C;&#x4E0D;&#x4F1A;&#x88AB;&#x91CA;&#x653E;&#xFF1B;
+ 2. &#x5982;&#x679C;&#x4E0D;&#x8BBE;&#x7F6E;AppDelegate.window&#xFF0C;&#x76F4;&#x63A5;&#x8BA9;&#x65B0;&#x521B;&#x5EFA;&#x7684;window&#x6210;&#x4E3A;&#x4E3B;&#x7A97;&#x53E3;&#x5E76;&#x663E;&#x793A;&#xFF0C;&#x7ED3;&#x679C;&#x662F;&#x9ED1;&#x5C4F;&#xFF1B;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;&#x7A97;&#x53E3;&#x5728;dealloc&#x4E2D;&#x6253;&#x5370;&#x8BED;&#x53E5;,&#x68C0;&#x6D4B;&#x7ED3;&#x679C;&#x662F;&#xFF1A;&#x7A97;&#x53E3;&#x9500;&#x6BC1;&#x4E86;
+</code></pre></li>
+<li><p>&#x5FC5;&#x987B;&#x6709;&#x5C3A;&#x5BF8;</p>
+<pre><code> &#x5EFA;&#x8BAE;&#x4E0E;&#x5C4F;&#x5E55;&#x540C;&#x5BBD;&#x540C;&#x9AD8;
+</code></pre></li>
+<li><p>&#x6210;&#x4E3A;&#x4E3B;&#x7A97;&#x53E3;&#xFF0C;&#x6216;&#x8BBE;&#x7F6E;hidden&#x5C5E;&#x6027;&#x4E3A;NO</p>
+<pre><code class="lang-objc"> [window makeKeyAndVisible];
+ <span class="hljs-comment">// window.hidden = NO</span>
+</code></pre>
+</li>
+<li><p>&#x7ECF;&#x8FC7;&#x524D;3&#x6B65;&#xFF0C;&#x7A97;&#x53E3;&#x5DF2;&#x7ECF;&#x5728;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x663E;&#x793A;&#xFF0C;&#x4F46;&#x6240;&#x6709;UIView&#x9ED8;&#x8BA4;&#x989C;&#x8272;&#x662F;clearColor&#xFF0C;&#x53EA;&#x6709;&#x8BBE;&#x7F6E;&#x5176;&#x4ED6;&#x989C;&#x8272;&#x624D;&#x80FD;&#x88AB;&#x6211;&#x4EEC;&#x53D1;&#x73B0;</p>
+<pre><code> 1. &#x82E5;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#x989C;&#x8272;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x5176;&#x4ED6;&#x63A7;&#x4EF6;&#x663E;&#x793A;&#xFF0C;&#x6700;&#x7EC8;&#x663E;&#x793A;&#x7684;&#x662F;&#x5C4F;&#x5E55;&#xFF08;&#x5C4F;&#x5E55;&#x989C;&#x8272;&#x662F;&#x9ED1;&#x8272;&#xFF0C;&#x6240;&#x4EE5;&#x8089;&#x773C;&#x6240;&#x89C1;&#x5C31;&#x662F;&#x9ED1;&#x8272;&#xFF09;
+ 2. &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x663E;&#x793A;&#x4ECE;&#x5185;&#x5230;&#x5916;&#x662F;&#xFF1A;&#x5C4F;&#x5E55;-&gt;&#x4E3B;&#x7A97;&#x53E3;-&gt;&#x6839;&#x63A7;&#x5236;&#x7684;View-&gt;&#x5B50;&#x63A7;&#x4EF6;&#xFF08;&#x6216;&#x5B50;&#x63A7;&#x4EF6;&#x7684;&#x5B50;&#x63A7;&#x4EF6;...&#xFF09;&#x3002;&#x6700;&#x7EC8;&#x663E;&#x793A;&#x7684;&#x662F;&#x6700;&#x5916;&#x5C42;&#x63A7;&#x4EF6;
+</code></pre></li>
+<li><p>&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x7A97;&#x53E3;&#x65F6;&#xFF0C;&#x9884;&#x671F;&#x7684;&#x7A97;&#x53E3;&#x6CA1;&#x6709;&#x51FA;&#x73B0;&#xFF0C;&#x68C0;&#x67E5;&#x7A97;&#x53E3;&#x7684;&#x5C42;&#x7EA7;
+&#xFF0C;&#x5224;&#x65AD;&#x662F;&#x5426;&#x88AB;&#x5176;&#x4ED6;&#x7A97;&#x53E3;&#x906E;&#x6321;</p>
+</li>
+</ol>
+<h3 id="&#x7A97;&#x53E3;&#x4E3B;&#x7A97;&#x53E3;&#x65F6;&#x95F4;">&#x7A97;&#x53E3;-&gt;&#x4E3B;&#x7A97;&#x53E3;&#x65F6;&#x95F4;</h3>
+<ul>
+<li><p>&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x81EA;&#x52A8;&#x52A0;&#x8F7D;&#xFF0C;&#x65B0;&#x5EFA;&#x7684;&#x7A97;&#x53E3;&#x6210;&#x4E3A;&#x4E3B;&#x7A97;&#x53E3;&#x65F6;&#x95F4;&#xFF1A;&#x662F;&#x5728;&#x6839;&#x63A7;&#x5236;&#x5668;&#x7684;View&#x5B8C;&#x6210;&#x663E;&#x793A;&#x65F6;&#xFF0C;&#x6D4B;&#x8BD5;&#x65F6;&#x95F4;&#x53CA;&#x7ED3;&#x679C;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-objc">  <span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x65F6;&#x95F4;1&#xFF1A;&#x63A7;&#x4EF6;&#x52A0;&#x8F7D;&#x4E2D;</span>
+  - (<span class="hljs-keyword">void</span>)viewDidLoad
+  {
+      [<span class="hljs-keyword">super</span> viewDidLoad];
+      <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;keywindow%@---%@&quot;</span>,[<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.keyWindow</span>,[<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.windows</span>);
+  }
+
+  <span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x65F6;&#x95F4;2&#xFF1A;&#x63A7;&#x4EF6;&#x5373;&#x5C06;&#x663E;&#x793A;</span>
+  - (<span class="hljs-keyword">void</span>)viewWillAppear:(<span class="hljs-built_in">BOOL</span>)animated
+  {
+      [<span class="hljs-keyword">super</span> viewWillAppear:animated];
+
+      <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;keywindow%@---%@&quot;</span>,[<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.keyWindow</span>,[<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.windows</span>);
+  }
+
+  <span class="hljs-comment">// &#x6D4B;&#x8BD5;&#x65F6;&#x95F4;3&#xFF1A;&#x63A7;&#x4EF6;&#x5DF2;&#x7ECF;&#x663E;&#x793A;</span>
+  - (<span class="hljs-keyword">void</span>)viewDidAppear:(<span class="hljs-built_in">BOOL</span>)animated
+  {
+      [<span class="hljs-keyword">super</span> viewDidAppear:animated];
+      <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;keywindow%@---%@&quot;</span>,[<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.keyWindow</span>,[<span class="hljs-built_in">UIApplication</span> sharedApplication]<span class="hljs-variable">.windows</span>);
+  }
+</code></pre>
+<pre><code class="lang-objc">  <span class="hljs-comment">// viewDidLoad&#x6253;&#x5370;&#x7ED3;&#x679C;</span>
+  keywindow(null)---
+  (
+      <span class="hljs-string">&quot;&lt;UIWindow: 0x7f86b0e6d4c0; frame = (0 0; 375 667); gestureRecognizers = &lt;NSArray: 0x7f86b0e6e830&gt;; layer = &lt;UIWindowLayer: 0x7f86b0e6a250&gt;&gt;&quot;</span>
+  )
+
+  <span class="hljs-comment">// viewWillAppear&#x6253;&#x5370;&#x7ED3;&#x679C;</span>
+  keywindow(null)---
+  (
+      <span class="hljs-string">&quot;&lt;UIWindow: 0x7f86b0e6d4c0; frame = (0 0; 375 667); gestureRecognizers = &lt;NSArray: 0x7f86b0e6e830&gt;; layer = &lt;UIWindowLayer: 0x7f86b0e6a250&gt;&gt;&quot;</span>
+  )
+
+  <span class="hljs-comment">// viewDidAppear&#x6253;&#x5370;&#x7ED3;&#x679C;</span>
+   keywindow&lt;<span class="hljs-built_in">UIWindow</span>: <span class="hljs-number">0x7f86b0e6d4c0</span>; frame = (<span class="hljs-number">0</span> <span class="hljs-number">0</span>; <span class="hljs-number">375</span> <span class="hljs-number">667</span>); autoresize = W+H; gestureRecognizers = &lt;<span class="hljs-built_in">NSArray</span>: <span class="hljs-number">0x7f86b0e6e830</span>&gt;; layer = &lt;<span class="hljs-built_in">UIWindowLayer</span>: <span class="hljs-number">0x7f86b0e6a250</span>&gt;&gt;---
+   (
+      <span class="hljs-string">&quot;&lt;UIWindow: 0x7f86b0e6d4c0; frame = (0 0; 375 667); autoresize = W+H; gestureRecognizers = &lt;NSArray: 0x7f86b0e6e830&gt;; layer = &lt;UIWindowLayer: 0x7f86b0e6a250&gt;&gt;&quot;</span>
+  )
+</code></pre>
+</li>
+</ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-29 17:03:26
+2016-06-05 09:57:37
 </span></footer>
                     
                     </section>
