@@ -65,7 +65,7 @@
         data-chapter-title="NSOperation"
         data-filepath="multithreading/nsoperation/nsoperation.md"
         data-basepath="../.."
-        data-revision="Wed May 25 2016 16:57:37 GMT+0800 (CST)"
+        data-revision="Tue Jun 07 2016 09:35:57 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -996,37 +996,31 @@
 <ul>
 <li>&#x7236;&#x7C7B;&#x662F;NSObject</li>
 </ul>
-<h4 id="nsoperation&#x4E0E;gcd&#x961F;&#x5217;&#x64CD;&#x4F5C;&#x7684;&#x5DEE;&#x522B;&#xFF1A;">NSOperation&#x4E0E;GCD&#x961F;&#x5217;+&#x64CD;&#x4F5C;&#x7684;&#x5DEE;&#x522B;&#xFF1A;</h4>
-<ul>
-<li>NSOperation&#x5C06;&#x540C;&#x6B65;&#x4E0E;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#x5C01;&#x88C5;&#x5728;&#x5185;&#x90E8;&#xFF1B;</li>
-<li>&#x961F;&#x5217;&#x7531;&#xFF08;&#x4E32;&#x884C;&#x961F;&#x5217;&#x3001;&#x4E3B;&#x961F;&#x5217;&#x3001;&#x5E76;&#x53D1;&#x961F;&#x5217;&#x3001;&#x5168;&#x5C40;&#x5E76;&#x53D1;&#x961F;&#x5217;&#xFF09;&#x53D8;&#x4E3A;&#x53EA;&#x5206;&#x6210;&#x4E3B;&#x961F;&#x5217;&#x548C;&#x975E;&#x4E3B;&#x961F;&#x5217;&#xFF1A;</li>
-</ul>
-<pre><code class="lang-objc">    <span class="hljs-number">01.</span> &#x540C;&#x6B65;&#x4E0E;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#xFF1A;
-        <span class="hljs-number">1.1</span> &#x540C;&#x6B65;&#x51FD;&#x6570;&#xFF1A;<span class="hljs-built_in">NSOperation</span>&#x4E2D;&#xFF0C;&#x4EFB;&#x52A1;&#x7684;start&#x65B9;&#x6CD5;&#x662F;&#x540C;&#x6B65;&#x51FD;&#x6570;&#xFF0C;start&#x662F;&#x8BA9;&#x4EFB;&#x52A1;&#x5728;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E2D;&#x540C;&#x6B65;&#x4E32;&#x884C;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x5185;&#x90E8;&#x7684;main&#x65B9;&#x6CD5;
-            a  &#x5982;&#x679C;&#x8981;&#x8BA9;&#x4EFB;&#x52A1;&#x5728;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x4EFB;&#x52A1;&#x5E76;start&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x52A0;&#x5165;&#x5230;&#x961F;&#x5217;&#x4E2D;
+<h4 id="nsoperation&#x4E0E;gcd&#x7684;&#x5DEE;&#x522B;&#xFF1A;">NSOperation&#x4E0E;GCD&#x7684;&#x5DEE;&#x522B;&#xFF1A;</h4>
+<ol>
+<li>NSOperation&#x5C06;&#x540C;&#x6B65;&#x4E0E;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#x5C01;&#x88C5;&#x5728;&#x5185;&#x90E8;&#xFF1B;GCD&#x987B;&#x81EA;&#x884C;&#x8BBE;&#x7F6E;</li>
+<li><p>&#x961F;&#x5217;&#x4ECE;GCD&#x7684;&#x4E32;&#x884C;&#x961F;&#x5217;&#x3001;&#x4E3B;&#x961F;&#x5217;&#x3001;&#x5E76;&#x53D1;&#x961F;&#x5217;&#x3001;&#x5168;&#x5C40;&#x5E76;&#x53D1;&#x961F;&#x5217;&#x53D8;&#x4E3A;NSOperation&#x7684;&#x4E3B;&#x961F;&#x5217;&#x548C;&#x975E;&#x4E3B;&#x961F;&#x5217;&#xFF1A;</p>
+<pre><code>  01. &#x540C;&#x6B65;&#x4E0E;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#xFF1A;
+      1.1 &#x540C;&#x6B65;&#x51FD;&#x6570;&#xFF1A;NSOperation&#x4E2D;&#xFF0C;&#x4EFB;&#x52A1;&#x7684;start&#x65B9;&#x6CD5;&#x662F;&#x540C;&#x6B65;&#x51FD;&#x6570;&#xFF0C;start&#x662F;&#x8BA9;&#x4EFB;&#x52A1;&#x5728;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E2D;&#x540C;&#x6B65;&#x4E32;&#x884C;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x5185;&#x90E8;&#x7684;main&#x65B9;&#x6CD5;
+          a  &#x5982;&#x679C;&#x8981;&#x8BA9;&#x4EFB;&#x52A1;&#x5728;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#xFF0C;&#x5C31;&#x76F4;&#x63A5;&#x521B;&#x5EFA;&#x4EFB;&#x52A1;&#x5E76;start&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x52A0;&#x5165;&#x5230;&#x961F;&#x5217;&#x4E2D;
+      1.2 &#x5F02;&#x6B65;&#x51FD;&#x6570;&#xFF1A;NSOperationQueue&#x90FD;&#x662F;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#x3002;&#x52A0;&#x5165;&#x5230;NSOperationQueue&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5185;&#x90E8;&#x4F1A;&#x8C03;&#x7528;start&#x65B9;&#x6CD5;&#xFF0C;&#x8BA9;&#x4EFB;&#x52A1;&#x5728;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E2D;&#x540C;&#x6B65;&#x4E32;&#x884C;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x5185;&#x90E8;&#x7684;main&#x65B9;&#x6CD5;
+      1.3 NSBlockOperation&#x8FFD;&#x52A0;&#x4EFB;&#x52A1;&#x4E5F;&#x662F;&#x5728;&#x65B0;&#x5F00;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#xFF0C;&#x662F;&#x7279;&#x4F8B;&#x3002;
 
-        <span class="hljs-number">1.2</span> &#x5F02;&#x6B65;&#x51FD;&#x6570;&#xFF1A;<span class="hljs-built_in">NSOperationQueue</span>&#x90FD;&#x662F;&#x5F02;&#x6B65;&#x51FD;&#x6570;&#x3002;&#x52A0;&#x5165;&#x5230;<span class="hljs-built_in">NSOperationQueue</span>&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#xFF0C;&#x5185;&#x90E8;&#x4F1A;&#x8C03;&#x7528;start&#x65B9;&#x6CD5;&#xFF0C;&#x8BA9;&#x4EFB;&#x52A1;&#x5728;&#x5F53;&#x524D;&#x7EBF;&#x7A0B;&#x4E2D;&#x540C;&#x6B65;&#x4E32;&#x884C;&#x6267;&#x884C;&#xFF0C;&#x5E76;&#x4E14;&#x8C03;&#x7528;&#x5185;&#x90E8;&#x7684;main&#x65B9;&#x6CD5;
+  02 NSOperation&#x7684;&#x961F;&#x5217;&#xFF1A;
+      1. &#x4E3B;&#x961F;&#x5217;&#x7684;&#x4EFB;&#x52A1;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;&#xFF08;&#x540C;GCD&#xFF09;&#xFF1B;
+      2. &#x975E;&#x4E3B;&#x961F;&#x5217;&#x7684;&#x4EFB;&#x52A1;&#x540C;&#x65F6;&#x5177;&#x5907;&#x4E32;&#x884C;&#x548C;&#x5E76;&#x53D1;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x901A;&#x8FC7;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6570;&#x8BBE;&#x7F6E;&#x961F;&#x5217;&#x6A21;&#x5F0F;&#xFF08;&#x4E32;&#x884C;&#xFF1F;&#x5E76;&#x53D1;&#xFF09;&#x3002;
 
-        <span class="hljs-number">1.3</span> <span class="hljs-built_in">NSBlockOperation</span>&#x8FFD;&#x52A0;&#x4EFB;&#x52A1;&#x4E5F;&#x662F;&#x5728;&#x65B0;&#x5F00;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#xFF0C;&#x662F;&#x7279;&#x4F8B;&#x3002;
-
-    <span class="hljs-number">02</span> <span class="hljs-built_in">NSOperation</span>&#x7684;&#x961F;&#x5217;&#xFF1A;
-        <span class="hljs-number">1.</span> &#x4E3B;&#x961F;&#x5217;&#x7684;&#x4EFB;&#x52A1;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;&#xFF08;&#x540C;GCD&#xFF09;&#xFF1B;
-        <span class="hljs-number">2.</span> &#x975E;&#x4E3B;&#x961F;&#x5217;&#x7684;&#x4EFB;&#x52A1;&#x540C;&#x65F6;&#x5177;&#x5907;&#x4E32;&#x884C;&#x548C;&#x5E76;&#x53D1;&#x7684;&#x80FD;&#x529B;&#xFF0C;&#x901A;&#x8FC7;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6570;&#x8BBE;&#x7F6E;&#x961F;&#x5217;&#x6A21;&#x5F0F;&#xFF08;&#x4E32;&#x884C;&#xFF1F;&#x5E76;&#x53D1;&#xFF09;&#x3002;
-
-
-
-<span class="hljs-number">1.</span><span class="hljs-built_in">NSOperation</span>&#x548C;GCD&#x7684;&#x5BF9;&#x6BD4;&#xFF1F;
-<span class="hljs-number">1</span>&#xFF09; GCD&#x662F;&#x7EAF;C&#x8BED;&#x8A00;&#x7684;API,&#x800C;&#x64CD;&#x4F5C;&#x961F;&#x5217;&#x5219;&#x662F;Object-C&#x7684;&#x5BF9;&#x8C61;&#x3002;
-<span class="hljs-number">2</span>&#xFF09;&#x5728;GCD&#x4E2D;&#xFF0C;&#x4EFB;&#x52A1;&#x7528;&#x5757;&#xFF08;block&#xFF09;&#x6765;&#x8868;&#x793A;&#xFF0C;&#x800C;&#x5757;&#x662F;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1B;
-   &#x76F8;&#x53CD;&#x64CD;&#x4F5C;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x300E;&#x64CD;&#x4F5C;&#x300F;<span class="hljs-built_in">NSOperation</span>&#x5219;&#x662F;&#x4E2A;&#x66F4;&#x52A0;&#x91CD;&#x91CF;&#x7EA7;&#x7684;Object-C&#x5BF9;&#x8C61;&#x3002;
-
-&#x64CD;&#x4F5C;&#x961F;&#x5217;&#x7684;&#x597D;&#x5904;&#x6709;&#xFF1A;
-    <span class="hljs-number">1</span>&#xFF09;<span class="hljs-built_in">NSOperationQueue</span>&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x8C03;&#x7528;cancel&#x65B9;&#x6CD5;&#x6765;&#x53D6;&#x6D88;&#x67D0;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;GCD&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x662F;&#x65E0;&#x6CD5;&#x88AB;&#x53D6;&#x6D88;&#x7684;&#xFF08;&#x5B89;&#x6392;&#x597D;&#x4EFB;&#x52A1;&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x7BA1;&#x4E86;&#xFF09;&#x3002;
-    <span class="hljs-number">2</span>&#xFF09;<span class="hljs-built_in">NSOperation</span>&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;
-    <span class="hljs-number">3</span>&#xFF09;<span class="hljs-built_in">NSOperation</span>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;KVO&#x63D0;&#x4F9B;&#x5BF9;<span class="hljs-built_in">NSOperation</span>&#x5BF9;&#x8C61;&#x7684;&#x7CBE;&#x7EC6;&#x63A7;&#x5236;&#x3002;
-    <span class="hljs-number">4</span>&#xFF09;<span class="hljs-built_in">NSOperation</span>&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x4F18;&#x5148;&#x7EA7;&#x3002;
-    <span class="hljs-number">5</span>&#xFF09;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;<span class="hljs-built_in">NSOperation</span>&#x7684;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x64CD;&#x4F5C;&#x91CD;&#x7528;&#x3002;
-</code></pre>
+  03 NSOperation&#x548C;GCD&#x7684;&#x5BF9;&#x6BD4;&#xFF1F;
+      1. GCD&#x662F;&#x7EAF;C&#x8BED;&#x8A00;&#x7684;API,&#x800C;&#x64CD;&#x4F5C;&#x961F;&#x5217;&#x5219;&#x662F;Object-C&#x7684;&#x5BF9;&#x8C61;&#x3002;
+      2. &#x5728;GCD&#x4E2D;&#xFF0C;&#x4EFB;&#x52A1;&#x7528;&#x5757;&#xFF08;block&#xFF09;&#x6765;&#x8868;&#x793A;&#xFF0C;&#x800C;&#x5757;&#x662F;&#x4E2A;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#xFF1B;&#x76F8;&#x53CD;&#x64CD;&#x4F5C;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x300E;&#x64CD;&#x4F5C;&#x300F;NSOperation&#x5219;&#x662F;&#x4E2A;&#x66F4;&#x52A0;&#x91CD;&#x91CF;&#x7EA7;&#x7684;Object-C&#x5BF9;&#x8C61;&#x3002;
+      3. &#x64CD;&#x4F5C;&#x961F;&#x5217;&#x7684;&#x597D;&#x5904;&#x6709;&#xFF1A;
+          1&#xFF09;NSOperationQueue&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x8C03;&#x7528;cancel&#x65B9;&#x6CD5;&#x6765;&#x53D6;&#x6D88;&#x67D0;&#x4E2A;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;GCD&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x662F;&#x65E0;&#x6CD5;&#x88AB;&#x53D6;&#x6D88;&#x7684;&#xFF08;&#x5B89;&#x6392;&#x597D;&#x4EFB;&#x52A1;&#x4E4B;&#x540E;&#x5C31;&#x4E0D;&#x7BA1;&#x4E86;&#xFF09;&#x3002;
+          2&#xFF09;NSOperation&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x95F4;&#x7684;&#x4F9D;&#x8D56;&#x5173;&#x7CFB;&#x3002;
+          3&#xFF09;NSOperation&#x53EF;&#x4EE5;&#x901A;&#x8FC7;KVO&#x63D0;&#x4F9B;&#x5BF9;NSOperation&#x5BF9;&#x8C61;&#x7684;&#x7CBE;&#x7EC6;&#x63A7;&#x5236;&#x3002;
+          4&#xFF09;NSOperation&#x53EF;&#x4EE5;&#x65B9;&#x4FBF;&#x7684;&#x6307;&#x5B9A;&#x64CD;&#x4F5C;&#x4F18;&#x5148;&#x7EA7;&#x3002;
+          5&#xFF09;&#x901A;&#x8FC7;&#x81EA;&#x5B9A;&#x4E49;NSOperation&#x7684;&#x5B50;&#x7C7B;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x64CD;&#x4F5C;&#x91CD;&#x7528;&#x3002;
+</code></pre></li>
+</ol>
 <h4 id="nsoperation&#x7684;&#x4F7F;&#x7528;">NSOperation&#x7684;&#x4F7F;&#x7528;</h4>
 <ul>
 <li>&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5B8C;&#x540E;&#x4E0D;&#x4F1A;&#x9500;&#x6BC1;&#xFF0C;&#x53EF;&#x7EE7;&#x7EED;&#x6DFB;&#x52A0;&#x4EFB;&#x52A1;&#x7EE7;&#x7EED;&#x6267;&#x884C;&#xFF1B;thread&#x4EFB;&#x52A1;&#x6267;&#x884C;&#x5B8C;&#x5C31;&#x201C;&#x6B7B;&#x6389;&#x201D;&#xFF0C;&#x4E0D;&#x80FD;&#x91CD;&#x65B0;&#x5F00;&#x59CB;&#x6216;&#x8005;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x4EFB;&#x52A1;</li>
@@ -1040,87 +1034,94 @@
     3.3 &#x7CFB;&#x7EDF;&#x4F1A;&#x81EA;&#x52A8;&#x5C06;NSOperationQueue&#x4E2D;&#x7684;NSOperation&#x53D6;&#x51FA;&#x6765;
     3.4 &#x5C06;&#x53D6;&#x51FA;&#x7684;NSOperation&#x5C01;&#x88C5;&#x7684;&#x64CD;&#x4F5C;&#x653E;&#x5230;&#x65B0;&#x7684;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;&#xFF08;&#x5F00;&#x591A;&#x5C11;&#x7EBF;&#x7A0B;&#x7531;&#x7CFB;&#x7EDF;&#x7BA1;&#x7406;&#xFF09;
 </code></pre><p>&#xFF08;2&#xFF09;&#x57FA;&#x672C;&#x4F7F;&#x7528;&#x4EE3;&#x7801;</p>
-<pre><code class="lang-objc">  <span class="hljs-number">01</span> <span class="hljs-built_in">NSInvocationOperation</span>
-    <span class="hljs-comment">//1.&#x5C01;&#x88C5;&#x64CD;&#x4F5C;</span>
-    <span class="hljs-comment">/*
-     &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;
-     &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x8BE5;&#x64CD;&#x4F5C;&#x8981;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6700;&#x591A;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;
-     &#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x65B9;&#x6CD5;&#x4E0D;&#x63A5;&#x53D7;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x503C;&#x4F20;nil
-     */</span>
-    <span class="hljs-built_in">NSInvocationOperation</span> *operation = [[<span class="hljs-built_in">NSInvocationOperation</span> alloc]
-                                        initWithTarget:<span class="hljs-keyword">self</span> selector:<span class="hljs-keyword">@selector</span>(run) object:<span class="hljs-literal">nil</span>];
+<ol>
+<li><p>NSInvocationOperation</p>
+<pre><code class="lang-objc">     <span class="hljs-comment">//1.&#x5C01;&#x88C5;&#x64CD;&#x4F5C;</span>
+     <span class="hljs-comment">/*
+      &#x7B2C;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x76EE;&#x6807;&#x5BF9;&#x8C61;
+      &#x7B2C;&#x4E8C;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x8BE5;&#x64CD;&#x4F5C;&#x8981;&#x8C03;&#x7528;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x6700;&#x591A;&#x63A5;&#x53D7;&#x4E00;&#x4E2A;&#x53C2;&#x6570;
+      &#x7B2C;&#x4E09;&#x4E2A;&#x53C2;&#x6570;&#xFF1A;&#x8C03;&#x7528;&#x65B9;&#x6CD5;&#x4F20;&#x9012;&#x7684;&#x53C2;&#x6570;&#xFF0C;&#x5982;&#x679C;&#x65B9;&#x6CD5;&#x4E0D;&#x63A5;&#x53D7;&#x53C2;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5;&#x503C;&#x4F20;nil
+      */</span>
+     <span class="hljs-built_in">NSInvocationOperation</span> *operation = [[<span class="hljs-built_in">NSInvocationOperation</span> alloc]
+                                         initWithTarget:<span class="hljs-keyword">self</span> selector:<span class="hljs-keyword">@selector</span>(run) object:<span class="hljs-literal">nil</span>];
 
-    <span class="hljs-comment">//2.&#x542F;&#x52A8;&#x64CD;&#x4F5C;</span>
-    [operation start];<span class="hljs-comment">//&#x5F00;&#x59CB;&#x8C03;&#x7528;run&#x65B9;&#x6CD5;</span>
-
--------------------------------------------------
-  <span class="hljs-number">02</span> <span class="hljs-built_in">NSBlockOperation</span>
-    <span class="hljs-comment">//1.&#x5C01;&#x88C5;&#x64CD;&#x4F5C;</span>
-    <span class="hljs-built_in">NSBlockOperation</span> *operation = [<span class="hljs-built_in">NSBlockOperation</span> blockOperationWithBlock:^{
-
-        <span class="hljs-comment">//&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;</span>
-        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;---download1--%@&quot;</span>,[<span class="hljs-built_in">NSThread</span> currentThread]);
-    }];
-
-    <span class="hljs-comment">//2.&#x8FFD;&#x52A0;&#x64CD;&#x4F5C;&#xFF0C;&#x8FFD;&#x52A0;&#x7684;&#x64CD;&#x4F5C;&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;</span>
-    [operation addExecutionBlock:^{
-        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;---download2--%@&quot;</span>,[<span class="hljs-built_in">NSThread</span> currentThread]);
-    }];
-
-    <span class="hljs-comment">//3.&#x542F;&#x52A8;&#x6267;&#x884C;&#x64CD;&#x4F5C;</span>
-    [operation start];
-
-----------------------------------------------
- <span class="hljs-number">03</span> &#x81EA;&#x5B9A;&#x4E49;<span class="hljs-built_in">NSOperation</span>
-    <span class="hljs-comment">//&#x5982;&#x4F55;&#x5C01;&#x88C5;&#x64CD;&#x4F5C;&#xFF1F;</span>
-    <span class="hljs-comment">//&#x81EA;&#x5B9A;&#x4E49;&#x7684;NSOperation,&#x901A;&#x8FC7;&#x91CD;&#x5199;&#x5185;&#x90E8;&#x7684;main&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x5C01;&#x88C5;&#x64CD;&#x4F5C;</span>
-    <span class="hljs-comment">//&#x91CD;&#x5199;- (void)main&#x65B9;&#x6CD5;&#x7684;&#x6CE8;&#x610F;&#x70B9;</span>
-&#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#x6C60;&#xFF08;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x662F;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#x6C60;&#xFF09;
-    <span class="hljs-comment">//&#x7ECF;&#x5E38;&#x901A;&#x8FC7;- (BOOL)isCancelled&#x65B9;&#x6CD5;&#x68C0;&#x6D4B;&#x64CD;&#x4F5C;&#x662F;&#x5426;&#x88AB;&#x53D6;&#x6D88;&#xFF0C;&#x5BF9;&#x53D6;&#x6D88;&#x505A;&#x51FA;&#x54CD;&#x5E94;</span>
-
-<span class="hljs-comment">//&#x4F18;&#x70B9;:</span>
-<span class="hljs-comment">//1.&#x4EE3;&#x7801;&#x7B80;&#x6D01;</span>
-<span class="hljs-comment">//2.&#x63D0;&#x9AD8;&#x4EE3;&#x7801;&#x7684;&#x590D;&#x7528;&#x6027;</span>
-<span class="hljs-comment">//3.&#x4FE1;&#x606F;&#x9690;&#x853D;</span>
-&#x81EA;&#x5B9A;&#x4E49;FZQOperation<span class="hljs-variable">.m</span>&#x4E2D;
-    -(<span class="hljs-keyword">void</span>)main
-    {
-        <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;--main--%@&quot;</span>,[<span class="hljs-built_in">NSThread</span> currentThread]);
-    }
-
-    <span class="hljs-comment">//&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF1F;</span>
-    <span class="hljs-comment">//1.&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;</span>
-    XMGOperation *op = [[XMGOperation alloc]init];
-
-    <span class="hljs-comment">//2.&#x6267;&#x884C;&#x64CD;&#x4F5C;</span>
-    [op start];
-    <span class="hljs-comment">//start&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x4F1A;&#x8C03;&#x7528;main&#x65B9;&#x6CD5;,&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x628A;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5728;&#x5185;&#x90E8;&#x7684;main&#x65B9;&#x6CD5;&#x4E2D;</span>
+     <span class="hljs-comment">//2.&#x542F;&#x52A8;&#x64CD;&#x4F5C;</span>
+     [operation start];<span class="hljs-comment">//&#x5F00;&#x59CB;&#x8C03;&#x7528;run&#x65B9;&#x6CD5;</span>
 </code></pre>
+</li>
+<li><p>NSBlockOperation</p>
+<pre><code class="lang-objc">  <span class="hljs-comment">//1.&#x5C01;&#x88C5;&#x64CD;&#x4F5C;</span>
+  <span class="hljs-built_in">NSBlockOperation</span> *operation = [<span class="hljs-built_in">NSBlockOperation</span> blockOperationWithBlock:^{
+
+      <span class="hljs-comment">//&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;</span>
+      <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;---download1--%@&quot;</span>,[<span class="hljs-built_in">NSThread</span> currentThread]);
+  }];
+
+  <span class="hljs-comment">//2.&#x8FFD;&#x52A0;&#x64CD;&#x4F5C;&#xFF0C;&#x8FFD;&#x52A0;&#x7684;&#x64CD;&#x4F5C;&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#x4E2D;&#x6267;&#x884C;</span>
+  [operation addExecutionBlock:^{
+      <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;---download2--%@&quot;</span>,[<span class="hljs-built_in">NSThread</span> currentThread]);
+  }];
+
+  <span class="hljs-comment">//3.&#x542F;&#x52A8;&#x6267;&#x884C;&#x64CD;&#x4F5C;</span>
+  [operation start];
+</code></pre>
+</li>
+<li><p>&#x81EA;&#x5B9A;&#x4E49;NSOperation</p>
+<pre><code class="lang-objc">      <span class="hljs-comment">//&#x5982;&#x4F55;&#x5C01;&#x88C5;&#x64CD;&#x4F5C;&#xFF1F;</span>
+      <span class="hljs-comment">//&#x81EA;&#x5B9A;&#x4E49;&#x7684;NSOperation,&#x901A;&#x8FC7;&#x91CD;&#x5199;&#x5185;&#x90E8;&#x7684;main&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x5C01;&#x88C5;&#x64CD;&#x4F5C;</span>
+      <span class="hljs-comment">//&#x91CD;&#x5199;- (void)main&#x65B9;&#x6CD5;&#x7684;&#x6CE8;&#x610F;&#x70B9;</span>
+  &#x81EA;&#x5DF1;&#x521B;&#x5EFA;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#x6C60;&#xFF08;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x662F;&#x5F02;&#x6B65;&#x64CD;&#x4F5C;&#xFF0C;&#x65E0;&#x6CD5;&#x8BBF;&#x95EE;&#x4E3B;&#x7EBF;&#x7A0B;&#x7684;&#x81EA;&#x52A8;&#x91CA;&#x653E;&#x6C60;&#xFF09;
+      <span class="hljs-comment">//&#x7ECF;&#x5E38;&#x901A;&#x8FC7;- (BOOL)isCancelled&#x65B9;&#x6CD5;&#x68C0;&#x6D4B;&#x64CD;&#x4F5C;&#x662F;&#x5426;&#x88AB;&#x53D6;&#x6D88;&#xFF0C;&#x5BF9;&#x53D6;&#x6D88;&#x505A;&#x51FA;&#x54CD;&#x5E94;</span>
+
+  <span class="hljs-comment">//&#x4F18;&#x70B9;:</span>
+  <span class="hljs-comment">//1.&#x4EE3;&#x7801;&#x7B80;&#x6D01;</span>
+  <span class="hljs-comment">//2.&#x63D0;&#x9AD8;&#x4EE3;&#x7801;&#x7684;&#x590D;&#x7528;&#x6027;</span>
+  <span class="hljs-comment">//3.&#x4FE1;&#x606F;&#x9690;&#x853D;</span>
+  &#x81EA;&#x5B9A;&#x4E49;FZQOperation<span class="hljs-variable">.m</span>&#x4E2D;
+      -(<span class="hljs-keyword">void</span>)main
+      {
+          <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;--main--%@&quot;</span>,[<span class="hljs-built_in">NSThread</span> currentThread]);
+      }
+
+      <span class="hljs-comment">//&#x5982;&#x4F55;&#x4F7F;&#x7528;&#xFF1F;</span>
+      <span class="hljs-comment">//1.&#x5B9E;&#x4F8B;&#x5316;&#x4E00;&#x4E2A;&#x81EA;&#x5B9A;&#x4E49;&#x64CD;&#x4F5C;&#x5BF9;&#x8C61;</span>
+      XMGOperation *op = [[XMGOperation alloc]init];
+
+      <span class="hljs-comment">//2.&#x6267;&#x884C;&#x64CD;&#x4F5C;</span>
+      [op start];
+      <span class="hljs-comment">//start&#x65B9;&#x6CD5;&#x5185;&#x90E8;&#x4F1A;&#x8C03;&#x7528;main&#x65B9;&#x6CD5;,&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x628A;&#x7EBF;&#x7A0B;&#x8C03;&#x7528;&#x7684;&#x4EE3;&#x7801;&#x653E;&#x5728;&#x5185;&#x90E8;&#x7684;main&#x65B9;&#x6CD5;&#x4E2D;</span>
+</code></pre>
+</li>
+</ol>
 <h4 id="nsoperationqueue&#x57FA;&#x672C;&#x4F7F;&#x7528;">NSOperationQueue&#x57FA;&#x672C;&#x4F7F;&#x7528;</h4>
 <p>&#xFF08;1&#xFF09;NSOperation&#x4E2D;&#x7684;&#x4E24;&#x79CD;&#x961F;&#x5217;</p>
 <pre><code>01 &#x4E3B;&#x961F;&#x5217; &#x901A;&#x8FC7;mainQueue&#x83B7;&#x5F97;&#xFF0C;&#x51E1;&#x662F;&#x653E;&#x5230;&#x4E3B;&#x961F;&#x5217;&#x4E2D;&#x7684;&#x4EFB;&#x52A1;&#x90FD;&#x5C06;&#x5728;&#x4E3B;&#x7EBF;&#x7A0B;&#x6267;&#x884C;
 02 &#x975E;&#x4E3B;&#x961F;&#x5217; &#x76F4;&#x63A5;alloc init&#x51FA;&#x6765;&#x7684;&#x961F;&#x5217;&#x3002;&#x975E;&#x4E3B;&#x961F;&#x5217;&#x540C;&#x65F6;&#x5177;&#x5907;&#x4E86;&#x5E76;&#x53D1;&#x548C;&#x4E32;&#x884C;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x901A;&#x8FC7;&#x8BBE;&#x7F6E;&#x6700;&#x5927;&#x5E76;&#x53D1;&#x6570;&#x5C5E;&#x6027;&#x6765;&#x63A7;&#x5236;&#x4EFB;&#x52A1;&#x662F;&#x5E76;&#x53D1;&#x6267;&#x884C;&#x8FD8;&#x662F;&#x4E32;&#x884C;&#x6267;&#x884C;&#x3002;&#x5177;&#x5907;&#x65B0;&#x5F00;&#x7EBF;&#x7A0B;&#x80FD;&#x529B;
 </code></pre><p>&#xFF08;2&#xFF09;&#x76F8;&#x5173;&#x4EE3;&#x7801;</p>
-<pre><code class="lang-objc">    <span class="hljs-number">01</span> &#x81EA;&#x5B9A;&#x4E49;<span class="hljs-built_in">NSOperation</span>
--(<span class="hljs-keyword">void</span>)customOperation
-{
-    <span class="hljs-comment">//1.&#x521B;&#x5EFA;&#x961F;&#x5217;</span>
-    <span class="hljs-built_in">NSOperationQueue</span> *queue = [[<span class="hljs-built_in">NSOperationQueue</span> alloc]init];
+<ul>
+<li><p>&#x81EA;&#x5B9A;&#x4E49;NSOperation</p>
+<pre><code class="lang-objc">  - (<span class="hljs-keyword">void</span>)customOperation
+  {
+      <span class="hljs-comment">//1.&#x521B;&#x5EFA;&#x961F;&#x5217;</span>
+      <span class="hljs-built_in">NSOperationQueue</span> *queue = [[<span class="hljs-built_in">NSOperationQueue</span> alloc]init];
 
-    <span class="hljs-comment">//2.&#x5C01;&#x88C5;&#x64CD;&#x4F5C;</span>
-    <span class="hljs-comment">//&#x597D;&#x5904;&#xFF1A;1.&#x4FE1;&#x606F;&#x9690;&#x853D;</span>
-    <span class="hljs-comment">//2.&#x4EE3;&#x7801;&#x590D;&#x7528;</span>
+      <span class="hljs-comment">//2.&#x5C01;&#x88C5;&#x64CD;&#x4F5C;</span>
+      <span class="hljs-comment">//&#x597D;&#x5904;&#xFF1A;1.&#x4FE1;&#x606F;&#x9690;&#x853D;</span>
+      <span class="hljs-comment">//2.&#x4EE3;&#x7801;&#x590D;&#x7528;</span>
 
-    XMGOperation *op1 = [[XMGOperation alloc]init];
-    XMGOperation *op2 = [[XMGOperation alloc]init];
+      XMGOperation *op1 = [[XMGOperation alloc]init];
+      XMGOperation *op2 = [[XMGOperation alloc]init];
 
-    <span class="hljs-comment">//3.&#x6DFB;&#x52A0;&#x64CD;&#x4F5C;&#x5230;&#x961F;&#x5217;&#x4E2D;</span>
-    [queue addOperation:op1];
-    [queue addOperation:op2];
-}
-
-    <span class="hljs-number">02</span> <span class="hljs-built_in">NSBlockOperation</span>
-- (<span class="hljs-keyword">void</span>)block
+      <span class="hljs-comment">//3.&#x6DFB;&#x52A0;&#x64CD;&#x4F5C;&#x5230;&#x961F;&#x5217;&#x4E2D;</span>
+      [queue addOperation:op1];
+      [queue addOperation:op2];
+  }
+</code></pre>
+</li>
+<li><p>NSBlockOperation</p>
+</li>
+</ul>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)block
 {
     <span class="hljs-comment">//1.&#x521B;&#x5EFA;&#x961F;&#x5217;</span>
     <span class="hljs-built_in">NSOperationQueue</span> *queue = [[<span class="hljs-built_in">NSOperationQueue</span> alloc]init];
@@ -1153,9 +1154,11 @@
     }];
 
 }
-
-    <span class="hljs-number">03</span> <span class="hljs-built_in">NSInvocationOperation</span>
-- (<span class="hljs-keyword">void</span>)invocation
+</code></pre>
+<ul>
+<li>NSInvocationOperation</li>
+</ul>
+<pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)invocation
 {
     <span class="hljs-comment">/*
      GCD&#x4E2D;&#x7684;&#x961F;&#x5217;&#xFF1A;
@@ -1339,7 +1342,7 @@
     }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-25 12:34:56
+2016-06-06 19:20:48
 </span></footer>
                     
                     </section>
