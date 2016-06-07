@@ -49,10 +49,10 @@
         
     
     
-    <link rel="next" href="../uialertcontroller/index.html" />
+    <link rel="next" href="../uitabbarcontroller/index.html" />
     
     
-    <link rel="prev" href="../uicollectionviewcontroller/index.html" />
+    <link rel="prev" href="../uiimagepickercontroller/index.html" />
     
 
         <!-- head:end -->
@@ -61,11 +61,11 @@
         <!-- body:start -->
         
     <div class="book"
-        data-level="1.6"
+        data-level="1.1.2"
         data-chapter-title="SFSafariViewController"
         data-filepath="sfsafariviewcontroller/README.md"
         data-basepath=".."
-        data-revision="Sun May 29 2016 15:09:39 GMT+0800 (CST)"
+        data-revision="Tue Jun 07 2016 22:20:41 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -130,16 +130,17 @@
                     </a>
             
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.2" data-path="uiimagepickercontroller/index.html">
+        <li class="chapter " data-level="1.1.1" data-path="uiimagepickercontroller/index.html">
             
                 
                     <a href="../uiimagepickercontroller/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.2.</b>
+                            <b>1.1.1.</b>
                         
                         UIImagePickerController
                     </a>
@@ -147,59 +148,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="uitabbarcontroller/index.html">
-            
-                
-                    <a href="../uitabbarcontroller/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.3.</b>
-                        
-                        UITabBarController
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="uitableviewcontroller/index.html">
-            
-                
-                    <a href="../uitableviewcontroller/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.4.</b>
-                        
-                        UITableViewController
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="uicollectionviewcontroller/index.html">
-            
-                
-                    <a href="../uicollectionviewcontroller/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.5.</b>
-                        
-                        UICollectionViewController
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter active" data-level="1.6" data-path="sfsafariviewcontroller/index.html">
+        <li class="chapter active" data-level="1.1.2" data-path="sfsafariviewcontroller/index.html">
             
                 
                     <a href="../sfsafariviewcontroller/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.6.</b>
+                            <b>1.1.2.</b>
                         
                         SFSafariViewController
                     </a>
@@ -207,14 +163,64 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="uialertcontroller/index.html">
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="uitabbarcontroller/index.html">
+            
+                
+                    <a href="../uitabbarcontroller/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        UITabBarController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="uitableviewcontroller/index.html">
+            
+                
+                    <a href="../uitableviewcontroller/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        UITableViewController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="uicollectionviewcontroller/index.html">
+            
+                
+                    <a href="../uicollectionviewcontroller/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        UICollectionViewController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="uialertcontroller/index.html">
             
                 
                     <a href="../uialertcontroller/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.7.</b>
+                            <b>1.5.</b>
                         
                         UIAlertController
                     </a>
@@ -353,57 +359,26 @@
                         <h2 id="sfsafariviewcontroller">SFSafariViewController</h2>
 <ul>
 <li>&#x7236;&#x7C7B;&#x662F;UINavigationController</li>
-<li>IOS9&#x65B0;&#x51FA;&#x7528;&#x4E8E;&#x7F51;&#x9875;&#x5C55;&#x793A;</li>
+<li>IOS9&#x65B0;&#x51FA;&#x7528;&#x4E8E;&#x7F51;&#x9875;&#x5C55;&#x793A;&#xFF0C;&#x4F7F;&#x7528;Safari&#x6253;&#x5F00;&#x7F51;&#x9875;&#xFF0C;&#x529F;&#x80FD;&#x7531;&#x82F9;&#x679C;&#x5B9E;&#x73B0;</li>
 </ul>
-<p>@interface SFSafariViewController : UIViewController</p>
-<p>/<em>! @abstract The view controller&apos;s delegate </em>/
-@property (nonatomic, weak, nullable) id<SFSafariViewControllerDelegate> delegate;</SFSafariViewControllerDelegate></p>
-<ul>
-<li>(instancetype)init NS_UNAVAILABLE;</li>
-<li>(instancetype)initWithCoder:(NSCoder *)aDecoder NS_UNAVAILABLE;</li>
-<li>(instancetype)initWithNibName:(nullable NSString <em>)nibNameOrNil bundle:(nullable NSBundle </em>)nibBundleOrNil NS_UNAVAILABLE;</li>
-</ul>
-<p>/<em>! @abstract Returns a view controller that loads a URL.
-    @param URL, the URL to navigate to.
-    @param entersReaderIfAvailable indicates if the Safari Reader version of content should be shown automatically
-    when Safari Reader is available on a web page
- </em>/</p>
-<ul>
-<li>(instancetype)initWithURL:(NSURL *)URL entersReaderIfAvailable:(BOOL)entersReaderIfAvailable NS_DESIGNATED_INITIALIZER;</li>
-</ul>
-<p>/<em>! @abstract Returns a view controller that loads a URL.
-    @param URL, the URL to navigate to.
- </em>/</p>
-<ul>
-<li>(instancetype)initWithURL:(NSURL *)URL;</li>
-</ul>
-<p>@end</p>
-<p>NS_AVAILABLE_IOS(9_0)
-@protocol SFSafariViewControllerDelegate <NSObject>
-@optional</NSObject></p>
-<p>/<em>! @abstract Called when the view controller is about to show UIActivityViewController after the user taps the action button.
-    @param URL, the URL of the web page.
-    @param title, the title of the web page.
-    @result Returns an array of UIActivity instances that will be appended to UIActivityViewController.
- </em>/</p>
-<ul>
-<li>(NSArray<UIActivity *=""> <em>)safariViewController:(SFSafariViewController </em>)controller activityItemsForURL:(NSURL <em>)URL title:(nullable NSString </em>)title;</UIActivity></li>
-</ul>
-<p>/<em>! @abstract Delegate callback called when the user taps the Done button. Upon this call, the view controller is dismissed modally. </em>/</p>
-<ul>
-<li>(void)safariViewControllerDidFinish:(SFSafariViewController *)controller;</li>
-</ul>
-<p>/<em>! @abstract Invoked when the initial URL load is complete.
-    @param success YES if loading completed successfully, NO if loading failed.
-    @discussion This method is invoked when SFSafariViewController completes the loading of the URL that you pass
-    to its initializer. It is not invoked for any subsequent page loads in the same SFSafariViewController instance.
- </em>/</p>
-<ul>
-<li>(void)safariViewController:(SFSafariViewController *)controller didCompleteInitialLoad:(BOOL)didLoadSuccessfully;</li>
-</ul>
-<p>@end</p>
+<h3 id="sfsafariviewcontroller&#x4F7F;&#x7528;">SFSafariViewController&#x4F7F;&#x7528;</h3>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x521B;&#x5EFA;</span>
+SFSafariViewController *sarariVc = [[SFSafariViewController alloc] initWithURL:[<span class="hljs-built_in">NSURL</span> URLWithString:urlStr]];
+
+<span class="hljs-comment">// &#x83B7;&#x53D6;tabBarController</span>
+<span class="hljs-built_in">UITabBarController</span> *tabBarVc = (<span class="hljs-built_in">UITabBarController</span> *)KEYWINDOW<span class="hljs-variable">.rootViewController</span>;
+
+<span class="hljs-comment">// &#x5B9E;&#x73B0;&#x8DF3;&#x8F6C;</span>
+[tabBarVc presentViewController:sarariVc animated:<span class="hljs-literal">YES</span> completion:<span class="hljs-literal">nil</span>];
+</code></pre>
+<h3 id="&#x7F51;&#x9875;&#x6253;&#x5F00;&#x65B9;&#x5F0F;">&#x7F51;&#x9875;&#x6253;&#x5F00;&#x65B9;&#x5F0F;</h3>
+<ol>
+<li>&#x65B9;&#x5F0F;&#x4E00;&#xFF1A;&#x901A;&#x8FC7;SFSafariViewController</li>
+<li>&#x65B9;&#x5F0F;&#x4E8C;&#xFF1A;&#x901A;&#x8FC7;<a href="../../UIKit-View/uiwebview/index.html">UIWebView</a></li>
+<li>&#x65B9;&#x5F0F;&#x4E09;&#xFF1A;&#x901A;&#x8FC7;<a href="../uiapplication/index.html">UIApplication</a>&#x7684;openURL&#x65B9;&#x6CD5;</li>
+</ol>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-25 16:14:52
+2016-06-07 15:41:34
 </span></footer>
                     
                     </section>
@@ -414,10 +389,10 @@
         </div>
 
         
-        <a href="../uicollectionviewcontroller/index.html" class="navigation navigation-prev " aria-label="Previous page: UICollectionViewController"><i class="fa fa-angle-left"></i></a>
+        <a href="../uiimagepickercontroller/index.html" class="navigation navigation-prev " aria-label="Previous page: UIImagePickerController"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../uialertcontroller/index.html" class="navigation navigation-next " aria-label="Next page: UIAlertController"><i class="fa fa-angle-right"></i></a>
+        <a href="../uitabbarcontroller/index.html" class="navigation navigation-next " aria-label="Next page: UITabBarController"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
