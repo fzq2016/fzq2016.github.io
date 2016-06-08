@@ -65,7 +65,7 @@
         data-chapter-title="UINavigationBar"
         data-filepath="uinavigationbar/README.md"
         data-basepath=".."
-        data-revision="Sun Jun 05 2016 22:34:22 GMT+0800 (CST)"
+        data-revision="Tue Jun 07 2016 21:51:02 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -480,6 +480,21 @@
             
         </li>
     
+        <li class="chapter " data-level="2.15" data-path="uiwebview/index.html">
+            
+                
+                    <a href="../uiwebview/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.15.</b>
+                        
+                        UIWebView
+                    </a>
+            
+            
+        </li>
+    
 
             </ul>
             
@@ -677,6 +692,21 @@
             
         </li>
     
+        <li class="chapter " data-level="13" data-path="nslayoutconstraint/index.html">
+            
+                
+                    <a href="../nslayoutconstraint/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>13.</b>
+                        
+                        NSLayoutConstraint
+                    </a>
+            
+            
+        </li>
+    
 
 
             
@@ -713,8 +743,9 @@
                         <h2 id="uinavigationbar&#x5BFC;&#x822A;&#x6761;&#xFF09;">UINavigationBar(&#x5BFC;&#x822A;&#x6761;&#xFF09;</h2>
 <ol>
 <li>&#x7236;&#x7C7B;&#x662F;UIView</li>
-<li>&#x4E00;&#x4E2A;&#x5BFC;&#x822A;&#x63A7;&#x5236;&#x5668;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5BFC;&#x822A;&#x6761;,&#x5B50;&#x63A7;&#x5236;&#x5668;&#x5171;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5BFC;&#x822A;&#x6761;&#x3002;</li>
+<li>&#x4E00;&#x4E2A;<a href="../../UIKit-Controller/uinavigationcontroller/index.html">UINavigationController&#xFF08;&#x5BFC;&#x822A;&#x63A7;&#x5236;&#x5668;&#xFF09;</a>&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5BFC;&#x822A;&#x6761;,&#x5B50;&#x63A7;&#x5236;&#x5668;&#x5171;&#x7528;&#x540C;&#x4E00;&#x4E2A;&#x5BFC;&#x822A;&#x6761;</li>
 <li>&#x5BFC;&#x822A;&#x6761;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x7531;&#x5BFC;&#x822A;&#x63A7;&#x5236;&#x5668;&#x672C;&#x8EAB;&#x8BBE;&#x7F6E;&#x7684;</li>
+<li>&#x5BFC;&#x822A;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5BFC;&#x822A;&#x6761;&#x9AD8;&#x5EA6;&#x662F;44&#xFF0C;&#x5BBD;&#x5EA6;&#x4E0E;&#x5C4F;&#x5E55;&#x540C;&#x9F50;&#xFF1B;&#x80CC;&#x666F;&#x9AD8;64&#xFF0C;&#x5BBD;&#x5EA6;&#x4E0E;&#x5C4F;&#x5E55;&#x540C;&#x9F50;</li>
 </ol>
 <h3 id="&#x5BFC;&#x822A;&#x63A7;&#x5236;&#x5668;&#x4E0E;&#x5BFC;&#x822A;&#x6761;&#xFF08;navigationbar&#xFF09;">&#x5BFC;&#x822A;&#x63A7;&#x5236;&#x5668;&#x4E0E;&#x5BFC;&#x822A;&#x6761;&#xFF08;navigationBar&#xFF09;</h3>
 <ol>
@@ -750,13 +781,13 @@
 </ol>
 <h3 id="&#x5BFC;&#x822A;&#x6761;&#xFF08;navigationbar&#xFF09;&#x5185;&#x90E8;&#x5185;&#x5BB9;&#xFF08;navigationitem&#xFF09;">&#x5BFC;&#x822A;&#x6761;&#xFF08;navigationBar&#xFF09;&#x5185;&#x90E8;&#x5185;&#x5BB9;&#xFF08;navigationItem&#xFF09;:</h3>
 <ol>
-<li><p>&#x8BBE;&#x7F6E;&#x6808;&#x9876;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5BFC;&#x822A;&#x6761;&#x6807;&#x9898;&#xFF08;navigationItem.title&#xFF09;,&#x76F4;&#x63A5;&#x62FF;&#x5230;navigationItem&#x8BBE;&#x7F6E;title.</p>
+<li><p>&#x8BBE;&#x7F6E;&#x6808;&#x9876;&#x63A7;&#x5236;&#x5668;&#x7684;&#x5BFC;&#x822A;&#x6761;&#x6807;&#x9898;&#xFF08;navigationItem.title&#xFF09;,&#x76F4;&#x63A5;&#x62FF;&#x5230;<a href="../uinavigationitem/index.html">UINavigationItem</a>&#x8BBE;&#x7F6E;title.</p>
 <pre><code> childViewController.navigationItem.title = @&quot;&#x5BFC;&#x822A;&#x6761;&#x6807;&#x9898;&quot;;
 </code></pre></li>
 <li><p>&#x8BBE;&#x7F6E;navigationItem&#x7684;titleView,&#x63A7;&#x4EF6;&#x4F4D;&#x7F6E;&#x7531;&#x7CFB;&#x7EDF;&#x51B3;&#x5B9A;,&#x53EA;&#x80FD;&#x8BBE;&#x7F6E;&#x5C3A;&#x5BF8;&#x3002;</p>
 <pre><code>  childViewController.navigationItem.titleView = [[UIImageView alloc] initWithImage:image];
 </code></pre></li>
-<li><p>&#x5BFC;&#x822A;&#x6761;&#x5DE6;&#x53F3;&#x4E24;&#x8FB9;&#x6309;&#x94AE;&#x6A21;&#x578B;&#xFF08;UIBarButtonItem&#xFF09;:</p>
+<li><p>&#x5BFC;&#x822A;&#x6761;&#x5DE6;&#x53F3;&#x4E24;&#x8FB9;&#x6309;&#x94AE;&#x6A21;&#x578B;&#xFF08;<a href="../uibarbuttonitem/index.html">UIBarButtonItem</a>&#xFF09;:</p>
 <ol>
 <li><p>&#x5BFC;&#x822A;&#x6761;&#x5DE6;&#x53F3;&#x4E24;&#x8FB9;&#x6309;&#x94AE;&#x901A;&#x8FC7;UIBarButtonItem&#x7C7B;&#x578B;&#x7684;&#x6A21;&#x578B;&#x7BA1;&#x7406;,&#x4FEE;&#x6539;&#x6A21;&#x578B;&#x5C31;&#x4F1A;&#x4FEE;&#x6539;&#x6309;&#x94AE;</p>
 <pre><code class="lang-objc"><span class="hljs-comment">// &#x8FD4;&#x56DE;&#x6309;&#x94AE;</span>
@@ -802,7 +833,7 @@ pushViewController<span class="hljs-variable">.navigationItem</span><span class=
 </li>
 </ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-05 20:23:14
+2016-06-07 15:59:11
 </span></footer>
                     
                     </section>

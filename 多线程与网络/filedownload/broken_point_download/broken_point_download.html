@@ -65,7 +65,7 @@
         data-chapter-title="断点下载"
         data-filepath="filedownload/broken_point_download/broken_point_download.md"
         data-basepath="../.."
-        data-revision="Wed May 25 2016 16:57:37 GMT+0800 (CST)"
+        data-revision="Tue Jun 07 2016 21:47:46 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -914,29 +914,14 @@
             
         </li>
     
-        <li class="chapter " data-level="12" data-path="uiwebview/index.html">
-            
-                
-                    <a href="../../uiwebview/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>12.</b>
-                        
-                        UIWebView
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="13" data-path="nsexception/index.html">
+        <li class="chapter " data-level="12" data-path="nsexception/index.html">
             
                 
                     <a href="../../nsexception/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>13.</b>
+                            <b>12.</b>
                         
                         NSException(异常)
                     </a>
@@ -944,14 +929,14 @@
             
         </li>
     
-        <li class="chapter " data-level="14" data-path="nsinvocation/index.html">
+        <li class="chapter " data-level="13" data-path="nsinvocation/index.html">
             
                 
                     <a href="../../nsinvocation/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>14.</b>
+                            <b>13.</b>
                         
                         NSInvocation
                     </a>
@@ -992,12 +977,12 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="broken-point-download&#xFF08;&#x65AD;&#x70B9;&#x4E0B;&#x8F7D;&#xFF09;">broken point download&#xFF08;&#x65AD;&#x70B9;&#x4E0B;&#x8F7D;&#xFF09;</h2>
+                        <h2 id="&#x65AD;&#x70B9;&#x4E0B;&#x8F7D;">&#x65AD;&#x70B9;&#x4E0B;&#x8F7D;</h2>
 <ol>
 <li>&#x5982;&#x679C;&#x4E0D;&#x7528;&#x79BB;&#x7EBF;&#x4E0B;&#x8F7D;&#xFF0C;&#x63A8;&#x8350;NSURLSessionDownloadTask-delegate&#x5B9E;&#x73B0;&#x65AD;&#x70B9;&#x4E0B;&#x8F7D;&#x3002;&#x5B83;&#x672C;&#x8EAB;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x79BB;&#x7EBF;&#x4E0B;&#x8F7D;&#x529F;&#x80FD;</li>
 <li>&#x4F46;&#x4E00;&#x822C;&#x90FD;&#x662F;&#x5EFA;&#x8BAE;&#x7528;NSURLSessionDataTask-delegate&#x4F7F;&#x7528;&#x65AD;&#x70B9;&#x4E0B;&#x8F7D;&#xFF0C;&#x56E0;&#x4E3A;&#x6269;&#x5C55;&#x5230;&#x79BB;&#x7EBF;&#x65AD;&#x70B9;&#x4E0B;&#x8F7D;&#x7684;&#x6269;&#x5C55;&#x6027;&#x66F4;&#x597D;&#x3002;&#x8BE6;&#x89C1;&#x201C;&#x79BB;&#x7EBF;&#x65AD;&#x7EBF;&#x4E0B;&#x8F7D;&#x201D;</li>
 </ol>
-<h4 id="&#x4F7F;&#x7528;nsurlsessiondownloadtaskdelegate&#x5B9E;&#x73B0;&#x5927;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x76D1;&#x542C;&#x4E0B;&#x8F7D;&#x8FDB;&#x5EA6;">&#x4F7F;&#x7528;NSURLSessionDownloadTask-delegate&#x5B9E;&#x73B0;&#x5927;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;-&#x76D1;&#x542C;&#x4E0B;&#x8F7D;&#x8FDB;&#x5EA6;</h4>
+<h3 id="&#x4F7F;&#x7528;nsurlsessiondownloadtaskdelegate&#x5B9E;&#x73B0;&#x5927;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x76D1;&#x542C;&#x4E0B;&#x8F7D;&#x8FDB;&#x5EA6;">&#x4F7F;&#x7528;NSURLSessionDownloadTask-delegate&#x5B9E;&#x73B0;&#x5927;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;-&#x76D1;&#x542C;&#x4E0B;&#x8F7D;&#x8FDB;&#x5EA6;</h3>
 <p>(1)&#x65B9;&#x6CD5;&#x7F3A;&#x9677;&#xFF1A;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x79BB;&#x7EBF;&#x4E0B;&#x8F7D;&#x529F;&#x80FD;</p>
 <pre><code>01 &#x5982;&#x679C;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x6682;&#x505C;&#x4E4B;&#x540E;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF0C;&#x90A3;&#x4E48;&#x9700;&#x8981;&#x628A;&#x6062;&#x590D;&#x4E0B;&#x8F7D;&#x7684;&#x6570;&#x636E;&#x5199;&#x4E00;&#x4EFD;&#x5230;&#x6C99;&#x76D2;&#xFF0C;&#x4EE3;&#x7801;&#x590D;&#x6742;&#x5EA6;&#x66F4;&#x9AD8;
 02 &#x5982;&#x679C;&#x7528;&#x6237;&#x5728;&#x4E0B;&#x8F7D;&#x4E2D;&#x9014;&#x672A;&#x4FDD;&#x5B58;&#x6062;&#x590D;&#x4E0B;&#x8F7D;&#x6570;&#x636E;&#x5373;&#x9000;&#x51FA;&#x7A0B;&#x5E8F;&#xFF0C;&#x5219;&#x4E0D;&#x5177;&#x5907;&#x53EF;&#x64CD;&#x4F5C;&#x6027;;&#x53E6;&#x5916;&#x65AD;&#x7F51;&#x7B49;&#x4E5F;&#x4F1A;&#x4F7F;&#x5F97;&#x8BE5;&#x529F;&#x80FD;&#x6709;&#x95EE;&#x9898;
@@ -1287,7 +1272,7 @@
     <span class="hljs-keyword">self</span><span class="hljs-variable">.stream</span> = <span class="hljs-literal">nil</span>;
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-04-28 17:15:48
+2016-06-06 20:02:41
 </span></footer>
                     
                     </section>

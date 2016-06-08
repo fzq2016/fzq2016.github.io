@@ -65,7 +65,7 @@
         data-chapter-title="UIStoryboard"
         data-filepath="uistoryboard/README.md"
         data-basepath=".."
-        data-revision="Sun May 29 2016 15:09:39 GMT+0800 (CST)"
+        data-revision="Tue Jun 07 2016 22:20:41 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -130,16 +130,17 @@
                     </a>
             
             
-        </li>
+            <ul class="articles">
+                
     
-        <li class="chapter " data-level="1.2" data-path="uiimagepickercontroller/index.html">
+        <li class="chapter " data-level="1.1.1" data-path="uiimagepickercontroller/index.html">
             
                 
                     <a href="../uiimagepickercontroller/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.2.</b>
+                            <b>1.1.1.</b>
                         
                         UIImagePickerController
                     </a>
@@ -147,59 +148,14 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3" data-path="uitabbarcontroller/index.html">
-            
-                
-                    <a href="../uitabbarcontroller/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.3.</b>
-                        
-                        UITabBarController
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.4" data-path="uitableviewcontroller/index.html">
-            
-                
-                    <a href="../uitableviewcontroller/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.4.</b>
-                        
-                        UITableViewController
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.5" data-path="uicollectionviewcontroller/index.html">
-            
-                
-                    <a href="../uicollectionviewcontroller/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>1.5.</b>
-                        
-                        UICollectionViewController
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="1.6" data-path="sfsafariviewcontroller/index.html">
+        <li class="chapter " data-level="1.1.2" data-path="sfsafariviewcontroller/index.html">
             
                 
                     <a href="../sfsafariviewcontroller/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.6.</b>
+                            <b>1.1.2.</b>
                         
                         SFSafariViewController
                     </a>
@@ -207,14 +163,64 @@
             
         </li>
     
-        <li class="chapter " data-level="1.7" data-path="uialertcontroller/index.html">
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="uitabbarcontroller/index.html">
+            
+                
+                    <a href="../uitabbarcontroller/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        UITabBarController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="uitableviewcontroller/index.html">
+            
+                
+                    <a href="../uitableviewcontroller/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        UITableViewController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="uicollectionviewcontroller/index.html">
+            
+                
+                    <a href="../uicollectionviewcontroller/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        UICollectionViewController
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="uialertcontroller/index.html">
             
                 
                     <a href="../uialertcontroller/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>1.7.</b>
+                            <b>1.5.</b>
                         
                         UIAlertController
                     </a>
@@ -351,25 +357,67 @@
                     <section class="normal" id="section-">
                     
                         <h2 id="uistoryboard">UIStoryboard</h2>
-<ul>
+<ol>
 <li>&#x7236;&#x7C7B;&#x662F;NSObject</li>
-<li>&#x6CA1;&#x6709;&#x6210;&#x5458;&#x53D8;&#x91CF;</li>
-<li>&#x53EA;&#x6709;&#x7C7B;&#x521B;&#x5EFA;&#x65B9;&#x6CD5;</li>
-</ul>
-<pre><code class="lang-objc">+ (<span class="hljs-built_in">UIStoryboard</span> *)storyboardWithName:(<span class="hljs-built_in">NSString</span> *)name bundle:(nullable <span class="hljs-built_in">NSBundle</span> *)storyboardBundleOrNil;
+<li>&#x6CA1;&#x6709;&#x6210;&#x5458;&#x53D8;&#x91CF;&#xFF0C;&#x53EA;&#x6709;&#x7C7B;&#x521B;&#x5EFA;&#x65B9;&#x6CD5;<pre><code class="lang-objc">  + (<span class="hljs-built_in">UIStoryboard</span> *)storyboardWithName:(<span class="hljs-built_in">NSString</span> *)name bundle:(nullable <span class="hljs-built_in">NSBundle</span> *)storyboardBundleOrNil;
 </code></pre>
-<h2 id="&#x6587;&#x5B57;&#x5185;&#x5BB9;&#x6362;&#x884C;">&#x6587;&#x5B57;&#x5185;&#x5BB9;&#x6362;&#x884C;</h2>
+</li>
+<li>Storyboard&#x662F;&#x91CD;&#x91CF;&#x7EA7;&#x7684;&#xFF0C;&#x4E00;&#x822C;&#x5F00;&#x53D1;&#x4E2D;&#x7531;&#x4E8E;&#x591A;&#x4EBA;&#x5F00;&#x53D1;&#x4F7F;&#x7528;Storyboard&#x5BB9;&#x6613;&#x51B2;&#x7A81;&#xFF0C;&#x591A;&#x7528;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;<a href="../uinib/index.html">xib</a></li>
+</ol>
+<h3 id="storyboard&#x6587;&#x4EF6;&#x7684;&#x8BA4;&#x8BC6;">storyboard&#x6587;&#x4EF6;&#x7684;&#x8BA4;&#x8BC6;</h3>
+<ul>
+<li>&#x4F5C;&#x7528;&#xFF1A;&#x63CF;&#x8FF0;&#x8F6F;&#x4EF6;&#x754C;&#x9762;</li>
+<li>&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x7684;&#x7B80;&#x5355;&#x8FC7;&#x7A0B;<ul>
+<li>&#x7A0B;&#x5E8F;&#x4E00;&#x542F;&#x52A8;&#xFF0C;&#x5C31;&#x4F1A;&#x52A0;&#x8F7D;<code>Main.storyboard</code>&#x6587;&#x4EF6;</li>
+<li>&#x4F1A;&#x521B;&#x5EFA;&#x7BAD;&#x5934;&#x6240;&#x6307;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x663E;&#x793A;&#x63A7;&#x5236;&#x5668;&#x6240;&#x7BA1;&#x7406;&#x7684;&#x8F6F;&#x4EF6;&#x754C;&#x9762;</li>
+</ul>
+</li>
+<li>&#x914D;&#x7F6E;&#x7A0B;&#x5E8F;&#x4E00;&#x542F;&#x52A8;&#x5C31;&#x4F1A;&#x52A0;&#x8F7D;&#x7684;storyboard&#x6587;&#x4EF6;
+<img src="storyboard&#x542F;&#x52A8;&#x8BBE;&#x7F6E;.png" alt="&#x622A;&#x56FE;"></li>
+</ul>
+<h3 id="storyboard&#x521B;&#x5EFA;&#x7684;&#x63A7;&#x5236;&#x5668;">storyboard&#x521B;&#x5EFA;&#x7684;&#x63A7;&#x5236;&#x5668;</h3>
+<ul>
+<li>&#x73B0;&#x5728;&#x521B;&#x5EFA;&#x7684;&#x63A7;&#x5236;&#x5668;&#x90FD;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x4E8B;&#x4EF6;,&#x5982;&#x679C;&#x9700;&#x8981;&#x5904;&#x7406;&#x4E8B;&#x4EF6;,&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;&#x3002;<ol>
+<li>&#x539F;&#x56E0;:&#x5F53;&#x901A;&#x8FC7;storyboard&#x521B;&#x5EFA;&#x63A7;&#x5236;&#x5668;&#x5BF9;&#x8C61;,&#x9ED8;&#x8BA4;&#x90FD;&#x662F;&#x7CFB;&#x7EDF;&#x81EA;&#x5E26;&#x7684;&#x63A7;&#x5236;&#x5668;&#x5BF9;&#x8C61;,&#x7CFB;&#x7EDF;&#x81EA;&#x5E26;&#x7684;&#x662F;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x7684;&#x3002;&#x4ED6;&#x4E0D;&#x80FD;&#x5199;&#x76D1;&#x542C;&#x65B9;&#x6CD5;</li>
+<li>&#x5982;&#x679C;&#x8981;&#x8BA9;&#x63A7;&#x5236;&#x5668;&#x80FD;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;storyboard&#x4E2D;custom class&#x7C7B;&#x578B;&#x3002;</li>
+</ol>
+</li>
+</ul>
+<h3 id="&#x7CFB;&#x7EDF;&#x52A0;&#x8F7D;&#x6307;&#x5B9A;storyboard&#x7684;&#x6D41;&#x7A0B;">&#x7CFB;&#x7EDF;&#x52A0;&#x8F7D;&#x6307;&#x5B9A;storyboard&#x7684;&#x6D41;&#x7A0B;</h3>
+<ol>
+<li><p>&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x4F1A;&#x5224;&#x65AD;&#x4E3B;&#x754C;&#x9762;&#x662F;&#x5426;&#x8BBE;&#x7F6E;&#x4E86;main storyboard&#xFF0C;&#x5982;&#x679C;&#x6709;&#xFF0C;&#x5C31;&#x4F1A;&#x52A0;&#x8F7D;storyboard,&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x597D;&#x7A97;&#x53E3;&#x548C;&#x6839;&#x63A7;&#x5236;&#x5668;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x7684;&#x4E0D;&#x662F;main storyboard&#xFF0C;&#x800C;&#x662F;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x5176;&#x4ED6;storyboard&#xFF0C;&#x5C31;&#x4F1A;&#x52A0;&#x8F7D;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x3002;&#xFF08;&#x5982;&#x679C;&#x6CA1;&#x80FD;&#x6210;&#x529F;&#xFF0C;&#x9700;&#x8981;&#x6E05;&#x9664;&#x7F13;&#x5B58;&#xFF09;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#xFF0C;&#x5C31;&#x4F1A;&#x6839;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;storyboard&#x53CA;&#x5176;&#x63CF;&#x8FF0;&#x7684;&#x63A7;&#x5236;&#x5668;&#x3002;&#x5FC5;&#x987B;&#x8981;&#x6709;storyboard,&#x521B;&#x5EFA;UIStoryboard&#x5BF9;&#x8C61;&#x624D;&#x6709;&#x610F;&#x4E49;,alloc init&#x521B;&#x5EFA;UIStoryboard&#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x610F;&#x4E49;</p>
+</li>
+</ol>
+<pre><code class="lang-objc">    <span class="hljs-comment">// 1.&#x6839;&#x636E;storyboard&#x540D;&#x79F0;&#x548C;&#x5730;&#x5740;&#x521B;&#x5EFA;storyboard&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x63CF;&#x8FF0;&#x7684;&#x63A7;&#x5236;&#x5668;</span>
+    <span class="hljs-comment">// Name:storyboard&#x6587;&#x4EF6;&#x540D;</span>
+    <span class="hljs-comment">// nil = [NSBundle mainBundle]</span>
+    <span class="hljs-built_in">UIStoryboard</span> *storyboard = [<span class="hljs-built_in">UIStoryboard</span> storyboardWithName:<span class="hljs-string">@&quot;Main&quot;</span> bundle:<span class="hljs-literal">nil</span>];
+
+    <span class="hljs-comment">// 2.&#x6839;&#x636E;&#x6807;&#x8BC6;&#x7B26;&#x52A0;&#x8F7D;&#x63CF;&#x8FF0;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF08;&#x5DF2;&#x521B;&#x5EFA;storyboard)</span>
+    <span class="hljs-comment">// &#x6807;&#x8BC6;&#x4E0D;&#x80FD;&#x4E71;&#x4F20;,&#x5FC5;&#x987B;storyboard&#x6709;&#x8FD9;&#x4E2A;&#x6807;&#x8BC6;&#xFF0C;&#x5426;&#x5219;&#x62A5;&#x9519;</span>
+<span class="hljs-comment">//    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@&quot;vc1&quot;];;</span>
+
+    <span class="hljs-comment">// 3.&#x52A0;&#x8F7D;&#x7BAD;&#x5934;&#x6307;&#x5411;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF08;&#x5DF2;&#x521B;&#x5EFA;storyboard)</span>
+    <span class="hljs-comment">// instantiateInitialViewController:</span>
+    <span class="hljs-built_in">UIViewController</span> *vc = [storyboard instantiateInitialViewController];
+</code></pre>
+<hr>
+<h3 id="&#x5728;storyboard&#x4E2D;&#x5B9E;&#x73B0;&#x6587;&#x5B57;&#x5185;&#x5BB9;&#x6362;&#x884C;">&#x5728;storyboard&#x4E2D;&#x5B9E;&#x73B0;&#x6587;&#x5B57;&#x5185;&#x5BB9;&#x6362;&#x884C;</h3>
 <ul>
 <li>&#x5982;&#x4F55;&#x8BA9;storyboard\xib&#x4E2D;&#x7684;&#x6587;&#x5B57;&#x5185;&#x5BB9;&#x6362;&#x884C;<ul>
 <li>&#x5FEB;&#x6377;&#x952E;: option + &#x56DE;&#x8F66;&#x952E;</li>
 <li>&#x5728;storyboard\xib&#x8F93;&#x5165;\n&#x662F;&#x65E0;&#x6CD5;&#x5B9E;&#x73B0;&#x6362;&#x884C;&#x7684;</li>
 </ul>
 </li>
-<li>&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x8F93;&#x5165;\n&#x662F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x6362;&#x884C;&#x7684;</li>
-</ul>
-<pre><code class="lang-objc"><span class="hljs-keyword">self</span><span class="hljs-variable">.label</span><span class="hljs-variable">.text</span> = <span class="hljs-string">@&quot;534534534\n5345345\n5345&quot;</span>;
+<li>&#x5728;&#x4EE3;&#x7801;&#x4E2D;&#x8F93;&#x5165;\n&#x662F;&#x53EF;&#x4EE5;&#x5B9E;&#x73B0;&#x6362;&#x884C;&#x7684;<pre><code class="lang-objc">  <span class="hljs-keyword">self</span><span class="hljs-variable">.label</span><span class="hljs-variable">.text</span> = <span class="hljs-string">@&quot;534534534\n5345345\n5345&quot;</span>;
 </code></pre>
-<h2 id="&#x5728;storyboardxib&#x4E2D;&#x7ED9;uiscrollview&#x5B50;&#x63A7;&#x4EF6;&#x6DFB;&#x52A0;&#x7EA6;&#x675F;">&#x5728;storyboard\xib&#x4E2D;&#x7ED9;UIScrollView&#x5B50;&#x63A7;&#x4EF6;&#x6DFB;&#x52A0;&#x7EA6;&#x675F;</h2>
+</li>
+</ul>
+<h3 id="&#x5728;storyboardxib&#x4E2D;&#x7ED9;uiscrollview&#x5B50;&#x63A7;&#x4EF6;&#x6DFB;&#x52A0;&#x7EA6;&#x675F;">&#x5728;storyboard\xib&#x4E2D;&#x7ED9;UIScrollView&#x5B50;&#x63A7;&#x4EF6;&#x6DFB;&#x52A0;&#x7EA6;&#x675F;</h3>
 <ul>
 <li>&#x7ED9;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;UIView&#x7C7B;&#x578B;&#x7684;&#x5B50;&#x63A7;&#x4EF6;A(&#x8FD9;&#x5C06;&#x662F;UIScrollView&#x552F;&#x4E00;&#x7684;&#x4E00;&#x4E2A;&#x5B50;&#x63A7;&#x4EF6;)</li>
 <li>&#x8BBE;&#x7F6E;A&#x8DDD;&#x79BB;UIScrollView&#x4E0A;&#x4E0B;&#x5DE6;&#x53F3;&#x95F4;&#x8DDD;&#x90FD;&#x4E3A;0</li>
@@ -407,88 +455,22 @@
 </ul>
 </li>
 </ul>
-<h2 id="&#x5728;xibstoryboard&#x4E2D;&#x4F7F;&#x7528;kvc">&#x5728;xib\storyboard&#x4E2D;&#x4F7F;&#x7528;KVC</h2>
+<h3 id="&#x5728;xibstoryboard&#x4E2D;&#x4F7F;&#x7528;kvc&#x793A;&#x4F8B;">&#x5728;xib\storyboard&#x4E2D;&#x4F7F;&#x7528;KVC&#x793A;&#x4F8B;</h3>
 <p><img src="Snip20151108_177.png" alt=""></p>
-<h2 id="&#x7CFB;&#x7EDF;&#x521B;&#x5EFA;uistoryboard&#x7684;&#x6D41;&#x7A0B;">&#x7CFB;&#x7EDF;&#x521B;&#x5EFA;UIStoryboard&#x7684;&#x6D41;&#x7A0B;</h2>
+<h3 id="&#x591A;storyboard&#x6587;&#x4EF6;&#x5171;&#x540C;&#x5F00;&#x53D1;">&#x591A;storyboard&#x6587;&#x4EF6;&#x5171;&#x540C;&#x5F00;&#x53D1;</h3>
 <ol>
-<li><p>&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x5B8C;&#x6210;&#x65F6;&#xFF0C;&#x4F1A;&#x5224;&#x65AD;&#x4E3B;&#x754C;&#x9762;&#x662F;&#x5426;&#x8BBE;&#x7F6E;&#x4E86;main storyboard&#xFF0C;&#x5982;&#x679C;&#x6709;&#xFF0C;&#x5C31;&#x4F1A;&#x52A0;&#x8F7D;storyboard,&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x597D;&#x7A97;&#x53E3;&#x548C;&#x6839;&#x63A7;&#x5236;&#x5668;&#x3002;</p>
+<li><p>&#x5F00;&#x53D1;&#x4E2D;&#x5F80;&#x5F80;&#x5B58;&#x5728;&#x591A;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5982;&#x679C;&#x90FD;&#x5728;storyboard&#x4E2D;&#x62D6;&#x63A7;&#x5236;&#x5668;&#x4F1A;&#x4F7F;&#x5F97;&#x7BA1;&#x7406;&#x975E;&#x5E38;&#x590D;&#x6742;&#xFF0C;&#x800C;&#x4E14;&#x754C;&#x9762;&#x6DF7;&#x4E71;&#xFF0C;&#x975E;&#x5E38;&#x4E0D;&#x6E05;&#x6670;&#x3002;</p>
 </li>
-<li><p>&#x5982;&#x679C;&#x8BBE;&#x7F6E;&#x7684;&#x4E0D;&#x662F;main storyboard&#xFF0C;&#x800C;&#x662F;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x5176;&#x4ED6;storyboard&#xFF0C;&#x5C31;&#x4F1A;&#x52A0;&#x8F7D;&#x6211;&#x4EEC;&#x521B;&#x5EFA;&#x7684;&#x3002;&#xFF08;&#x5982;&#x679C;&#x6CA1;&#x80FD;&#x6210;&#x529F;&#xFF0C;&#x9700;&#x8981;&#x6E05;&#x9664;&#x7F13;&#x5B58;&#xFF09;</p>
+<li><p>&#x53EF;&#x4EE5;&#x901A;&#x8FC7;xcode-editor-refactor to storyboard&#x5C06;&#x591A;&#x4E2A;&#x63A7;&#x5236;&#x5668;&#x62BD;&#x79BB;&#x6210;&#x591A;&#x4E2A;&#x4E0D;&#x540C;&#x7684;storyboard&#x6587;&#x4EF6;&#xFF0C;&#x4F7F;&#x7528;&#x89C1;&#x4E0B;&#x56FE;
+ <img src="Snip20160527_6.png" alt=""></p>
 </li>
-<li><p>&#x5982;&#x679C;&#x6CA1;&#x6709;&#x8BBE;&#x7F6E;&#xFF0C;&#x5C31;&#x4F1A;&#x6839;&#x636E;&#x5BF9;&#x5E94;&#x7684;&#x4EE3;&#x7801;&#x521B;&#x5EFA;&#x5BF9;&#x5E94;&#x7684;storyboard&#x53CA;&#x5176;&#x63CF;&#x8FF0;&#x7684;&#x63A7;&#x5236;&#x5668;&#x3002;&#x5FC5;&#x987B;&#x8981;&#x6709;storyboard,&#x521B;&#x5EFA;UIStoryboard&#x5BF9;&#x8C61;&#x624D;&#x6709;&#x610F;&#x4E49;,alloc init&#x521B;&#x5EFA;UIStoryboard&#x5BF9;&#x8C61;&#x6CA1;&#x6709;&#x610F;&#x4E49;</p>
+<li><p>&#x6548;&#x679C;&#x56FE;
+ <img src="Snip20160527_7.png" alt=""></p>
 </li>
+<li>&#x867D;&#x7136;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x64CD;&#x4F5C;&#xFF0C;&#x4F7F;storyboard&#x7ED3;&#x6784;&#x53D8;&#x5F97;&#x6E05;&#x6670;&#xFF0C;&#x4F46;&#x662F;&#x4F9D;&#x7136;&#x4E0D;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x64CD;&#x4F5C;&#x3002;&#x5EFA;&#x8BAE;&#x591A;&#x7528;xib + &#x4EE3;&#x7801;&#x65B9;&#x5F0F;&#x5F00;&#x53D1;</li>
 </ol>
-<pre><code class="lang-objc">    <span class="hljs-comment">// 1.&#x6839;&#x636E;storyboard&#x540D;&#x79F0;&#x548C;&#x5730;&#x5740;&#x521B;&#x5EFA;storyboard&#xFF0C;&#x5E76;&#x521B;&#x5EFA;&#x63CF;&#x8FF0;&#x7684;&#x63A7;&#x5236;&#x5668;</span>
-    <span class="hljs-comment">// Name:storyboard&#x6587;&#x4EF6;&#x540D;</span>
-    <span class="hljs-comment">// nil = [NSBundle mainBundle]</span>
-    <span class="hljs-built_in">UIStoryboard</span> *storyboard = [<span class="hljs-built_in">UIStoryboard</span> storyboardWithName:<span class="hljs-string">@&quot;Main&quot;</span> bundle:<span class="hljs-literal">nil</span>];
-
-    <span class="hljs-comment">//2.&#x6839;&#x636E;&#x6807;&#x8BC6;&#x7B26;&#x52A0;&#x8F7D;&#x63CF;&#x8FF0;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF08;&#x5DF2;&#x521B;&#x5EFA;storyboard)</span>
-    <span class="hljs-comment">//&#x6807;&#x8BC6;&#x4E0D;&#x80FD;&#x4E71;&#x4F20;,&#x5FC5;&#x987B;storyboard&#x6709;&#x8FD9;&#x4E2A;&#x6807;&#x8BC6;&#xFF0C;&#x5426;&#x5219;&#x62A5;&#x9519;</span>
-<span class="hljs-comment">//    UIViewController *vc = [storyboard instantiateViewControllerWithIdentifier:@&quot;vc1&quot;];;</span>
-
-    <span class="hljs-comment">// 3.&#x52A0;&#x8F7D;&#x7BAD;&#x5934;&#x6307;&#x5411;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF08;&#x5DF2;&#x521B;&#x5EFA;storyboard)</span>
-    <span class="hljs-comment">// instantiateInitialViewController:</span>
-    <span class="hljs-built_in">UIViewController</span> *vc = [storyboard instantiateInitialViewController];
-</code></pre>
-<h2 id="storyboard&#x521B;&#x5EFA;&#x7684;&#x63A7;&#x5236;&#x5668;">storyboard&#x521B;&#x5EFA;&#x7684;&#x63A7;&#x5236;&#x5668;</h2>
-<ul>
-<li>&#x73B0;&#x5728;&#x521B;&#x5EFA;&#x7684;&#x63A7;&#x5236;&#x5668;&#x90FD;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x4E8B;&#x4EF6;,&#x5982;&#x679C;&#x9700;&#x8981;&#x5904;&#x7406;&#x4E8B;&#x4EF6;,&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;&#x3002;<ol>
-<li>&#x539F;&#x56E0;:&#x5F53;&#x901A;&#x8FC7;storyboard&#x521B;&#x5EFA;&#x63A7;&#x5236;&#x5668;&#x5BF9;&#x8C61;,&#x9ED8;&#x8BA4;&#x90FD;&#x662F;&#x7CFB;&#x7EDF;&#x81EA;&#x5E26;&#x7684;&#x63A7;&#x5236;&#x5668;&#x5BF9;&#x8C61;,&#x7CFB;&#x7EDF;&#x81EA;&#x5E26;&#x7684;&#x662F;&#x4E0D;&#x80FD;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#x7684;&#x3002;&#x4ED6;&#x4E0D;&#x80FD;&#x5199;&#x76D1;&#x542C;&#x65B9;&#x6CD5;</li>
-<li>&#x5982;&#x679C;&#x8981;&#x8BA9;&#x63A7;&#x5236;&#x5668;&#x80FD;&#x5904;&#x7406;&#x4E8B;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x81EA;&#x5B9A;&#x4E49;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5E76;&#x8BBE;&#x7F6E;storyboard&#x4E2D;custom class&#x7C7B;&#x578B;&#x3002;</li>
-</ol>
-</li>
-</ul>
-<h2 id="storyboard">storyboard</h2>
-<h2 id="storyboard&#x6587;&#x4EF6;&#x7684;&#x8BA4;&#x8BC6;">storyboard&#x6587;&#x4EF6;&#x7684;&#x8BA4;&#x8BC6;</h2>
-<ul>
-<li>&#x4F5C;&#x7528;&#xFF1A;&#x63CF;&#x8FF0;&#x8F6F;&#x4EF6;&#x754C;&#x9762;</li>
-<li>&#x7A0B;&#x5E8F;&#x542F;&#x52A8;&#x7684;&#x7B80;&#x5355;&#x8FC7;&#x7A0B;<ul>
-<li>&#x7A0B;&#x5E8F;&#x4E00;&#x542F;&#x52A8;&#xFF0C;&#x5C31;&#x4F1A;&#x52A0;&#x8F7D;<code>Main.storyboard</code>&#x6587;&#x4EF6;</li>
-<li>&#x4F1A;&#x521B;&#x5EFA;&#x7BAD;&#x5934;&#x6240;&#x6307;&#x7684;&#x63A7;&#x5236;&#x5668;&#xFF0C;&#x5E76;&#x4E14;&#x663E;&#x793A;&#x63A7;&#x5236;&#x5668;&#x6240;&#x7BA1;&#x7406;&#x7684;&#x8F6F;&#x4EF6;&#x754C;&#x9762;</li>
-</ul>
-</li>
-<li>&#x914D;&#x7F6E;&#x7A0B;&#x5E8F;&#x4E00;&#x542F;&#x52A8;&#x5C31;&#x4F1A;&#x52A0;&#x8F7D;&#x7684;storyboard&#x6587;&#x4EF6;
-<img src="storyboard&#x542F;&#x52A8;&#x8BBE;&#x7F6E;.png" alt="&#x622A;&#x56FE;"></li>
-</ul>
-<h2 id="xib">xib</h2>
-<h3 id="xib&#x548C;storyboard&#x5BF9;&#x6BD4;">Xib&#x548C;storyboard&#x5BF9;&#x6BD4;</h3>
-<ul>
-<li><p>&#x5171;&#x540C;&#x70B9;&#xFF1A;</p>
-<ul>
-<li>&#x90FD;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x8F6F;&#x4EF6;&#x754C;&#x9762;</li>
-<li>&#x90FD;&#x7528;Interface Builder&#x5DE5;&#x5177;&#x6765;&#x7F16;&#x8F91;</li>
-<li>&#x672C;&#x8D28;&#x90FD;&#x662F;<code>&#x8F6C;&#x6362;&#x6210;&#x4EE3;&#x7801;&#x53BB;&#x521B;&#x5EFA;&#x63A7;&#x4EF6;</code><ul>
-<li>&#x5305;&#x62EC;&#x521B;&#x5EFA;&#x63A7;&#x4EF6;&#xFF0C;&#x52A0;&#x5165;&#x89C6;&#x56FE;&#x4E2D;&#xFF0C;&#x8BBE;&#x7F6E;frame&#x7B49;&#x57FA;&#x672C;&#x5C5E;&#x6027;&#xFF0C;&#x62D6;&#x7EBF;&#x7B49;&#x529F;&#x80FD;</li>
-</ul>
-</li>
-</ul>
-</li>
-<li><p>&#x4E0D;&#x540C;&#x70B9;</p>
-<ul>
-<li>Xib&#x662F;&#x8F7B;&#x91CF;&#x7EA7;&#x7684;&#xFF0C;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x5C40;&#x90E8;&#x7684;UI&#x754C;&#x9762;</li>
-<li>Storyboard&#x662F;&#x91CD;&#x91CF;&#x7EA7;&#x7684;&#xFF0C;&#x7528;&#x6765;&#x63CF;&#x8FF0;&#x6574;&#x4E2A;&#x8F6F;&#x4EF6;&#x7684;&#x591A;&#x4E2A;&#x754C;&#x9762;&#xFF0C;&#x5E76;&#x4E14;&#x80FD;&#x5C55;&#x793A;&#x591A;&#x4E2A;&#x754C;&#x9762;&#x4E4B;&#x95F4;&#x7684;&#x8DF3;&#x8F6C;&#x5173;&#x7CFB;</li>
-</ul>
-</li>
-</ul>
-<h3 id="xib&#x7684;&#x52A0;&#x8F7D;">xib&#x7684;&#x52A0;&#x8F7D;</h3>
-<ul>
-<li><code>xib&#x4F1A;&#x8F6C;&#x53D8;&#x6210;nib&#x6587;&#x4EF6;</code></li>
-<li><p>loadNibNamed</p>
-<pre><code class="lang-objc"><span class="hljs-built_in">NSArray</span> *views = [[<span class="hljs-built_in">NSBundle</span> mainBundle] loadNibNamed:<span class="hljs-string">@&quot;xib&#x6587;&#x4EF6;&#x540D;&quot;</span> owner:<span class="hljs-literal">nil</span> options:<span class="hljs-literal">nil</span>]
-</code></pre>
-</li>
-<li><p>instantiateWithOwner</p>
-<pre><code class="lang-objc"><span class="hljs-built_in">UINib</span> *nib = [<span class="hljs-built_in">UINib</span> nibWithNibName:<span class="hljs-string">@&quot;xib&#x6587;&#x4EF6;&#x540D;&quot;</span> bundle:<span class="hljs-literal">nil</span>];
-<span class="hljs-built_in">NSArray</span> *views = [nib instantiateWithOwner:<span class="hljs-literal">nil</span> options:<span class="hljs-literal">nil</span>];
-</code></pre>
-</li>
-<li><p><code>[views firstObject]</code>,&#x53D6;&#x51FA;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x52A0;&#x8F7D;&#x540E;&#x7684;xib&#x53D6;&#x51FA;&#x7684;&#x662F;&#x6574;&#x4E2A;&#x7236;&#x63A7;&#x4EF6;&#x3002;</p>
-</li>
-<li><code>[views lastObject]</code>&#xFF0C;&#x53D6;&#x51FA;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x52A0;&#x8F7D;&#x540E;&#x7684;xib&#x82E5;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x7236;&#x63A7;&#x4EF6;&#xFF08;&#x5B50;&#x63A7;&#x4EF6;&#x4E0D;&#x7B97;&#xFF09;&#xFF0C;&#x4E5F;&#x80FD;&#x53D6;&#x51FA;&#x7236;&#x63A7;&#x4EF6;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x662F;&#x53D6;&#x51FA;&#x7236;&#x63A7;&#x4EF6;&#x3002;</li>
-</ul>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-25 16:14:55
+2016-06-07 21:18:52
 </span></footer>
                     
                     </section>

@@ -65,7 +65,7 @@
         data-chapter-title="运行循环"
         data-filepath="runloop/README.md"
         data-basepath=".."
-        data-revision="Wed May 25 2016 16:57:37 GMT+0800 (CST)"
+        data-revision="Tue Jun 07 2016 21:47:46 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -914,29 +914,14 @@
             
         </li>
     
-        <li class="chapter " data-level="12" data-path="uiwebview/index.html">
-            
-                
-                    <a href="../uiwebview/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>12.</b>
-                        
-                        UIWebView
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="13" data-path="nsexception/index.html">
+        <li class="chapter " data-level="12" data-path="nsexception/index.html">
             
                 
                     <a href="../nsexception/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>13.</b>
+                            <b>12.</b>
                         
                         NSException(异常)
                     </a>
@@ -944,14 +929,14 @@
             
         </li>
     
-        <li class="chapter " data-level="14" data-path="nsinvocation/index.html">
+        <li class="chapter " data-level="13" data-path="nsinvocation/index.html">
             
                 
                     <a href="../nsinvocation/index.html">
                 
                         <i class="fa fa-check"></i>
                         
-                            <b>14.</b>
+                            <b>13.</b>
                         
                         NSInvocation
                     </a>
@@ -1019,66 +1004,68 @@
 </code></pre></li>
 </ul>
 <ul>
-<li>1.5 Runloop&#x53C2;&#x8003;&#x8D44;&#x6599;</li>
-</ul>
-<pre><code class="lang-objc">&#xFF08;<span class="hljs-number">1</span>&#xFF09;&#x82F9;&#x679C;&#x5B98;&#x65B9;&#x6587;&#x6863;
-https:<span class="hljs-comment">//developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html</span>
+<li><p>1.5 Runloop&#x53C2;&#x8003;&#x8D44;&#x6599;</p>
+<pre><code class="lang-objc">  &#xFF08;<span class="hljs-number">1</span>&#xFF09;&#x82F9;&#x679C;&#x5B98;&#x65B9;&#x6587;&#x6863;
+  https:<span class="hljs-comment">//developer.apple.com/library/mac/documentation/Cocoa/Conceptual/Multithreading/RunLoopManagement/RunLoopManagement.html</span>
 
-&#xFF08;<span class="hljs-number">2</span>&#xFF09;<span class="hljs-built_in">CFRunLoopRef</span>&#x5F00;&#x6E90;&#x4EE3;&#x7801;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;
-http:<span class="hljs-comment">//opensource.apple.com/source/CF/CF-1151.16/</span>
+  &#xFF08;<span class="hljs-number">2</span>&#xFF09;<span class="hljs-built_in">CFRunLoopRef</span>&#x5F00;&#x6E90;&#x4EE3;&#x7801;&#x4E0B;&#x8F7D;&#x5730;&#x5740;&#xFF1A;
+  http:<span class="hljs-comment">//opensource.apple.com/source/CF/CF-1151.16/</span>
 </code></pre>
-<ul>
+</li>
 <li><p>1.6 Runloop&#x4E0E;&#x7EBF;&#x7A0B;</p>
 <pre><code>  1.Runloop&#x548C;&#x7EBF;&#x7A0B;&#x7684;&#x5173;&#x7CFB;&#xFF1A;&#x4E00;&#x4E2A;Runloop&#x5BF9;&#x5E94;&#x7740;&#x4E00;&#x6761;&#x552F;&#x4E00;&#x7684;&#x7EBF;&#x7A0B;&#xFF0C;&#x4E00;&#x6761;&#x7EBF;&#x7A0B;&#x6700;&#x591A;&#x6709;&#x4E00;&#x4E2A;Runloop&#xFF1B;&#x5F00;&#x542F;&#x4E00;&#x4E2A;Runloop&#x80FD;&#x8BA9;&#x5B50;&#x7EBF;&#x7A0B;&#x4E0D;&#x6B7B;
   2.Runloop&#x7684;&#x521B;&#x5EFA;&#xFF1A;&#x4E3B;&#x7EBF;&#x7A0B;Runloop&#x5DF2;&#x7ECF;&#x521B;&#x5EFA;&#x597D;&#x4E86;&#xFF0C;&#x5B50;&#x7EBF;&#x7A0B;&#x7684;runloop&#x9700;&#x8981;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x5E76;&#x5F00;&#x542F;
   3.Runloop&#x7684;&#x751F;&#x547D;&#x5468;&#x671F;&#xFF1A;&#x5728;&#x7B2C;&#x4E00;&#x6B21;&#x83B7;&#x53D6;&#x65F6;&#x521B;&#x5EFA;&#xFF0C;&#x5728;&#x7EBF;&#x7A0B;&#x7ED3;&#x675F;&#x65F6;&#x9500;&#x6BC1;
 </code></pre></li>
 <li><p>1.7 &#x83B7;&#x5F97;Runloop&#x5BF9;&#x8C61;</p>
+<pre><code class="lang-objc">  <span class="hljs-number">1.</span>&#x83B7;&#x5F97;&#x5F53;&#x524D;Runloop&#x5BF9;&#x8C61;
+      <span class="hljs-comment">//01 NSRunloop</span>
+       <span class="hljs-built_in">NSRunLoop</span> * runloop1 = [<span class="hljs-built_in">NSRunLoop</span> currentRunLoop];
+      <span class="hljs-comment">//02 CFRunLoopRef</span>
+      <span class="hljs-built_in">CFRunLoopRef</span> runloop2 =   <span class="hljs-built_in">CFRunLoopGetCurrent</span>();
+
+  <span class="hljs-number">2.</span>&#x62FF;&#x5230;&#x5F53;&#x524D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x4E3B;Runloop&#xFF08;&#x4E3B;&#x7EBF;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;Runloop&#xFF09;
+      <span class="hljs-comment">//01 NSRunloop</span>
+       <span class="hljs-built_in">NSRunLoop</span> * runloop1 = [<span class="hljs-built_in">NSRunLoop</span> mainRunLoop];
+      <span class="hljs-comment">//02 CFRunLoopRef</span>
+       <span class="hljs-built_in">CFRunLoopRef</span> runloop2 =   <span class="hljs-built_in">CFRunLoopGetMain</span>();
+
+  <span class="hljs-number">3.</span>&#x6CE8;&#x610F;&#x70B9;&#xFF1A;&#x5F00;&#x4E00;&#x4E2A;&#x5B50;&#x7EBF;&#x7A0B;&#x521B;&#x5EFA;runloop,&#x4E0D;&#x662F;&#x901A;&#x8FC7;alloc init&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x8C03;&#x7528;currentRunLoop&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#xFF0C;&#x5B83;&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;&#x61D2;&#x52A0;&#x8F7D;&#x7684;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x90A3;&#x4E48;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8BE5;&#x7EBF;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;runloop&#x5BF9;&#x8C61;&#x8FD4;&#x56DE;
+  <span class="hljs-number">4.</span>&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4E3B;&#x52A8;&#x83B7;&#x53D6;Runloop&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x5B50;&#x7EBF;&#x7A0B;&#x5185;&#x90E8;&#x662F;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;Runloop&#x7684;&#x3002;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;<span class="hljs-built_in">CFRunloopRef</span>&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x641C;&#x7D22;_<span class="hljs-built_in">CFRunloopGet0</span>,&#x67E5;&#x770B;&#x4EE3;&#x7801;&#x3002;
+  <span class="hljs-number">5.</span>Runloop&#x5BF9;&#x8C61;&#x662F;&#x5229;&#x7528;&#x5B57;&#x5178;&#x6765;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#xFF0C;&#x800C;&#x4E14;key&#x662F;&#x5BF9;&#x5E94;&#x7684;&#x7EBF;&#x7A0B;Value&#x4E3A;&#x8BE5;&#x7EBF;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;Runloop&#x3002;
+</code></pre>
+</li>
+<li><p>1.8 Runloop&#x76F8;&#x5173;&#x7C7B;</p>
 </li>
 </ul>
-<pre><code class="lang-objc"><span class="hljs-number">1.</span>&#x83B7;&#x5F97;&#x5F53;&#x524D;Runloop&#x5BF9;&#x8C61;
-    <span class="hljs-comment">//01 NSRunloop</span>
-     <span class="hljs-built_in">NSRunLoop</span> * runloop1 = [<span class="hljs-built_in">NSRunLoop</span> currentRunLoop];
-    <span class="hljs-comment">//02 CFRunLoopRef</span>
-    <span class="hljs-built_in">CFRunLoopRef</span> runloop2 =   <span class="hljs-built_in">CFRunLoopGetCurrent</span>();
-
-<span class="hljs-number">2.</span>&#x62FF;&#x5230;&#x5F53;&#x524D;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x7684;&#x4E3B;Runloop&#xFF08;&#x4E3B;&#x7EBF;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;Runloop&#xFF09;
-    <span class="hljs-comment">//01 NSRunloop</span>
-     <span class="hljs-built_in">NSRunLoop</span> * runloop1 = [<span class="hljs-built_in">NSRunLoop</span> mainRunLoop];
-    <span class="hljs-comment">//02 CFRunLoopRef</span>
-     <span class="hljs-built_in">CFRunLoopRef</span> runloop2 =   <span class="hljs-built_in">CFRunLoopGetMain</span>();
-
-<span class="hljs-number">3.</span>&#x6CE8;&#x610F;&#x70B9;&#xFF1A;&#x5F00;&#x4E00;&#x4E2A;&#x5B50;&#x7EBF;&#x7A0B;&#x521B;&#x5EFA;runloop,&#x4E0D;&#x662F;&#x901A;&#x8FC7;alloc init&#x65B9;&#x6CD5;&#x521B;&#x5EFA;&#xFF0C;&#x800C;&#x662F;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x8C03;&#x7528;currentRunLoop&#x65B9;&#x6CD5;&#x6765;&#x521B;&#x5EFA;&#xFF0C;&#x5B83;&#x672C;&#x8EAB;&#x662F;&#x4E00;&#x4E2A;&#x61D2;&#x52A0;&#x8F7D;&#x7684;&#x3002;&#x5982;&#x679C;&#x4E0D;&#x5B58;&#x5728;&#x90A3;&#x4E48;&#x4F1A;&#x81EA;&#x52A8;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x8BE5;&#x7EBF;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;runloop&#x5BF9;&#x8C61;&#x8FD4;&#x56DE;
-<span class="hljs-number">4.</span>&#x5728;&#x5B50;&#x7EBF;&#x7A0B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x4E3B;&#x52A8;&#x83B7;&#x53D6;Runloop&#x7684;&#x8BDD;&#xFF0C;&#x90A3;&#x4E48;&#x5B50;&#x7EBF;&#x7A0B;&#x5185;&#x90E8;&#x662F;&#x4E0D;&#x4F1A;&#x521B;&#x5EFA;Runloop&#x7684;&#x3002;&#x53EF;&#x4EE5;&#x4E0B;&#x8F7D;<span class="hljs-built_in">CFRunloopRef</span>&#x7684;&#x6E90;&#x7801;&#xFF0C;&#x641C;&#x7D22;_<span class="hljs-built_in">CFRunloopGet0</span>,&#x67E5;&#x770B;&#x4EE3;&#x7801;&#x3002;
-<span class="hljs-number">5.</span>Runloop&#x5BF9;&#x8C61;&#x662F;&#x5229;&#x7528;&#x5B57;&#x5178;&#x6765;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#xFF0C;&#x800C;&#x4E14;key&#x662F;&#x5BF9;&#x5E94;&#x7684;&#x7EBF;&#x7A0B;Value&#x4E3A;&#x8BE5;&#x7EBF;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;Runloop&#x3002;
-</code></pre>
-<ul>
-<li>1.8 Runloop&#x76F8;&#x5173;&#x7C7B;</li>
-</ul>
 <p>&#xFF08;1&#xFF09;Runloop&#x8FD0;&#x884C;&#x539F;&#x7406;&#x56FE;</p>
-<p><img src="2.png" alt="PNG"></p>
+<h2 id=""><img src="2.png" alt="PNG"></h2>
 <p>&#xFF08;2&#xFF09;&#x4E94;&#x4E2A;&#x76F8;&#x5173;&#x7684;&#x7C7B;</p>
-<p>a.CFRunloopRef</p>
-<p>b.<a href="runloop/cfrunloopmoderef/cfrunloopmoderef.html">CFRunloopModeRef</a>&#x3010;Runloop&#x7684;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#x3011;</p>
-<p>c.<a href="runloop/cfrunloopsourceref/cfrunloopsourceref.html">CFRunloopSourceRef</a>&#x3010;Runloop&#x8981;&#x5904;&#x7406;&#x7684;&#x4E8B;&#x4EF6;&#x6E90;&#x3011;</p>
-<p>d.<a href="runloop/cfrunloopmoderef/cfrunloopmoderef.html">CFRunloopTimerRef</a>&#x3010;Timer&#x4E8B;&#x4EF6;&#x3011;</p>
-<p>e.<a href="runloop/cfrunloopmoderef/cfrunloopmoderef.html">CFRunloopObserverRef</a>&#x3010;Runloop&#x7684;&#x89C2;&#x5BDF;&#x8005;&#xFF08;&#x76D1;&#x542C;&#x8005;&#xFF09;&#x3011;</p>
+<p>a. CFRunloopRef</p>
+<p>b. <a href="runloop/cfrunloopmoderef/cfrunloopmoderef.html">CFRunloopModeRef</a>&#x3010;Runloop&#x7684;&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#x3011;</p>
+<p>c. <a href="runloop/cfrunloopsourceref/cfrunloopsourceref.html">CFRunloopSourceRef</a>&#x3010;Runloop&#x8981;&#x5904;&#x7406;&#x7684;&#x4E8B;&#x4EF6;&#x6E90;&#x3011;</p>
+<p>d. <a href="runloop/cfrunloopmoderef/cfrunloopmoderef.html">CFRunloopTimerRef</a>&#x3010;Timer&#x4E8B;&#x4EF6;&#x3011;</p>
+<p>e. <a href="runloop/cfrunloopmoderef/cfrunloopmoderef.html">CFRunloopObserverRef</a>&#x3010;Runloop&#x7684;&#x89C2;&#x5BDF;&#x8005;&#xFF08;&#x76D1;&#x542C;&#x8005;&#xFF09;&#x3011;</p>
+<hr>
 <p>&#xFF08;3&#xFF09;Runloop&#x548C;&#x76F8;&#x5173;&#x7C7B;&#x4E4B;&#x95F4;&#x7684;&#x5173;&#x7CFB;&#x56FE;</p>
 <p> <img src="1.png" alt="PNG"></p>
 <p>&#xFF08;4&#xFF09;Runloop&#x8981;&#x60F3;&#x8DD1;&#x8D77;&#x6765;&#xFF0C;&#x5B83;&#x7684;&#x5185;&#x90E8;&#x5FC5;&#x987B;&#x8981;&#x6709;&#x4E00;&#x4E2A;mode,&#x8FD9;&#x4E2A;mode&#x91CC;&#x9762;&#x5FC5;&#x987B;&#x6709;source\timer&#xFF0C;&#x81F3;&#x5C11;&#x8981;&#x6709;&#x5176;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x3002;</p>
+<hr>
 <ul>
 <li>1.9 Runloop&#x8FD0;&#x884C;&#x903B;&#x8F91;
--
 <img src="3.png" alt="PNG"></li>
 </ul>
-<hr>
 <p><img src="4.png" alt="PNG"></p>
 <hr>
 <h4 id="cf&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#xFF08;core-foundation&#xFF09;">CF&#x7684;&#x5185;&#x5B58;&#x7BA1;&#x7406;&#xFF08;Core Foundation&#xFF09;</h4>
-<pre><code>    &#x51E1;&#x662F;&#x5E26;&#x6709;Create&#x3001;Copy&#x3001;Retain&#x7B49;&#x5B57;&#x773C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x5728;&#x6700;&#x540E;&#x505A;&#x4E00;&#x6B21;release
-    &#x6BD4;&#x5982;CFRunLoopObserverCreate
-    release&#x51FD;&#x6570;&#xFF1A;CFRelease(&#x5BF9;&#x8C61;);
-</code></pre><h4 id="2runloop&#x5E94;&#x7528;">2.Runloop&#x5E94;&#x7528;</h4>
+<ol>
+<li>&#x51E1;&#x662F;&#x5E26;&#x6709;Create&#x3001;Copy&#x3001;Retain&#x7B49;&#x5B57;&#x773C;&#x7684;&#x51FD;&#x6570;&#xFF0C;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x90FD;&#x9700;&#x8981;&#x5728;&#x6700;&#x540E;&#x505A;&#x4E00;&#x6B21;release<ul>
+<li>&#x6BD4;&#x5982;CFRunLoopObserverCreate</li>
+</ul>
+</li>
+<li>release&#x51FD;&#x6570;&#xFF1A;CFRelease(&#x5BF9;&#x8C61;);</li>
+</ol>
+<h4 id="runloop&#x5E94;&#x7528;">Runloop&#x5E94;&#x7528;</h4>
 <pre><code>1&#xFF09;&#x5F00;&#x542F;NSTimer&#xFF0C;&#x63A7;&#x5236;&#x5B9A;&#x65F6;&#x5668;&#x5728;&#x7279;&#x5B9A;&#x6A21;&#x5F0F;&#x4E0B;&#x6267;&#x884C;
 2&#xFF09;&#x53EF;&#x4EE5;&#x8BA9;&#x67D0;&#x4E9B;&#x4E8B;&#x4EF6;&#xFF08;&#x884C;&#x4E3A;&#x3001;&#x4EFB;&#x52A1;&#xFF09;&#x5728;&#x7279;&#x5B9A;&#x6A21;&#x5F0F;&#x4E0B;&#x6267;&#x884C;&#xFF0C;&#x5982;ImageView&#x663E;&#x793A;&#xFF1A;&#x63A7;&#x5236;&#x65B9;&#x6CD5;&#x5728;&#x7279;&#x5B9A;&#x7684;&#x6A21;&#x5F0F;&#x4E0B;&#x53EF;&#x7528;
 3&#xFF09;PerformSelector&#xFF1A;&#x63A7;&#x5236;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x4E0D;&#x540C;&#x7684;&#x4EFB;&#x52A1;
@@ -1094,7 +1081,7 @@ http:<span class="hljs-comment">//opensource.apple.com/source/CF/CF-1151.16/</sp
     &#x5B50;&#x7EBF;&#x7A0B;&#x5BF9;&#x5E94;&#x7684;runloop&#x8FD8;&#x9700;&#x8981;&#x624B;&#x52A8;&#x7684;&#x5F00;&#x542F;&#xFF0C;&#x5426;&#x5219;&#x8BE5;runloop&#x4E00;&#x521B;&#x5EFA;&#x51FA;&#x6765;&#x5C31;&#x9000;&#x51FA;&#xFF1B;&#x5728;&#x5F00;&#x542F;&#x524D;&#x8981;&#x5148;&#x6DFB;&#x52A0;&#x4E8B;&#x4EF6;&#xFF0C;&#x5426;&#x5219;&#x4E5F;&#x4F1A;&#x9000;&#x51FA;&#x3002;
     &#x4FDD;&#x8BC1;mode&#x91CC;&#x9762;&#x6709;&#x4E8B;&#x4EF6;,&#x4E0D;&#x8BA9;runloop&#x7ACB;&#x523B;&#x9000;&#x51FA;
     &#x53EF;&#x4EE5;&#x5F80;runloop&#x4E2D;&#x6DFB;&#x52A0;source&#x548C;timer,&#x4F46;&#x662F;&#x6DFB;&#x52A0;observer&#x662F;&#x6CA1;&#x6709;&#x4F5C;&#x7528;&#x7684;
-    */</span>
+*/</span>
 <span class="hljs-comment">/*
     NSTimer *timer = [NSTimer timerWithTimeInterval:2.0 target:self selector:@selector(timer) userInfo:nil repeats:YES];
     [[NSRunLoop currentRunLoop] addTimer:timer forMode:NSDefaultRunLoopMode];
@@ -1120,7 +1107,7 @@ http:<span class="hljs-comment">//opensource.apple.com/source/CF/CF-1151.16/</sp
 <li>NSTimer&#x5FC5;&#x987B;&#x6DFB;&#x52A0;&#x5230;runloop&#x4E2D;&#x624D;&#x4F1A;&#x5DE5;&#x4F5C;&#xFF0C;&#x4E14;&#x5176;&#x5DE5;&#x4F5C;&#x6536;&#x5230;runloop&#x8FD0;&#x884C;&#x6A21;&#x5F0F;&#x7684;&#x5F71;&#x54CD;&#x3002;</li>
 </ol>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-25 12:40:49
+2016-06-06 19:48:55
 </span></footer>
                     
                     </section>
