@@ -65,7 +65,7 @@
         data-chapter-title="NSObject"
         data-filepath="nsobject/README.md"
         data-basepath=".."
-        data-revision="Wed May 25 2016 17:00:37 GMT+0800 (CST)"
+        data-revision="Sat Jun 18 2016 14:46:46 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -356,8 +356,31 @@
 </code></pre>
 </li>
 </ul>
+<!--Objective-C 有 designated 和 secondary 初始化方法的观念。 designated 初始化方法是提供所有的参数，secondary 初始化方法是一个或多个，并且提供一个或者更多的默认参数来调用 designated 初始化方法的初始化方法。-->
+<!--64-bit下的BOOL-->
+<!--32-bit下，BOOL被定义为signed char，@encode(BOOL)的结果是'c'-->
+<!--64-bit下，BOOL被定义为bool，(邮箱前缀符号)encode(BOOL)结果是'B'-->
+<!--更直观的解释是：-->
+<!--```-->
+<!--(lldb) p/t (signed char)7-->
+<!--(BOOL) $0 = 0b00000111 (YES)-->
+<!--(lldb) p/t (bool)7-->
+<!--(bool) $1 = 0b00000001 (YES)-->
+<!--```-->
+<!--32-bit版本的BOOL包括了256个值的可能性，还会引起一些坑，像这篇文章所说的。而64-bit下只有0（NO），1（YES）两种可能，终于给BOOL正了名。-->
+<!--替代Format字符串-->
+<!--适配64-bit时，你是否遇到了下面的恶心写法：-->
+<!--NSArray *items = @[@1, @2, @3];-->
+<!--NSLog(@"数组元素个数：%lu", (unsigned long)items.count);-->
+<!--一般情况下，利用NSNumber的(邮箱前缀符号)语法糖就可以解决：-->
+<!--NSArray *items = @[@1, @2, @3];-->
+<!--NSLog(@"数组元素个数：%@", @(items.count));-->
+<!--同理，int转string也可以：-->
+<!--NSInteger i = 10086;-->
+<!--NSString *string = @(i).stringValue;-->
+<!--当然，如需要%.2f这种Format就不适用了。-->
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-01 17:09:41
+2016-06-18 13:59:16
 </span></footer>
                     
                     </section>

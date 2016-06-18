@@ -65,7 +65,7 @@
         data-chapter-title="@property关键字"
         data-filepath="property/README.md"
         data-basepath=".."
-        data-revision="Wed May 25 2016 17:00:37 GMT+0800 (CST)"
+        data-revision="Sat Jun 18 2016 14:46:46 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -390,13 +390,19 @@ __<span class="hljs-keyword">weak</span>&#x7684;&#x7279;&#x70B9;:
 </code></pre>
 <ul>
 <li>&#x7528;&#x9014;<ul>
-<li>assign&#x4E00;&#x822C;&#x7528;&#x5728;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0A;&#x9762;, &#x6BD4;&#x5982;int\double&#x7B49;</li>
-<li>weak&#x4E00;&#x822C;&#x7528;&#x5728;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x4E0A;&#x9762;, &#x6216;&#x8005;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x5FAA;&#x73AF;&#x5F3A;&#x5F15;&#x7528;&#x7684;&#x95EE;&#x9898;</li>
+<li>assign&#x4E00;&#x822C;&#x7528;&#x5728;&#x57FA;&#x672C;&#x6570;&#x636E;&#x7C7B;&#x578B;&#x4E0A;&#x9762;, &#x6BD4;&#x5982;int\double&#x7B49;;&#x4E5F;&#x53EF;&#x4EE5;&#x4FEE;&#x9970;OC&#x5BF9;&#x8C61;</li>
+<li>weak&#x4E00;&#x822C;&#x7528;&#x5728;&#x4EE3;&#x7406;&#x5BF9;&#x8C61;&#x4E0A;&#x9762;, &#x6216;&#x8005;&#x7528;&#x6765;&#x89E3;&#x51B3;&#x5FAA;&#x73AF;&#x5F3A;&#x5F15;&#x7528;&#x7684;&#x95EE;&#x9898;&#xFF1B;&#x53EA;&#x80FD;&#x4FEE;&#x9970;OC&#x5BF9;&#x8C61;</li>
 </ul>
 </li>
 </ul>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-01 17:10:41
+<!--第二个 @property 中 assign 和 nonatomic 调换位置。 推荐按照下面的格式来定义属性-->
+<!--@property (nonatomic, readwrite, copy) NSString *name;-->
+<!--如果基于第一种修改方法：既然该类中已经有一个“初始化方法” (initializer)，用于设置“姓名”(Name)、“年龄”(Age)和“性别”(Sex）的初始值: 那么在设计对应 @property 时就应该尽量使用不可变的对象：其三个属性都应该设为“只读”。用初始化方法设置好属性值之后，就不能再改变了。在本例中，仍需声明属性的“内存管理语义”。于是可以把属性的定义改成这样-->
+<pre><code>  @property (nonatomic, readonly, copy) NSString *name;
+  @property (nonatomic, readonly, assign) NSUInteger age;
+  @property (nonatomic, readonly, assign) CYLSex sex;
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2016-06-18 14:00:32
 </span></footer>
                     
                     </section>

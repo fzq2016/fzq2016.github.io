@@ -65,7 +65,7 @@
         data-chapter-title="bit operation（位运算）与bit Flags（位枚举）"
         data-filepath="bit_operationbit_flags/README.md"
         data-basepath=".."
-        data-revision="Wed May 25 2016 17:00:37 GMT+0800 (CST)"
+        data-revision="Sat Jun 18 2016 14:46:46 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -378,8 +378,17 @@
     <span class="hljs-keyword">if</span> (value &amp; d) <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#x5305;&#x542B;&#x4E86;d&quot;</span>);
 }
 </code></pre>
+<!--使用新版枚举-->
+<!--和上面的原因差不多，枚举应该使用新版的写法：-->
+<!--typedef NS_ENUM(NSInteger, UIViewAnimationCurve) {-->
+<!--    UIViewAnimationCurveEaseInOut,-->
+<!--    UIViewAnimationCurveEaseIn,-->
+<!--    UIViewAnimationCurveEaseOut,-->
+<!--    UIViewAnimationCurveLinear-->
+<!--};-->
+<!--不仅能为枚举值指定类型，而且当赋值赋错类型时，编译器还会给出警告，没理由不用这种写法。-->
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-01 17:09:40
+2016-06-18 13:59:20
 </span></footer>
                     
                     </section>
