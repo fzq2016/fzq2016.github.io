@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en" >
-    <!-- Start book 目录--回到所有书目录 -->
+    <!-- Start book 目录--回到书架 -->
     <head>
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>drawShape(图形） | 目录--回到所有书目录</title>
+        <title>drawShape(图形） | 目录--回到书架</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -65,7 +65,7 @@
         data-chapter-title="drawShape(图形）"
         data-filepath="drawshape/README.md"
         data-basepath=".."
-        data-revision="Mon Jun 06 2016 17:52:57 GMT+0800 (CST)"
+        data-revision="Sat Jun 18 2016 14:47:05 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -245,7 +245,7 @@
                         
                             <b>10.</b>
                         
-                        drawImage(绘制图片）
+                        绘制图片
                     </a>
             
             
@@ -379,7 +379,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >目录--回到所有书目录</a>
+        <a href="../" >目录--回到书架</a>
     </h1>
 </div>
 
@@ -410,36 +410,41 @@
 <li><p>&#x5229;&#x7528;&#x56FE;&#x5F62;&#x4E0A;&#x4E0B;&#x6587;&#x5C06;&#x7ED8;&#x5236;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x6E32;&#x67D3;&#x663E;&#x793A;&#x5230;view&#x4E0A;&#x9762;</p>
 </li>
 </ol>
-<h3 id="&#x83B7;&#x53D6;&#x4E0A;&#x4E0B;&#x6587;">&#x83B7;&#x53D6;&#x4E0A;&#x4E0B;&#x6587;</h3>
-<pre><code>CGContextRef ctx = UIGraphicsGetCurrentContext();
-</code></pre><h3 id="&#x62FC;&#x63A5;&#x8DEF;&#x5F84;">&#x62FC;&#x63A5;&#x8DEF;&#x5F84;</h3>
-<pre><code>// 1/4&#x6247;&#x5F62;
-CGPoint center = CGPointMake(rect.size.width * 0.5, rect.size.height * 0.5);//&#x8BBE;&#x7F6E;&#x5706;&#x5FC3;
-CGFloat radius = rect.size.width * 0.5 * 0.5;//&#x8BBE;&#x7F6E;&#x534A;&#x5F84;
-UIBezierPath *path = [UIBezierPath bezierPathWithArcCenter:center radius:50 startAngle:0 endAngle:M_PI_2 clockwise:YES];
+<pre><code class="lang-objc"><span class="hljs-preprocessor">### &#x83B7;&#x53D6;&#x4E0A;&#x4E0B;&#x6587;</span>
+    <span class="hljs-built_in">CGContextRef</span> ctx = <span class="hljs-built_in">UIGraphicsGetCurrentContext</span>();
 
-// &#x6DFB;&#x52A0;&#x4E00;&#x6839;&#x7EBF;&#x5230;&#x5706;&#x5FC3;
-[path addLineToPoint:center];
+<span class="hljs-preprocessor">### &#x62FC;&#x63A5;&#x8DEF;&#x5F84;</span>
+    <span class="hljs-comment">// 1/4&#x6247;&#x5F62;</span>
+    <span class="hljs-built_in">CGPoint</span> center = <span class="hljs-built_in">CGPointMake</span>(rect<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span>, rect<span class="hljs-variable">.size</span><span class="hljs-variable">.height</span> * <span class="hljs-number">0.5</span>);<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x5706;&#x5FC3;</span>
+    <span class="hljs-built_in">CGFloat</span> radius = rect<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> * <span class="hljs-number">0.5</span> * <span class="hljs-number">0.5</span>;<span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x534A;&#x5F84;</span>
+    <span class="hljs-built_in">UIBezierPath</span> *path = [<span class="hljs-built_in">UIBezierPath</span> bezierPathWithArcCenter:center radius:<span class="hljs-number">50</span> startAngle:<span class="hljs-number">0</span> endAngle:M_PI_2 clockwise:<span class="hljs-literal">YES</span>];
 
-// &#x5173;&#x95ED;&#x8DEF;&#x5F84;:&#x4ECE;&#x8DEF;&#x5F84;&#x7684;&#x7EC8;&#x70B9;,&#x8FDE;&#x63A5;&#x5230;&#x8D77;&#x70B9;
-[path closePath];//&#x6700;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;
-</code></pre><p>//    [path addLineToPoint:CGPointMake(center.x + 50, center.y)];//&#x7B2C;&#x4E8C;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</p>
-<h3 id="&#x628A;&#x8DEF;&#x5F84;&#x6DFB;&#x52A0;&#x5230;&#x4E0A;&#x4E0B;&#x6587;">&#x628A;&#x8DEF;&#x5F84;&#x6DFB;&#x52A0;&#x5230;&#x4E0A;&#x4E0B;&#x6587;</h3>
-<pre><code>CGContextAddPath(ctx, path.CGPath);
-</code></pre><h3 id="&#x8BBE;&#x7F6E;&#x7ED8;&#x56FE;&#x72B6;&#x6001;">&#x8BBE;&#x7F6E;&#x7ED8;&#x56FE;&#x72B6;&#x6001;</h3>
-<pre><code>//&#x8BBE;&#x7F6E;&#x7EBF;&#x5BBD;
-CGContextSetLineWidth(ctx, 5);
-//&#x8BBE;&#x7F6E;&#x586B;&#x5145;&#x989C;&#x8272;
-[[UIColor redColor] setFill];
-// &#x8BBE;&#x7F6E;&#x63CF;&#x8FB9;&#x989C;&#x8272;
-[[UIColor greenColor] setStroke];
-</code></pre><h3 id="&#x6E32;&#x67D3;">&#x6E32;&#x67D3;</h3>
-<pre><code>//&#x8D1D;&#x585E;&#x5C14;&#x8DEF;&#x5F84;&#x6CA1;&#x6709;&#x5C01;&#x88C5;&#x5373;&#x63CF;&#x8FB9;&#x53C8;&#x586B;&#x5145;&#x7684;&#x65B9;&#x6CD5;
-// &#x65E2;&#x8981;&#x586B;&#x5145;&#x53C8;&#x8981;&#x63CF;&#x8FB9;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;CG&#x51FD;&#x6570;
-CGContextDrawPath(ctx, kCGPathFillStroke);
-</code></pre><p>}</p>
-<h2 id="&#x5176;&#x4ED6;&#x56FE;&#x5F62;&#x753B;&#x6CD5;">&#x5176;&#x4ED6;&#x56FE;&#x5F62;&#x753B;&#x6CD5;</h2>
-<pre><code class="lang-objc">    <span class="hljs-comment">// &#x5706;&#x5F62;</span>
+    <span class="hljs-comment">// &#x6DFB;&#x52A0;&#x4E00;&#x6839;&#x7EBF;&#x5230;&#x5706;&#x5FC3;</span>
+    [path addLineToPoint:center];
+
+    <span class="hljs-comment">// &#x5173;&#x95ED;&#x8DEF;&#x5F84;:&#x4ECE;&#x8DEF;&#x5F84;&#x7684;&#x7EC8;&#x70B9;,&#x8FDE;&#x63A5;&#x5230;&#x8D77;&#x70B9;</span>
+    [path closePath];<span class="hljs-comment">//&#x6700;&#x7B80;&#x5355;&#x7684;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</span>
+<span class="hljs-comment">//    [path addLineToPoint:CGPointMake(center.x + 50, center.y)];//&#x7B2C;&#x4E8C;&#x79CD;&#x5B9E;&#x73B0;&#x65B9;&#x5F0F;</span>
+
+<span class="hljs-preprocessor">### &#x628A;&#x8DEF;&#x5F84;&#x6DFB;&#x52A0;&#x5230;&#x4E0A;&#x4E0B;&#x6587;</span>
+    <span class="hljs-built_in">CGContextAddPath</span>(ctx, path<span class="hljs-variable">.CGPath</span>);
+
+<span class="hljs-preprocessor">### &#x8BBE;&#x7F6E;&#x7ED8;&#x56FE;&#x72B6;&#x6001;</span>
+    <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x7EBF;&#x5BBD;</span>
+    <span class="hljs-built_in">CGContextSetLineWidth</span>(ctx, <span class="hljs-number">5</span>);
+    <span class="hljs-comment">//&#x8BBE;&#x7F6E;&#x586B;&#x5145;&#x989C;&#x8272;</span>
+    [[<span class="hljs-built_in">UIColor</span> redColor] setFill];
+    <span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x63CF;&#x8FB9;&#x989C;&#x8272;</span>
+    [[<span class="hljs-built_in">UIColor</span> greenColor] setStroke];
+
+<span class="hljs-preprocessor">### &#x6E32;&#x67D3;</span>
+    <span class="hljs-comment">//&#x8D1D;&#x585E;&#x5C14;&#x8DEF;&#x5F84;&#x6CA1;&#x6709;&#x5C01;&#x88C5;&#x5373;&#x63CF;&#x8FB9;&#x53C8;&#x586B;&#x5145;&#x7684;&#x65B9;&#x6CD5;</span>
+    <span class="hljs-comment">// &#x65E2;&#x8981;&#x586B;&#x5145;&#x53C8;&#x8981;&#x63CF;&#x8FB9;&#xFF0C;&#x53EA;&#x80FD;&#x4F7F;&#x7528;CG&#x51FD;&#x6570;</span>
+    <span class="hljs-built_in">CGContextDrawPath</span>(ctx, k<span class="hljs-built_in">CGPathFillStroke</span>);
+}
+
+<span class="hljs-preprocessor">## &#x5176;&#x4ED6;&#x56FE;&#x5F62;&#x753B;&#x6CD5;</span>
+    <span class="hljs-comment">// &#x5706;&#x5F62;</span>
     <span class="hljs-comment">// &#x4E3A;&#x4EC0;&#x4E48;&#x4F20;&#x5165;&#x77E9;&#x5F62;&#xFF0C;&#x56E0;&#x4E3A;&#x5706;&#x5185;&#x5207;&#x4E0E;&#x77E9;&#x5F62;</span>
 <span class="hljs-comment">//   UIBezierPath *path = [UIBezierPath bezierPathWithRoundedRect:CGRectMake(10, 10, 200, 200) cornerRadius:100];</span>
 <span class="hljs-comment">//</span>
@@ -459,7 +464,7 @@ CGContextDrawPath(ctx, kCGPathFillStroke);
 <span class="hljs-comment">//    [path stroke];</span>
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-06 17:46:30
+2016-06-16 15:30:37
 </span></footer>
                     
                     </section>
@@ -514,5 +519,5 @@ require(["gitbook"], function(gitbook) {
 
         <!-- body:end -->
     </body>
-    <!-- End of book 目录--回到所有书目录 -->
+    <!-- End of book 目录--回到书架 -->
 </html>
