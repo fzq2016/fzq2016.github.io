@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en" >
-    <!-- Start book 目录--回到所有书目录 -->
+    <!-- Start book 目录--回到书架 -->
     <head>
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>扫描二维码- 动画实现 | 目录--回到所有书目录</title>
+        <title>扫描二维码- 动画实现 | 目录--回到书架</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -65,7 +65,7 @@
         data-chapter-title="扫描二维码- 动画实现"
         data-filepath="chapter-6/README.md"
         data-basepath=".."
-        data-revision="Sun May 29 2016 21:24:11 GMT+0800 (CST)"
+        data-revision="Sat Jun 18 2016 14:45:02 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -296,7 +296,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >目录--回到所有书目录</a>
+        <a href="../" >目录--回到书架</a>
     </h1>
 </div>
 
@@ -310,8 +310,6 @@
 <pre><code class="lang-swift">    <span class="hljs-preprocessor">@IBOutlet</span> <span class="hljs-keyword">weak</span> <span class="hljs-keyword">var</span> chongjibo: <span class="hljs-type">UIImageView</span>!
     <span class="hljs-preprocessor">@IBOutlet</span> <span class="hljs-keyword">weak</span> <span class="hljs-keyword">var</span> backView: <span class="hljs-type">UIView</span>!
     <span class="hljs-preprocessor">@IBOutlet</span> <span class="hljs-keyword">weak</span> <span class="hljs-keyword">var</span> toBottom: <span class="hljs-type">NSLayoutConstraint</span>!
-
-
 
     <span class="hljs-keyword">override</span> <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">viewDidAppear</span><span class="hljs-params">(animated: Bool)</span></span> {
         <span class="hljs-keyword">super</span>.viewDidAppear(animated)
@@ -338,18 +336,14 @@
 
             <span class="hljs-keyword">self</span>.view.layoutIfNeeded()
         }
-
-
-
     }
-
 
     <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">endAniamtion</span><span class="hljs-params">()</span></span> -&gt; () {
         chongjibo.layer.removeAllAnimations()
     }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-27 21:53:18
+2016-06-18 14:13:54
 </span></footer>
                     
                     </section>
@@ -404,5 +398,5 @@ require(["gitbook"], function(gitbook) {
 
         <!-- body:end -->
     </body>
-    <!-- End of book 目录--回到所有书目录 -->
+    <!-- End of book 目录--回到书架 -->
 </html>
