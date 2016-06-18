@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en" >
-    <!-- Start book 目录--回到所有书目录 -->
+    <!-- Start book 目录--回到书架 -->
     <head>
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>KVO | 目录--回到所有书目录</title>
+        <title>KVO | 目录--回到书架</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -65,7 +65,7 @@
         data-chapter-title="KVO"
         data-filepath="kvo/README.md"
         data-basepath=".."
-        data-revision="Sun May 29 2016 15:00:05 GMT+0800 (CST)"
+        data-revision="Sat Jun 18 2016 14:44:36 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -229,7 +229,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >目录--回到所有书目录</a>
+        <a href="../" >目录--回到书架</a>
     </h1>
 </div>
 
@@ -240,6 +240,7 @@
                     <section class="normal" id="section-">
                     
                         <h2 id="kvo">KVO</h2>
+<p><a href="http://blog.csdn.net/zzhou910/article/details/8158523" target="_blank">http://blog.csdn.net/zzhou910/article/details/8158523</a></p>
 <ul>
 <li>&#x5168;&#x79F0;&#xFF1A;Key Value Observing&#xFF08;&#x952E;&#x503C;&#x76D1;&#x542C;&#xFF09;</li>
 <li>&#x6B65;&#x9AA4;&#xFF1A;</li>
@@ -275,8 +276,36 @@
     <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;%@ %@ %@ %@&quot;</span>, object, keyPath, change, context);
 }
 </code></pre>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-05-25 15:49:13
+<p>//    /<em>* &#x901A;&#x8FC7;KVO&#x76D1;&#x542C; </em>/
+//    for(FZQWine* wine in self.wine){
+//        [wine addObserver:self forKeyPath:@&quot;amount&quot; options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
+//        }</p>
+<p>/<strong> KVO&#x76D1;&#x89C6;&#x6570;&#x91CF;&#x53D8;&#x5316; <em>/
+-(void)observeValueForKeyPath:(NSString </em>)keyPath ofObject:(FZQWine<em>)wine change:(NSDictionary&lt;NSString </em>,id&gt; <em>)change context:(void </em>)context
+{
+    /</strong> &#x53D6;&#x51FA;&#x6570;&#x503C; */
+    int oldAmount = [change[NSKeyValueChangeOldKey] intValue];
+    int newAmount = [change[NSKeyValueChangeNewKey] intValue];</p>
+<pre><code>/** &#x52A0;&#x5165;&#x8D2D;&#x7269;&#x8F66;&#x6216;&#x79FB;&#x51FA;&#x8D2D;&#x7269;&#x8F66; */
+[self changeCart:wine];
+
+/** &#x6839;&#x636E;&#x53D8;&#x5316;&#x8BA1;&#x7B97;&#x603B;&#x4EF7; */
+NSString *shop;
+//&#x5224;&#x65AD;&#x6539;&#x53D8;&#x60C5;&#x51B5;
+if (newAmount&gt;oldAmount) {
+    shop = @&quot;plus&quot;;
+}else{
+    shop = @&quot;minus&quot;;
+}
+[self totalPriceCal:wine change:shop];
+</code></pre><p>}</p>
+<p>for(FZQWine* wine in self.wine)
+    {
+        [wine removeObserver:self forKeyPath:@&quot;amount&quot;];
+    }//KVO</p>
+<pre><code>cocoa&#x7684;KVO&#x6A21;&#x578B;&#x4E2D;&#xFF0C;&#x6709;&#x4E24;&#x79CD;&#x901A;&#x77E5;&#x89C2;&#x5BDF;&#x8005;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x81EA;&#x52A8;&#x901A;&#x77E5;&#x548C;&#x624B;&#x52A8;&#x901A;&#x77E5;&#x3002;&#x987E;&#x540D;&#x601D;&#x4E49;&#xFF0C;&#x81EA;&#x52A8;&#x901A;&#x77E5;&#x7531;cocoa&#x5728;&#x5C5E;&#x6027;&#x503C;&#x53D8;&#x5316;&#x65F6;&#x81EA;&#x52A8;&#x901A;&#x77E5;&#x89C2;&#x5BDF;&#x8005;&#xFF0C;&#x800C;&#x624B;&#x52A8;&#x901A;&#x77E5;&#x9700;&#x8981;&#x5728;&#x503C;&#x53D8;&#x5316;&#x65F6;&#x8C03;&#x7528; willChangeValueForKey:&#x548C;didChangeValueForKey: &#x65B9;&#x6CD5;&#x901A;&#x77E5;&#x8C03;&#x7528;&#x8005;&#x3002;&#x4E3A;&#x6C42;&#x7B80;&#x4FBF;&#xFF0C;&#x6211;&#x4EEC;&#x4E00;&#x822C;&#x4F7F;&#x7528;&#x81EA;&#x52A8;&#x901A;&#x77E5;&#x3002; 
+</code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
+2016-06-15 22:15:38
 </span></footer>
                     
                     </section>
@@ -331,5 +360,5 @@ require(["gitbook"], function(gitbook) {
 
         <!-- body:end -->
     </body>
-    <!-- End of book 目录--回到所有书目录 -->
+    <!-- End of book 目录--回到书架 -->
 </html>
