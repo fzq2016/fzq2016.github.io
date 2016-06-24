@@ -65,7 +65,7 @@
         data-chapter-title="静态库"
         data-filepath="chapter-13/README.md"
         data-basepath=".."
-        data-revision="Fri Jun 24 2016 16:17:39 GMT+0800 (CST)"
+        data-revision="Fri Jun 24 2016 19:44:11 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -393,7 +393,7 @@
 <pre><code> .a
  .framework
 </code></pre></li>
-<li><p>&#x9759;&#x6001;&#x5E93;&#x7684;&#x5B58;&#x5728;&#x5F62;&#x5F0F;?</p>
+<li><p>&#x52A8;&#x6001;&#x5E93;&#x7684;&#x5B58;&#x5728;&#x5F62;&#x5F0F;?</p>
 <pre><code> .dylib
  .framework
 </code></pre></li>
@@ -410,85 +410,55 @@
      &#x8BBE;&#x7F6E;Objective-C Automatic Reference Counting -&gt; NO
 </code></pre></li>
 </ol>
-<h3 id="2-&#x9759;&#x6001;&#x5E93;&#x7684;&#x5236;&#x4F5C;">2. &#x9759;&#x6001;&#x5E93;&#x7684;&#x5236;&#x4F5C;</h3>
+<h3 id="2-&#x9759;&#x6001;&#x5E93;&#x548C;&#x52A8;&#x6001;&#x5E93;&#x7684;&#x5236;&#x4F5C;">2. &#x9759;&#x6001;&#x5E93;&#x548C;&#x52A8;&#x6001;&#x5E93;&#x7684;&#x5236;&#x4F5C;</h3>
 <ol>
-<li>&#x521B;&#x5EFA;&#x9879;&#x76EE;&#x65F6;, &#x76F4;&#x63A5;&#x9009;&#x62E9;.framework&#x9759;&#x6001;&#x5E93;</li>
-<li>&#x8BBE;&#x7F6E;&#x9700;&#x8981;&#x66B4;&#x6F0F;&#x7684;&#x5934;&#x6587;&#x4EF6;</li>
-<li>&#x5728;&#x6A21;&#x62DF;&#x5668;&#x73AF;&#x5883;&#x4E0B;&#x7F16;&#x8BD1;(&#x5F97;&#x5230;&#x6A21;&#x62DF;&#x5668;&#x73AF;&#x5883;&#x4E0B;&#x7684;&#x9759;&#x6001;&#x5E93;)</li>
-<li><p>&#x5728;&#x771F;&#x673A;&#x73AF;&#x5883;&#x4E0B;&#x7F16;&#x8BD1;(&#x5F97;&#x5230;&#x771F;&#x673A;&#x73AF;&#x5883;&#x4E0B;&#x7684;&#x9759;&#x6001;&#x5E93;)</p>
+<li><p><a href="http://www.jianshu.com/p/42070c513104" target="_blank">&#x9759;&#x6001;&#x5E93;&#x548C;&#x52A8;&#x6001;&#x5E93;&#x7684;&#x5236;&#x4F5C;&#x56FE;&#x89E3;</a></p>
 </li>
 <li><p>&#x6CE8;&#x610F;&#x4E8B;&#x9879;:</p>
 <pre><code> &gt; &#x6A21;&#x62DF;&#x5668;&#x4E0B;&#x7684;&#x9759;&#x6001;&#x5E93;&#x548C;&#x771F;&#x673A;&#x4E0B;&#x7684;&#x9759;&#x6001;&#x5E93;&#x4E0D;&#x80FD;&#x5171;&#x7528;
 </code></pre></li>
 <li><p>&#x6CE8;&#x610F;&#x9759;&#x6001;&#x5E93;&#x6240;&#x652F;&#x6301;&#x7684;&#x67B6;&#x6784;</p>
-<p> &#x4E0D;&#x540C;&#x673A;&#x578B;&#x7684;CPU, &#x5BF9;&#x5E94;&#x7684;&#x67B6;&#x6784;&#x4E0D;&#x540C;;</p>
-<pre><code> &#x6A21;&#x62DF;&#x5668;:
-     4s----5  : i386
-     5s----6sPlus : x86_64
- &#x771F;&#x673A;:
-     3gs---4s : armv7
-     5/5c : armv7s(armv7&#x517C;&#x5BB9;armv7s)
-     5s---6sPlus: arm64
+<pre><code> &#x4E0D;&#x540C;&#x673A;&#x578B;&#x7684;CPU, &#x5BF9;&#x5E94;&#x7684;&#x67B6;&#x6784;&#x4E0D;&#x540C;;
+     &#x6A21;&#x62DF;&#x5668;:
+         4s----5  : i386
+         5s----6sPlus : x86_64
+     &#x771F;&#x673A;:
+         3gs---4s : armv7
+         5/5c : armv7s(armv7&#x517C;&#x5BB9;armv7s)
+         5s---6sPlus: arm64
 </code></pre></li>
-</ol>
-<pre><code>&#x67E5;&#x770B;&#x9759;&#x6001;&#x5E93;&#x652F;&#x6301;&#x7684;&#x67B6;&#x6784;
-    lipo -info &#x5E93;&#x6587;&#x4EF6;
-
-
-&#x89E3;&#x51B3;&#x65B9;&#x6848;:
-    Build Settings -&gt; Build Active -&gt; NO
-</code></pre><ol>
+<li><p>&#x67E5;&#x770B;&#x9759;&#x6001;&#x5E93;&#x652F;&#x6301;&#x7684;&#x67B6;&#x6784;</p>
+<pre><code> lipo -info &#x5E93;&#x6587;&#x4EF6;
+</code></pre></li>
 <li><p>&#x5408;&#x5E76;&#x9759;&#x6001;&#x5E93;(&#x6A21;&#x62DF;&#x5668;&#x548C;&#x771F;&#x673A;&#x90FD;&#x652F;&#x6301;)</p>
 <pre><code> lipo -create &#x5E93;1 &#x5E93;2 -output &#x7EC8;&#x6781;&#x5E93;
 </code></pre></li>
-<li><p>Debug&#x7248;&#x672C;&#x548C;Release&#x7248;&#x672C;</p>
-<pre><code> &#x533A;&#x522B;:
-     &#x63D0;&#x4F9B;&#x7684;&#x9759;&#x6001;&#x5E93;&#x5E94;&#x8BE5;&#x662F;release&#x7248;&#x672C;
-
- &#x4FEE;&#x6539;&#x65B9;&#x6848;:
-     &#x9879;&#x76EE; -&gt; Edit Scheme -&gt; Run -&gt; Release/Debug &#x5206;&#x522B;&#x8FDB;&#x884C;&#x7F16;&#x8BD1;
-</code></pre></li>
 </ol>
-<ol>
-<li><p>&#x771F;&#x6B63;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x9759;&#x6001;&#x5E93;&#x5236;&#x4F5C;</p>
-<p> &#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x9879;&#x76EE;, &#x5728;&#x9879;&#x76EE;&#x4E2D;, &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x5E93;;
- &#x597D;&#x5904;: &#x53EF;&#x4EE5;&#x8C03;&#x8BD5;&#x9759;&#x6001;&#x5E93;</p>
-</li>
-</ol>
-<h3 id="framework-&#x9759;&#x6001;&#x5E93;&#x5236;&#x4F5C;">framework &#x9759;&#x6001;&#x5E93;&#x5236;&#x4F5C;</h3>
-<pre><code>&#x540C;&#x9759;&#x6001;&#x5E93;&#x5236;&#x9020;&#x65B9;&#x6CD5;&#x4E00;&#x81F4;
+<h3 id="3-a&#x9759;&#x6001;&#x5E93;&#x548C;framework&#x9759;&#x6001;&#x5E93;&#x7684;&#x533A;&#x522B;">3 .a&#x9759;&#x6001;&#x5E93;&#x548C;.framework&#x9759;&#x6001;&#x5E93;&#x7684;&#x533A;&#x522B;?</h3>
+<pre><code>1&gt; .a&#x662F;&#x4E00;&#x4E2A;&#x7EAF;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;,.framework&#x4E2D;&#x9664;&#x4E86;&#x6709;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E4B;&#x5916;&#x8FD8;&#x6709;&#x8D44;&#x6E90;&#x6587;&#x4EF6;
+2&gt; .a&#x6587;&#x4EF6;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528;, &#x81F3;&#x5C11;&#x8981;&#x6709;.h&#x6587;&#x4EF6;&#x7684;&#x914D;&#x5408;; .framework&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;
+3&gt; .a + .h + sourceFile = .framework
+4&gt; &#x6253;&#x5305;&#x9759;&#x6001;&#x5E93;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;.framework
+</code></pre><h3 id="4-&#x9759;&#x6001;&#x5E93;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x95EE;&#x9898;">4. &#x9759;&#x6001;&#x5E93;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x95EE;&#x9898;</h3>
+<pre><code>&#x95EE;&#x9898;1: &#x6709;&#x4E9B;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x4E00;&#x4E9B;&#x56FE;&#x7247;&#x7D20;&#x6750;&#xFF0C;&#x4F8B;&#x5982;&#x516C;&#x53F8;&#x7684;logo&#x7B49;&#x3002;
+    &#x7531;&#x4E8E;Xcode&#x9ED8;&#x8BA4;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x4F1A;&#x628A;&#x6240;&#x6709;&#x7684;&#x7D20;&#x6750;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x5230;mainBundle&#x4E2D;&#xFF0C;&#x76F4;&#x63A5;&#x5C06;&#x6587;&#x4EF6;&#x8D44;&#x6E90;&#x62D6;&#x5230;&#x9759;&#x6001;&#x5E93;&#x6216;&#x8005;&#x65B0;&#x5EFA;&#x6587;&#x4EF6;&#x5939;&#x4FDD;&#x5B58;&#x7D20;&#x6750;&#x6587;&#x4EF6;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x6700;&#x7EC8;&#x53EF;&#x80FD;&#x4E0E;&#x4F7F;&#x7528;&#x9759;&#x6001;&#x5E93;&#x7684;&#x7A0B;&#x5E8F;&#x51B2;&#x7A81;&#x3002;
+    &#x5728;&#x9759;&#x6001;&#x5E93;&#x4E2D;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;&#x56FE;&#x7247;&#x7D20;&#x6750;&#xFF0C;&#x4F1A;&#x5229;&#x7528;bundle&#x7684;&#x624B;&#x6BB5;&#xFF0C;&#x6B65;&#x9AA4;&#xFF1A;
+        1&gt;  &#x5EFA;&#x7ACB;bundle&#xFF0C;&#x5E76;&#x4E14;&#x5411;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x56FE;&#x7247;
+        2&gt;  &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x56FE;&#x7247;
+        3&gt;  &#x7F16;&#x8BD1;
+        4&gt;  &#x8C03;&#x7528;&#x65B9;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165; .h + .a + XXX.bundle
 
-&#x9ED8;&#x8BA4;&#x60C5;&#x51B5;&#x4E0B;, &#x5236;&#x4F5C;&#x7684;&#x662F;&#x52A8;&#x6001;&#x5E93;
+&#x95EE;&#x9898;2: &#x5982;&#x679C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x8FC7;&#x591A;&#x600E;&#x4E48;&#x52A0;?
+    &#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4E3B;&#x5934;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x5176;&#x4ED6;&#x5934;&#x6587;&#x4EF6;,&#x8BA9;&#x7528;&#x6237;&#x53EA;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x4E3B;&#x5934;&#x6587;&#x4EF6;
 
-&#x53D8;&#x6210;&#x9759;&#x6001;&#x5E93;
- b s -&gt; match
-
-target -&gt; Build Settings-&gt; &#x641C;&#x7D22; Mach-o Type ; &#x6539;&#x4E3A;&#x9759;&#x6001;&#x5E93;
-</code></pre><h3 id="a&#x9759;&#x6001;&#x5E93;&#x548C;framework&#x9759;&#x6001;&#x5E93;&#x7684;&#x533A;&#x522B;">.a&#x9759;&#x6001;&#x5E93;&#x548C;.framework&#x9759;&#x6001;&#x5E93;&#x7684;&#x533A;&#x522B;?</h3>
-<pre><code>    1&gt; .a&#x662F;&#x4E00;&#x4E2A;&#x7EAF;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;,.framework&#x4E2D;&#x9664;&#x4E86;&#x6709;&#x4E8C;&#x8FDB;&#x5236;&#x6587;&#x4EF6;&#x4E4B;&#x5916;&#x8FD8;&#x6709;&#x8D44;&#x6E90;&#x6587;&#x4EF6;
-    2&gt; .a&#x6587;&#x4EF6;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x4F7F;&#x7528;, &#x81F3;&#x5C11;&#x8981;&#x6709;.h&#x6587;&#x4EF6;&#x7684;&#x914D;&#x5408;; .framework&#x6587;&#x4EF6;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x4F7F;&#x7528;
-    3&gt; .a + .h + sourceFile = .framework
-    4&gt;  &#x6253;&#x5305;&#x9759;&#x6001;&#x5E93;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528;.framework
-</code></pre><h3 id="&#x9759;&#x6001;&#x5E93;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x95EE;&#x9898;">&#x9759;&#x6001;&#x5E93;&#x5F00;&#x53D1;&#x4E2D;&#x7684;&#x5E38;&#x89C1;&#x95EE;&#x9898;</h3>
-<pre><code>    &#x95EE;&#x9898;1: &#x6709;&#x4E9B;&#x7B2C;&#x4E09;&#x65B9;&#x5E93;&#x4F1A;&#x4F7F;&#x7528;&#x5230;&#x4E00;&#x4E9B;&#x56FE;&#x7247;&#x7D20;&#x6750;&#xFF0C;&#x4F8B;&#x5982;&#x516C;&#x53F8;&#x7684;logo&#x7B49;&#x3002;
-        &#x7531;&#x4E8E;Xcode&#x9ED8;&#x8BA4;&#x5728;&#x7F16;&#x8BD1;&#x65F6;&#x4F1A;&#x628A;&#x6240;&#x6709;&#x7684;&#x7D20;&#x6750;&#x6587;&#x4EF6;&#x5BFC;&#x5165;&#x5230;mainBundle&#x4E2D;&#xFF0C;&#x53EF;&#x80FD;&#x4E0E;&#x4F7F;&#x7528;&#x9759;&#x6001;&#x5E93;&#x7684;&#x7A0B;&#x5E8F;&#x51B2;&#x7A81;&#x3002;
-        &#x5728;&#x9759;&#x6001;&#x5E93;&#x4E2D;&#x5982;&#x679C;&#x8981;&#x4F7F;&#x7528;&#x56FE;&#x7247;&#x7D20;&#x6750;&#xFF0C;&#x4F1A;&#x5229;&#x7528;bundle&#x7684;&#x624B;&#x6BB5;&#xFF0C;&#x6B65;&#x9AA4;&#xFF1A;
-            1&gt;  &#x5EFA;&#x7ACB;bundle&#xFF0C;&#x5E76;&#x4E14;&#x5411;&#x5176;&#x4E2D;&#x6DFB;&#x52A0;&#x56FE;&#x7247;
-            2&gt;  &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7C7B;&#x65B9;&#x6CD5;&#xFF0C;&#x8FD4;&#x56DE;&#x56FE;&#x7247;
-            3&gt;  &#x7F16;&#x8BD1;
-            4&gt;  &#x8C03;&#x7528;&#x65B9;&#x5982;&#x679C;&#x9700;&#x8981;&#x4F7F;&#x7528;&#xFF0C;&#x9700;&#x8981;&#x5BFC;&#x5165; .h + .a + XXX.bundle
-
-    &#x95EE;&#x9898;2:&#x5982;&#x679C;&#x7528;&#x6237;&#x9700;&#x8981;&#x5BFC;&#x5165;&#x7684;&#x5934;&#x6587;&#x4EF6;&#x8FC7;&#x591A;&#x600E;&#x4E48;&#x52A0;?
-        &#x5EFA;&#x8BAE;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x4E3B;&#x5934;&#x6587;&#x4EF6;&#x5305;&#x542B;&#x5176;&#x4ED6;&#x5934;&#x6587;&#x4EF6;, &#x8BA9;&#x7528;&#x6237;&#x53EA;&#x5BFC;&#x5165;&#x4E00;&#x4E2A;&#x4E3B;&#x5934;&#x6587;&#x4EF6;
-
-    &#x95EE;&#x9898;3: &#x9759;&#x6001;&#x5E93;&#x7A0B;&#x5E8F;&#x600E;&#x6837;&#x6D4B;&#x8BD5;?
-        &#x9759;&#x6001;&#x5E93;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5C0F;&#x9879;&#x76EE;,&#x5B9E;&#x73B0;&#x67D0;&#x4E9B;&#x529F;&#x80FD;,&#x4F46;&#x662F;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x4E5F;&#x9700;&#x8981;&#x6D4B;&#x8BD5;.&#x800C;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x53C8;&#x4E0D;&#x80FD;&#x4F5C;&#x4E3A;&#x9759;&#x6001;&#x5E93;&#x7684;&#x4E00;&#x90E8;&#x5206;
-        &#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x521B;&#x5EFA;&#x590D;&#x5408;&#x9879;&#x76EE;
-</code></pre><h3 id="&#x8865;&#x5145;-swift&#x52A8;&#x6001;&#x5E93;&#x6253;&#x5305;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;">&#x8865;&#x5145;: swift&#x52A8;&#x6001;&#x5E93;&#x6253;&#x5305;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;</h3>
-<pre><code>    &#x8865;&#x5145;: swift&#x52A8;&#x6001;&#x5E93;&#x6253;&#x5305;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;&#xFF0C;&#x9759;&#x6001;&#x5E93;&#x6253;&#x5305;&#x6D41;&#x7A0B;&#x5927;&#x81F4;&#x540C;&#x4E0A;
-    &#x60F3;&#x8981;&#x66B4;&#x6F0F;&#x63A5;&#x53E3;&#x51FA;&#x53BB;, &#x5B66;&#x4F1A;&#x4F7F;&#x7528;public&#x5173;&#x952E;&#x5B57;
+&#x95EE;&#x9898;3: &#x9759;&#x6001;&#x5E93;&#x7A0B;&#x5E8F;&#x600E;&#x6837;&#x6D4B;&#x8BD5;?
+    &#x9759;&#x6001;&#x5E93;&#x672C;&#x8EAB;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5C0F;&#x9879;&#x76EE;,&#x5B9E;&#x73B0;&#x67D0;&#x4E9B;&#x529F;&#x80FD;,&#x4F46;&#x662F;&#x8FD9;&#x4E9B;&#x529F;&#x80FD;&#x5728;&#x5F00;&#x53D1;&#x4E2D;&#x4E5F;&#x9700;&#x8981;&#x6D4B;&#x8BD5;.&#x800C;&#x6D4B;&#x8BD5;&#x4EE3;&#x7801;&#x53C8;&#x4E0D;&#x80FD;&#x4F5C;&#x4E3A;&#x9759;&#x6001;&#x5E93;&#x7684;&#x4E00;&#x90E8;&#x5206;
+    &#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x521B;&#x5EFA;&#x590D;&#x5408;&#x9879;&#x76EE;&#xFF0C;&#x53EF;&#x53C2;&#x8003;-&gt;2.&#x9759;&#x6001;&#x5E93;&#x548C;&#x52A8;&#x6001;&#x5E93;&#x7684;&#x5236;&#x4F5C;&#x56FE;&#x89E3;&#x4E2D;-&gt;&#x56DB;&#x3001;&#x9759;&#x6001;&#x5E93;&#x4F7F;&#x7528;&#x4E2D;&#x7684;&#x4E00;&#x4E9B;&#x6CE8;&#x610F;&#x70B9;
+</code></pre><h3 id="5-&#x8865;&#x5145;-swift&#x52A8;&#x6001;&#x5E93;&#x6253;&#x5305;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;">5. &#x8865;&#x5145;: swift&#x52A8;&#x6001;&#x5E93;&#x6253;&#x5305;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;</h3>
+<pre><code>    &#x8865;&#x5145;: swift&#x652F;&#x6301;&#x52A8;&#x6001;&#x5E93;&#x6253;&#x5305;&#x4EE5;&#x53CA;&#x4F7F;&#x7528;&#xFF0C;&#x4E0D;&#x652F;&#x6301;&#x9759;&#x6001;&#x5E93;&#x3002;&#x52A8;&#x6001;&#x5E93;&#x7684;&#x6253;&#x5305;&#x540C;&#x4E0A;&#x8FF0;-&gt;2.&#x9759;&#x6001;&#x5E93;&#x548C;&#x52A8;&#x6001;&#x5E93;&#x7684;&#x5236;&#x4F5C;&#x56FE;&#x89E3;&#x4E2D;-&gt;&#x4E94;&#x3001;&#x52A8;&#x6001;&#x5E93;&#x7684;&#x5236;&#x4F5C;&#x3002;
+    swift&#x66B4;&#x6F0F;&#x63A5;&#x53E3;, &#x9700;&#x8981;&#x4F7F;&#x7528;public&#x5173;&#x952E;&#x5B57;
 </code></pre><footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-22 18:42:13
+2016-06-24 19:42:10
 </span></footer>
                     
                     </section>
