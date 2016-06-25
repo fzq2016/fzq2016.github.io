@@ -65,7 +65,7 @@
         data-chapter-title="Quartz2D简介"
         data-filepath="chapter-0/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 18 2016 14:47:05 GMT+0800 (CST)"
+        data-revision="Sat Jun 25 2016 16:38:07 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -516,8 +516,38 @@
 </ul>
 </li>
 </ol>
+<h3 id="&#x79BB;&#x5C4F;&#x6E32;&#x67D3;">&#x79BB;&#x5C4F;&#x6E32;&#x67D3;</h3>
+<ol>
+<li><a href="http://www.jianshu.com/p/6d24a4c29e18" target="_blank">&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x6982;&#x5FF5;&#x4E0E;&#x51FA;&#x73B0;&#x573A;&#x666F;</a></li>
+<li><a href="http://mp.weixin.qq.com/s?__biz=MjM5NTIyNTUyMQ==&amp;mid=2709544818&amp;idx=1&amp;sn=62d0d2e9a363d250beb2d6887dca54b3&amp;scene=23&amp;srcid=0428cfMLZueQn9JBDTVmo3wK#rd" target="_blank">&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x8BE6;&#x89E3;&#x4E0E;&#x4F18;&#x5316;</a></li>
+<li>&#x8981;&#x70B9;&#x6574;&#x7406;&#xFF1A;<pre><code>  1. &#x5C4F;&#x5E55;&#x4E0A;&#x56FE;&#x50CF;&#x7684;&#x663E;&#x793A;&#x90FD;&#x662F;&#x4E00;&#x5E27;&#x4E00;&#x5E27;&#x7684;&#x663E;&#x793A;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x7528;&#x5E27;&#x7387;&#xFF08;&#x6BCF;&#x79D2;&#x663E;&#x793A;&#x591A;&#x5C11;&#x5F20;&#x56FE;&#x7247;&#xFF09;&#x67E5;&#x770B;&#x8FD0;&#x884C;&#x7684;&#x6D41;&#x7A0B;&#x7A0B;&#x5EA6;&#x3002;&#x8BE5;&#x6570;&#x503C;&#x8D8A;&#x9AD8;&#x8D8A;&#x597D;
+  2. &#x4E3A;&#x4EC0;&#x4E48;&#x4F1A;&#x6709;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF1A;&#x56FE;&#x5C42;&#x5C5E;&#x6027;&#x7684;&#x6DF7;&#x5408;&#x4F53;&#x88AB;&#x6307;&#x5B9A;&#x4E3A;&#x5728;&#x672A;&#x9884;&#x5408;&#x6210;&#x4E4B;&#x524D;&#x4E0D;&#x80FD;&#x76F4;&#x63A5;&#x5728;&#x5C4F;&#x5E55;&#x4E2D;&#x7ED8;&#x5236;&#xFF0C;&#x6240;&#x4EE5;&#x5C31;&#x9700;&#x8981;&#x5C4F;&#x5E55;&#x5916;&#x6E32;&#x67D3;&#xFF0C;&#x4E00;&#x822C;&#x7531;&#x8BBE;&#x7F6E;mask, shadow, group opacity, edge antialiasing&#x9020;&#x6210;
+  3. &#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x4E00;&#x822C;&#x662F;&#x6307;&#xFF08;GPU&#x7684;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF09;&#xFF0C;CPU&#x4E5F;&#x4F1A;&#x6709;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF08;&#x91CD;&#x5199;drawRect:&#x65B9;&#x6CD5;&#x4F1A;&#x9020;&#x6210;&#x8BE5;&#x95EE;&#x9898;&#xFF09;
+  4. &#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x7684;&#x574F;&#x5904;&#xFF1A;&#x56E0;&#x4E3A;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x4F1A;&#x5355;&#x72EC;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x5C4F;&#x5E55;&#x5916;&#x7F13;&#x51B2;&#x533A;&#x5E76;&#x8FDB;&#x884C;&#x6E32;&#x67D3;&#xFF0C;&#x800C;&#x5C4F;&#x5E55;&#x5916;&#x7F13;&#x51B2;&#x533A;&#x8DDF;&#x5F53;&#x524D;&#x5C4F;&#x5E55;&#x7F13;&#x51B2;&#x533A;&#x4E0A;&#x4E0B;&#x6587;&#x5207;&#x6362;&#x662F;&#x5F88;&#x8017;&#x6027;&#x80FD;&#x7684;
+  5. &#x7CFB;&#x7EDF;&#x5706;&#x89D2;&#x4F1A;&#x9020;&#x6210;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x95EE;&#x9898;&#xFF0C;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;
+      1. &#x540E;&#x53F0;&#x7ED8;&#x5236;&#x5706;&#x89D2;&#xFF08;&#x5176;&#x5B9E;&#x662F;&#x5C06;GPU&#x7684;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x53D8;&#x4E3A;CPU&#x7684;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF09;&#xFF0C;&#x4F46;&#x8FD8;&#x5B58;&#x5728;&#x7ED8;&#x5236;&#x540E;&#x7684;&#x56FE;&#x7247;&#x662F;&#x5426;&#x8FDB;&#x884C;&#x78C1;&#x76D8;&#x7F13;&#x5B58;&#xFF1B;
+      2. &#x8BA9;UI&#x7ED8;&#x5236;&#x5706;&#x89D2;&#x56FE;&#x7247;&#xFF1B;
+      3. &#x7ED8;&#x5236;&#x4E00;&#x5B9A;&#x91CF;&#x7684;&#x5706;&#x89D2;&#x906E;&#x7F69;&#xFF0C;&#x63D2;&#x5165;&#x56FE;&#x7247;layer&#x5C42;&#x4E2D;&#xFF0C;&#x4E0E;&#x56FE;&#x7247;&#x5408;&#x6210;&#x540E;&#x663E;&#x793A;&#xFF0C;&#x5706;&#x89D2;&#x906E;&#x7F69;&#x53EF;&#x7528;&#x5185;&#x5B58;&#x7F13;&#x5B58;&#x51CF;&#x5C11;&#x91CD;&#x590D;&#x7ED8;&#x5236;
+</code></pre><pre><code class="lang-objc">  view<span class="hljs-variable">.layer</span><span class="hljs-variable">.cornerRadius</span> = <span class="hljs-number">5</span>
+  view<span class="hljs-variable">.layer</span><span class="hljs-variable">.masksToBounds</span> = <span class="hljs-literal">true</span>
+</code></pre>
+<pre><code>  6. &#x8BBE;&#x7F6E;Shadow.path&#x53EF;&#x4EE5;&#x907F;&#x514D;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;
+  7. Mask &#x6548;&#x679C;&#x65E0;&#x6CD5;&#x53D6;&#x6D88;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF0C;&#x4F7F;&#x7528;&#x6DF7;&#x5408;&#x56FE;&#x5C42;&#x7684;&#x65B9;&#x6CD5;&#x6765;&#x6A21;&#x62DF; mask &#x6548;&#x679C;&#xFF0C;&#x6027;&#x80FD;&#x5404;&#x65B9;&#x9762;&#x90FD;&#x662F;&#x548C;&#x65E0;&#x6548;&#x679C;&#x6301;&#x5E73;&#xFF0C;&#x63A8;&#x8350;&#x4F7F;&#x7528;&#x6DF7;&#x5408;&#x56FE;&#x5C42;&#x3002;
+  8. GroupOpacity&#x662F;&#x6307;CALayer&#x7684;allowsGroupOpacity&#x5C5E;&#x6027;&#xFF0C;UIView &#x7684;alpha&#x5C5E;&#x6027;&#x7B49;&#x540C;&#x4E8E;CALayer&#x7684;opacity&#x5C5E;&#x6027;&#x3002;&#x5F00;&#x542F;GroupOpacity&#x540E;&#xFF0C;&#x5B50;layer&#x5728;&#x89C6;&#x89C9;&#x4E0A;&#x7684;&#x900F;&#x660E;&#x5EA6;&#x7684;&#x4E0A;&#x9650;&#x662F;&#x5176;&#x7236;layer&#x7684;opacity&#x3002;GroupOpacity&#x5F00;&#x542F;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x7684;&#x6761;&#x4EF6;&#x662F;&#xFF1A;layer.opacity != 1.0&#x5E76;&#x4E14;&#x6709;&#x5B50; layer &#x6216;&#x8005;&#x80CC;&#x666F;&#x56FE;
+  9. &#x5F00;&#x542F; edge antialiasing(&#x65CB;&#x8F6C;&#x89C6;&#x56FE;&#x5E76;&#x4E14;&#x8BBE;&#x7F6E;layer.allowsEdgeAntialiasing = true) &#x5728; iOS 8 &#x548C; iOS 9 &#x4E0A;&#x5E76;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF0C;&#x5BF9;&#x6027;&#x80FD;&#x4E5F;&#x6CA1;&#x6709;&#x4EC0;&#x4E48;&#x5F71;&#x54CD;&#xFF0C;&#x4E5F;&#x8BB8;&#x5230;&#x73B0;&#x5728;&#x8FD9;&#x4E2A;&#x529F;&#x80FD;&#x5DF2;&#x7ECF;&#x88AB;&#x4F18;&#x5316;&#x4E86;
+  10. &#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x4F9D;&#x9760;&#x5149;&#x6805;&#x5316;&#x3002;&#x5149;&#x6805;&#x5316;&#x662F;&#x4E00;&#x628A;&#x53CC;&#x5203;&#x5251;&#xFF0C;&#x5B83;&#x5F00;&#x542F;&#x7684;&#x662F;CPU&#x7684;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF0C;&#x964D;&#x4F4E;GPU&#x7684;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#x3002;&#x9002;&#x7528;&#x4E8E;&#x89C6;&#x56FE;&#x53D8;&#x5316;&#x5F88;&#x5C11;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x5982;&#x679C;&#x89C6;&#x56FE;&#x4E0D;&#x65AD;&#x53D8;&#x5316;&#xFF0C;&#x6027;&#x80FD;&#x4F1A;&#x66F4;&#x52A0;&#x5DEE;
+</code></pre></li>
+<li>&#x603B;&#x7ED3;<pre><code>  1. RoundedCorner &#x5728;&#x4EC5;&#x6307;&#x5B9A;cornerRadius&#x65F6;&#x4E0D;&#x4F1A;&#x89E6;&#x53D1;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF0C;&#x4EC5;&#x9002;&#x7528;&#x4E8E;&#x7279;&#x6B8A;&#x60C5;&#x51B5;&#xFF1A;contents&#x4E3A; nil &#x6216;&#x8005;contents&#x4E0D;&#x4F1A;&#x906E;&#x6321;&#x80CC;&#x666F;&#x8272;&#x5706;&#x89D2;&#xFF1B;
+  2. Shawdow &#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x6307;&#x5B9A;&#x8DEF;&#x5F84;&#x6765;&#x53D6;&#x6D88;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF1B;
+  3. Mask &#x65E0;&#x6CD5;&#x53D6;&#x6D88;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF1B;
+  4. &#x4EE5;&#x4E0A;&#x6548;&#x679C;&#x5728;&#x540C;&#x7B49;&#x6570;&#x91CF;&#x7684;&#x89C4;&#x6A21;&#x4E0B;&#xFF0C;&#x5BF9;&#x6027;&#x80FD;&#x7684;&#x5F71;&#x54CD;&#x7B49;&#x7EA7;&#xFF1A;Shadow &gt; RoundedCorner &gt; Mask &gt; GroupOpacity(&#x8FF7;&#x4E4B;&#x6548;&#x679C;)&#x3002;
+  5. &#x4EFB;&#x4F55;&#x65F6;&#x5019;&#x4F18;&#x5148;&#x8003;&#x8651;&#x907F;&#x514D;&#x89E6;&#x53D1;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF0C;&#x65E0;&#x6CD5;&#x907F;&#x514D;&#x65F6;&#x4F18;&#x5316;&#x65B9;&#x6848;&#x6709;&#x4E24;&#x79CD;&#xFF1A;
+      1. Rasterization&#xFF1A;&#x9002;&#x7528;&#x4E8E;&#x9759;&#x6001;&#x5185;&#x5BB9;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5185;&#x90E8;&#x7ED3;&#x6784;&#x548C;&#x5185;&#x5BB9;&#x4E0D;&#x53D1;&#x751F;&#x53D8;&#x5316;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x6240;&#x6709;&#x6548;&#x679C;&#x800C;&#x8A00;&#xFF0C;&#x5728;&#x5B9E;&#x73B0;&#x6210;&#x672C;&#x4EE5;&#x53CA;&#x6027;&#x80FD;&#x4E0A;&#x6700;&#x5747;&#x8861;&#x7684;&#x3002;&#x5373;&#x4F7F;&#x662F;&#x52A8;&#x6001;&#x53D8;&#x5316;&#x7684;&#x89C6;&#x56FE;&#xFF0C;&#x5F00;&#x542F; Rasterization &#x540E;&#x80FD;&#x591F;&#x6709;&#x6548;&#x964D;&#x4F4E; GPU &#x7684;&#x8D1F;&#x8377;&#xFF0C;&#x4E0D;&#x8FC7;&#x5728;&#x52A8;&#x6001;&#x89C6;&#x56FE;&#x91CC;&#x662F;&#x5426;&#x542F;&#x7528;&#x8FD8;&#x662F;&#x770B; Instruments &#x7684;&#x6570;&#x636E;&#x3002;
+      2. &#x89C4;&#x907F;&#x79BB;&#x5C4F;&#x6E32;&#x67D3;&#xFF0C;&#x7528;&#x5176;&#x4ED6;&#x624B;&#x6CD5;&#x6765;&#x6A21;&#x62DF;&#x6548;&#x679C;&#xFF0C;&#x6DF7;&#x5408;&#x56FE;&#x5C42;&#x662F;&#x4E2A;&#x6027;&#x80FD;&#x6700;&#x597D;&#x3001;&#x8017;&#x80FD;&#x6700;&#x5C11;&#x7684;&#x901A;&#x7528;&#x4F18;&#x5316;&#x65B9;&#x6848;&#xFF0C;&#x5C24;&#x5176;&#x5BF9;&#x4E8E; rounded corer &#x548C; mask&#x3002;
+</code></pre></li>
+</ol>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-18 14:03:51
+2016-06-18 23:50:48
 </span></footer>
                     
                     </section>
