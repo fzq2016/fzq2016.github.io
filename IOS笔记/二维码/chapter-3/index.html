@@ -1,11 +1,11 @@
 <!DOCTYPE HTML>
 <html lang="en" >
-    <!-- Start book 目录--回到书架 -->
+    <!-- Start book 简介 -->
     <head>
         <!-- head:start -->
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <title>自定义二维码 | 目录--回到书架</title>
+        <title>生成二维码- 自定义二维码 | 简介</title>
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
         <meta name="description" content="">
         <meta name="generator" content="GitBook 2.6.7">
@@ -62,10 +62,10 @@
         
     <div class="book"
         data-level="3"
-        data-chapter-title="自定义二维码"
+        data-chapter-title="生成二维码- 自定义二维码"
         data-filepath="chapter-3/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 18 2016 14:45:02 GMT+0800 (CST)"
+        data-revision="Sun Jun 26 2016 01:31:32 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -125,7 +125,7 @@
                         
                             <b>2.</b>
                         
-                        生成二维码
+                        生成二维码- 原生二维码
                     </a>
             
             
@@ -140,7 +140,7 @@
                         
                             <b>3.</b>
                         
-                        自定义二维码
+                        生成二维码- 自定义二维码
                     </a>
             
             
@@ -155,7 +155,7 @@
                         
                             <b>4.</b>
                         
-                        识别图片二维码
+                        识别二维码- 静态二维码
                     </a>
             
             
@@ -170,7 +170,7 @@
                         
                             <b>5.</b>
                         
-                        绘制识别到的边框
+                        识别二维码- 描绘边框
                     </a>
             
             
@@ -200,7 +200,7 @@
                         
                             <b>7.</b>
                         
-                        扫描功能实现
+                        扫描二维码- 功能实现
                     </a>
             
             
@@ -215,7 +215,7 @@
                         
                             <b>8.</b>
                         
-                        描绘扫描到的二维码边框
+                        扫描二维码- 描绘边框
                     </a>
             
             
@@ -230,7 +230,7 @@
                         
                             <b>9.</b>
                         
-                        限定扫描区域
+                        扫描二维码- 限定扫描区域
                     </a>
             
             
@@ -266,13 +266,6 @@
             
         </li>
     
-        <li class="chapter " data-level="12" data-path="chapter-12/index.html">
-            
-            <span><b>12.</b> Chapter-12</span>
-            
-            
-        </li>
-    
 
 
             
@@ -296,7 +289,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../" >目录--回到书架</a>
+        <a href="../" >简介</a>
     </h1>
 </div>
 
@@ -306,10 +299,178 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;">&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;</h2>
-<!--/Users/imac/Desktop/note/IOSNote/Library/Import/OC/未整理笔记/二维码/资料/01-二维码/1. 二维码/code/03-二维码-自定义二维码-->
+                        <h2 id="&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;">&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;</h2>
+<ol>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;,&#x5C31;&#x662F;&#x6307;&#x7ED9;&#x7CFB;&#x7EDF;&#x4E8C;&#x7EF4;&#x7801;&#x6DFB;&#x52A0;&#x4E00;&#x4E9B;&#x56FE;&#x7247;(&#x524D;&#x666F;&#x6216;&#x8005;&#x80CC;&#x666F;&#x56FE;&#x7247;), &#x6216;&#x8005;&#x6539;&#x53D8;&#x4E0B;&#x989C;&#x8272;</li>
+<li>&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;&#x5B9E;&#x8D28;&#x662F;&#x901A;&#x8FC7;<a href="../../Quartz2D&#x6846;&#x67B6;/drawwatermark/index.html">Quartz2D&#x6846;&#x67B6;</a>&#x6765;&#x7ED8;&#x5236;&#x56FE;&#x7247;</li>
+</ol>
+<h3 id="&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;&#x7684;&#x57FA;&#x7840;">&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;&#x7684;&#x57FA;&#x7840;</h3>
+<pre><code>    1. &#x53EF;&#x4EE5;&#x6DFB;&#x52A0;&#x524D;&#x666F;&#x56FE;&#x7247;&#x7684;&#x524D;&#x63D0;&#x662F;&#x56E0;&#x4E3A;&#x4E8C;&#x7EF4;&#x7801;&#x5177;&#x5907;&#x4E00;&#x5B9A;&#x7684;&quot;&#x7EA0;&#x9519;&#x7387;&quot;&#xFF0C;&#x5982;&#x679C;&#x4E8C;&#x7EF4;&#x7801;&#x88AB;&#x90E8;&#x5206;&#x906E;&#x6321;,&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5176;&#x4ED6;&#x90E8;&#x5206;,&#x8BA1;&#x7B97;&#x51FA;&#x906E;&#x6321;&#x90E8;&#x5206;&#x5185;&#x5BB9;;
+    2. &#x4F46;&#x662F;&#x8981;&#x4FDD;&#x8BC1;&#x4E09;&#x4E2A;&#x89D2;&#x4E0D;&#x80FD;&#x88AB;&#x906E;&#x6321;;&#x4E09;&#x4E2A;&#x89D2;&#x7528;&#x4F5C;&#x626B;&#x63CF;&#x5B9A;&#x4F4D;&#x4F7F;&#x7528;(&#x53EF;&#x80FD;&#x7528;&#x6237;&#x5012;&#x7740;&#x62CD;, &#x659C;&#x7740;&#x62CD;&#x7B49;&#x7B49;)
+</code></pre><h3 id="&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;--oc">&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801; &lt;- OC</h3>
+<ol>
+<li><p>&#x5BFC;&#x5165;CoreImage&#x6846;&#x67B6;&#xFF0C;&#x4E00;&#x4E9B;&#x56FE;&#x7247;&#x5904;&#x7406;&#x64CD;&#x4F5C;&#x7684;&#x529F;&#x80FD;, &#x90FD;&#x662F;&#x7528;&#x8FD9;&#x4E2A;&#x6846;&#x67B6;&#x5B9E;&#x73B0;, &#x6BD4;&#x5982;: &#x6EE4;&#x955C;&#x6548;&#x679C;, &#x6BDB;&#x73BB;&#x7483;, &#x7F8E;&#x989C;&#x76F8;&#x673A;....</p>
+<pre><code class="lang-objc"> <span class="hljs-preprocessor">#import <span class="hljs-title">&lt;CoreImage/CoreImage.h&gt;</span></span>
+</code></pre>
+</li>
+<li><p>&#x5B9E;&#x73B0;&#x4EE3;&#x7801;(&#x6709;&#x5174;&#x8DA3;&#x53EF;&#x7814;&#x7A76;)</p>
+<pre><code class="lang-objc"> <span class="hljs-comment">// &#x6839;&#x636E;CIImage, &#x548C;&#x6307;&#x5B9A;&#x5927;&#x5C0F;, &#x751F;&#x6210;UIImage&#x56FE;&#x7247;</span>
+ + (<span class="hljs-built_in">UIImage</span> *)createNonInterpolated<span class="hljs-built_in">UIImageFormCIImage</span>:(<span class="hljs-built_in">CIImage</span> *)image withSize:(<span class="hljs-built_in">CGFloat</span>) size {
+     <span class="hljs-built_in">CGRect</span> extent = <span class="hljs-built_in">CGRectIntegral</span>(image<span class="hljs-variable">.extent</span>);
+     <span class="hljs-built_in">CGFloat</span> scale = MIN(size/<span class="hljs-built_in">CGRectGetWidth</span>(extent), size/<span class="hljs-built_in">CGRectGetHeight</span>(extent));
+
+     <span class="hljs-comment">// &#x521B;&#x5EFA;bitmap;</span>
+     size_t width = <span class="hljs-built_in">CGRectGetWidth</span>(extent) * scale;
+     size_t height = <span class="hljs-built_in">CGRectGetHeight</span>(extent) * scale;
+     <span class="hljs-built_in">CGColorSpaceRef</span> cs = <span class="hljs-built_in">CGColorSpaceCreateDeviceGray</span>();
+     <span class="hljs-built_in">CGContextRef</span> bitmapRef = <span class="hljs-built_in">CGBitmapContextCreate</span>(<span class="hljs-literal">nil</span>, width, height, <span class="hljs-number">8</span>, <span class="hljs-number">0</span>, cs, (<span class="hljs-built_in">CGBitmapInfo</span>)k<span class="hljs-built_in">CGImageAlphaNone</span>);
+     <span class="hljs-built_in">CIContext</span> *context = [<span class="hljs-built_in">CIContext</span> contextWithOptions:<span class="hljs-literal">nil</span>];
+     <span class="hljs-built_in">CGImageRef</span> bitmapImage = [context create<span class="hljs-built_in">CGImage</span>:image fromRect:extent];
+     <span class="hljs-built_in">CGContextSetInterpolationQuality</span>(bitmapRef, k<span class="hljs-built_in">CGInterpolationNone</span>);
+     <span class="hljs-built_in">CGContextScaleCTM</span>(bitmapRef, scale, scale);
+     <span class="hljs-built_in">CGContextDrawImage</span>(bitmapRef, extent, bitmapImage);
+
+     <span class="hljs-comment">// &#x4FDD;&#x5B58;bitmap&#x5230;&#x56FE;&#x7247;</span>
+     <span class="hljs-built_in">CGImageRef</span> scaledImage = <span class="hljs-built_in">CGBitmapContextCreateImage</span>(bitmapRef);
+     <span class="hljs-built_in">CGContextRelease</span>(bitmapRef);
+     <span class="hljs-built_in">CGImageRelease</span>(bitmapImage);
+     <span class="hljs-keyword">return</span> [<span class="hljs-built_in">UIImage</span> imageWith<span class="hljs-built_in">CGImage</span>:scaledImage];
+ }
+</code></pre>
+</li>
+<li><p>&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5F69;&#x8272;&#x56FE;&#x7247;(&#x6709;&#x5174;&#x8DA3;&#x53EF;&#x7814;&#x7A76;)</p>
+<pre><code class="lang-objc"> <span class="hljs-keyword">void</span> ProviderReleaseData (<span class="hljs-keyword">void</span> *info, <span class="hljs-keyword">const</span> <span class="hljs-keyword">void</span> *data, size_t size){
+     free((<span class="hljs-keyword">void</span>*)data);
+ }
+
+ <span class="hljs-comment">// &#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5F69;&#x8272;&#x56FE;&#x7247;</span>
+ + (<span class="hljs-built_in">UIImage</span>*)imageBlackToTransparent:(<span class="hljs-built_in">UIImage</span>*)image withRed:(<span class="hljs-built_in">CGFloat</span>)red andGreen:(<span class="hljs-built_in">CGFloat</span>)green andBlue:(<span class="hljs-built_in">CGFloat</span>)blue{
+     <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> imageWidth = image<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span>;
+     <span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> imageHeight = image<span class="hljs-variable">.size</span><span class="hljs-variable">.height</span>;
+     size_t      bytesPerRow = imageWidth * <span class="hljs-number">4</span>;
+     uint32_t* rgbImageBuf = (uint32_t*)malloc(bytesPerRow * imageHeight);
+     <span class="hljs-built_in">CGColorSpaceRef</span> colorSpace = <span class="hljs-built_in">CGColorSpaceCreateDeviceRGB</span>();
+     <span class="hljs-built_in">CGContextRef</span> context = <span class="hljs-built_in">CGBitmapContextCreate</span>(rgbImageBuf, imageWidth, imageHeight, <span class="hljs-number">8</span>, bytesPerRow, colorSpace,
+                                                  k<span class="hljs-built_in">CGBitmapByteOrder32Little</span> | k<span class="hljs-built_in">CGImageAlphaNoneSkipLast</span>);
+     <span class="hljs-built_in">CGContextDrawImage</span>(context, <span class="hljs-built_in">CGRectMake</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, imageWidth, imageHeight), image<span class="hljs-variable">.CGImage</span>);
+     <span class="hljs-comment">// &#x904D;&#x5386;&#x50CF;&#x7D20;</span>
+     <span class="hljs-keyword">int</span> pixelNum = imageWidth * imageHeight;
+     uint32_t* pCurPtr = rgbImageBuf;
+     <span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; pixelNum; i++, pCurPtr++){
+         <span class="hljs-keyword">if</span> ((*pCurPtr &amp; <span class="hljs-number">0xFFFFFF00</span>) &lt; <span class="hljs-number">0x99999900</span>)    <span class="hljs-comment">// &#x5C06;&#x767D;&#x8272;&#x53D8;&#x6210;&#x900F;&#x660E;</span>
+         {
+             <span class="hljs-comment">// &#x6539;&#x6210;&#x4E0B;&#x9762;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x4F1A;&#x5C06;&#x56FE;&#x7247;&#x8F6C;&#x6210;&#x60F3;&#x8981;&#x7684;&#x989C;&#x8272;</span>
+             uint8_t* ptr = (uint8_t*)pCurPtr;
+             ptr[<span class="hljs-number">3</span>] = red; <span class="hljs-comment">//0~255</span>
+             ptr[<span class="hljs-number">2</span>] = green;
+             ptr[<span class="hljs-number">1</span>] = blue;
+         }
+         <span class="hljs-keyword">else</span>
+         {
+             uint8_t* ptr = (uint8_t*)pCurPtr;
+             ptr[<span class="hljs-number">0</span>] = <span class="hljs-number">0</span>;
+         }
+     }
+     <span class="hljs-comment">// &#x8F93;&#x51FA;&#x56FE;&#x7247;</span>
+     <span class="hljs-built_in">CGDataProviderRef</span> dataProvider = <span class="hljs-built_in">CGDataProviderCreateWithData</span>(<span class="hljs-literal">NULL</span>, rgbImageBuf, bytesPerRow * imageHeight, ProviderReleaseData);
+     <span class="hljs-built_in">CGImageRef</span> imageRef = <span class="hljs-built_in">CGImageCreate</span>(imageWidth, imageHeight, <span class="hljs-number">8</span>, <span class="hljs-number">32</span>, bytesPerRow, colorSpace,
+                                         k<span class="hljs-built_in">CGImageAlphaLast</span> | k<span class="hljs-built_in">CGBitmapByteOrder32Little</span>, dataProvider,
+                                         <span class="hljs-literal">NULL</span>, <span class="hljs-literal">true</span>, k<span class="hljs-built_in">CGRenderingIntentDefault</span>);
+     <span class="hljs-built_in">CGDataProviderRelease</span>(dataProvider);
+     <span class="hljs-built_in">UIImage</span>* result<span class="hljs-built_in">UIImage</span> = [<span class="hljs-built_in">UIImage</span> imageWith<span class="hljs-built_in">CGImage</span>:imageRef];
+     <span class="hljs-comment">// &#x6E05;&#x7406;&#x7A7A;&#x95F4;</span>
+     <span class="hljs-built_in">CGImageRelease</span>(imageRef);
+     <span class="hljs-built_in">CGContextRelease</span>(context);
+     <span class="hljs-built_in">CGColorSpaceRelease</span>(colorSpace);
+     <span class="hljs-keyword">return</span> result<span class="hljs-built_in">UIImage</span>;
+ }
+</code></pre>
+</li>
+</ol>
+<h3 id="&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;--swift">&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801; &lt;- swift</h3>
+<ol>
+<li><p>&#x5BFC;&#x5165;&#x6846;&#x67B6;&#xFF08;&#x53EF;&#x9009;&#xFF09;</p>
+<pre><code class="lang-swift"> <span class="hljs-keyword">import</span> CoreImage
+</code></pre>
+</li>
+<li><p>&#x5B9E;&#x73B0;&#x4EE3;&#x7801;</p>
+<pre><code class="lang-swift"> <span class="hljs-comment">// &#x5728;&#x751F;&#x6210;&#x7CFB;&#x7EDF;&#x4E8C;&#x7EF4;&#x7801;&#x7684;&#x57FA;&#x7840;&#x4E0A;&#xFF0C;&#x83B7;&#x53D6;&#x5230;&#x6EE4;&#x955C;outputImage&#x540E;&#xFF0C;&#x5BF9;&#x56FE;&#x7247;&#x8FDB;&#x884C;&#x52A0;&#x5DE5;&#xFF0C;&#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#x52A0;&#x5DE5;&#x540E;&#x7684;&#x56FE;&#x7247;</span>
+     <span class="hljs-comment">// &#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;</span>
+     <span class="hljs-keyword">let</span> center = <span class="hljs-type">UIImage</span>(named: <span class="hljs-string">&quot;erha.png&quot;</span>)
+     <span class="hljs-keyword">let</span> hechengImage = createImage(outputImage, centerImage: center)
+
+ <span class="hljs-comment">// &#x52A0;&#x5DE5;&#x7CFB;&#x7EDF;&#x4E8C;&#x7EF4;&#x7801;&#xFF0C;&#x751F;&#x6210;&#x81EA;&#x5B9A;&#x4E49;&#x4E8C;&#x7EF4;&#x7801;</span>
+ <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">createImage</span><span class="hljs-params">(sourceImage: UIImage?, centerImage: UIImage?)</span></span> -&gt; <span class="hljs-type">UIImage</span>? {
+
+     <span class="hljs-comment">// 0. &#x5BB9;&#x9519;&#x5904;&#x7406;</span>
+     <span class="hljs-keyword">if</span> (sourceImage == <span class="hljs-literal">nil</span> &amp;&amp; centerImage == <span class="hljs-literal">nil</span>) {
+         <span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;sourceImage&#x6216;&#x8005;centerImage&#x4E3A;&#x7A7A;&quot;</span>)
+         <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+     }
+
+     <span class="hljs-comment">// 1. &#x83B7;&#x53D6;&#x56FE;&#x7247;&#x5927;&#x5C0F;</span>
+     <span class="hljs-keyword">let</span> size = sourceImage!.size
+
+     <span class="hljs-comment">// 2. &#x5F00;&#x542F;&#x4E0A;&#x4E0B;&#x6587;</span>
+     <span class="hljs-type">UIGraphicsBeginImageContext</span>(size)
+
+     <span class="hljs-comment">// 3. &#x7ED8;&#x5236;&#x5927;&#x56FE;&#x7247;</span>
+     sourceImage!.drawInRect(<span class="hljs-type">CGRectMake</span>(<span class="hljs-number">0</span>, <span class="hljs-number">0</span>, size.width, size.height))
+
+     <span class="hljs-comment">// 4. &#x7ED8;&#x5236;&#x5C0F;&#x56FE;&#x7247;</span>
+     <span class="hljs-keyword">let</span> w: <span class="hljs-type">CGFloat</span> = <span class="hljs-number">90</span>
+     <span class="hljs-keyword">let</span> h: <span class="hljs-type">CGFloat</span> = <span class="hljs-number">90</span>
+     <span class="hljs-keyword">let</span> x: <span class="hljs-type">CGFloat</span> = (size.width - w) * <span class="hljs-number">0.5</span>
+     <span class="hljs-keyword">let</span> y: <span class="hljs-type">CGFloat</span> = (size.height - h) * <span class="hljs-number">0.5</span>
+
+     centerImage!.drawInRect(<span class="hljs-type">CGRectMake</span>(x, y, w, h))
+
+     <span class="hljs-comment">// 5. &#x83B7;&#x53D6;&#x5408;&#x6210;&#x7684;&#x56FE;&#x7247;</span>
+     <span class="hljs-keyword">let</span> resultImage = <span class="hljs-type">UIGraphicsGetImageFromCurrentImageContext</span>()
+
+     <span class="hljs-comment">// 6. &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;</span>
+     <span class="hljs-type">UIGraphicsEndImageContext</span>()
+
+     <span class="hljs-comment">// 7. &#x8FD4;&#x56DE;&#x7ED3;&#x679C;</span>
+     <span class="hljs-keyword">return</span> resultImage
+ }
+</code></pre>
+</li>
+<li><p>&#x6839;&#x636E;CIImage&#x751F;&#x6210;&#x6307;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x9AD8;&#x6E05;UIImage(&#x6709;&#x5174;&#x8DA3;&#x53EF;&#x7814;&#x7A76;)</p>
+<pre><code class="lang-swift"> <span class="hljs-comment">/**
+  &#x6839;&#x636E;CIImage&#x751F;&#x6210;&#x6307;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x9AD8;&#x6E05;UIImage
+  :param: image &#x6307;&#x5B9A;CIImage
+  :param: size    &#x6307;&#x5B9A;&#x5927;&#x5C0F;
+  :returns: &#x751F;&#x6210;&#x597D;&#x7684;&#x56FE;&#x7247;
+  */</span>
+ private <span class="hljs-func"><span class="hljs-keyword">func</span> <span class="hljs-title">createBigImage</span><span class="hljs-params">(image: CIImage, size: CGFloat)</span></span> -&gt; <span class="hljs-type">UIImage</span> {
+
+     <span class="hljs-keyword">let</span> extent: <span class="hljs-type">CGRect</span> = <span class="hljs-type">CGRectIntegral</span>(image.extent)
+     <span class="hljs-keyword">let</span> scale: <span class="hljs-type">CGFloat</span> = <span class="hljs-built_in">min</span>(size/<span class="hljs-type">CGRectGetWidth</span>(extent), size/<span class="hljs-type">CGRectGetHeight</span>(extent))
+
+     <span class="hljs-comment">// 1.&#x521B;&#x5EFA;bitmap;</span>
+     <span class="hljs-keyword">let</span> width = <span class="hljs-type">CGRectGetWidth</span>(extent) * scale
+     <span class="hljs-keyword">let</span> height = <span class="hljs-type">CGRectGetHeight</span>(extent) * scale
+     <span class="hljs-keyword">let</span> cs: <span class="hljs-type">CGColorSpaceRef</span> = <span class="hljs-type">CGColorSpaceCreateDeviceGray</span>()!
+     <span class="hljs-keyword">let</span> bitmapRef = <span class="hljs-type">CGBitmapContextCreate</span>(<span class="hljs-literal">nil</span>, <span class="hljs-type">Int</span>(width), <span class="hljs-type">Int</span>(height), <span class="hljs-number">8</span>, <span class="hljs-number">0</span>, cs, <span class="hljs-number">0</span>)!
+
+     <span class="hljs-keyword">let</span> context = <span class="hljs-type">CIContext</span>(options: <span class="hljs-literal">nil</span>)
+     <span class="hljs-keyword">let</span> bitmapImage: <span class="hljs-type">CGImageRef</span> = context.createCGImage(image, fromRect: extent)
+
+     <span class="hljs-type">CGContextSetInterpolationQuality</span>(bitmapRef,  <span class="hljs-type">CGInterpolationQuality</span>.<span class="hljs-type">None</span>)
+     <span class="hljs-type">CGContextScaleCTM</span>(bitmapRef, scale, scale);
+     <span class="hljs-type">CGContextDrawImage</span>(bitmapRef, extent, bitmapImage);
+
+     <span class="hljs-comment">// 2.&#x4FDD;&#x5B58;bitmap&#x5230;&#x56FE;&#x7247;</span>
+     <span class="hljs-keyword">let</span> scaledImage: <span class="hljs-type">CGImageRef</span> = <span class="hljs-type">CGBitmapContextCreateImage</span>(bitmapRef)!
+
+     <span class="hljs-keyword">return</span> <span class="hljs-type">UIImage</span>(<span class="hljs-type">CGImage</span>: scaledImage)
+ }
+</code></pre>
+</li>
+</ol>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-18 14:13:45
+2016-06-26 01:25:15
 </span></footer>
                     
                     </section>
@@ -320,10 +481,10 @@
         </div>
 
         
-        <a href="../chapter-2/index.html" class="navigation navigation-prev " aria-label="Previous page: 生成二维码"><i class="fa fa-angle-left"></i></a>
+        <a href="../chapter-2/index.html" class="navigation navigation-prev " aria-label="Previous page: 生成二维码- 原生二维码"><i class="fa fa-angle-left"></i></a>
         
         
-        <a href="../chapter-4/index.html" class="navigation navigation-next " aria-label="Next page: 识别图片二维码"><i class="fa fa-angle-right"></i></a>
+        <a href="../chapter-4/index.html" class="navigation navigation-next " aria-label="Next page: 识别二维码- 静态二维码"><i class="fa fa-angle-right"></i></a>
         
     </div>
 </div>
@@ -364,5 +525,5 @@ require(["gitbook"], function(gitbook) {
 
         <!-- body:end -->
     </body>
-    <!-- End of book 目录--回到书架 -->
+    <!-- End of book 简介 -->
 </html>
