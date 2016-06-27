@@ -65,7 +65,7 @@
         data-chapter-title="推送通知"
         data-filepath="chapter-6/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 25 2016 13:27:44 GMT+0800 (CST)"
+        data-revision="Mon Jun 27 2016 13:20:16 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -296,36 +296,6 @@
             
         </li>
     
-        <li class="chapter " data-level="14" data-path="chapter-15/index.html">
-            
-                
-                    <a href="../chapter-15/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>14.</b>
-                        
-                        Chapter-15
-                    </a>
-            
-            
-        </li>
-    
-        <li class="chapter " data-level="15" data-path="chapter-16/index.html">
-            
-                
-                    <a href="../chapter-16/index.html">
-                
-                        <i class="fa fa-check"></i>
-                        
-                            <b>15.</b>
-                        
-                        Chapter-16
-                    </a>
-            
-            
-        </li>
-    
 
 
             
@@ -359,7 +329,7 @@
                 
                     <section class="normal" id="section-">
                     
-                        <h2 id="&#x4E00;-&#x63A8;&#x9001;&#x901A;&#x77E5;">&#x4E00;. &#x63A8;&#x9001;&#x901A;&#x77E5;</h2>
+                        <h2 id="&#x63A8;&#x9001;&#x901A;&#x77E5;">&#x63A8;&#x9001;&#x901A;&#x77E5;</h2>
 <h3 id="1-&#x4EC0;&#x4E48;&#x662F;&#x63A8;&#x9001;&#x901A;&#x77E5;">1. &#x4EC0;&#x4E48;&#x662F;&#x63A8;&#x9001;&#x901A;&#x77E5;?</h3>
 <pre><code>    &gt; &#x9996;&#x5148;&#x660E;&#x786E;:**&#x6B64;&#x5904;&#x7684;&#x63A8;&#x9001;&#x901A;&#x77E5;&#x8DDF;&#x6211;&#x4EEC;&#x7684;&#x201D;NSNotification&#x201D;&#x6CA1;&#x6709;&#x534A;&#x6BDB;&#x94B1;&#x5173;&#x7CFB;
     &gt; &#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;: &#x5411;&#x7528;&#x6237;&#x63A8;&#x9001;&#x4E00;&#x6761;&#x4FE1;&#x606F;&#x6765;&#x901A;&#x77E5;&#x7528;&#x6237;&#x67D0;&#x4EF6;&#x4E8B;&#x60C5;
@@ -401,30 +371,33 @@
 <li><p>&#x521B;&#x5EFA;UILocalNotification &#x5BF9;&#x8C61;</p>
 </li>
 <li><p>&#x8BBE;&#x7F6E;&#x4E00;&#x4E9B;&#x5FC5;&#x8981;&#x5C5E;&#x6027;</p>
-<pre><code>     // &#x63A8;&#x9001;&#x901A;&#x77E5;&#x7684;&#x89E6;&#x53D1;&#x65F6;&#x95F4;&#xFF08;&#x4F55;&#x65F6;&#x53D1;&#x51FA;&#x63A8;&#x9001;&#x901A;&#x77E5;&#xFF09;
-     @property(nonatomic,copy) NSDate *fireDate;
-     // &#x63A8;&#x9001;&#x901A;&#x77E5;&#x7684;&#x5177;&#x4F53;&#x5185;&#x5BB9;
-     @property(nonatomic,copy) NSString *alertBody;
-</code></pre></li>
+<pre><code class="lang-objc"> <span class="hljs-comment">// &#x63A8;&#x9001;&#x901A;&#x77E5;&#x7684;&#x89E6;&#x53D1;&#x65F6;&#x95F4;&#xFF08;&#x4F55;&#x65F6;&#x53D1;&#x51FA;&#x63A8;&#x9001;&#x901A;&#x77E5;&#xFF09;</span>
+ <span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>,<span class="hljs-keyword">copy</span>) <span class="hljs-built_in">NSDate</span> *fireDate;
+ <span class="hljs-comment">// &#x63A8;&#x9001;&#x901A;&#x77E5;&#x7684;&#x5177;&#x4F53;&#x5185;&#x5BB9;</span>
+ <span class="hljs-keyword">@property</span>(<span class="hljs-keyword">nonatomic</span>,<span class="hljs-keyword">copy</span>) <span class="hljs-built_in">NSString</span> *alertBody;
+</code></pre>
+</li>
 </ol>
 <ol>
 <li><p>&#x5F00;&#x59CB;&#x63A8;&#x9001;&#x901A;&#x77E5;</p>
-<pre><code>     - &#x6839;&#x636E;fireDate&#x8BBE;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x8FDB;&#x884C;&#x63A8;&#x9001;
-     [[UIApplication sharedApplication] scheduleLocalNotification:ln];
- - &#x7ACB;&#x5373;&#x63A8;&#x9001;
-     presentLocalNotificationNow:(UILocalNotification *)notification;
-</code></pre></li>
+<pre><code class="lang-objc"> <span class="hljs-comment">// &#x6839;&#x636E;fireDate&#x8BBE;&#x5B9A;&#x7684;&#x65F6;&#x95F4;&#x8FDB;&#x884C;&#x63A8;&#x9001;</span>
+ [[<span class="hljs-built_in">UIApplication</span> sharedApplication] scheduleLocalNotification:ln];
+ <span class="hljs-comment">// &#x7ACB;&#x5373;&#x63A8;&#x9001;</span>
+ presentLocalNotificationNow:(<span class="hljs-built_in">UILocalNotification</span> *)notification;
+</code></pre>
+</li>
 <li><p>&#x76D1;&#x542C;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x901A;&#x77E5;</p>
-<pre><code>     - app&#x5904;&#x4E8E;&#x524D;&#x53F0;
-         &#x6B64;&#x65F6;&#x4E0D;&#x4F1A;&#x5F39;&#x6846;&#x901A;&#x77E5;&#x7528;&#x6237;&#x901A;&#x77E5;&#x7684;&#x5230;&#x8FBE;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x4F1A;&#x8C03;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;
-     - app&#x5E76;&#x6CA1;&#x6709;&#x5173;&#x95ED;&#xFF0C;&#x4E00;&#x76F4;&#x9690;&#x85CF;&#x5728;&#x540E;&#x53F0;&#x65F6;
-         &#x6B64;&#x65F6;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x901A;&#x77E5;&#x4FE1;&#x606F;&#x540E;,&#x4F1A;&#x8BA9;app&#x8FDB;&#x5165;&#x524D;&#x53F0;&#xFF0C;&#x5E76;&#x4F1A;&#x8C03;&#x7528;AppDelegate&#x7684;&#x4E0B;&#x9762;&#x65B9;&#x6CD5;
-         application: didReceiveLocalNotification:
-     - app&#x5DF2;&#x7ECF;&#x88AB;&#x5173;&#x95ED;&#xFF08;&#x8FDB;&#x7A0B;&#x5DF2;&#x6B7B;&#xFF09;
-         &#x6B64;&#x65F6;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x901A;&#x77E5;&#x4FE1;&#x606F;&#x540E;,&#x4F1A;&#x542F;&#x52A8;app&#xFF0C;&#x542F;&#x52A8;&#x5B8C;&#x6BD5;&#x4F1A;&#x8C03;&#x7528;AppDelegate&#x7684;&#x4E0B;&#x9762;&#x65B9;&#x6CD5;
-         application: didFinishLaunchingWithOptions:
-         launchOptions&#x53C2;&#x6570;&#x901A;&#x8FC7;UIApplicationLaunchOptionsLocalNotificationKey&#x53D6;&#x51FA;&#x672C;&#x5730;&#x63A8;&#x9001;&#x901A;&#x77E5;&#x5BF9;&#x8C61;
-</code></pre></li>
+<pre><code class="lang-objc"> <span class="hljs-comment">// app&#x5904;&#x4E8E;&#x524D;&#x53F0;</span>
+     &#x6B64;&#x65F6;&#x4E0D;&#x4F1A;&#x5F39;&#x6846;&#x901A;&#x77E5;&#x7528;&#x6237;&#x901A;&#x77E5;&#x7684;&#x5230;&#x8FBE;&#xFF0C;&#x4F46;&#x662F;&#x8FD8;&#x662F;&#x4F1A;&#x8C03;&#x7528;&#x5BF9;&#x5E94;&#x7684;&#x4EE3;&#x7406;&#x65B9;&#x6CD5;
+ - app&#x5E76;&#x6CA1;&#x6709;&#x5173;&#x95ED;&#xFF0C;&#x4E00;&#x76F4;&#x9690;&#x85CF;&#x5728;&#x540E;&#x53F0;&#x65F6;
+     &#x6B64;&#x65F6;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x901A;&#x77E5;&#x4FE1;&#x606F;&#x540E;,&#x4F1A;&#x8BA9;app&#x8FDB;&#x5165;&#x524D;&#x53F0;&#xFF0C;&#x5E76;&#x4F1A;&#x8C03;&#x7528;AppDelegate&#x7684;&#x4E0B;&#x9762;&#x65B9;&#x6CD5;
+     application: didReceiveLocalNotification:
+ - app&#x5DF2;&#x7ECF;&#x88AB;&#x5173;&#x95ED;&#xFF08;&#x8FDB;&#x7A0B;&#x5DF2;&#x6B7B;&#xFF09;
+     &#x6B64;&#x65F6;&#x7528;&#x6237;&#x70B9;&#x51FB;&#x901A;&#x77E5;&#x4FE1;&#x606F;&#x540E;,&#x4F1A;&#x542F;&#x52A8;app&#xFF0C;&#x542F;&#x52A8;&#x5B8C;&#x6BD5;&#x4F1A;&#x8C03;&#x7528;AppDelegate&#x7684;&#x4E0B;&#x9762;&#x65B9;&#x6CD5;
+     application: didFinishLaunchingWithOptions:
+     launchOptions&#x53C2;&#x6570;&#x901A;&#x8FC7;<span class="hljs-built_in">UIApplicationLaunchOptionsLocalNotificationKey</span>&#x53D6;&#x51FA;&#x672C;&#x5730;&#x63A8;&#x9001;&#x901A;&#x77E5;&#x5BF9;&#x8C61;
+</code></pre>
+</li>
 <li><p>&#x989D;&#x5916;&#x8BBE;&#x7F6E;</p>
 <pre><code>     // &#x6BCF;&#x9694;&#x591A;&#x4E45;&#x91CD;&#x590D;&#x53D1;&#x4E00;&#x6B21;&#x63A8;&#x9001;&#x901A;&#x77E5;
      @property(nonatomic) NSCalendarUnit repeatInterval;
@@ -566,8 +539,12 @@
 </code></pre></li>
 </ol>
 <hr>
+<p>es/]</p>
+<hr>
+<p> [<a href="http://mdsa.51cto.com/services/" target="_blank">http://mdsa.51cto.com/services/</a>]</p>
+<hr>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-24 16:24:13
+2016-06-26 14:48:21
 </span></footer>
                     
                     </section>
