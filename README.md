@@ -1,5 +1,6 @@
 # 我就是我，世界上不一样的烟火（韩寒）
-
+* github地址：https://github.com/fzq2016/fzq2016.github.io
+* oschina地址：http://git.oschina.net/fanzq_oschina/fzq2016.github.io
 
 ## 前言
   "不敲代码就掌握不了语言"，对此我深以为然。当然除了敲代码外，我认为整理笔记也是掌握语言的必要步骤.
