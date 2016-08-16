@@ -1,3 +1,4 @@
+#pragma mark - DDL语句
 #pragma mark create(创建表)
 // 格式
 create table 表名 (字段名1 字段类型1, 字段名2 字段类型2, …) ;
@@ -9,10 +10,10 @@ CREATE TABLE IF NOT EXISTS t_student(id INTEGER , name TEXT, age , score REAL);
 
 #pragma mark create+（简单约束）
 // 建表时可以给特定的字段设置一些约束条件，常见的约束有
-not null ：规定字段的值不能为null
-unique ：规定字段的值必须唯一
-default ：指定字段的默认值
-（建议：尽量给字段设定严格的约束，以保证数据的规范性）
+not null // 规定字段的值不能为null
+unique // 规定字段的值必须唯一
+default // 指定字段的默认值
+//（建议：尽量给字段设定严格的约束，以保证数据的规范性）
 
 // 示例
 create table t_student (id integer, name text not null unique, age integer not null default 1) ;
@@ -27,7 +28,7 @@ create table t_student (id integer primary key autoincrement, name text, age int
 create table t_student (id integer primary key autoincrement, name text, age integer, class_id integer, constraint fk_t_student_class_id_t_class_id foreign key (class_id) references t_class (id)) ; 
 
 
-#pragma mark - drop（删除表）
+#pragma mark drop（删除表）
 // 格式
 drop table 表名 ;
 drop table if exists 表名 ;
@@ -36,7 +37,8 @@ drop table t_student ;
 DROP TABLE IF EXISTS t_student;
 
 
-#pragma mark - insert(插入数据)
+#pragma mark - DML语句
+#pragma mark insert(插入数据)
 // 格式
 insert into 表名 (字段1, 字段2, …) values (字段1的值, 字段2的值, …) ;
 // 示例
@@ -45,7 +47,7 @@ INSERT INTO t_student(age, score, name) VALUES ('28', 100, 'jonathan');
 INSERT INTO t_student(name, age) VALUES ('lee', '28');
 INSERT INTO t_student(score) VALUES (100);
 
-#pragma mark - update（更新数据）
+#pragma mark update（更新数据）
 // 格式
 update 表名 set 字段1 = 字段1的值, 字段2 = 字段2的值, … ; 
 // 示例
@@ -55,14 +57,14 @@ UPDATE t_student SET name = 'WW' WHERE age is 7;
 UPDATE t_student SET name = 'XXOO' WHERE age < 20;
 UPDATE t_student SET name = 'NNMM' WHERE age < 50 and score > 10;
 
-#pragma mark - delete（删除数据）
+#pragma mark delete（删除数据）
 // 格式
 delete from 表名 ;
 // 示例
 delete from t_student ;//将t_student表中所有记录都删掉
 
 
-#pragma mark - where（条件语句）
+#pragma mark where（条件语句）
 // 如果只想更新或者删除某些固定的记录，那就必须在DML语句后加上一些条件
 
 // 条件语句的常见格式
@@ -85,7 +87,7 @@ update t_student set score = age where name = ‘jack’ ;
 
 
 
-#pragma mark - select(DQL语句)
+#pragma mark - DQL语句
 #pragma mark select(查询)
 // 格式
 select 字段1, 字段2, … from 表名 ;
@@ -151,7 +153,7 @@ select * from t_student limit 7 ;
 // 表示取最前面的7条记录
 
 
-#pragma mark - select (表连接查询)
+#pragma mark select (表连接查询)
 // 表连接的类型
 // 内连接：inner join 或者 join  （显示的是左右表都有完整字段值的记录）
 // 左外连接：left outer join （保证左表数据的完整性）
