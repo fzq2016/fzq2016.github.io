@@ -65,7 +65,7 @@
         data-chapter-title="裁剪圆环图片"
         data-filepath="drawcircleborderimage/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 25 2016 16:38:07 GMT+0800 (CST)"
+        data-revision="Tue Nov 29 2016 23:18:08 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -416,13 +416,13 @@
 <li><p>&#x5229;&#x7528;&#x56FE;&#x7247;</p>
 </li>
 </ul>
-<pre><code class="lang-objc"><span class="hljs-preprocessor">## &#x52A0;&#x8F7D;&#x56FE;&#x7247;</span>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x52A0;&#x8F7D;&#x56FE;&#x7247;</span>
     <span class="hljs-built_in">UIImage</span> *image = [<span class="hljs-built_in">UIImage</span> imageNamed:imageName];
 
-<span class="hljs-preprocessor">## &#x5F00;&#x542F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x5F00;&#x542F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-built_in">UIGraphicsBeginImageContextWithOptions</span>(ctxRect<span class="hljs-variable">.size</span>, <span class="hljs-literal">NO</span>, <span class="hljs-number">0</span>);
 
-<span class="hljs-preprocessor">##  &#x7ED8;&#x5236;&#x5927;&#x5706;</span>
+<span class="hljs-comment">//  &#x7ED8;&#x5236;&#x5927;&#x5706;</span>
     <span class="hljs-comment">//&#x8BA1;&#x7B97;&#x5706;&#x5BBD;</span>
     <span class="hljs-built_in">CGFloat</span> borderWH = borderW;
     <span class="hljs-built_in">CGFloat</span> ctxWH = image<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span> + <span class="hljs-number">2</span> * borderWH;
@@ -435,25 +435,25 @@
     [circleColor set];
     [bigCirclePath fill];
 
-<span class="hljs-preprocessor">##  &#x8BBE;&#x7F6E;&#x88C1;&#x526A;&#x533A;&#x57DF;</span>
+<span class="hljs-comment">//  &#x8BBE;&#x7F6E;&#x88C1;&#x526A;&#x533A;&#x57DF;</span>
     <span class="hljs-built_in">CGRect</span> clipRect = <span class="hljs-built_in">CGRectMake</span>(borderWH, borderWH, image<span class="hljs-variable">.size</span><span class="hljs-variable">.width</span>, image<span class="hljs-variable">.size</span><span class="hljs-variable">.height</span>);
     <span class="hljs-built_in">UIBezierPath</span> *clipPath = [<span class="hljs-built_in">UIBezierPath</span> bezierPathWithOvalInRect:clipRect];
     [clipPath addClip];
 
-<span class="hljs-preprocessor">## &#x7ED8;&#x5236;&#x56FE;&#x7247;&#x5230;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x7ED8;&#x5236;&#x56FE;&#x7247;&#x5230;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
     [image drawAtPoint:<span class="hljs-built_in">CGPointMake</span>(borderWH, borderWH)];
 
-<span class="hljs-preprocessor">## &#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x83B7;&#x53D6;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x83B7;&#x53D6;&#x56FE;&#x7247;</span>
     image = <span class="hljs-built_in">UIGraphicsGetImageFromCurrentImageContext</span>();
 
-<span class="hljs-preprocessor">## &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-built_in">UIGraphicsEndImageContext</span>();
 
-<span class="hljs-preprocessor">## &#x5229;&#x7528;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x5229;&#x7528;&#x56FE;&#x7247;</span>
     <span class="hljs-keyword">return</span> image;
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-06 17:45:37
+2016-11-29 23:17:23
 </span></footer>
                     
                     </section>

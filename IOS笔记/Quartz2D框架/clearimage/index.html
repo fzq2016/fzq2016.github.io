@@ -65,7 +65,7 @@
         data-chapter-title="图片擦除"
         data-filepath="clearimage/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 25 2016 16:38:07 GMT+0800 (CST)"
+        data-revision="Tue Nov 29 2016 23:18:08 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -409,21 +409,21 @@
 <li><p>&#x5C06;&#x64E6;&#x9664;&#x540E;&#x7684;&#x56FE;&#x7247;&#x663E;&#x793A;&#x56DE;&#x63A7;&#x4EF6;&#x4E2D;</p>
 </li>
 </ul>
-<pre><code class="lang-objc"><span class="hljs-preprocessor">## &#x52A0;&#x8F7D;&#x56FE;&#x7247;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x62D6;&#x52A8;&#x624B;&#x52BF;&#xFF1B;&#x53E6;&#x5916;&#x52A0;&#x8F7D;&#x4E00;&#x5F20;&#x80CC;&#x666F;&#x56FE;&#x7247;&#xFF0C;&#x7528;&#x4E8E;&#x56FE;&#x7247;&#x88AB;&#x64E6;&#x9664;&#x540E;&#x663E;&#x793A;&#xFF0C;&#x7F6E;&#x4E8E;&#x64E6;&#x9664;&#x56FE;&#x7247;&#x4E0B;&#x65B9;&#xFF0C;&#x5DF2;&#x901A;&#x8FC7;storyboard&#x5B9E;&#x73B0;</span>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x52A0;&#x8F7D;&#x56FE;&#x7247;&#xFF0C;&#x5E76;&#x6DFB;&#x52A0;&#x62D6;&#x52A8;&#x624B;&#x52BF;&#xFF1B;&#x53E6;&#x5916;&#x52A0;&#x8F7D;&#x4E00;&#x5F20;&#x80CC;&#x666F;&#x56FE;&#x7247;&#xFF0C;&#x7528;&#x4E8E;&#x56FE;&#x7247;&#x88AB;&#x64E6;&#x9664;&#x540E;&#x663E;&#x793A;&#xFF0C;&#x7F6E;&#x4E8E;&#x64E6;&#x9664;&#x56FE;&#x7247;&#x4E0B;&#x65B9;&#xFF0C;&#x5DF2;&#x901A;&#x8FC7;storyboard&#x5B9E;&#x73B0;</span>
 
 <span class="hljs-comment">//&#x76D1;&#x89C6;&#x62D6;&#x52A8;</span>
 - (<span class="hljs-keyword">IBAction</span>)pan:(<span class="hljs-built_in">UIPanGestureRecognizer</span> *)sender {
 
-<span class="hljs-preprocessor">## &#x5F00;&#x542F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x5F00;&#x542F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-built_in">UIGraphicsBeginImageContextWithOptions</span>(sender<span class="hljs-variable">.view</span><span class="hljs-variable">.bounds</span><span class="hljs-variable">.size</span>, <span class="hljs-literal">NO</span>, <span class="hljs-number">0</span>);
 
-<span class="hljs-preprocessor">## &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-built_in">CGContextRef</span> ctx = <span class="hljs-built_in">UIGraphicsGetCurrentContext</span>();
 
-<span class="hljs-preprocessor">## &#x6E32;&#x67D3;&#x63A7;&#x4EF6;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x63A7;&#x4EF6;&#x7684;layer&#x56FE;&#x5C42;&#x52A0;&#x8F7D;&#x5230;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;</span>
+<span class="hljs-comment">// &#x6E32;&#x67D3;&#x63A7;&#x4EF6;&#xFF0C;&#x76F8;&#x5F53;&#x4E8E;&#x63A7;&#x4EF6;&#x7684;layer&#x56FE;&#x5C42;&#x52A0;&#x8F7D;&#x5230;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;</span>
     [sender<span class="hljs-variable">.view</span><span class="hljs-variable">.layer</span> renderInContext:ctx];
 
-<span class="hljs-preprocessor">##  &#x6E05;&#x9664;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x67D0;&#x4E00;&#x90E8;&#x5206;</span>
+<span class="hljs-comment">//  &#x6E05;&#x9664;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x67D0;&#x4E00;&#x90E8;&#x5206;</span>
     <span class="hljs-comment">//&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x89E6;&#x6478;&#x70B9;</span>
     <span class="hljs-built_in">CGPoint</span> curP =[sender locationInView:sender<span class="hljs-variable">.view</span>];
 
@@ -433,23 +433,23 @@
     <span class="hljs-built_in">CGFloat</span> y = curP<span class="hljs-variable">.y</span> - wh * <span class="hljs-number">0.5</span>;
     <span class="hljs-built_in">CGRect</span> clearR = <span class="hljs-built_in">CGRectMake</span>(x, y, wh, wh);
 
-    <span class="hljs-preprocessor">### &#x6838;&#x5FC3;&#x4EE3;&#x7801;</span>
+    <span class="hljs-comment">// &#x6838;&#x5FC3;&#x4EE3;&#x7801;</span>
     <span class="hljs-built_in">CGContextClearRect</span>(ctx, clearR);
 
-<span class="hljs-preprocessor">## &#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x751F;&#x6210;&#x4E00;&#x5F20;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x751F;&#x6210;&#x4E00;&#x5F20;&#x56FE;&#x7247;</span>
     <span class="hljs-built_in">UIImage</span> *image = <span class="hljs-built_in">UIGraphicsGetImageFromCurrentImageContext</span>();
 
-<span class="hljs-preprocessor">## &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-built_in">UIGraphicsEndImageContext</span>();
 
-<span class="hljs-preprocessor">## &#x5C06;&#x64E6;&#x9664;&#x540E;&#x7684;&#x56FE;&#x7247;&#x663E;&#x793A;&#x56DE;&#x63A7;&#x4EF6;&#x4E2D;</span>
+<span class="hljs-comment">// &#x5C06;&#x64E6;&#x9664;&#x540E;&#x7684;&#x56FE;&#x7247;&#x663E;&#x793A;&#x56DE;&#x63A7;&#x4EF6;&#x4E2D;</span>
     <span class="hljs-built_in">UIImageView</span> *imageV = (<span class="hljs-built_in">UIImageView</span> *)sender<span class="hljs-variable">.view</span>;
     imageV<span class="hljs-variable">.image</span> = image;
 
 }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-06 17:31:22
+2016-11-29 23:17:32
 </span></footer>
                     
                     </section>

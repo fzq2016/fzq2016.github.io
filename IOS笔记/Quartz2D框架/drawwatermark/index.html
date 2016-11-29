@@ -65,7 +65,7 @@
         data-chapter-title="添加图片水印"
         data-filepath="drawwatermark/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 25 2016 16:38:07 GMT+0800 (CST)"
+        data-revision="Tue Nov 29 2016 23:18:08 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -419,30 +419,30 @@
 <li><p>&#x4FDD;&#x5B58;&#x56FE;&#x7247;</p>
 </li>
 </ol>
-<pre><code class="lang-objc"><span class="hljs-preprocessor">## &#x52A0;&#x8F7D;&#x56FE;&#x7247;</span>
+<pre><code class="lang-objc"><span class="hljs-comment">// &#x52A0;&#x8F7D;&#x56FE;&#x7247;</span>
     <span class="hljs-built_in">UIImage</span> *image = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@&quot;&#x5C0F;&#x9EC4;&#x4EBA;&quot;</span>];
 
-<span class="hljs-preprocessor">## &#x5F00;&#x542F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x7684;&#x56FE;&#x7247;&#x6700;&#x6E05;&#x6670;&#x3002;</span>
+<span class="hljs-comment">// &#x5F00;&#x542F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x8FD9;&#x79CD;&#x65B9;&#x6CD5;&#x5F97;&#x5230;&#x7684;&#x56FE;&#x7247;&#x6700;&#x6E05;&#x6670;&#x3002;</span>
     <span class="hljs-comment">// size:&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;,&#x4E00;&#x822C;&#x6839;&#x56FE;&#x7247;&#x4E00;&#x6837;&#x5927;</span>
     <span class="hljs-comment">// opaque:&#x4E0D;&#x900F;&#x660E;&#x5EA6;,&#x53EA;&#x8981;&#x8DDF;&#x4E0A;&#x4E0B;&#x6587;&#x76F8;&#x5173;&#x7684;&#x90FD;&#x662F;&#x53EB;&#x4E0D;&#x900F;&#x660E;&#x5EA6;,&#x6839;view&#x76F8;&#x5173;&#x7684;&#x53EB;&#x900F;&#x660E;&#x5EA6;</span>
     <span class="hljs-comment">// opaque:YES &#x4E0D;&#x900F;&#x660E; NO:&#x900F;&#x660E;,&#x4E00;&#x822C;&#x90FD;&#x662F;&#x4F7F;&#x7528;&#x900F;&#x660E;&#x7684;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-comment">// scale: 0 &#x8868;&#x793A;&#x4E0D;&#x9700;&#x8981;&#x7F29;&#x653E;</span>
     <span class="hljs-built_in">UIGraphicsBeginImageContextWithOptions</span>(image<span class="hljs-variable">.size</span>, <span class="hljs-literal">NO</span>, <span class="hljs-number">0</span>);
 
-<span class="hljs-preprocessor">## &#x7ED8;&#x5236;&#x56FE;&#x7247;&#x5230;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x7ED8;&#x5236;&#x56FE;&#x7247;&#x5230;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
     [image drawAtPoint:<span class="hljs-built_in">CGPointZero</span>];
 
-<span class="hljs-preprocessor">## &#x6DFB;&#x52A0;&#x6C34;&#x5370;</span>
+<span class="hljs-comment">// &#x6DFB;&#x52A0;&#x6C34;&#x5370;</span>
     <span class="hljs-built_in">NSString</span> *str = <span class="hljs-string">@&quot;IOS&#x7B14;&#x8BB0;&quot;</span>;
     [str drawAtPoint:<span class="hljs-built_in">CGPointZero</span> withAttributes:@{<span class="hljs-built_in">NSForegroundColorAttributeName</span> : [<span class="hljs-built_in">UIColor</span> redColor]}];
 
-<span class="hljs-preprocessor">## &#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x83B7;&#x53D6;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x83B7;&#x53D6;&#x56FE;&#x7247;</span>
     image = <span class="hljs-built_in">UIGraphicsGetImageFromCurrentImageContext</span>();
 
-<span class="hljs-preprocessor">## &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x5426;&#x5219;&#x4E00;&#x81F4;&#x5360;&#x7528;&#x5185;&#x5B58;</span>
+<span class="hljs-comment">// &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;&#xFF0C;&#x5426;&#x5219;&#x4E00;&#x81F4;&#x5360;&#x7528;&#x5185;&#x5B58;</span>
     <span class="hljs-built_in">UIGraphicsEndImageContext</span>();
 
-<span class="hljs-preprocessor">## &#x4FDD;&#x5B58;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x4FDD;&#x5B58;&#x56FE;&#x7247;</span>
     <span class="hljs-comment">// &#x628A;&#x56FE;&#x7247;&#x8F6C;&#x6362;&#x6210;&#x4E8C;&#x8FDB;&#x5236;&#x6570;&#x636E;&#xFF0C;png&#x683C;&#x5F0F;&#xFF0C;&#x8D28;&#x91CF;&#x6700;&#x9AD8;&#x6E05;</span>
     <span class="hljs-built_in">NSData</span> *data = <span class="hljs-built_in">UIImagePNGRepresentation</span>(image);
 
@@ -450,7 +450,7 @@
     [data writeToFile:<span class="hljs-string">@&quot;/Users/xiaomage/Desktop/1.png&quot;</span> atomically:<span class="hljs-literal">YES</span>];
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-25 16:37:33
+2016-11-29 23:17:17
 </span></footer>
                     
                     </section>

@@ -65,7 +65,7 @@
         data-chapter-title="点击截图"
         data-filepath="printscreen/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 25 2016 16:38:07 GMT+0800 (CST)"
+        data-revision="Tue Nov 29 2016 23:18:08 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -409,26 +409,26 @@
 </ul>
 <pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)touchesBegan:(<span class="hljs-built_in">NSSet</span> *)touches withEvent:(<span class="hljs-built_in">UIEvent</span> *)event
 {
-<span class="hljs-preprocessor">## &#x5F00;&#x542F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x5F00;&#x542F;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-built_in">UIGraphicsBeginImageContextWithOptions</span>(<span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.bounds</span><span class="hljs-variable">.size</span>, <span class="hljs-literal">NO</span>, <span class="hljs-number">0</span>);
 
-<span class="hljs-preprocessor">## &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;==&gt;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x83B7;&#x53D6;&#x5F53;&#x524D;&#x4E0A;&#x4E0B;&#x6587;==&gt;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-built_in">CGContextRef</span> ctx = <span class="hljs-built_in">UIGraphicsGetCurrentContext</span>();
 
-<span class="hljs-preprocessor">## &#x83B7;&#x53D6;view&#x56FE;&#x5C42;</span>
+<span class="hljs-comment">// &#x83B7;&#x53D6;view&#x56FE;&#x5C42;</span>
     <span class="hljs-built_in">CALayer</span> *vcLayer = <span class="hljs-keyword">self</span><span class="hljs-variable">.view</span><span class="hljs-variable">.layer</span>;
 
-<span class="hljs-preprocessor">## &#x628A;&#x63A7;&#x4EF6;&#x56FE;&#x5C42;&#x6E32;&#x67D3;&#x5230;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;,&#x56FE;&#x5C42;&#x53EA;&#x80FD;&#x6E32;&#x67D3;,&#x4E0D;&#x80FD;&#x7ED8;&#x5236;</span>
+<span class="hljs-comment">// &#x628A;&#x63A7;&#x4EF6;&#x56FE;&#x5C42;&#x6E32;&#x67D3;&#x5230;&#x4F4D;&#x56FE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;,&#x56FE;&#x5C42;&#x53EA;&#x80FD;&#x6E32;&#x67D3;,&#x4E0D;&#x80FD;&#x7ED8;&#x5236;</span>
     [vcLayer renderInContext:ctx];
 <span class="hljs-comment">//    [vcLayer drawInContext:ctx];</span>
 
-<span class="hljs-preprocessor">## &#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x53D6;&#x51FA;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x4ECE;&#x4E0A;&#x4E0B;&#x6587;&#x4E2D;&#x53D6;&#x51FA;&#x56FE;&#x7247;</span>
     <span class="hljs-built_in">UIImage</span> *image = <span class="hljs-built_in">UIGraphicsGetImageFromCurrentImageContext</span>();
 
-<span class="hljs-preprocessor">## &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;</span>
+<span class="hljs-comment">// &#x5173;&#x95ED;&#x4E0A;&#x4E0B;&#x6587;</span>
     <span class="hljs-built_in">UIGraphicsEndImageContext</span>();
 
-<span class="hljs-preprocessor">## &#x4FDD;&#x5B58;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x4FDD;&#x5B58;&#x56FE;&#x7247;</span>
     <span class="hljs-comment">// Quality:&#x56FE;&#x7247;&#x8D28;&#x91CF;</span>
     <span class="hljs-comment">//jpeg&#x53D6;&#x5F97;&#x56FE;&#x7247;&#x8D28;&#x91CF;&#x4E0D;&#x4E00;&#x5B9A;&#x662F;&#x6700;&#x597D;&#x7684;&#xFF0C;&#x8BBE;&#x7F6E;&#x6570;&#x503C;&#x8D8A;&#x5C11;&#x8D28;&#x91CF;&#x8D8A;&#x5DEE;&#xFF1B;png&#x7684;&#x662F;&#x6700;&#x597D;&#x7684;&#x3002;&#x4E0A;&#x4F20;&#x670D;&#x52A1;&#x5668;&#x65F6;&#x6700;&#x597D;&#x7528;jpeg&#x538B;&#x7F29;&#x4E00;&#x4E0B;&#xFF0C;&#x670D;&#x52A1;&#x5668;&#x538B;&#x529B;&#x6CA1;&#x90A3;&#x4E48;&#x5927;</span>
    <span class="hljs-built_in">NSData</span> *data = <span class="hljs-built_in">UIImageJPEGRepresentation</span>(image, <span class="hljs-number">0.0000001</span>);
@@ -437,7 +437,7 @@
 }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-06 17:44:07
+2016-11-29 23:17:25
 </span></footer>
                     
                     </section>

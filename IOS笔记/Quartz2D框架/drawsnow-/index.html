@@ -65,7 +65,7 @@
         data-chapter-title="动画图片-计时器画雪花"
         data-filepath="drawsnow-/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 25 2016 16:38:07 GMT+0800 (CST)"
+        data-revision="Tue Nov 29 2016 23:18:08 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -407,7 +407,7 @@
 </ol>
 <pre><code class="lang-objc">- (<span class="hljs-keyword">void</span>)awakeFromNib
 {
-<span class="hljs-preprocessor">## &#x521B;&#x5EFA;&#x5B9A;&#x65F6;&#x5668;</span>
+<span class="hljs-comment">// &#x521B;&#x5EFA;&#x5B9A;&#x65F6;&#x5668;</span>
 <span class="hljs-comment">// &#x5982;&#x679C;&#x6BCF;&#x9694;&#x4E00;&#x6BB5;&#x65F6;&#x95F4;&#x91CD;&#x7ED8;,&#x4E00;&#x822C;&#x4E0D;&#x4F7F;&#x7528;NSTimer&#xFF08;&#x56E0;&#x4E3A;&#x4E0D;&#x591F;&#x53CA;&#x65F6;&#xFF09;// &#x6BCF;&#x6B21;&#x5C4F;&#x5E55;&#x81EA;&#x52A8;&#x5237;&#x65B0;60&#x6B21;/&#x79D2;,&#x6BCF;&#x6B21;&#x5237;&#x65B0;&#x7684;&#x65F6;&#x5019;&#x53EA;&#x4F1A;&#x628A;&#x5F53;&#x524D;&#x9700;&#x8981;&#x5237;&#x65B0;&#x7684;view&#x91CD;&#x7ED8;&#xFF08;&#x5373;&#x7ED1;&#x5B9A;&#x4E86;&#x5237;&#x65B0;&#x6807;&#x8BC6;&#x7684;view&#xFF09;</span>
 <span class="hljs-comment">// setNeedsDisplay:&#x91CD;&#x7ED8;,&#x5B9E;&#x8D28;&#x662F;&#x7ED9;&#x5F53;&#x524D;&#x63A7;&#x4EF6;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x5237;&#x65B0;&#x7684;&#x6807;&#x8BC6;,&#x5728;&#x4E0B;&#x4E00;&#x6B21;&#x5C4F;&#x5E55;&#x5237;&#x65B0;&#x5C31;&#x4F1A;&#x91CD;&#x7ED8;</span>
 
@@ -423,12 +423,12 @@
 - (<span class="hljs-keyword">void</span>)drawRect:(<span class="hljs-built_in">CGRect</span>)rect {
 
     <span class="hljs-keyword">static</span> <span class="hljs-built_in">CGFloat</span> snowY = <span class="hljs-number">0</span>;
-<span class="hljs-preprocessor">## &#x52A0;&#x8F7D;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x52A0;&#x8F7D;&#x56FE;&#x7247;</span>
     <span class="hljs-built_in">UIImage</span> *image = [<span class="hljs-built_in">UIImage</span> imageNamed:<span class="hljs-string">@&quot;&#x96EA;&#x82B1;&quot;</span>];
-<span class="hljs-preprocessor">## &#x7ED8;&#x5236;&#x56FE;&#x7247;</span>
+<span class="hljs-comment">// &#x7ED8;&#x5236;&#x56FE;&#x7247;</span>
     [image drawAtPoint:<span class="hljs-built_in">CGPointMake</span>(<span class="hljs-number">50</span>, snowY)];
 
-<span class="hljs-preprocessor">## &#x8BBE;&#x7F6E;&#x53D8;&#x5316;</span>
+<span class="hljs-comment">// &#x8BBE;&#x7F6E;&#x53D8;&#x5316;</span>
     snowY += <span class="hljs-number">10</span>;
 
     <span class="hljs-keyword">if</span> (snowY &gt; rect<span class="hljs-variable">.size</span><span class="hljs-variable">.height</span>) {
@@ -437,7 +437,7 @@
 }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-06 17:34:29
+2016-11-29 23:10:16
 </span></footer>
                     
                     </section>
