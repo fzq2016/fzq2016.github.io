@@ -65,7 +65,7 @@
         data-chapter-title="UIAlertView"
         data-filepath="uialertview/README.md"
         data-basepath=".."
-        data-revision="Sat Jun 18 2016 14:47:34 GMT+0800 (CST)"
+        data-revision="Thu Jan 05 2017 23:14:26 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -750,17 +750,23 @@
 {
     <span class="hljs-built_in">UIAlertView</span> *alertView = [[<span class="hljs-built_in">UIAlertView</span> alloc] initWithTitle:<span class="hljs-string">@&quot;&#x8B66;&#x544A;&quot;</span> message:<span class="hljs-string">@&quot;&#x662F;&#x5426;&#x8981;&#x5220;&#x9664;&#x5B83;&#xFF1F;&quot;</span> delegate:<span class="hljs-keyword">self</span> cancelButtonTitle:<span class="hljs-string">@&quot;&#x662F;&quot;</span> otherButtonTitles:<span class="hljs-string">@&quot;&#x5426;&quot;</span>, <span class="hljs-literal">nil</span>];
     alertView<span class="hljs-variable">.alertViewStyle</span> = <span class="hljs-built_in">UIAlertViewStyleLoginAndPasswordInput</span>;
+    alertView<span class="hljs-variable">.tag</span> = <span class="hljs-number">999</span>;    <span class="hljs-comment">// &#x4E00;&#x822C;&#x8981;&#x4F5C;&#x6807;&#x8BB0;&#xFF0C;&#x5728;clickedButtonAtIndex&#x4E2D;&#x6839;&#x636E;tag&#x4F5C;&#x4E0D;&#x540C;&#x7684;&#x5904;&#x7406;</span>
     [alertView show];
 }
 
 <span class="hljs-preprocessor">#pragma mark - <span class="hljs-title">&lt;UIAlertViewDelegate&gt;</span></span>
 - (<span class="hljs-keyword">void</span>)alertView:(<span class="hljs-built_in">UIAlertView</span> *)alertView clickedButtonAtIndex:(<span class="hljs-built_in">NSInteger</span>)buttonIndex
 {
-    <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#x70B9;&#x51FB;&#x4E86;&#x7B2C;%zd&#x4E2A;&#x6309;&#x94AE; - %@&quot;</span>, buttonIndex, [alertView textFieldAtIndex:<span class="hljs-number">0</span>]<span class="hljs-variable">.text</span>);
+    <span class="hljs-keyword">if</span> (buttonIndex == <span class="hljs-number">1</span>) {
+            <span class="hljs-keyword">if</span> (alertView<span class="hljs-variable">.tag</span> == <span class="hljs-number">999</span>) {
+                 <span class="hljs-built_in">NSLog</span>(<span class="hljs-string">@&quot;&#x70B9;&#x51FB;&#x4E86;&#x7B2C;%zd&#x4E2A;&#x6309;&#x94AE; - %@&quot;</span>, buttonIndex, [alertView textFieldAtIndex:<span class="hljs-number">0</span>]<span class="hljs-variable">.text</span>);
+                 <span class="hljs-keyword">return</span>;
+            }
+    }
 }
 </code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-07 15:22:38
+2016-12-27 23:53:06
 </span></footer>
                     
                     </section>

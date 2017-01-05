@@ -65,7 +65,7 @@
         data-chapter-title="UILabel"
         data-filepath="uilabel/README.md"
         data-basepath=".."
-        data-revision="Tue Jun 07 2016 21:51:02 GMT+0800 (CST)"
+        data-revision="Thu Jan 05 2017 23:14:26 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -828,8 +828,16 @@ label<span class="hljs-variable">.lineBreakMode</span>= <span class="hljs-built_
 </ul>
 </li>
 </ul>
+<!--如何在iPhone中使用自定义字体-->
+<!--答案讨论了在iOS3.2以前及以后的做法，现在都5.1了，估计支持3.2以前的app很少了吧。所以我把iOS3.2以后的办法附在下面。简单来说，就是iOS3.2苹果支持自定义字体，只需要在Info.plist文件中设置UIAppFonts相关的信息即可。步骤如下：-->
+<!--将自定义字体加到你的工程资源文件中-->
+<!--在 info.plist 文件中增加一名为 UIAppFonts 的key-->
+<!--将这个key修改成array-->
+<!--将你用到的所有字体的名字，作为这个array的值，一项一项填进去（包括扩展名）-->
+<!--保存 info.plist-->
+<!--现在就可以在代码中直接用[UIFont fontWithName:@”CustomFontName” size:12]来取得你自定义的字体了。-->
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-05 17:25:17
+2016-06-19 13:00:37
 </span></footer>
                     
                     </section>

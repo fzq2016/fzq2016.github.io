@@ -65,7 +65,7 @@
         data-chapter-title="UIImage"
         data-filepath="uiimage/README.md"
         data-basepath=".."
-        data-revision="Tue Jun 07 2016 21:51:02 GMT+0800 (CST)"
+        data-revision="Thu Jan 05 2017 23:14:26 GMT+0800 (CST)"
         data-innerlanguage="">
     
 
@@ -847,8 +847,32 @@ vc<span class="hljs-variable">.tabBarItem</span><span class="hljs-variable">.sel
 </ul>
 </li>
 </ol>
+<!--在Image Views中调整图片大小-->
+<!--如果要在UIImageView中显示一个来自bundle的图片，你应保证图片的大小和UIImageView的大小相同。在运行中缩放图片是很耗费资源的，特别是UIImageView嵌套在UIScrollView中的情况下。-->
+<!--如果图片是从远端服务加载的你不能控制图片大小，比如在下载前调整到合适大小的话，你可以在下载完成后，最好是用background thread，缩放一次，然后在UIImageView中使用缩放后的图片。-->
+<!--尽量把views设置为不透明-->
+<!--如果你有不透明的Views，你应该设置它们的opaque属性为YES。-->
+<!--原因是这会使系统用一个最优的方式渲染这些views。这个简单的属性在IB或者代码里都可以设定。-->
+<!--Apple的文档对于为图片设置不透明属性的描述是：-->
+<!--(opaque)这个属性给渲染系统提供了一个如何处理这个view的提示。如果设为YES， 渲染系统就认为这个view是完全不透明的，这使得渲染系统优化一些渲染过程和提高性能。如果设置为NO，渲染系统正常地和其它内容组成这个View。默认值是YES。-->
+<!--在相对比较静止的画面中，设置这个属性不会有太大影响。然而当这个view嵌在scroll view里边，或者是一个复杂动画的一部分，不设置这个属性的话会在很大程度上影响app的性能。-->
+<!--你可以在模拟器中用Debug\Color Blended Layers选项来发现哪些view没有被设置为opaque。目标就是，能设为opaque的就全设为opaque!-->
+<!--4. 避免过于庞大的XIB-->
+<!--iOS5中加入的Storyboards(分镜)正在快速取代XIB。然而XIB在一些场景中仍然很有用。比如你的app需要适应iOS5之前的设备，或者你有一个自定义的可重用的view,你就不可避免地要用到他们。-->
+<!--如果你不得不XIB的话，使他们尽量简单。尝试为每个Controller配置一个单独的XIB，尽可能把一个View Controller的view层次结构分散到单独的XIB中去。-->
+<!--需要注意的是，当你加载一个XIB的时候所有内容都被放在了内存里，包括任何图片。如果有一个不会即刻用到的view，你这就是在浪费宝贵的内存资源了。Storyboards就是另一码事儿了，storyboard仅在需要时实例化一个view controller.-->
+<!--正确设定背景图片-->
+<!--在View里放背景图片就像很多其它iOS编程一样有很多方法:-->
+<!--使用UIColor的 colorWithPatternImage来设置背景色；-->
+<!--在view中添加一个UIImageView作为一个子View。-->
+<!--如果你使用全画幅的背景图，你就必须使用UIImageView因为UIColor的colorWithPatternImage是用来创建小的重复的图片作为背景的。这种情形下使用UIImageView可以节约不少的内存：-->
+<!--// You could also achieve the same result in Interface Builder-->
+<!--UIImageView *backgroundView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background"]];-->
+<!--[self.view addSubview:backgroundView];-->
+<!--如果你用小图平铺来创建背景，你就需要用UIColor的colorWithPatternImage来做了，它会更快地渲染也不会花费很多内存：-->
+<!--self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"background"]];-->
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; fzq2016 2016 all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2016-06-05 19:48:13
+2016-07-30 12:50:12
 </span></footer>
                     
                     </section>
